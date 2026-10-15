@@ -103,7 +103,8 @@ def fig_recall():
         v = [pct(r["metrics"]["subsets"]["clean"]["terms"][key][field]) for r in rs]
         fig.add_bar(y=[_label(r) for r in rs], x=v, name=name, orientation="h", marker_color=colour,
                     hovertemplate="%{y}<br>" + name + ": %{x:.1f}%<extra></extra>")
-    fig.update_layout(barmode="group", bargap=0.25, bargroupgap=0.08)
+    # Horizontal groups draw the first trace at the bottom; reverse the legend to match.
+    fig.update_layout(barmode="group", bargap=0.25, bargroupgap=0.08, legend_traceorder="reversed")
     return _layout(fig, "Hebrew terms transcribed correctly, clean subset", x="%", height=520)
 
 
@@ -112,11 +113,14 @@ def fig_scatter():
     for ft, colour, name in [(True, FT, "Code-switching fine-tune"), (False, STOCK, "Stock")]:
         rs = [r for r in RESULTS if bool(r["model"].get("fine_tuned_for_code_switching")) == ft]
         c = [r["metrics"]["subsets"]["clean"] for r in rs]
-        fig.add_scatter(x=[pct(s["wer"]) for s in c], y=[pct(s["terms"]["all"]["recall"]) for s in c],
-                        mode="markers+text", name=name, text=[_label(r) for r in rs], textposition="middle right",
+        ys = [pct(s["terms"]["all"]["recall"]) for s in c]
+        # A point just below another prints its label below itself, so the two do not collide.
+        pos = ["bottom right" if any(0 < y2 - y < 3 for y2 in ys) else "middle right" for y in ys]
+        fig.add_scatter(x=[pct(s["wer"]) for s in c], y=ys,
+                        mode="markers+text", name=name, text=[_label(r) for r in rs], textposition=pos,
                         marker=dict(size=12, color=colour, line=dict(width=2, color="white")),
                         hovertemplate="%{text}<br>WER %{x:.1f}%<br>Term recall %{y:.1f}%<extra></extra>")
-    fig.update_xaxes(range=[3, 13])
+    fig.update_xaxes(range=[3, 16])
     return _layout(fig, "Lower WER goes with better Hebrew terms (top left is best)", x="WER % (clean)",
                    y="Term recall %")
 
@@ -128,7 +132,7 @@ def fig_control():
                            textposition="outside", cliponaxis=False,
                            marker_color=[FT if r["model"].get("fine_tuned_for_code_switching") else STOCK for r in rs],
                            hovertemplate="%{y}<br>English control WER %{x:.1f}%<extra></extra>"))
-    return _layout(fig, "English-only control: WER (lower is better). Blue: fine-tune, grey: stock",
+    return _layout(fig, "English-only control (24 clips): WER, lower is better. Blue: fine-tune, grey: stock",
                    x="WER %", height=380)
 
 
@@ -145,7 +149,9 @@ def fig_heatmap(min_n):
                                hovertemplate="%{y} · %{x}<br>%{text} occurrences written correctly<extra></extra>"))
     fig.update_yaxes(autorange="reversed", tickfont=dict(size=11))
     fig.update_xaxes(tickangle=-30, side="top")
-    return _layout(fig, f"Per term, hardest first ({len(terms)} terms)", height=max(400, 18 * len(terms) + 160))
+    fig = _layout(fig, f"Per term, hardest first ({len(terms)} terms)", height=max(400, 18 * len(terms) + 220))
+    fig.update_layout(margin=dict(t=190))
+    return fig
 
 
 # Archive: one file per published round in ./archive (scripts/snapshot_run.py). Unlike the
@@ -254,9 +260,8 @@ How well does speech recognition handle **English with Hebrew words in it**: *"p
         gr.Markdown("Clean subset (84 clips, 172 Hebrew term occurrences) unless stated. Hover for values. "
                     "With 172 occurrences, a gap of 2 to 3 points is about 4 to 5 words: treat it as noise.")
         gr.Plot(fig_recall())
-        with gr.Row():
-            gr.Plot(fig_scatter())
-            gr.Plot(fig_control())
+        gr.Plot(fig_scatter())
+        gr.Plot(fig_control())
         n = gr.Radio([("Terms that occur 2+ times", 2), ("All 139 terms", 1)], value=2, label="Heatmap")
         heat = gr.Plot(fig_heatmap(2))
         n.change(fig_heatmap, n, heat)
