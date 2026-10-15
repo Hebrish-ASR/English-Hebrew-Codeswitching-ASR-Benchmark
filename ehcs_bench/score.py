@@ -1,4 +1,4 @@
-"""Metrics. Pure Python plus jiwer; no GPU, no model. Definitions: docs/methodology.md.
+"""Metrics. Pure Python plus jiwer; no GPU, no model. Definitions: docs/about.md and docs/data-dictionary.md.
 
 The normalisation and the term matcher are the same as the ones behind the Parakeet
 code-switching fine-tune's published numbers, so the two stay comparable.

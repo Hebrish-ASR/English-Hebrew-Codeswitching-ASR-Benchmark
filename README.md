@@ -54,7 +54,7 @@ ehcs-bench score --preds preds.jsonl --name "My model" --model-id org/model
 
 ## Adding a result to the leaderboard
 
-Put the result file in `results/`. Then run `python3 scripts/results_table.py` to refresh the table above, and `scripts/deploy_space.sh` to publish the Space. Outside contributors open a PR with the result file. See [submitting](docs/about.md#submitting-a-result).
+Put the result file in `results/`. Then run `python3 scripts/results_table.py` to refresh the table above, `scripts/make_figures.py` to redraw the charts, and `scripts/deploy_space.sh` to publish the Space. When a batch of new results is complete, freeze it as a dated round: `python3 scripts/snapshot_run.py --title "Round N: ..." --notes "..."`, commit, then deploy. Outside contributors open a PR with the result file. See [submitting](docs/about.md#submitting-a-result).
 
 ## Layout
 
@@ -65,7 +65,10 @@ Put the result file in `results/`. Then run `python3 scripts/results_table.py` t
 | `ehcs_bench/data.py` | Pinned test-set revision and loader |
 | `ehcs_bench/cli.py` | `ehcs-bench run / score / rescore` |
 | `modal_app.py` | GPU runner on Modal |
-| `results/` | One JSON per model: model metadata, metrics, every transcript |
+| `results/` | One JSON per model: model metadata, metrics, every transcript. The latest result per model |
+| `archive/` | One JSON per published benchmark round (`scripts/snapshot_run.py`). Append-only; the Space's *Archive* tab |
+| `docs/data-dictionary.md` | Every term, field and metric. The Space's *Data dictionary* tab |
+| `scripts/make_figures.py` | Static PNG charts into `docs/figures/` (`uv run --with matplotlib python scripts/make_figures.py`) |
 | `scripts/build_testset.py` | Rebuilds the test set from pinned upstream commits |
 | `docs/dataset-card/README.md` | Source of the HF dataset card. Upload it with `hf upload ... README.md --repo-type dataset` (a card-only commit; the pinned revision does not change) |
 | `scripts/deploy_space.sh` | Publishes `space/` + `results/` to the leaderboard Space |

@@ -3,13 +3,14 @@
 Benchmark runner/scorer for English-Hebrew code-switching ASR. Created 2026-10-15. Public.
 Read `docs/about.md` first: it is the methodology and also the Space's About tab.
 
-## Three artefacts, three places
+## Where each artefact lives
 
 | Artefact | Where | Changes how |
 |---|---|---|
 | Test set | HF dataset `danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark` | Never in place. `ehcs_bench/data.py` pins `REVISION`; a new test set is a new `VERSION` + `REVISION`, and old results stop showing on the Space (it filters by revision) |
 | Results | `results/*.json` in **this** repo (source of truth) | Add a file; `scripts/results_table.py`; `scripts/deploy_space.sh` |
-| Leaderboard | HF Space `danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard` | Only via `scripts/deploy_space.sh`, which copies space/, results/, docs/about.md and the pinned metadata. Never edit the Space directly |
+| Archive | `archive/<date>.json`, one per published round | `scripts/snapshot_run.py` after the round's results are committed. Never edit a committed round |
+| Leaderboard | HF Space `danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard` | Only via `scripts/deploy_space.sh`, which copies space/, results/, archive/, docs/about.md, docs/data-dictionary.md and the pinned metadata. Never edit the Space directly |
 
 README edits to the HF dataset create new commits; that is fine because the loader pins
 `REVISION`, not `main`. Do not repin unless the audio or metadata changed.
@@ -36,3 +37,11 @@ copies the NeMo 2.7.3 pins from `~/repos/github/audio-dictation/Parakeet-V2-Pers
 The 4 non-canonical references (`heder madregot`, `machane Yehuda`) are corrected here at
 build time. They are still wrong in `Read-Aloud-Voice-Sentences` and should be fixed there
 by its normaliser (private repo Parakeet-V2-Personal-Finetune, `scripts/normalize_transcripts.py`).
+
+## Article drafts
+
+`drafts/` is gitignored: the HF community article draft lives there (`drafts/hf-article.md`,
+figures via the `drafts/figures -> ../docs/figures` symlink). HF has no API or CLI for creating
+community blog articles or Posts (checked 2026-10-15: `huggingface_hub` 1.25.1, `hf` CLI, and
+`/.well-known/openapi.json` only expose delete/comment endpoints for them), so publishing is a
+manual paste into huggingface.co/new-blog.

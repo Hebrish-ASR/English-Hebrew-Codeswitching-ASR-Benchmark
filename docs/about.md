@@ -42,6 +42,7 @@ The normalisation and term matcher are the same ones behind the Parakeet fine-tu
 - **One speaker.** The speaker is Irish-born, English-speaking and lives in Jerusalem. Results rank models on *this* speaker's code-switching. They do not show performance on other accents.
 - **Read speech**, mostly on one phone microphone.
 - **Small.** 84 headline clips and 172 term occurrences. A difference of 2 to 3 percentage points in term recall is about 4 to 5 hits, which is within noise.
+- **Not every labelled term is Hebrew (found 2026-10-15, open).** 22 of the 139 clean-subset terms are English or product names: tech jargon (*JSON*, *YAML*, *grep*, *venv*, *Proxmox*, *Ubuntu*, *sherpa-onnx*, *VS Code*, ...) and brands (*Tuya*, *Astro*, *Pinecone*). They are 26 of the 172 occurrences. They came from the source dataset's term labels, which tag hard vocabulary in general. Excluding them changes no ranks but lowers every model's term recall by 2 to 6 points (Parakeet v2 EN-HE (v2): 65.7% to 63.7%; Whisper Large V3: 45.9% to 39.7%). A relabelled test set will be a new version.
 - The canonical spelling is a convention. *Lenient recall* is there because a model writing *tsaharon* is not wrong in any absolute sense.
 
 ## Submitting a result
