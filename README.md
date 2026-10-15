@@ -9,7 +9,7 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 | **Leaderboard** | [HF Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard) |
 | **Test set** | [HF dataset: English-Hebrew-Codeswitching-ASR-Benchmark](https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark): v1, pinned commit in [`ehcs_bench/data.py`](ehcs_bench/data.py) |
 | **Methodology, contamination, limits** | [`docs/about.md`](docs/about.md) |
-| **Write-up** | [How good is speech-to-text at Hebrew words in English?](https://blog.danielrosehill.com/posts/english-hebrew-code-switching-asr-benchmark) (blog, 2026-10-15) |
+| **Write-up** | [How good is speech-to-text at Hebrew words in English? I built a benchmark to find out](https://blog.danielrosehill.com/posts/english-hebrew-code-switching-asr-benchmark) (blog, 2026-10-15) |
 
 ## Results (test set v1, clean subset: 84 clips, 172 Hebrew term occurrences)
 
