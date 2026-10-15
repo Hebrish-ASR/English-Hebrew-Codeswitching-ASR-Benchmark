@@ -1,0 +1,1951 @@
+{
+ "schema": 1,
+ "benchmark": {
+  "repo": "danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark",
+  "version": "v1",
+  "revision": "3cb0b2b3b3e46c951962ababeb7c56fc4248cb94"
+ },
+ "model": {
+  "id": "danielrosehill/Whisper-Hebrish",
+  "revision": "77e4104b55caf20f2925b52938e8ad8132c8bbd6",
+  "name": "Whisper-Hebrish",
+  "adapter": "whisper",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "fine_tuned_for_code_switching": true,
+  "params_m": 809.0,
+  "url": "https://huggingface.co/danielrosehill/Whisper-Hebrish",
+  "settings": {
+   "language": "en",
+   "decoding": "greedy",
+   "chunk_length_s": 30,
+   "dtype": "float16"
+  },
+  "notes": null,
+  "contamination": "Trained on English-Hebrew-Mixed-Sentences (2025-11-17), which overlaps 33 non-headline clips; 10 unseen-flagged clean term occurrences appear in its training text."
+ },
+ "scored_at": "2026-10-15T14:07:25Z",
+ "run": {
+  "wall_seconds": 66.3,
+  "audio_seconds": 1037.6,
+  "host": "modal:L40S"
+ },
+ "metrics": {
+  "missing": [],
+  "subsets": {
+   "clean": {
+    "n": 84,
+    "minutes": 11.8,
+    "wer": 0.065,
+    "cer": 0.0214,
+    "wer_raw": 0.1128,
+    "terms": {
+     "all": {
+      "occurrences": 172,
+      "terms": 139,
+      "recall": 0.5407,
+      "recall_lenient": 0.564,
+      "recall_exact_case": 0.4244
+     },
+     "unseen": {
+      "occurrences": 117,
+      "terms": 88,
+      "recall": 0.5641,
+      "recall_lenient": 0.5812,
+      "recall_exact_case": 0.4444
+     },
+     "seen": {
+      "occurrences": 55,
+      "terms": 51,
+      "recall": 0.4909,
+      "recall_lenient": 0.5273,
+      "recall_exact_case": 0.3818
+     }
+    }
+   },
+   "all_code_switch": {
+    "n": 121,
+    "minutes": 13.9,
+    "wer": 0.0563,
+    "cer": 0.0187,
+    "wer_raw": 0.0975,
+    "terms": {
+     "all": {
+      "occurrences": 201,
+      "terms": 146,
+      "recall": 0.607,
+      "recall_lenient": 0.6269,
+      "recall_exact_case": 0.5075
+     },
+     "unseen": {
+      "occurrences": 146,
+      "terms": 95,
+      "recall": 0.6507,
+      "recall_lenient": 0.6644,
+      "recall_exact_case": 0.5548
+     },
+     "seen": {
+      "occurrences": 55,
+      "terms": 51,
+      "recall": 0.4909,
+      "recall_lenient": 0.5273,
+      "recall_exact_case": 0.3818
+     }
+    }
+   },
+   "english_control": {
+    "n": 24,
+    "minutes": 3.3,
+    "wer": 0.0471,
+    "cer": 0.0127,
+    "wer_raw": 0.0891
+   }
+  },
+  "per_term": {
+   "tza'atzuim": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Moran": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Edri": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "tachles": {
+    "n": 2,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "bediuk": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Gal": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Kiryat Ono": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "mechina": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Yehuda": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "sherut chova": {
+    "n": 2,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "shloshim": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": true
+   },
+   "ma hadash": {
+    "n": 2,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Shacharit": {
+    "n": 3,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 0,
+    "unseen": true
+   },
+   "TOML": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "hotzaot": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": true
+   },
+   "freier": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": true
+   },
+   "Mas Hachnasa": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": false
+   },
+   "Dafna": {
+    "n": 2,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": false
+   },
+   "Halevi": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": false
+   },
+   "kaspomat": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Tehila": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "Rosenberg": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "tafsik": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Tavily": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "mercaz": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": true
+   },
+   "Esti": {
+    "n": 3,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "chummusia": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "erev chag": {
+    "n": 3,
+    "strict": 3,
+    "lenient": 3,
+    "exact": 0,
+    "unseen": true
+   },
+   "chatzer": {
+    "n": 2,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Maya": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "Peretz": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "machshev": {
+    "n": 2,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "shamash": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "sherpa-onnx": {
+    "n": 2,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Yom Chamishi": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": true
+   },
+   "cheder madregot": {
+    "n": 3,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "baalut": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Yom Shlishi": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Proxmox": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Bamba": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 0,
+    "unseen": true
+   },
+   "kvish": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "Ubuntu": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "chevra": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "Selichot": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "yofi": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Dizengoff": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "sachar": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "Pinecone": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": true
+   },
+   "megillah": {
+    "n": 2,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "YAML": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Shai": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": false
+   },
+   "Mahane Yehuda": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": false
+   },
+   "kadurim": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "MagicDNS": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "KDP": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "async": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "grep": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "meches": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "misrad": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Shmuel": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Netanya": {
+    "n": 2,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "JSON": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "adb": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": false
+   },
+   "VS Code": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "minyan": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": false
+   },
+   "WER": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "shnitzel": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "ishur avoda": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "shniya": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "PR": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "lechem": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "Google Workspace": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Chol Hamoed": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "venv": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "dgima": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "pargit": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Avi": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "ma nishma": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "shiurim": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "sachirut": {
+    "n": 2,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "chodesh": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Tuya": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 0,
+    "unseen": true
+   },
+   "Kiddush": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Astro": {
+    "n": 3,
+    "strict": 3,
+    "lenient": 3,
+    "exact": 0,
+    "unseen": true
+   },
+   "yom": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "AdGuard Home": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": true
+   },
+   "tofes": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": true
+   },
+   "Rabinowitz": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "mas briut": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Misrad Ha'otzar": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": true
+   },
+   "nituach": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": true
+   },
+   "peilut": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "yalla": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Ariel": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Ben-Haim": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "gisha": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": true
+   },
+   "binyan": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "hitnatkut": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "kise": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "mezuman": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "kartis ashrai": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "b'kitzur": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Nachlaot": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": false
+   },
+   "mishloach manot": {
+    "n": 2,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "shtar shituf": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "hazmana": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Dani": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "Rishon LeZion": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "laffa": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "misada": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "Lovelace": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "kivun": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "memshala": {
+    "n": 2,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Wissotzky": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "rishayon iski": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "shikun": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Chana": {
+    "n": 2,
+    "strict": 2,
+    "lenient": 2,
+    "exact": 2,
+    "unseen": true
+   },
+   "Alyn": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "teudat zehut": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Shapira": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": false
+   },
+   "kupat pensia": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "Adi": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Dahan": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "tzevet": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Be'er Sheva": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "yadid nefesh": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "kita": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Yom Revi'i": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "cheshbon": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 1,
+    "exact": 0,
+    "unseen": false
+   },
+   "Hila": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "sharav": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": false
+   },
+   "yafeh": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "Kan": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "shoko": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "ofanayim": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "Asaf": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "va'ada refu'it": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   },
+   "garinim": {
+    "n": 1,
+    "strict": 1,
+    "lenient": 1,
+    "exact": 1,
+    "unseen": true
+   },
+   "yo'etz klita": {
+    "n": 1,
+    "strict": 0,
+    "lenient": 0,
+    "exact": 0,
+    "unseen": true
+   }
+  }
+ },
+ "utterances": [
+  {
+   "id": "20261014T185245Z_tp3ray",
+   "subset": "english_control",
+   "ref": "Some of our other friends have asked to get together so we're inviting people for pot luck. we'll supply the beer.",
+   "hyp": "Some of our other friends have asked to get together, so we're inviting people for potluck. We'll supply the beer."
+  },
+  {
+   "id": "20261014T190834Z_r9islo",
+   "subset": "clean",
+   "ref": "Reminder to call Moran Edri tomorrow about the tza'atzuim, and ask whether she wants the white ones or the blue ones.",
+   "hyp": "Remind her to call Mora and Edri tomorrow about the tzatzumim and ask whether she wants the white ones or the blue ones."
+  },
+  {
+   "id": "20261014T190859Z_g99tvb",
+   "subset": "clean",
+   "ref": "Hi Gal, tachles, I need the signed contract for the place in Kiryat Ono, so can you tell me bediuk when you can send it over?",
+   "hyp": "Haigal, tachles, I need the signed contract for the place in Kiriat Ono, so can you tell me bidyuk when you can send it over?"
+  },
+  {
+   "id": "20261014T192409Z_x42wqt",
+   "subset": "clean",
+   "ref": "Yehuda, can you ask whether the mechina student is joining us on Sunday, because I need to know how many laptops to prepare?",
+   "hyp": "Yahuda, can you ask whether the mechin student is joining us on Sunday because I need to know how many laptops to provide?"
+  },
+  {
+   "id": "20261014T192418Z_6g045h",
+   "subset": "english_control",
+   "ref": "Hi, I'd like to book a doctor's appointment through the health fund for Omer, preferably early next week, before he goes back to work.",
+   "hyp": "Hi, I'd like to book a doctor's appointment through the Health Fund for Omer, preferably early next week before he goes back to work."
+  },
+  {
+   "id": "20261014T192920Z_64nd5p",
+   "subset": "english_control",
+   "ref": "Even though I have some unique talents myself, your life still makes me jealous.",
+   "hyp": "Even though I have some unique talents myself, your life still makes me jealous."
+  },
+  {
+   "id": "20261014T193806Z_c2vcdw",
+   "subset": "english_control",
+   "ref": "Thanks so much for the invitation, but we can't make it this time, and we hope you have a wonderful evening.",
+   "hyp": "Thanks so much for the invitation, but we can't make it this time, and we hope you have a wonderful evening."
+  },
+  {
+   "id": "20261014T193953Z_7iow5f",
+   "subset": "clean",
+   "ref": "Hi, I'm confirming that the package will be at my door tomorrow, and I'll be home all morning since my son just started sherut chova.",
+   "hyp": "Hi, I'm confirming that the package will be at my door tomorrow and I'll be home all morning since my son just started sherut choba."
+  },
+  {
+   "id": "20261014T194043Z_6maudn",
+   "subset": "contaminated_text",
+   "ref": "I need to increase my pensia contributions this year.",
+   "hyp": "I need to increase my pensia contributions this year."
+  },
+  {
+   "id": "20261014T194416Z_3sqdy9",
+   "subset": "clean",
+   "ref": "We're driving up to the family for the shloshim on Sunday, so I'll be offline most of the day. Call if anything urgent comes up.",
+   "hyp": "We're driving up to the family for the shloshim on Sunday, so I'll be offline most of the day. Call if anything urgent comes up."
+  },
+  {
+   "id": "20261014T194457Z_dpyy82",
+   "subset": "clean",
+   "ref": "Hi Dana, I hope the week is going well. Ma hadash with the contract, did legal get back to you yet?",
+   "hyp": "Hi Dana, I hope the week is going well. Ma chadash with the contract? Did legal get back to you yet?"
+  },
+  {
+   "id": "20261014T195952Z_0bd6m9",
+   "subset": "clean",
+   "ref": "I'll finish the TOML config cleanup right after Shacharit tomorrow, so you can review it before the standup, okay?",
+   "hyp": "I'll finish the Talmol configuration cleanup right after shachari tomorrow, so you can review it before the standup, okay?"
+  },
+  {
+   "id": "20261014T200143Z_xr7g3x",
+   "subset": "contaminated_text",
+   "ref": "I saw the Rosh HaMemshalah on the news this morning.",
+   "hyp": "I saw the Rosh HaMemshalah on the news this morning."
+  },
+  {
+   "id": "20261014T200422Z_62clrp",
+   "subset": "clean",
+   "ref": "Hi Dana, I'm attaching all the hotzaot from this month, including the parking and the new monitor. Please let me know if anything is missing.",
+   "hyp": "Hi Dana, I'm attaching all the hotzaot from this month, including the parking and the new monitor. Please let me know if anything is missing."
+  },
+  {
+   "id": "20261014T200443Z_xvkhmj",
+   "subset": "clean",
+   "ref": "Sorry for the slow reply, Dafna Halevi, I felt like a total freier for forgetting about this, and I still need to send the Mas Hachnasa form.",
+   "hyp": "Sorry for the slow reply, dafna halevi.I felt like a total freier for forgetting about this, and I still need to send the mas hachnasa form."
+  },
+  {
+   "id": "20261014T200546Z_q3t1rw",
+   "subset": "english_control",
+   "ref": "A lack of water meant that our crop was poor.",
+   "hyp": "A lack of water meant that our crop was poor."
+  },
+  {
+   "id": "20261014T200557Z_3404of",
+   "subset": "clean",
+   "ref": "Hi, Tehila Rosenberg suggested we ask you for a quote on installing a kaspomat in the lobby of our new office.",
+   "hyp": "Hi, Tehila Rosenberg suggested we ask you for a quote on installing a caspomat in the lobby of our new office."
+  },
+  {
+   "id": "20261014T200740Z_2h7f1n",
+   "subset": "clean",
+   "ref": "Tafsik with the manual googling already, I just hooked Tavily into the agent so it can run the searches and pull the results by itself.",
+   "hyp": "Tafsik was the manual googling already.I just fucked tavili into the agent so it can run the searches and pull the results by itself."
+  },
+  {
+   "id": "20261014T200829Z_4e4kom",
+   "subset": "english_control",
+   "ref": "Hi, Tehila and I are looking for a quote for the equipment delivery to our new office in Netanya, so please send us your best price.",
+   "hyp": "Hi.Tehila and I are looking for a quote for the equipment delivery to our new office in Etanya, so please send us your best price."
+  },
+  {
+   "id": "20261014T200851Z_0bjm0m",
+   "subset": "english_control",
+   "ref": "Please SSH into the Proxmox host and check which virtual machines are using the most memory, then summarise it for me before changing anything.",
+   "hyp": "Please ssh into the ProxMox host and check which virtual machines are using the most memory, then summarize it for me before changing anything."
+  },
+  {
+   "id": "20261014T200949Z_4r49t9",
+   "subset": "clean",
+   "ref": "Hi, Esti asked me to request a quote for forty chairs for the new mercaz, including delivery if possible.",
+   "hyp": "Hi. SD asked me to request a quote for forty chairs for the new mercaz, including delivery if possible."
+  },
+  {
+   "id": "20261014T201121Z_hsj3bw",
+   "subset": "english_control",
+   "ref": "I pushed the new RAG pipeline to GitHub this morning, so can you take a look at the retrieval part before lunch?",
+   "hyp": "I pushed the new rag pipeline to GitHub this morning, so can you take a look at the retrieval part before lunch?"
+  },
+  {
+   "id": "20261014T201250Z_p3yiv3",
+   "subset": "clean",
+   "ref": "Hi Dana, I finished my sherut chova last year, but I still get the reserve notices. Can we talk about the schedule over lunch at the chummusia?",
+   "hyp": "Hi Dana, I finished my sherut chova last week, but I still get the reserve notices.Can we talk about the schedule over lunch at the chomusiyah?"
+  },
+  {
+   "id": "20261014T201341Z_ae5455",
+   "subset": "clean",
+   "ref": "Just confirming that the delivery will arrive on erev chag, so please make sure someone is home before the afternoon.",
+   "hyp": "Just confirming that the delivery will arrive on Erev Chag, so please make sure someone is home before the afternoon."
+  },
+  {
+   "id": "20261014T201547Z_98cc0r",
+   "subset": "clean",
+   "ref": "Hi, just a heads up that Maya Peretz will be waiting in the chatzer after school today, so please pick her up from there and not from the front gate.",
+   "hyp": "Hi, just a heads up that Maya Peretz will be waiting in the chatzair after school today, so please pick her up from there and not from the front gate."
+  },
+  {
+   "id": "20261014T201850Z_7pjzlh",
+   "subset": "english_control",
+   "ref": "The sun and the moon cause tides.",
+   "hyp": "The sun and the moon got heights."
+  },
+  {
+   "id": "20261014T201922Z_i0ae36",
+   "subset": "clean",
+   "ref": "My machshev died again this morning, so I'll be working from my phone until I get it to the shop.",
+   "hyp": "My machshev died again this morning, so I'll be working for my phone until I get it to the shop."
+  },
+  {
+   "id": "20261014T202109Z_6dq8rf",
+   "subset": "clean",
+   "ref": "Don't forget to light the shamash first tonight, and tomorrow I want to try sherpa-onnx for offline speech recognition.",
+   "hyp": "Don't forget to light the shamash first tonight, and tomorrow I want to try sherpa onyx for offline speech recognition."
+  },
+  {
+   "id": "20261014T202211Z_09yvlf",
+   "subset": "english_control",
+   "ref": "Can you run ffmpeg on those clips to shrink them before I leave? I'm switching to an eSIM at the airport and data will be tight.",
+   "hyp": "Can you run FFMPEG on those clips to shrink them before I leave? I'm switching to an e-sim at the airport and data will be tight."
+  },
+  {
+   "id": "20261014T202250Z_9ursa6",
+   "subset": "clean",
+   "ref": "Reminder to myself that on Yom Chamishi I need to pick up the package before the post office closes.",
+   "hyp": "Reminder to myself that on yom hamishi, I need to pick up the package before the post office closes."
+  },
+  {
+   "id": "20261014T202401Z_0okoqp",
+   "subset": "clean",
+   "ref": "Hi Dana, we're still waiting on the cheder madregot cleaning schedule, and I'd like to confirm baalut of the new storage room before we sign anything.",
+   "hyp": "Hi Dana, we're still waiting on the cheder madrigot cleaning schedule, and I'd like to confirm ba'alut of the new storage room before we sign anything."
+  },
+  {
+   "id": "20261014T202456Z_52omxx",
+   "subset": "clean",
+   "ref": "Let's do the Proxmox upgrade on Yom Shlishi evening, after the kids are asleep, so nothing else is running on the server.",
+   "hyp": "Let's do the Proxmox upgrade on yom shli shi evening after the kids are asleep so nothing else is running on the server."
+  },
+  {
+   "id": "20261014T203157Z_ub4r14",
+   "subset": "clean",
+   "ref": "Hi Dan, I left a few bags of Bamba in the car, and traffic on the kvish was terrible this morning, so I'll be late.",
+   "hyp": "Hi Dan, I left a few bags of bamba in the car, and traffic on the kvish was terrible this morning, so I'll be late."
+  },
+  {
+   "id": "20261014T203546Z_kvrz0n",
+   "subset": "clean",
+   "ref": "I'll patch the Ubuntu box before erev chag, so please don't push anything to the server tonight, because everyone will be offline tomorrow.",
+   "hyp": "I'll patch the Ubuntu box before Erev Chag, so please don't push anything to the server tonight because everything will be offline tomorrow."
+  },
+  {
+   "id": "20261014T203842Z_obvq48",
+   "subset": "english_control",
+   "ref": "I switched the DNS filtering over to AdGuard Home on the Raspberry Pi, and I'm rebuilding the invoice template in Typst this afternoon. Can you review it later?",
+   "hyp": "I switched the DNS filtering over to AdGuard Home on the Raspberry Pi, and I'm rebuilding the invoice template in TIPST this afternoon.Can you review it later?"
+  },
+  {
+   "id": "20261014T204020Z_6h01hi",
+   "subset": "contaminated_text",
+   "ref": "Maccabi won the championship last season.",
+   "hyp": "Maccabi won the championship last season."
+  },
+  {
+   "id": "20261014T204130Z_enmg7a",
+   "subset": "english_control",
+   "ref": "I moved our whole team over to Google Workspace last week, and now I'm trying to figure out how to share the LaTeX thesis template with everyone.",
+   "hyp": "I moved our whole team over to Google Workspace last week, and now I'm trying to figure out how to share the latex thesis template with everyone."
+  },
+  {
+   "id": "20261014T204713Z_gu219u",
+   "subset": "clean",
+   "ref": "The chevra are meeting at my place before Selichot tonight, so please bring a few chairs and something cold to drink.",
+   "hyp": "The chevra meeting at my place before celichot tonight, so please bring a few chairs and something cold to drink."
+  },
+  {
+   "id": "20261014T204750Z_nzjen8",
+   "subset": "clean",
+   "ref": "Yofi, so we'll all meet at Dizengoff after the shloshim, and Esti said she'll book the table.",
+   "hyp": "Yofi, so we'll all meet at Dizengoff after the shloshim, and Esti said she'll book the table."
+  },
+  {
+   "id": "20261014T204828Z_4r4319",
+   "subset": "english_control",
+   "ref": "The enterprise solution leverages Dataflow for real-time stream processing, with results stored in both BigQuery for analytics and Firestore for application queries.",
+   "hyp": "The enterprise solution leverages data flow for real-time stream processing, with results stored in both BigQuery for analytics and Firestore for application queries."
+  },
+  {
+   "id": "20261014T205544Z_xb2wov",
+   "subset": "clean",
+   "ref": "Note to self: check whether the sachar for the contractor includes the Pinecone hosting costs, because the invoice looks higher than last month.",
+   "hyp": "Note to self, check whether the sachar for the contractor includes the pinecone hosting costs, because the invoice looks higher than last month."
+  },
+  {
+   "id": "20261014T205639Z_kntf8n",
+   "subset": "clean",
+   "ref": "Writing out the whole YAML config for this deployment turned into a real megillah, so can you review it before I push anything?",
+   "hyp": "Writing out the whole Yama config for this deployment turned into a real megila, so can you review it before I push anything?"
+  },
+  {
+   "id": "20261014T205656Z_fughgr",
+   "subset": "clean",
+   "ref": "Hi Shai, the app crashes every time I open the map near Mahane Yehuda, and it happened again while I was eating Bamba on the bus.",
+   "hyp": "Hi, shai.The app crashes every time I open the map near Machane Yehuda, and it happened again while I was eating bamba on the bus."
+  },
+  {
+   "id": "20261014T205729Z_2taf2a",
+   "subset": "clean",
+   "ref": "Okay, so for the weekend. I need to buy kadurim for the kids, they lost all of theirs at the park. Also, on the server, MagicDNS finally resolves the names properly across all my devices. I still need to check the KDP upload, because the cover file got rejected again. Let me make the export script async so it stops blocking everything else. And remember to grep the logs for that timeout error before Sunday, because I think it's the same issue every time.",
+   "hyp": "Okay, so for the weekend, I need to buy katorim for the kids. They lost all of theirs at the park. Also, on the server, MagicDNS finally resolves the names properly across all my devices. I still need to check the KDP upload, because the cover file got rejected again. Let me make the export script async so it stops blocking everything else. And remember to grab the logs for that timeout error before Sunday, because I think it's the same issue every time."
+  },
+  {
+   "id": "20261014T205859Z_nmnbkk",
+   "subset": "clean",
+   "ref": "Shmuel, I'm stuck at the meches in Netanya with the shipment, so please tell the misrad I'll be in late today.",
+   "hyp": "Mishmuel, I'm stuck at the meches in Atanya with the shiment, so please tell the misrad I'll be in late today."
+  },
+  {
+   "id": "20261014T210058Z_0oaz28",
+   "subset": "english_control",
+   "ref": "Please SSH into the server and check that the backup service is running with systemctl status. Then look at the rclone config and make sure it syncs to the right bucket. I'm worried about egress costs, so add a limit or at least log how much data leaves each night. Also, deploy the new build to Canary first, and don't touch the main instance until I've looked at it. Tell me what you changed when you're done.",
+   "hyp": "Please ssh into the server and check that the backup service is running with system CTL status. Then, look at the Arclone config and make sure it syncs to the right bucket.I'm worried about egress costs, so add a limit or at least log how much data leaves each night. Also, deploy the new build to Canary first, and don't touch the main instance until I've looked at it. Tell me what you changed when you're done."
+  },
+  {
+   "id": "20261014T210238Z_koycp3",
+   "subset": "clean",
+   "ref": "Tachles, I just need the endpoint to return clean JSON, nothing fancy. Forget the extra fields for now, we can add them later if anyone asks.",
+   "hyp": "Tachlis, I just need the end point to return clean Jason, nothing fancy. Forget the extra fields for now, we can add them later if anyone asks."
+  },
+  {
+   "id": "20261014T210532Z_zi5dks",
+   "subset": "clean",
+   "ref": "Hi everyone, the lights in the cheder madregot have been out for over a week now and it's getting really dangerous in the evening.",
+   "hyp": "Hi everyone.The lights in the cheder madrugot have been out for over a week now and it's getting really dangerous in the evening."
+  },
+  {
+   "id": "20261014T210650Z_b95h04",
+   "subset": "clean",
+   "ref": "Please open the project on my machshev and look at the Android helper scripts. Use adb to list the connected devices first, and don't assume there is only one. Then fix the install script so it picks the right device by serial number. After that, add a short note to the readme explaining the change. Finally, check that the VS Code workspace settings still point to the correct folder, and tell me if anything looks off.",
+   "hyp": "Please open the project on my machshav and look at the Android helper scripts, use ADB to list the connected devices first and don't assume there is only one, then fix the install script so it picks the right device by serial number. After that, add a short note to the readme explaining the change. Finally, check that the VS Code Workspace settings still point to the correct folder and tell me if anything looks off."
+  },
+  {
+   "id": "20261014T210712Z_p25qp1",
+   "subset": "clean",
+   "ref": "Hi, are we still short for the minyan tomorrow morning? I can definitely make it for Shacharit if you need one more.",
+   "hyp": "Hi, are we still short for the minyan tomorrow morning? I can definitely make it for shacharit if you need one more."
+  },
+  {
+   "id": "20261014T210829Z_03wnqv",
+   "subset": "clean",
+   "ref": "Remember to rerun the WER test before erev chag, because I want to send the numbers to Yossi before everything shuts down.",
+   "hyp": "Remember to rerun the WER test before Erev Chag, because I want to send the numbers to Yassi before everything shuts down."
+  },
+  {
+   "id": "20261014T211239Z_navqxp",
+   "subset": "english_control",
+   "ref": "The team is evaluating whether to use FAISS or Pinecone for our production embedding storage, considering both cosine similarity performance and scalability.",
+   "hyp": "The team is evaluating whether to use FAISS or pine cone for our production embedding storage, considering both COS9's similarity performance and scalability."
+  },
+  {
+   "id": "20261014T211403Z_z194ww",
+   "subset": "english_control",
+   "ref": "To optimize performance, we'll implement CloudFront caching in front of our API and use Kinesis for real-time data streaming.",
+   "hyp": "To optimize performance, we'll implement CloudFront caching in front of our API and use Kinesis for real-time data streaming."
+  },
+  {
+   "id": "20261015T055653Z_w3p3tt",
+   "subset": "clean",
+   "ref": "Dinner tonight is shnitzel with rice, but I'm still waiting on my ishur avoda before I can sign the new lease.",
+   "hyp": "Dinner tonight is schnitzel with rice, but I'm still waiting on my ishur avuda before I can sign the new lease."
+  },
+  {
+   "id": "20261015T062544Z_6hx2hv",
+   "subset": "clean",
+   "ref": "Give me one shniya, I'm just looking at your PR now. I think the config change is fine, but I want to check the tests first.",
+   "hyp": "Give me one tchnya, I'm just looking at your PR now.I think the config change is fine, but I want to check the tests first."
+  },
+  {
+   "id": "20261015T063857Z_m6jn8k",
+   "subset": "clean",
+   "ref": "The new mercaz has all the shops we need.",
+   "hyp": "The new mercaz has all the shops we need."
+  },
+  {
+   "id": "20261015T064158Z_kvbxmc",
+   "subset": "clean",
+   "ref": "Remember to pick up lechem on the way home, and also please check that my Google Workspace invite for tomorrow actually went out.",
+   "hyp": "Remember to pick up lechem on the way home, and also please check that my Google Workspace invite for tomorrow actually went out."
+  },
+  {
+   "id": "20261015T064357Z_txiltm",
+   "subset": "clean",
+   "ref": "Hey, I won't be around much during Chol Hamoed, so please recreate the venv on the staging server before then and check that the requirements install cleanly.",
+   "hyp": "Hey, I won't be around much during cholmohed, so please repeat the venv on the staging server before then and check that the requirements installed cleanly."
+  },
+  {
+   "id": "20261015T064652Z_u7spr2",
+   "subset": "clean",
+   "ref": "Reminder: ask Avi for a dgima of the marinade before we buy the pargit for the barbecue in Netanya.",
+   "hyp": "Reminder, ask Avi for a dgima of the marinade before we buy the pargit for the barbecue in Netanya."
+  },
+  {
+   "id": "20261015T064754Z_1qqcmu",
+   "subset": "english_control",
+   "ref": "I think the npm install is failing again because of a dependency conflict, so I'll clear the cache and try once more after lunch.",
+   "hyp": "I think the NPM install is failing again because of a dependency conflict, so I'll clear the cache and try once more after lunch."
+  },
+  {
+   "id": "20261015T065354Z_c1ush1",
+   "subset": "contaminated_text",
+   "ref": "I'm planning to extend my chufshat leida by another month.",
+   "hyp": "I'm planning to extend my chufshat leida by another month."
+  },
+  {
+   "id": "20261015T065834Z_ufpq9c",
+   "subset": "clean",
+   "ref": "Ma nishma with the building? Remember to ask the landlord about fixing the lights in the cheder madregot.",
+   "hyp": "Manishma was the building. Remember to ask the landlord about fixing the lights in the cheder madrigot."
+  },
+  {
+   "id": "20261015T065845Z_pieg9r",
+   "subset": "english_control",
+   "ref": "Hey, have you tried adjusting the chunk size when preprocessing documents for Pinecone? The overlap settings might need tweaking too.",
+   "hyp": "Hey, have you tried adjusting the chunk size when pre-processing documents for Pinecone? The overlap settings might need tweaking too."
+  },
+  {
+   "id": "20261015T065918Z_76vdb8",
+   "subset": "clean",
+   "ref": "Remember to ask about the shiurim for the kids this winter, and also to look at the sachirut contract before we sign anything.",
+   "hyp": "Remember to ask about the shiorim for the kids this winter, and also to look at the schirut contract before we sign anything."
+  },
+  {
+   "id": "20261015T065942Z_7hliz2",
+   "subset": "english_control",
+   "ref": "The API gateway is throttling our requests again, and I'm pretty sure it's because we're hitting the rate limiting threshold during peak hours.",
+   "hyp": "The API gateway is throttling our request again, and I'm pretty sure it's because we're hitting the rate-limiting threshold during pKaris."
+  },
+  {
+   "id": "20261015T070504Z_i7gszu",
+   "subset": "clean",
+   "ref": "Reminder to self: the smart plug I set up with Tuya needs to be re-paired, and I should do it before the end of the chodesh.",
+   "hyp": "Reminder to self, the smart plug I set up with tuya needs to be repaired, and I should do it before the end of the chodesh."
+  },
+  {
+   "id": "20261015T071017Z_0fbe1g",
+   "subset": "clean",
+   "ref": "Please remind me to finish the Astro site before Friday, because I want the Kiddush schedule page live before the community sees it.",
+   "hyp": "Please remind me to finish the astro site before Friday because I want the kidush schedule page live before the community sees it."
+  },
+  {
+   "id": "20261015T071114Z_0gdhzm",
+   "subset": "clean",
+   "ref": "Thanks for sending the paperwork, but honestly the whole thing has become such a megillah that I think we should just have a call tomorrow.",
+   "hyp": "Thanks for sending the paperwork, but honestly, the whole thing has become such a magila that I think we should just have a call tomorrow."
+  },
+  {
+   "id": "20261015T071131Z_jy61te",
+   "subset": "clean",
+   "ref": "Tomorrow is a long yom, so please remember to check the AdGuard Home logs before I leave, because something is blocking the smart plugs.",
+   "hyp": "Tomorrow is a long yom, so please remember to check the AdGuard home locks before I leave, because something is blocking the smart plugs."
+  },
+  {
+   "id": "20261015T071140Z_xg3mbl",
+   "subset": "clean",
+   "ref": "Esti Rabinowitz told me I still need to fill out a tofes for the tax authority before the end of the month.",
+   "hyp": "SD Rabinowitz told me I still need to fill out a tofes for the tax authority before the end of the month."
+  },
+  {
+   "id": "20261015T071302Z_z7wcih",
+   "subset": "clean",
+   "ref": "Could you please send me the form from the mas briut and the letter from Misrad Ha'otzar before the end of the week?",
+   "hyp": "Could you please send me the form from the mas bryut and the letter from Misrad HaOtzar before the end of the week?"
+  },
+  {
+   "id": "20261015T071416Z_kz9mnu",
+   "subset": "english_control",
+   "ref": "The shell script failed because it was running under zsh instead of bash, and the array syntax is slightly different between shells.",
+   "hyp": "The shell script failed because it was running under ZSH instead of Bash, and the erase syntax is slightly different between shells."
+  },
+  {
+   "id": "20261015T071547Z_ypz6xt",
+   "subset": "english_control",
+   "ref": "Good question, I think the answer is yes, but let me double check with the team and get back to you before the end of the day.",
+   "hyp": "Good question.I think the answer is yes, but let me double check with the team and get back to you before the end of the day."
+  },
+  {
+   "id": "20261015T071635Z_dq720e",
+   "subset": "clean",
+   "ref": "My mother has her nituach on Thursday, so remind me to clear my calendar and call the hospital tomorrow morning.",
+   "hyp": "My mother has her nituach on Thursday, so remind me to clear my calendar and call the hospital tomorrow morning."
+  },
+  {
+   "id": "20261015T071742Z_vi0w5d",
+   "subset": "clean",
+   "ref": "Hi Ariel Ben-Haim, yalla, please send me the schedule for the afternoon peilut so I can sort out the pickup for the kids this week.",
+   "hyp": "Hi Arielle Ben Haim. Yala, please send me the schedule for the afternoon pilot so I can sort out the pickup for the kids this week."
+  },
+  {
+   "id": "20261015T071833Z_m5n7mz",
+   "subset": "english_control",
+   "ref": "We need to implement distributed tracing with OpenTelemetry to get better observability into our microservices architecture.",
+   "hyp": "We need to implement distributed tracing with OpenTelemetry to get better observability into our microservices architecture."
+  },
+  {
+   "id": "20261015T071956Z_elfily",
+   "subset": "clean",
+   "ref": "Gisha is the company handling the delivery, so tell the guard at the binyan that a courier is coming around five.",
+   "hyp": "Gisha is the company handling the delivery, so tell the guard at the binyan that a courier is coming around Fife."
+  },
+  {
+   "id": "20261015T072012Z_0ro8vz",
+   "subset": "english_control",
+   "ref": "Can you grep the logs for the model path and tell me if the safetensors file is actually the one loading?",
+   "hyp": "Can you grab the logs for the model path and tell me if the save tensors file is actually the one loading?"
+  },
+  {
+   "id": "20261015T072036Z_nkhsgp",
+   "subset": "english_control",
+   "ref": "Let's get a picture of us together.",
+   "hyp": "Let's get a picture of us together."
+  },
+  {
+   "id": "20261015T103646Z_2rg79o",
+   "subset": "clean",
+   "ref": "Hello, I would like to request the hitnatkut of my internet service from the end of this month, and please confirm by email when it's done.",
+   "hyp": "Hello, I would like to request the hitnat kut of my internet service from the end of this month, and please confirm by email when it's done."
+  },
+  {
+   "id": "20261015T103746Z_ccy6ty",
+   "subset": "clean",
+   "ref": "We need to buy one more kise for the dining table, and I still have to sort out the hotzaot for the trip.",
+   "hyp": "We need to buy one more kisei for the dining table, and I still have to sort out the hotzaot for the trip."
+  },
+  {
+   "id": "20261015T104259Z_gi2vrx",
+   "subset": "clean",
+   "ref": "Yes, you can pay with a kartis ashrai, but if you pay mezuman there's a small discount.",
+   "hyp": "Yes, you can pay with a kartiz ashray, but if you pay mezuman, there's a small discount."
+  },
+  {
+   "id": "20261015T104343Z_9ihyfn",
+   "subset": "clean",
+   "ref": "B'kitzur, I can't make Tuesday, so can we move our meeting to Thursday morning? I'll come to you in Nachlaot if that's easier.",
+   "hyp": "Bikitzur, I can't make Tuesday, so can we move our meeting to Thursday morning? I'll come to you in nachlaot if that's easier."
+  },
+  {
+   "id": "20261015T104428Z_tpt0mv",
+   "subset": "clean",
+   "ref": "Need to get the mishloach manot packed tonight. Also, remind me to test the sherpa-onnx build on the Raspberry Pi tomorrow morning.",
+   "hyp": "Need to get the mishlach manot packed tonight? Also, remind me to test the sherpa onyx build on the raspberry pi tomorrow morning."
+  },
+  {
+   "id": "20261015T104818Z_4yv108",
+   "subset": "clean",
+   "ref": "Sorry for the slow reply, Dani. I was in Rishon LeZion all week, and I'm only now looking at the shtar shituf and the hazmana.",
+   "hyp": "Sorry for the slow reply, Dani.I was in Rishon at Tzion all week, and I'm only now looking at the shtar shi tuf and the hazmana."
+  },
+  {
+   "id": "20261015T105126Z_bk72gq",
+   "subset": "contaminated_text",
+   "ref": "Nobody wants to be a freier in this country.",
+   "hyp": "Nobody wants to be a freier in this country."
+  },
+  {
+   "id": "20261015T105206Z_c66v64",
+   "subset": "clean",
+   "ref": "Pick up some fresh laffa on your way home, and get hummus too, because I'm making shakshuka for dinner tonight.",
+   "hyp": "Pick up some fresh lafa on your way home and get humus too because I'm making shakshuka for dinner tonight."
+  },
+  {
+   "id": "20261015T105259Z_thudy8",
+   "subset": "contaminated_text",
+   "ref": "There's a great cafe in the mercaz.",
+   "hyp": "There's a great cafe in the mercaz."
+  },
+  {
+   "id": "20261015T105406Z_23xk57",
+   "subset": "clean",
+   "ref": "We're booking the misada for Friday night, and I still need to ask Avi how his nituach went and whether he can come.",
+   "hyp": "We're booking the misada for Friday night, and I still need to ask Avi how his nituach went and whether he can come."
+  },
+  {
+   "id": "20261015T105824Z_52rl97",
+   "subset": "clean",
+   "ref": "Hey Avi, ma hadash with the Lovelace setup? I want to know if you managed to get the deployment working yesterday.",
+   "hyp": "Hey Avi, machadash with the lovely setup.I want to know if you managed to get the deployment working yesterday."
+  },
+  {
+   "id": "20261015T110621Z_ck0wfh",
+   "subset": "clean",
+   "ref": "Hi Dana, I'm still waiting for the signed sachirut agreement, and I also wanted to check which kivun the new office windows face, since it affects the cooling.",
+   "hyp": "Hi Dana, I'm still waiting for the signed sachirut agreement, and I also wanted to check which kivun the new office windows face since it affects the cooling."
+  },
+  {
+   "id": "20261015T110629Z_5bp2nr",
+   "subset": "clean",
+   "ref": "Hi, are we still short for the minyan tomorrow morning? I can definitely make it for Shacharit if you need one more.",
+   "hyp": "Hi, are we still short for the minyan tomorrow morning? I can definitely make it for a shacharit if you need one more."
+  },
+  {
+   "id": "20261015T110714Z_f4rzhk",
+   "subset": "clean",
+   "ref": "Did you see that the memshala just approved another round of funding for the cyber program? Let's read the details tonight.",
+   "hyp": "Did you see that the memshalah just approved another round of funding for the cyber program? Let's read the details tonight."
+  },
+  {
+   "id": "20261015T110852Z_ar44w6",
+   "subset": "clean",
+   "ref": "Hello, I'd like to order two more boxes of Wissotzky tea for the office, the same kind we got last time.",
+   "hyp": "Hello, I'd like to order two more boxes of wisatsuki tea for the office, the same kind we got last time."
+  },
+  {
+   "id": "20261015T110900Z_8qye9b",
+   "subset": "clean",
+   "ref": "Pick up the forms for the rishayon iski from Chana, and ask her about the vaad in her shikun while you're there.",
+   "hyp": "Pick up the forums for the rishayon iski from Chana and ask her about the vaad and her shikun while you're there."
+  },
+  {
+   "id": "20261015T110909Z_rp8tu5",
+   "subset": "clean",
+   "ref": "We're visiting Alyn on Thursday afternoon, so remember to bring the board games and pick up some snacks for the kids.",
+   "hyp": "We're visiting Allen on Thursday afternoon, so remember to bring the board games and pick up some snacks for the kids."
+  },
+  {
+   "id": "20261015T111900Z_ug020v",
+   "subset": "clean",
+   "ref": "Chana Shapira, I'd like you to meet my friend from work, who is still hunting for his teudat zehut and has some mishloach manot questions.",
+   "hyp": "Chana Shapira, I'd like you to meet my friend from work who is still hunting for his jeudat zehut and has some mishloach manot questions."
+  },
+  {
+   "id": "20261015T112024Z_9sgrwq",
+   "subset": "clean",
+   "ref": "Reminder: fill out the tofes for the tax office before the end of the week.",
+   "hyp": "Reminder, fill out the tofes for the tax office before the end of the week."
+  },
+  {
+   "id": "20261015T112049Z_au3oal",
+   "subset": "clean",
+   "ref": "Hi, Dafna told me you have a great gisha for onboarding new developers, so could you recommend a good book or a course?",
+   "hyp": "Hi, Daphne told me you have a great gisha for onboarding developers. So, could you recommend a good book or a course?"
+  },
+  {
+   "id": "20261015T112138Z_zvk5ym",
+   "subset": "clean",
+   "ref": "Hi Adi Dahan, can you check with HR whether my kupat pensia deposits for last month actually went through?",
+   "hyp": "Hi Aditahan, can you check with HR whether my kopat pensia deposits for last month actually went through?"
+  },
+  {
+   "id": "20261015T112551Z_dlzys6",
+   "subset": "clean",
+   "ref": "Hi Avi, I checked with the tzevet and the answer is yes, we can have the demo ready for the Be'er Sheva client by Thursday.",
+   "hyp": "Hi Avi, I checked with the tzavet and the answer is yes.We can have the demo ready for the ber sheva client by Thursday."
+  },
+  {
+   "id": "20261015T112558Z_5r1zad",
+   "subset": "clean",
+   "ref": "Don't be a freier and pay full price when everyone else is negotiating.",
+   "hyp": "Don't be a freier and pay full price when everyone else is negotiating."
+  },
+  {
+   "id": "20261015T112813Z_elbfri",
+   "subset": "clean",
+   "ref": "After the meal we all sang yadid nefesh out in the chatzer, and even the neighbours joined in.",
+   "hyp": "After the meal, we all sang yadid nefesh out in the chatzar, and even the neighbors joined in."
+  },
+  {
+   "id": "20261015T112834Z_2uan73",
+   "subset": "clean",
+   "ref": "Hi Rivka, I wanted to ask whether Noam's kita is going on the trip to the Biblical Zoo next week, and if I need to sign anything.",
+   "hyp": "Hi Rivka, I want to ask whether Noa Mskita is going on the trip to the biblical zoo next week and if I need to sign anything."
+  },
+  {
+   "id": "20261015T112953Z_6sp9gn",
+   "subset": "clean",
+   "ref": "The memshala API keeps returning errors when I submit the form from our script, so can you check whether they changed the authentication again?",
+   "hyp": "The memshala API keeps returning errors when I submit the form from Arscript, so can you check whether they change the authentication again?"
+  },
+  {
+   "id": "20261015T113138Z_wwtkfc",
+   "subset": "clean",
+   "ref": "Reminder: on Yom Revi'i, ask Hila to send me the cheshbon for the office supplies before we close the month.",
+   "hyp": "Reminder, on yom ravi'i, ask Kila to send me the heshbon for the office supplies before we close the months."
+  },
+  {
+   "id": "20261015T114539Z_dnn472",
+   "subset": "clean",
+   "ref": "It's such a sharav today that I'm not touching the server room. Remind me to finish the Astro blog migration tonight when it cools down.",
+   "hyp": "It's such a shirav today that I'm not touching the server room. Remind me to finish the astro blog migration tonight when it cools down."
+  },
+  {
+   "id": "20261015T115032Z_387te3",
+   "subset": "clean",
+   "ref": "The Tuya plug finally pairs with the hub, yafeh! Can you test the schedule automation tonight and tell me if it holds?",
+   "hyp": "The tuya plug finally pairs with the hub, yafeh.Can you test the schedule automation device and tell me if it holds?"
+  },
+  {
+   "id": "20261015T115348Z_9upjmt",
+   "subset": "contaminated_text",
+   "ref": "My son plays for Maccabi Tel Aviv's youth team.",
+   "hyp": "My son plays for Maccabi Tel Aviv's use team."
+  },
+  {
+   "id": "20261015T115531Z_xvzsj6",
+   "subset": "clean",
+   "ref": "I was listening to Kan on the drive this morning and they had a really good interview about AI in schools, so I'll send you the link.",
+   "hyp": "I was listening to Kan on the drive this morning and they had a really good interview about AI in schools, so I'll send you the link."
+  },
+  {
+   "id": "20261015T115634Z_on3qd1",
+   "subset": "clean",
+   "ref": "Remind me to finish the Astro blog layout tonight. I'll sit down with a cold shoko and fix the navigation before I go to sleep.",
+   "hyp": "Remind me to finish the astro blog layout tonight.I'll sit down with the gold shoko and fix the navigation before I go to sleep."
+  },
+  {
+   "id": "20261015T115727Z_c96xxf",
+   "subset": "clean",
+   "ref": "Hi Asaf, here's the link to the folder with the specs, and I also added the notes from the call about the ofanayim project so you have the full picture.",
+   "hyp": "Hi Asaf, here's the link to the folder with the specs, and I also added the notes from the call about the Of Naim project so you have the full picture."
+  },
+  {
+   "id": "20261015T120246Z_9wik5a",
+   "subset": "clean",
+   "ref": "I'm going to be out Tuesday for the va'ada refu'it, so please take over the deployment and ping me if the server acts up.",
+   "hyp": "I'm going to be out Tuesday for the vaada refuit, so please take over the deployment and ping me if the server acts up."
+  },
+  {
+   "id": "20261015T120306Z_c89cd5",
+   "subset": "clean",
+   "ref": "I'm going to sit with a bag of garinim and go through the logs, because this bug has been driving me crazy all morning.",
+   "hyp": "I'm going to sit with a bag of garinim and go through the logs because this bug has been driving me crazy all morning."
+  },
+  {
+   "id": "20261015T120456Z_lbf548",
+   "subset": "clean",
+   "ref": "Remind me to call the yo'etz klita tomorrow morning, because she still hasn't sent the forms for my cousin who just made aliyah.",
+   "hyp": "Remind me to call the yuets klita tomorrow morning because she still hasn't sent the forms for my cousin,"
+  },
+  {
+   "id": "ehms_110_1",
+   "subset": "contaminated_audio",
+   "ref": "I've been with Cellcom for over five years now.",
+   "hyp": "I've been with Cellcom for over five years now."
+  },
+  {
+   "id": "ehms_111_1",
+   "subset": "contaminated_audio",
+   "ref": "I watched a great documentary on Kan last night.",
+   "hyp": "I watched a great documentary on Kan last night."
+  },
+  {
+   "id": "ehms_117_1",
+   "subset": "contaminated_audio",
+   "ref": "I found some good rental listings on Janglo.",
+   "hyp": "I found some good rental listings on Janglo."
+  },
+  {
+   "id": "ehms_123_2",
+   "subset": "desktop_mic",
+   "ref": "I bought a bottle of Tubi for the party tonight.",
+   "hyp": "I bought a bottle of Tubi for the party tonight."
+  },
+  {
+   "id": "ehms_126_3",
+   "subset": "contaminated_audio",
+   "ref": "I'm planning to extend my chufshat leida by another month.",
+   "hyp": "I'm planning to extend my chufshat leida by another month."
+  },
+  {
+   "id": "ehms_131_1",
+   "subset": "contaminated_audio",
+   "ref": "I take the rakevet kala to work every morning.",
+   "hyp": "I take the rakevet kala to work every morning."
+  },
+  {
+   "id": "ehms_131_2",
+   "subset": "contaminated_audio",
+   "ref": "The rakevet kala makes getting around Jerusalem so much easier.",
+   "hyp": "The rakevet kala makes getting around Jerusalem so much easier."
+  },
+  {
+   "id": "ehms_131_3",
+   "subset": "contaminated_audio",
+   "ref": "Where's the nearest rakevet kala station?",
+   "hyp": "Where's the nearest rakevet kala station?"
+  },
+  {
+   "id": "ehms_143_1",
+   "subset": "contaminated_audio",
+   "ref": "My in-laws live on a moshav near Netanya.",
+   "hyp": "My in-laws live on a moshav near Netanya."
+  },
+  {
+   "id": "ehms_144_2",
+   "subset": "contaminated_audio",
+   "ref": "I saw the Rosh HaMemshalah on the news this morning.",
+   "hyp": "I saw the Rosh HaMemshalah on the news this morning."
+  },
+  {
+   "id": "ehms_163_1",
+   "subset": "contaminated_audio",
+   "ref": "The matzav is really tense right now, so we're staying close to home.",
+   "hyp": "The matzav is really tense right now, so we're staying close to home."
+  },
+  {
+   "id": "ehms_163_2",
+   "subset": "contaminated_audio",
+   "ref": "How's the matzav at work these days?",
+   "hyp": "How's the matzav at work these days?"
+  },
+  {
+   "id": "ehms_163_3",
+   "subset": "contaminated_audio",
+   "ref": "Given the current matzav, we decided to postpone our trip to the north.",
+   "hyp": "Given the current matzav, we decided to postpone our trip to the north."
+  },
+  {
+   "id": "ehms_166_1",
+   "subset": "desktop_mic",
+   "ref": "Don't be a freier and pay full price when everyone else is negotiating.",
+   "hyp": "Don't be a freier and pay full price when everyone else is negotiating."
+  },
+  {
+   "id": "ehms_166_2",
+   "subset": "desktop_mic",
+   "ref": "He felt like a freier when he found out his friends got a better deal.",
+   "hyp": "He felt like a freier when he found out his friends got a better deal."
+  },
+  {
+   "id": "ehms_166_3",
+   "subset": "contaminated_audio",
+   "ref": "Nobody wants to be a freier in this country.",
+   "hyp": "Nobody wants to be a freier in this country."
+  },
+  {
+   "id": "ehms_61_1",
+   "subset": "contaminated_audio",
+   "ref": "My son plays for Maccabi Tel Aviv's youth team.",
+   "hyp": "My son plays for Maccabi Tel Aviv's youth team."
+  },
+  {
+   "id": "ehms_61_2",
+   "subset": "contaminated_audio",
+   "ref": "Are you going to the Maccabi game tonight?",
+   "hyp": "Are you going to the Maccabi game tonight?"
+  },
+  {
+   "id": "ehms_61_3",
+   "subset": "contaminated_audio",
+   "ref": "Maccabi won the championship last season.",
+   "hyp": "Maccabi won the championship last season."
+  },
+  {
+   "id": "ehms_63_1",
+   "subset": "contaminated_audio",
+   "ref": "We're considering buying an apartment in Nes Tziona.",
+   "hyp": "We're considering buying an apartment in Nes Tziona."
+  },
+  {
+   "id": "ehms_63_3",
+   "subset": "contaminated_audio",
+   "ref": "I have a job interview in Nes Tziona next week.",
+   "hyp": "I have a job interview in Nes Tziona next week."
+  },
+  {
+   "id": "ehms_70_1",
+   "subset": "contaminated_audio",
+   "ref": "My savta makes the best chicken soup.",
+   "hyp": "My savta makes the best chicken soup."
+  },
+  {
+   "id": "ehms_70_2",
+   "subset": "contaminated_audio",
+   "ref": "We're visiting my savta this Shabbat.",
+   "hyp": "We're visiting my savta this Shabbat."
+  },
+  {
+   "id": "ehms_70_3",
+   "subset": "contaminated_audio",
+   "ref": "My kids love spending time with their savta.",
+   "hyp": "My kids love spending time with their savta."
+  },
+  {
+   "id": "ehms_7_1",
+   "subset": "desktop_mic",
+   "ref": "The new mercaz has all the shops we need.",
+   "hyp": "The new mercaz has all the shops we need."
+  },
+  {
+   "id": "ehms_7_2",
+   "subset": "contaminated_audio",
+   "ref": "Let's meet at the mercaz after work.",
+   "hyp": "Let's meet at the mercaz after work."
+  },
+  {
+   "id": "ehms_7_3",
+   "subset": "contaminated_audio",
+   "ref": "There's a great cafe in the mercaz.",
+   "hyp": "There's a great cafe in the mercaz."
+  },
+  {
+   "id": "ehms_85_1",
+   "subset": "contaminated_audio",
+   "ref": "We go to shul every Shabbat morning.",
+   "hyp": "We go to shul every Shabbat morning."
+  },
+  {
+   "id": "ehms_89_2",
+   "subset": "contaminated_audio",
+   "ref": "Which basis is your son training at?",
+   "hyp": "Which basis is your son training at?"
+  },
+  {
+   "id": "ehms_95_1",
+   "subset": "contaminated_audio",
+   "ref": "I need to increase my pensia contributions this year.",
+   "hyp": "I need to increase my pensia contributions this year."
+  }
+ ]
+}
