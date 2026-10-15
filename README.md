@@ -7,6 +7,7 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 | **Leaderboard** | [HF Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard) |
 | **Test set** | [HF dataset: English-Hebrew-Codeswitching-ASR-Benchmark](https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark): v1, pinned commit in [`ehcs_bench/data.py`](ehcs_bench/data.py) |
 | **Methodology, contamination, limits** | [`docs/about.md`](docs/about.md) |
+| **Write-up** | [How good is speech-to-text at Hebrew words in English?](https://blog.danielrosehill.com/posts/english-hebrew-code-switching-asr-benchmark) (blog, 2026-10-15) |
 
 ## Results (test set v1, clean subset: 84 clips, 172 Hebrew term occurrences)
 
@@ -21,6 +22,8 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 | [Parakeet TDT 0.6B v2](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2) | Stock | **32.6** | 32.5 | 34.3 | 9.5 | 2.7 |
 | [Parakeet TDT 0.6B v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) | Stock | **31.4** | 31.6 | 35.5 | 10.5 | 2.7 |
 <!-- results:end -->
+
+![Hebrew term recall by model, clean subset](docs/figures/term_recall.png)
 
 **Term recall** is the share of Hebrew words written with the canonical romanized spelling, as a whole word and case-insensitive. It is the headline number, because a model can score a low WER and still mangle every Hebrew word. **Unseen-term recall** counts only words absent from the public training split. **Lenient** recall also accepts lexicon spelling variants. ⚠ marks a model with known training-data overlap: see the leaderboard. All test clips come from one speaker reading aloud, so treat gaps of a few points as noise ([limits](docs/about.md#limits)).
 
