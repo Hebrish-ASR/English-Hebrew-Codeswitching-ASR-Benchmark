@@ -13,6 +13,11 @@ tags:
 - evaluation
 - code-switching
 - hebrew
+- israel
+- codeswitching
+- speech-recognition
+- hebrew-nlp
+- english-hebrew
 - english
 - single-speaker
 size_categories:
@@ -25,6 +30,8 @@ configs:
 ---
 
 # English-Hebrew Code-Switching ASR Benchmark (test set v1)
+
+> **Status: early-stage, work in progress.** Known issue: 22 of the 139 clean-subset `hebrew_terms` labels are English tech words or product names (*JSON*, *grep*, *Proxmox*, *Tuya*, ...), 26 of 172 occurrences. v1.1 will relabel them; until then, term recall is 2 to 6 points higher than a Hebrew-only count. Details: [methodology, limits](https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark/blob/main/docs/about.md#limits).
 
 A frozen, versioned test set for measuring how well speech recognition handles **English speech with Hebrew words in it**: *"pick up some bamba from the makolet"*, *"I have to go to Bituach Leumi tomorrow"*. The references write each Hebrew word in **one canonical romanized spelling**, in Latin letters.
 

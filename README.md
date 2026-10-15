@@ -2,6 +2,8 @@
 
 A replicable benchmark for speech recognition on **English speech with Hebrew words in it**: *"pick up some bamba from the makolet"*, *"I have to go to Bituach Leumi tomorrow"*. It scores stock models and code-switching fine-tunes on the same frozen test set, with the same normaliser and term matcher.
 
+> **Status: early-stage, work in progress (test set v1).** Known issue: 22 of the 139 labelled terms are English tech words or product names, not Hebrew (*JSON*, *grep*, *Proxmox*, ...). Ranks are unaffected; absolute term recall is 2 to 6 points high. v1.1 will relabel them and rescore every model from its stored transcripts. Contributions welcome (see [Known issues](docs/about.md#limits)): more speakers, better labels, more models.
+
 | | |
 |---|---|
 | **Leaderboard** | [HF Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard) |

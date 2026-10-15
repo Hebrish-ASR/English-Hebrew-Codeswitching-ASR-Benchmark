@@ -249,6 +249,8 @@ How well does speech recognition handle **English with Hebrew words in it**: *"p
 
 **Term recall** is the share of Hebrew words written with the canonical romanized spelling (case-insensitive, whole word). It is the headline: a model can have a low WER and still mangle every Hebrew word. **Unseen-term** recall counts only Hebrew words absent from the public training split. Single speaker, read speech: see *About* before drawing conclusions.
 
+> **Status: early-stage, work in progress (test set v1).** Known issue: 22 of the 139 labelled terms are English tech words or product names, not Hebrew (*JSON*, *grep*, *Proxmox*, ...). Ranks are unaffected; absolute term recall is 2 to 6 points high. v1.1 will relabel them and rescore every model from its stored transcripts. Contributions welcome: more speakers, better labels, more models.
+
 {LINKS}""")
     with gr.Tab("Leaderboard (clean, 84 clips)"):
         gr.Dataframe(table("clean"), datatype="markdown", wrap=True, interactive=False)

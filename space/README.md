@@ -16,6 +16,11 @@ tags:
 - asr
 - code-switching
 - hebrew
+- israel
+- codeswitching
+- speech-recognition
+- hebrew-nlp
+- english-hebrew
 ---
 
 Leaderboard for the [English-Hebrew code-switching ASR benchmark](https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark). Deployed from that repository by `scripts/deploy_space.sh`; do not edit here.
