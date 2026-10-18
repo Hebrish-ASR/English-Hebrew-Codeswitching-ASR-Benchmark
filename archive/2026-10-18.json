@@ -1,0 +1,653 @@
+{
+ "schema": 1,
+ "date": "2026-10-18",
+ "title": "Round 2: code-switching fine-tune v3",
+ "notes": "Adds Parakeet EN-HE code-switching v3 (196 min of code-switching audio). Other models unchanged from round 1.",
+ "benchmark": {
+  "version": "v1",
+  "revision": "3cb0b2b3b3e46c951962ababeb7c56fc4248cb94"
+ },
+ "repo_commit": "3ff5e61d365740630a94f4650aad8d21725c41ab",
+ "models": [
+  {
+   "name": "Parakeet v2 EN-HE code-switching (v3)",
+   "id": "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+   "revision": "728e6f88d499d9bfc40d5b5f0d1c19d626d4073b",
+   "url": "https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+   "fine_tuned_for_code_switching": true,
+   "params_m": 600.0,
+   "contamination": null,
+   "scored_at": "2026-10-18T04:48:55Z",
+   "host": "modal:L40S",
+   "subsets": {
+    "clean": {
+     "n": 84,
+     "minutes": 11.8,
+     "wer": 0.0397,
+     "cer": 0.0131,
+     "wer_raw": 0.0591,
+     "terms": {
+      "all": {
+       "occurrences": 172,
+       "terms": 139,
+       "recall": 0.6744,
+       "recall_lenient": 0.7035,
+       "recall_exact_case": 0.593
+      },
+      "unseen": {
+       "occurrences": 117,
+       "terms": 88,
+       "recall": 0.6325,
+       "recall_lenient": 0.6667,
+       "recall_exact_case": 0.547
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.7636,
+       "recall_lenient": 0.7818,
+       "recall_exact_case": 0.6909
+      }
+     }
+    },
+    "all_code_switch": {
+     "n": 121,
+     "minutes": 13.9,
+     "wer": 0.0448,
+     "cer": 0.0148,
+     "wer_raw": 0.062,
+     "terms": {
+      "all": {
+       "occurrences": 201,
+       "terms": 146,
+       "recall": 0.6318,
+       "recall_lenient": 0.6567,
+       "recall_exact_case": 0.5622
+      },
+      "unseen": {
+       "occurrences": 146,
+       "terms": 95,
+       "recall": 0.5822,
+       "recall_lenient": 0.6096,
+       "recall_exact_case": 0.5137
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.7636,
+       "recall_lenient": 0.7818,
+       "recall_exact_case": 0.6909
+      }
+     }
+    },
+    "english_control": {
+     "n": 24,
+     "minutes": 3.3,
+     "wer": 0.0254,
+     "cer": 0.0069,
+     "wer_raw": 0.0436
+    }
+   }
+  },
+  {
+   "name": "Parakeet v2 EN-HE code-switching (v2)",
+   "id": "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+   "revision": "e1541065f8bda57565f6ea404af27db7c868369e",
+   "url": "https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/e1541065f8bda57565f6ea404af27db7c868369e",
+   "fine_tuned_for_code_switching": true,
+   "params_m": 600.0,
+   "contamination": null,
+   "scored_at": "2026-10-15T14:07:16Z",
+   "host": "modal:L40S",
+   "subsets": {
+    "clean": {
+     "n": 84,
+     "minutes": 11.8,
+     "wer": 0.0417,
+     "cer": 0.0141,
+     "wer_raw": 0.0651,
+     "terms": {
+      "all": {
+       "occurrences": 172,
+       "terms": 139,
+       "recall": 0.657,
+       "recall_lenient": 0.6744,
+       "recall_exact_case": 0.564
+      },
+      "unseen": {
+       "occurrences": 117,
+       "terms": 88,
+       "recall": 0.6068,
+       "recall_lenient": 0.6239,
+       "recall_exact_case": 0.5128
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.7636,
+       "recall_lenient": 0.7818,
+       "recall_exact_case": 0.6727
+      }
+     }
+    },
+    "all_code_switch": {
+     "n": 121,
+     "minutes": 13.9,
+     "wer": 0.0474,
+     "cer": 0.0161,
+     "wer_raw": 0.0688,
+     "terms": {
+      "all": {
+       "occurrences": 201,
+       "terms": 146,
+       "recall": 0.607,
+       "recall_lenient": 0.6219,
+       "recall_exact_case": 0.5224
+      },
+      "unseen": {
+       "occurrences": 146,
+       "terms": 95,
+       "recall": 0.5479,
+       "recall_lenient": 0.5616,
+       "recall_exact_case": 0.4658
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.7636,
+       "recall_lenient": 0.7818,
+       "recall_exact_case": 0.6727
+      }
+     }
+    },
+    "english_control": {
+     "n": 24,
+     "minutes": 3.3,
+     "wer": 0.0236,
+     "cer": 0.0056,
+     "wer_raw": 0.0455
+    }
+   }
+  },
+  {
+   "name": "Parakeet v2 EN-HE code-switching (v1)",
+   "id": "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+   "revision": "ebc0e7aff15ed17b457d69639ab817345ea36ca2",
+   "url": "https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/ebc0e7aff15ed17b457d69639ab817345ea36ca2",
+   "fine_tuned_for_code_switching": true,
+   "params_m": 600.0,
+   "contamination": null,
+   "scored_at": "2026-10-15T14:07:15Z",
+   "host": "modal:L40S",
+   "subsets": {
+    "clean": {
+     "n": 84,
+     "minutes": 11.8,
+     "wer": 0.0461,
+     "cer": 0.0158,
+     "wer_raw": 0.0691,
+     "terms": {
+      "all": {
+       "occurrences": 172,
+       "terms": 139,
+       "recall": 0.6221,
+       "recall_lenient": 0.6395,
+       "recall_exact_case": 0.5465
+      },
+      "unseen": {
+       "occurrences": 117,
+       "terms": 88,
+       "recall": 0.6154,
+       "recall_lenient": 0.6325,
+       "recall_exact_case": 0.5128
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.6364,
+       "recall_lenient": 0.6545,
+       "recall_exact_case": 0.6182
+      }
+     }
+    },
+    "all_code_switch": {
+     "n": 121,
+     "minutes": 13.9,
+     "wer": 0.0491,
+     "cer": 0.0168,
+     "wer_raw": 0.0693,
+     "terms": {
+      "all": {
+       "occurrences": 201,
+       "terms": 146,
+       "recall": 0.5871,
+       "recall_lenient": 0.602,
+       "recall_exact_case": 0.5174
+      },
+      "unseen": {
+       "occurrences": 146,
+       "terms": 95,
+       "recall": 0.5685,
+       "recall_lenient": 0.5822,
+       "recall_exact_case": 0.4795
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.6364,
+       "recall_lenient": 0.6545,
+       "recall_exact_case": 0.6182
+      }
+     }
+    },
+    "english_control": {
+     "n": 24,
+     "minutes": 3.3,
+     "wer": 0.0254,
+     "cer": 0.0065,
+     "wer_raw": 0.0491
+    }
+   }
+  },
+  {
+   "name": "Whisper-Hebrish",
+   "id": "danielrosehill/Whisper-Hebrish",
+   "revision": "77e4104b55caf20f2925b52938e8ad8132c8bbd6",
+   "url": "https://huggingface.co/danielrosehill/Whisper-Hebrish",
+   "fine_tuned_for_code_switching": true,
+   "params_m": 809.0,
+   "contamination": "Trained on English-Hebrew-Mixed-Sentences (2025-11-17), which overlaps 33 non-headline clips; 10 unseen-flagged clean term occurrences appear in its training text.",
+   "scored_at": "2026-10-15T14:07:25Z",
+   "host": "modal:L40S",
+   "subsets": {
+    "clean": {
+     "n": 84,
+     "minutes": 11.8,
+     "wer": 0.065,
+     "cer": 0.0214,
+     "wer_raw": 0.1128,
+     "terms": {
+      "all": {
+       "occurrences": 172,
+       "terms": 139,
+       "recall": 0.5407,
+       "recall_lenient": 0.564,
+       "recall_exact_case": 0.4244
+      },
+      "unseen": {
+       "occurrences": 117,
+       "terms": 88,
+       "recall": 0.5641,
+       "recall_lenient": 0.5812,
+       "recall_exact_case": 0.4444
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.4909,
+       "recall_lenient": 0.5273,
+       "recall_exact_case": 0.3818
+      }
+     }
+    },
+    "all_code_switch": {
+     "n": 121,
+     "minutes": 13.9,
+     "wer": 0.0563,
+     "cer": 0.0187,
+     "wer_raw": 0.0975,
+     "terms": {
+      "all": {
+       "occurrences": 201,
+       "terms": 146,
+       "recall": 0.607,
+       "recall_lenient": 0.6269,
+       "recall_exact_case": 0.5075
+      },
+      "unseen": {
+       "occurrences": 146,
+       "terms": 95,
+       "recall": 0.6507,
+       "recall_lenient": 0.6644,
+       "recall_exact_case": 0.5548
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.4909,
+       "recall_lenient": 0.5273,
+       "recall_exact_case": 0.3818
+      }
+     }
+    },
+    "english_control": {
+     "n": 24,
+     "minutes": 3.3,
+     "wer": 0.0471,
+     "cer": 0.0127,
+     "wer_raw": 0.0891
+    }
+   }
+  },
+  {
+   "name": "Whisper Large V3",
+   "id": "openai/whisper-large-v3",
+   "revision": "06f233fe06e710322aca913c1bc4249a0d71fce1",
+   "url": "https://huggingface.co/openai/whisper-large-v3",
+   "fine_tuned_for_code_switching": false,
+   "params_m": 1550.0,
+   "contamination": null,
+   "scored_at": "2026-10-15T14:07:46Z",
+   "host": "modal:L40S",
+   "subsets": {
+    "clean": {
+     "n": 84,
+     "minutes": 11.8,
+     "wer": 0.0754,
+     "cer": 0.0295,
+     "wer_raw": 0.1223,
+     "terms": {
+      "all": {
+       "occurrences": 172,
+       "terms": 139,
+       "recall": 0.4593,
+       "recall_lenient": 0.4767,
+       "recall_exact_case": 0.3488
+      },
+      "unseen": {
+       "occurrences": 117,
+       "terms": 88,
+       "recall": 0.4615,
+       "recall_lenient": 0.4786,
+       "recall_exact_case": 0.3504
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.4545,
+       "recall_lenient": 0.4727,
+       "recall_exact_case": 0.3455
+      }
+     }
+    },
+    "all_code_switch": {
+     "n": 121,
+     "minutes": 13.9,
+     "wer": 0.0832,
+     "cer": 0.0326,
+     "wer_raw": 0.1257,
+     "terms": {
+      "all": {
+       "occurrences": 201,
+       "terms": 146,
+       "recall": 0.4428,
+       "recall_lenient": 0.4577,
+       "recall_exact_case": 0.3333
+      },
+      "unseen": {
+       "occurrences": 146,
+       "terms": 95,
+       "recall": 0.4384,
+       "recall_lenient": 0.4521,
+       "recall_exact_case": 0.3288
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.4545,
+       "recall_lenient": 0.4727,
+       "recall_exact_case": 0.3455
+      }
+     }
+    },
+    "english_control": {
+     "n": 24,
+     "minutes": 3.3,
+     "wer": 0.0236,
+     "cer": 0.0069,
+     "wer_raw": 0.0473
+    }
+   }
+  },
+  {
+   "name": "Whisper Large V3 Turbo",
+   "id": "openai/whisper-large-v3-turbo",
+   "revision": "41f01f3fe87f28c78e2fbf8b568835947dd65ed9",
+   "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+   "fine_tuned_for_code_switching": false,
+   "params_m": 809.0,
+   "contamination": null,
+   "scored_at": "2026-10-15T14:08:07Z",
+   "host": "modal:L40S",
+   "subsets": {
+    "clean": {
+     "n": 84,
+     "minutes": 11.8,
+     "wer": 0.0893,
+     "cer": 0.0379,
+     "wer_raw": 0.1372,
+     "terms": {
+      "all": {
+       "occurrences": 172,
+       "terms": 139,
+       "recall": 0.4012,
+       "recall_lenient": 0.4186,
+       "recall_exact_case": 0.2791
+      },
+      "unseen": {
+       "occurrences": 117,
+       "terms": 88,
+       "recall": 0.3932,
+       "recall_lenient": 0.4103,
+       "recall_exact_case": 0.265
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.4182,
+       "recall_lenient": 0.4364,
+       "recall_exact_case": 0.3091
+      }
+     }
+    },
+    "all_code_switch": {
+     "n": 121,
+     "minutes": 13.9,
+     "wer": 0.096,
+     "cer": 0.0389,
+     "wer_raw": 0.1402,
+     "terms": {
+      "all": {
+       "occurrences": 201,
+       "terms": 146,
+       "recall": 0.398,
+       "recall_lenient": 0.4179,
+       "recall_exact_case": 0.2786
+      },
+      "unseen": {
+       "occurrences": 146,
+       "terms": 95,
+       "recall": 0.3904,
+       "recall_lenient": 0.411,
+       "recall_exact_case": 0.2671
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.4182,
+       "recall_lenient": 0.4364,
+       "recall_exact_case": 0.3091
+      }
+     }
+    },
+    "english_control": {
+     "n": 24,
+     "minutes": 3.3,
+     "wer": 0.0236,
+     "cer": 0.0069,
+     "wer_raw": 0.0527
+    }
+   }
+  },
+  {
+   "name": "Parakeet TDT 0.6B v2",
+   "id": "nvidia/parakeet-tdt-0.6b-v2",
+   "revision": "ae9ad07059c7c739ffaf932226a8fe64ae2620b0",
+   "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2",
+   "fine_tuned_for_code_switching": false,
+   "params_m": 600.0,
+   "contamination": null,
+   "scored_at": "2026-10-15T14:05:34Z",
+   "host": "modal:L40S",
+   "subsets": {
+    "clean": {
+     "n": 84,
+     "minutes": 11.8,
+     "wer": 0.0952,
+     "cer": 0.0338,
+     "wer_raw": 0.1332,
+     "terms": {
+      "all": {
+       "occurrences": 172,
+       "terms": 139,
+       "recall": 0.3256,
+       "recall_lenient": 0.343,
+       "recall_exact_case": 0.2326
+      },
+      "unseen": {
+       "occurrences": 117,
+       "terms": 88,
+       "recall": 0.3248,
+       "recall_lenient": 0.3504,
+       "recall_exact_case": 0.2222
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.3273,
+       "recall_lenient": 0.3273,
+       "recall_exact_case": 0.2545
+      }
+     }
+    },
+    "all_code_switch": {
+     "n": 121,
+     "minutes": 13.9,
+     "wer": 0.0998,
+     "cer": 0.0353,
+     "wer_raw": 0.1364,
+     "terms": {
+      "all": {
+       "occurrences": 201,
+       "terms": 146,
+       "recall": 0.3284,
+       "recall_lenient": 0.3483,
+       "recall_exact_case": 0.2338
+      },
+      "unseen": {
+       "occurrences": 146,
+       "terms": 95,
+       "recall": 0.3288,
+       "recall_lenient": 0.3562,
+       "recall_exact_case": 0.226
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.3273,
+       "recall_lenient": 0.3273,
+       "recall_exact_case": 0.2545
+      }
+     }
+    },
+    "english_control": {
+     "n": 24,
+     "minutes": 3.3,
+     "wer": 0.0272,
+     "cer": 0.0062,
+     "wer_raw": 0.0491
+    }
+   }
+  },
+  {
+   "name": "Parakeet TDT 0.6B v3",
+   "id": "nvidia/parakeet-tdt-0.6b-v3",
+   "revision": "541d1f99c6b0c3cd0b11a95167540bb8edefd82b",
+   "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+   "fine_tuned_for_code_switching": false,
+   "params_m": 600.0,
+   "contamination": null,
+   "scored_at": "2026-10-15T14:07:18Z",
+   "host": "modal:L40S",
+   "subsets": {
+    "clean": {
+     "n": 84,
+     "minutes": 11.8,
+     "wer": 0.1052,
+     "cer": 0.0434,
+     "wer_raw": 0.1436,
+     "terms": {
+      "all": {
+       "occurrences": 172,
+       "terms": 139,
+       "recall": 0.314,
+       "recall_lenient": 0.3547,
+       "recall_exact_case": 0.2151
+      },
+      "unseen": {
+       "occurrences": 117,
+       "terms": 88,
+       "recall": 0.3162,
+       "recall_lenient": 0.3675,
+       "recall_exact_case": 0.2137
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.3091,
+       "recall_lenient": 0.3273,
+       "recall_exact_case": 0.2182
+      }
+     }
+    },
+    "all_code_switch": {
+     "n": 121,
+     "minutes": 13.9,
+     "wer": 0.1109,
+     "cer": 0.045,
+     "wer_raw": 0.1475,
+     "terms": {
+      "all": {
+       "occurrences": 201,
+       "terms": 146,
+       "recall": 0.3234,
+       "recall_lenient": 0.3682,
+       "recall_exact_case": 0.2189
+      },
+      "unseen": {
+       "occurrences": 146,
+       "terms": 95,
+       "recall": 0.3288,
+       "recall_lenient": 0.3836,
+       "recall_exact_case": 0.2192
+      },
+      "seen": {
+       "occurrences": 55,
+       "terms": 51,
+       "recall": 0.3091,
+       "recall_lenient": 0.3273,
+       "recall_exact_case": 0.2182
+      }
+     }
+    },
+    "english_control": {
+     "n": 24,
+     "minutes": 3.3,
+     "wer": 0.0272,
+     "cer": 0.0078,
+     "wer_raw": 0.0582
+    }
+   }
+  }
+ ]
+}
