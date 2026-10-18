@@ -13,7 +13,7 @@
   "base_model": "nvidia/parakeet-tdt-0.6b-v2",
   "fine_tuned_for_code_switching": true,
   "params_m": 600.0,
-  "url": "https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+  "url": "https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/e1541065f8bda57565f6ea404af27db7c868369e",
   "settings": {
    "nemo_file": "Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching.nemo",
    "decoding": "default (greedy)"

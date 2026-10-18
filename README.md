@@ -16,7 +16,8 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 <!-- results:start -->
 | Model | Type | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |
 |---|---|---|---|---|---|---|
-| [Parakeet v2 EN-HE code-switching (v2)](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching) | CS fine-tune | **65.7** | 60.7 | 67.4 | 4.2 | 2.4 |
+| [Parakeet v2 EN-HE code-switching (v3)](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching) | CS fine-tune | **67.4** | 63.2 | 70.3 | 4.0 | 2.5 |
+| [Parakeet v2 EN-HE code-switching (v2)](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/e1541065f8bda57565f6ea404af27db7c868369e) | CS fine-tune | **65.7** | 60.7 | 67.4 | 4.2 | 2.4 |
 | [Parakeet v2 EN-HE code-switching (v1)](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/ebc0e7aff15ed17b457d69639ab817345ea36ca2) | CS fine-tune | **62.2** | 61.5 | 63.9 | 4.6 | 2.5 |
 | [Whisper-Hebrish](https://huggingface.co/danielrosehill/Whisper-Hebrish) ⚠ | CS fine-tune | **54.1** | 56.4 | 56.4 | 6.5 | 4.7 |
 | [Whisper Large V3](https://huggingface.co/openai/whisper-large-v3) | Stock | **45.9** | 46.2 | 47.7 | 7.5 | 2.4 |
