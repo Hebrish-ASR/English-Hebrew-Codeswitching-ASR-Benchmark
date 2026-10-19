@@ -6,6 +6,7 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 
 | | |
 |---|---|
+| **Website** (the Parakeet code-switching fine-tune) | [hebrish.app](https://hebrish.app): get the Hebrish keyboard for Android and the desktop apps, see the results, and find every model, dataset and demo in one place |
 | **Leaderboard** | [HF Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard) |
 | **Test set** | [HF dataset: English-Hebrew-Codeswitching-ASR-Benchmark](https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark): v1, pinned commit in [`ehcs_bench/data.py`](ehcs_bench/data.py) |
 | **Methodology, contamination, limits** | [`docs/about.md`](docs/about.md) |
