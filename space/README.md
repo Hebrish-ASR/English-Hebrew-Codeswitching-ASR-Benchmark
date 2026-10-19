@@ -10,7 +10,7 @@ pinned: false
 license: mit
 short_description: ASR on English speech with Hebrew words in it
 datasets:
-- danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark
+- Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark
 tags:
 - leaderboard
 - asr
@@ -23,6 +23,6 @@ tags:
 - english-hebrew
 ---
 
-Leaderboard for the [English-Hebrew code-switching ASR benchmark](https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark). Deployed from that repository by `scripts/deploy_space.sh`; do not edit here.
+Leaderboard for the [English-Hebrew code-switching ASR benchmark](https://github.com/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark). Deployed from that repository by `scripts/deploy_space.sh`; do not edit here.
 
 **Website: [hebrish.app](https://hebrish.app)**: get the Hebrish keyboard for Android and the desktop apps, see the results, and find every model, dataset and demo in one place.

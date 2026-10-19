@@ -14,8 +14,8 @@ import pandas as pd
 import plotly.graph_objects as go
 
 ROOT = Path(__file__).parent
-BENCH = "danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark"
-GITHUB = "https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark"
+BENCH = "Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"
+GITHUB = "https://github.com/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"
 REVISION = json.loads((ROOT / "benchmark.json").read_text())["revision"]
 BLOG = "https://blog.danielrosehill.com/posts/english-hebrew-code-switching-asr-benchmark"
 LINKS = " · ".join([

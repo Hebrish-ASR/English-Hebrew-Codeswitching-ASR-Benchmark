@@ -1,11 +1,11 @@
 """Build the frozen benchmark test set from pinned upstream revisions.
 
 Every input is pinned, so running this again produces the same files. The output is the
-`data/test/` folder of the HF dataset danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark.
+`data/test/` folder of the HF dataset Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark.
 How each subset is decided, and why: docs/contamination.md.
 
     uv run scripts/build_testset.py --out build/
-    hf upload danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark build/ . --repo-type dataset
+    hf upload Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark build/ . --repo-type dataset
 """
 import argparse
 import csv
@@ -19,9 +19,9 @@ RAV = "danielrosehill/Read-Aloud-Voice-Sentences"
 RAV_SHA = "3bdaa2a50d5246d222f8c719861ff738787d2811"   # the revision Parakeet CS v2 trained on
 # English-Hebrew-Mixed-Sentences as it stood when Whisper-Hebrish was trained (2025-11-17).
 # Later revisions (2026-10-14) appended phone takes, so `main` is the wrong thing to diff against.
-EHMS = "danielrosehill/English-Hebrew-Mixed-Sentences"
+EHMS = "Hebrish/English-Hebrew-Mixed-Sentences"
 EHMS_SHA = "e7dc91ef7301"
-LEXICON = "https://raw.githubusercontent.com/danielrosehill/Hebrew-Latin-Token-Classifier/94f4a72e6043468c731cfb22036fd3d306876f40/data/terms.csv"
+LEXICON = "https://raw.githubusercontent.com/Hebrish-ASR/Hebrew-Latin-Token-Classifier/94f4a72e6043468c731cfb22036fd3d306876f40/data/terms.csv"
 
 HF = "https://huggingface.co/datasets"
 

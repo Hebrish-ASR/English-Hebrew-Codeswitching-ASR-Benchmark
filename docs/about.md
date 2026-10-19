@@ -6,7 +6,7 @@ The references write each Hebrew word in **one canonical romanized spelling** in
 
 ## Test set (v1)
 
-145 clips, frozen at a pinned commit of [`danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark`](https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark). They are the held-out test split of `Read-Aloud-Voice-Sentences` (commit `3bdaa2a50d52`). Each clip is tagged with a subset:
+145 clips, frozen at a pinned commit of [`Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark`](https://huggingface.co/datasets/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark). They are the held-out test split of `Read-Aloud-Voice-Sentences` (commit `3bdaa2a50d52`). Each clip is tagged with a subset:
 
 | Subset | Clips | Headline? | Why |
 |---|---|---|---|
@@ -18,7 +18,7 @@ The references write each Hebrew word in **one canonical romanized spelling** in
 
 **How contamination was established (2026-10-15).** Whisper-Hebrish was trained on 2025-11-17 on `English-Hebrew-Mixed-Sentences` at commit `e7dc91ef7301`, using its `whisper_train` and `whisper_validation` files. 26 of the 30 imported desktop clips in the test split have ids in those files. 7 of the phone clips re-read a sentence from those files (normalised text match). Later commits of that dataset (2026-10-14) appended phone takes, so comparing against its `main` branch gives the wrong answer. The Parakeet fine-tune's test split is term-disjoint by design: no test clip is in its training data.
 
-**Term labels.** Every clip lists its Hebrew terms with the accepted spelling variants from the [Hebrew-Latin-Token-Classifier lexicon](https://github.com/danielrosehill/Hebrew-Latin-Token-Classifier) and an `unseen` flag. The flag is set when the term is absent from the source dataset's *train* split. The clean subset has 172 term occurrences (139 distinct). 117 of the occurrences are unseen. `unseen` is defined against that one public train split, so it fits models trained on it, such as the Parakeet fine-tune. Whisper-Hebrish was trained on different data: 19 clean occurrences are of terms that appear in its training sentences, and 10 of those are flagged unseen.
+**Term labels.** Every clip lists its Hebrew terms with the accepted spelling variants from the [Hebrew-Latin-Token-Classifier lexicon](https://github.com/Hebrish-ASR/Hebrew-Latin-Token-Classifier) and an `unseen` flag. The flag is set when the term is absent from the source dataset's *train* split. The clean subset has 172 term occurrences (139 distinct). 117 of the occurrences are unseen. `unseen` is defined against that one public train split, so it fits models trained on it, such as the Parakeet fine-tune. Whisper-Hebrish was trained on different data: 19 clean occurrences are of terms that appear in its training sentences, and 10 of those are flagged unseen.
 
 Four source transcripts had a variant spelling where their own term label was canonical (*heder madregot*, *machane Yehuda*). With them, even a perfect transcript could not score a hit. The benchmark references use the canonical term and keep the original in `source_text`. An oracle check (references scored as transcripts) gives 0% WER and 100% on every term metric. That check is the guard against this class of bug.
 
@@ -50,6 +50,6 @@ The normalisation and term matcher are the same ones behind the Parakeet fine-tu
 1. **Run the model.** NeMo and Hugging Face Whisper checkpoints run directly:
    `ehcs-bench run --model nemo:<repo>` or `--model whisper:<repo>`. It runs on a GPU with `modal run modal_app.py --model ...`.
 2. **Anything else** (an API, a phone app, a GGUF runtime): transcribe the 145 WAVs yourself. Write `{"id", "hyp"}` JSONL and run `ehcs-bench score --preds preds.jsonl --name ... --model-id ...`.
-3. Open a pull request on [GitHub](https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark) that adds the result file to `results/`. CI-free check: `ehcs-bench rescore results/<file>.json` must print `OK`.
+3. Open a pull request on [GitHub](https://github.com/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark) that adds the result file to `results/`. CI-free check: `ehcs-bench rescore results/<file>.json` must print `OK`.
 
 Declare any overlap between your training data and this test set with `--contamination`. Training on the **train** split of the source datasets is fine and expected. That is what the `unseen` metric exists for.

@@ -1,6 +1,6 @@
 ## Data dictionary
 
-Every term, field and metric used by the benchmark, in one place. The methodology and the reasoning behind these choices are in *About*. The code that computes every metric is [`ehcs_bench/score.py`](https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark/blob/main/ehcs_bench/score.py).
+Every term, field and metric used by the benchmark, in one place. The methodology and the reasoning behind these choices are in *About*. The code that computes every metric is [`ehcs_bench/score.py`](https://github.com/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark/blob/main/ehcs_bench/score.py).
 
 ### Concepts
 
@@ -10,7 +10,7 @@ Every term, field and metric used by the benchmark, in one place. The methodolog
 | **Hebrew term** | A Hebrew word or multi-word phrase inside an English sentence (*makolet*, *Bituach Leumi*, *teudat zehut*). Proper nouns (people, places) count. |
 | **Term occurrence** | One appearance of a term in one clip. Recall is computed over occurrences, so a term that appears 3 times counts 3 times. |
 | **Canonical spelling** | The one romanized (Latin-letter) spelling the reference uses for a term. A convention, not a truth: see *lenient*. |
-| **Variant** | An alternative romanization accepted by lenient recall (*tsaharon* for *tzaharon*). From the [Hebrew-Latin-Token-Classifier lexicon](https://github.com/danielrosehill/Hebrew-Latin-Token-Classifier). |
+| **Variant** | An alternative romanization accepted by lenient recall (*tsaharon* for *tzaharon*). From the [Hebrew-Latin-Token-Classifier lexicon](https://github.com/Hebrish-ASR/Hebrew-Latin-Token-Classifier). |
 | **Unseen term** | A term absent from the *train* split of the source dataset `Read-Aloud-Voice-Sentences`. Measures generalisation for models trained on that split. |
 | **Seen term** | A term that does appear in that train split. |
 | **Hit** | The term is found in the transcript as a whole word, case-insensitive, hyphen and space interchangeable. Never a substring match (*chool* is not in *school*). Hebrew script is never a hit. |

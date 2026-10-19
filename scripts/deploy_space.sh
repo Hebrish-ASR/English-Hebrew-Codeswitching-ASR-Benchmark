@@ -12,7 +12,7 @@ cp docs/data-dictionary.md "$STAGE"/DATA_DICTIONARY.md
 mkdir "$STAGE"/results && cp results/*.json "$STAGE"/results/
 mkdir "$STAGE"/archive && cp archive/*.json "$STAGE"/archive/
 printf '{"revision": "%s"}\n' "$REV" > "$STAGE"/benchmark.json
-curl -sfL "https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark/resolve/$REV/data/test/metadata.jsonl" -o "$STAGE"/metadata.jsonl
+curl -sfL "https://huggingface.co/datasets/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark/resolve/$REV/data/test/metadata.jsonl" -o "$STAGE"/metadata.jsonl
 export HF_TOKEN="${HF_TOKEN:-${HUGGINGFACE_TOKEN:-}}"
 HF=${HF_CLI:-$HOME/.local/bin/hf}
 "$HF" repos create "$SPACE" --repo-type space --space-sdk gradio --exist-ok >/dev/null

@@ -31,12 +31,12 @@ configs:
 
 # English-Hebrew Code-Switching ASR Benchmark (test set v1)
 
-> **Status: early-stage, work in progress.** Known issue: 22 of the 139 clean-subset `hebrew_terms` labels are English tech words or product names (*JSON*, *grep*, *Proxmox*, *Tuya*, ...), 26 of 172 occurrences. v1.1 will relabel them; until then, term recall is 2 to 6 points higher than a Hebrew-only count. Details: [methodology, limits](https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark/blob/main/docs/about.md#limits).
+> **Status: early-stage, work in progress.** Known issue: 22 of the 139 clean-subset `hebrew_terms` labels are English tech words or product names (*JSON*, *grep*, *Proxmox*, *Tuya*, ...), 26 of 172 occurrences. v1.1 will relabel them; until then, term recall is 2 to 6 points higher than a Hebrew-only count. Details: [methodology, limits](https://github.com/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark/blob/main/docs/about.md#limits).
 
 A frozen, versioned test set for measuring how well speech recognition handles **English speech with Hebrew words in it**: *"pick up some bamba from the makolet"*, *"I have to go to Bituach Leumi tomorrow"*. The references write each Hebrew word in **one canonical romanized spelling**, in Latin letters.
 
 - **Website (the Parakeet code-switching fine-tune):** [hebrish.app](https://hebrish.app): get the Hebrish keyboard for Android and the desktop apps, see the results, and find every model, dataset and demo in one place.
-- **Runner and scorer:** [github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark](https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark)
+- **Runner and scorer:** [github.com/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark](https://github.com/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark)
 - **Leaderboard:** [Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard)
 
 This repository is the test set only. It never changes in place: a new test set is a new version, and every result records the commit it was scored against.
@@ -63,7 +63,7 @@ The `clean` subset holds 172 Hebrew term occurrences (139 distinct terms). 117 o
 | `id` | Same id as in the source dataset |
 | `text` | Reference transcript: cased and punctuated, canonical romanized Hebrew |
 | `subset` | See above |
-| `hebrew_terms` | List of `{term, variants, unseen}`. `term` is the canonical spelling. `variants` are accepted alternative romanizations from the [Hebrew-Latin-Token-Classifier lexicon](https://github.com/danielrosehill/Hebrew-Latin-Token-Classifier). `unseen` is true when the term is absent from the source dataset's train split |
+| `hebrew_terms` | List of `{term, variants, unseen}`. `term` is the canonical spelling. `variants` are accepted alternative romanizations from the [Hebrew-Latin-Token-Classifier lexicon](https://github.com/Hebrish-ASR/Hebrew-Latin-Token-Classifier). `unseen` is true when the term is absent from the source dataset's train split |
 | `source_text` | Set on the 4 rows whose reference was corrected: the source transcript had a variant spelling (*heder madregot*, *machane Yehuda*) where its own label was the canonical term, so no transcript could have scored a hit. The reference here uses the canonical term; `source_text` is the original |
 | `duration_s`, `categories`, `recording`, `source_dataset` | Provenance |
 

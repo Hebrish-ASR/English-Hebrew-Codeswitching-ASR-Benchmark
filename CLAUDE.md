@@ -7,7 +7,7 @@ Read `docs/about.md` first: it is the methodology and also the Space's About tab
 
 | Artefact | Where | Changes how |
 |---|---|---|
-| Test set | HF dataset `danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark` | Never in place. `ehcs_bench/data.py` pins `REVISION`; a new test set is a new `VERSION` + `REVISION`, and old results stop showing on the Space (it filters by revision) |
+| Test set | HF dataset `Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark` | Never in place. `ehcs_bench/data.py` pins `REVISION`; a new test set is a new `VERSION` + `REVISION`, and old results stop showing on the Space (it filters by revision) |
 | Results | `results/*.json` in **this** repo (source of truth) | Add a file; `scripts/results_table.py`; `scripts/deploy_space.sh` |
 | Archive | `archive/<date>.json`, one per published round | `scripts/snapshot_run.py` after the round's results are committed. Never edit a committed round |
 | Leaderboard | HF Space `danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard` | Only via `scripts/deploy_space.sh`, which copies space/, results/, archive/, docs/about.md, docs/data-dictionary.md and the pinned metadata. Never edit the Space directly |

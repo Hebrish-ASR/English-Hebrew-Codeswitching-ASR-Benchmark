@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-REPO = "danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark"
+REPO = "Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"
 VERSION = "v1"
 # Commit of REPO that holds test-set v1. Results record this and the leaderboard refuses
 # results scored against anything else. Bump VERSION and this together, never one alone.

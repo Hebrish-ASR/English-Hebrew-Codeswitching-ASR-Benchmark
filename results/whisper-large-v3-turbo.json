@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "benchmark": {
-  "repo": "danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark",
+  "repo": "Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark",
   "version": "v1",
   "revision": "3cb0b2b3b3e46c951962ababeb7c56fc4248cb94"
  },
