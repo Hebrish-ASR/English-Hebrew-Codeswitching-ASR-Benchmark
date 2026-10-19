@@ -35,6 +35,7 @@ configs:
 
 A frozen, versioned test set for measuring how well speech recognition handles **English speech with Hebrew words in it**: *"pick up some bamba from the makolet"*, *"I have to go to Bituach Leumi tomorrow"*. The references write each Hebrew word in **one canonical romanized spelling**, in Latin letters.
 
+- **Website (the Parakeet code-switching fine-tune):** [hebrish.app](https://hebrish.app): get the Hebrish keyboard for Android and the desktop apps, see the results, and find every model, dataset and demo in one place.
 - **Runner and scorer:** [github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark](https://github.com/danielrosehill/English-Hebrew-Codeswitching-ASR-Benchmark)
 - **Leaderboard:** [Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard)
 

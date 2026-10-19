@@ -25,6 +25,7 @@ LINKS = " · ".join([
     f"[Test set](https://huggingface.co/datasets/{BENCH})",
     f"[Result files]({GITHUB}/tree/main/results)",
     f"[Write-up]({BLOG})",
+    "[Fine-tune website: hebrish.app](https://hebrish.app)",
 ])
 
 
