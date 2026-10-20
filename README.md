@@ -17,7 +17,7 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 <!-- results:start -->
 | Model | Type | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |
 |---|---|---|---|---|---|---|
-| [Parakeet v2 EN-HE Sabich v1.0](https://huggingface.co/Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-All-Subsets) | CS fine-tune | **73.8** | 68.4 | 76.7 | 3.3 | 2.0 |
+| [Parakeet v2 EN-HE Sabich v1.0](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **73.8** | 68.4 | 76.7 | 3.3 | 2.0 |
 | [Parakeet v2 EN-HE Jachnun v1.0](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching) | CS fine-tune | **73.3** | 70.1 | 76.2 | 3.3 | 2.2 |
 | [Parakeet v2 EN-HE PoC-3](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/728e6f88d499d9bfc40d5b5f0d1c19d626d4073b) | CS fine-tune | **67.4** | 63.2 | 70.3 | 4.0 | 2.5 |
 | [Parakeet v2 EN-HE PoC-2](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/e1541065f8bda57565f6ea404af27db7c868369e) | CS fine-tune | **65.7** | 60.7 | 67.4 | 4.2 | 2.4 |

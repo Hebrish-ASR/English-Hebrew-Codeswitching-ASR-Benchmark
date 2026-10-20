@@ -6,19 +6,19 @@
   "revision": "3cb0b2b3b3e46c951962ababeb7c56fc4248cb94"
  },
  "model": {
-  "id": "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-All-Subsets",
-  "revision": "640c14835df62df111f69611ba9d9f311659a32c",
+  "id": "Hebrish/Sabich",
+  "revision": "d2818208cc9b1dd8ab61589bf3060f7062573492",
   "name": "Parakeet v2 EN-HE Sabich v1.0",
   "adapter": "nemo",
   "base_model": "nvidia/parakeet-tdt-0.6b-v2",
   "fine_tuned_for_code_switching": true,
   "params_m": 600.0,
-  "url": "https://huggingface.co/Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-All-Subsets",
+  "url": "https://huggingface.co/Hebrish/Sabich",
   "settings": {
-   "nemo_file": "Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-All-Subsets.nemo",
+   "nemo_file": "Sabich.nemo",
    "decoding": "default (greedy)"
   },
-  "notes": "Released 2026-10-20 as Sabich v1.0, run r7-all: the kitchen-sink line (every own take, 373.1 of 560.5 min code-switching, plus tech and other task subsets, 10% LibriSpeech-PC replay). Checked 2026-10-20: none of the 145 benchmark clip ids or texts (normalised) are in its training or validation manifests (runs/r7-all/train.jsonl, 5,334 rows; val.jsonl, 326 rows).",
+  "notes": "Released 2026-10-20 as Sabich v1.0, run r7-all: the kitchen-sink line (every own take, 373.1 of 560.5 min code-switching, plus tech and other task subsets, 10% LibriSpeech-PC replay). Checked 2026-10-20: none of the 145 benchmark clip ids or texts (normalised) are in its training or validation manifests (runs/r7-all/train.jsonl, 5,334 rows; val.jsonl, 326 rows). Scored at Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-All-Subsets@640c14835df6; that repo was deleted on 2026-10-20 and the same model.nemo (Modal parakeet-cs-finetune runs/r7-all, sha256 a95c7f69) was re-uploaded as Hebrish/Sabich the same day, so the revision here is the re-upload's.",
   "contamination": null
  },
  "scored_at": "2026-10-20T16:59:34Z",
