@@ -30,13 +30,13 @@ README edits to the HF dataset create new commits; that is fine because the load
 
 Personal workspace only: `MODAL_PROFILE=danielrosehill`. Uses the existing secret
 `parakeet-finetune-hf`. No Volumes, by Daniel's choice: weights download on every run. The image
-copies the NeMo 2.7.3 pins from `~/repos/github/audio-dictation/Parakeet-V2-Personal-Finetune/training/app.py`.
+copies the NeMo 2.7.3 pins from `~/repos/github/audio-dictation/ASR-Training/training/app.py`.
 
 ## Upstream fixes owed
 
 The 4 non-canonical references (`heder madregot`, `machane Yehuda`) are corrected here at
 build time. They are still wrong in `Read-Aloud-Voice-Sentences` and should be fixed there
-by its normaliser (private repo Parakeet-V2-Personal-Finetune, `scripts/normalize_transcripts.py`).
+by its normaliser (private repo ASR-Training, `scripts/normalize_transcripts.py`).
 
 ## Article drafts
 
