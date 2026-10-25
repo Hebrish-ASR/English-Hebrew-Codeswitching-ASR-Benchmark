@@ -2,32 +2,26 @@
 
 A replicable benchmark for speech recognition on **English speech with Hebrew words in it**: *"pick up some bamba from the makolet"*, *"I have to go to Bituach Leumi tomorrow"*. It scores stock models and code-switching fine-tunes on the same frozen test set, with the same normaliser and term matcher.
 
-> **Status (2026-10-25): test set v2 is current.** v2 has 129 code-switching clips balanced across 13 Hebrew vocabulary domains, none of them trained on by any Hebrish model, plus English and tech checks. It is the set Hebrish uses for its own internal benchmarks; see [About](docs/about.md#test-set-v2-current-2026-10-25). No model has been scored on v2 yet, so the table below is still **v1**, which stays loadable (`--version v1`) along with every result scored on it. v1's known issue (22 of its 139 labelled terms are English tech or product words) is fixed in v2. Still single-speaker read speech. Contributions welcome: more speakers, better labels, more models.
+> **Status (2026-10-25): test set v2 is current.** v2 has 129 code-switching clips balanced across 13 Hebrew vocabulary domains, none of them trained on by any Hebrish model, plus English and tech checks. It is the set Hebrish uses for its own internal benchmarks; see [About](docs/about.md#test-set-v2-current-2026-10-25). The table below and the [leaderboard Space](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard) default to **v2** (first round scored 2026-10-25); v1 stays loadable (`--version v1`) and keeps its own tab on the Space with every result scored on it. v1's known issue (22 of its 139 labelled terms are English tech or product words) is fixed in v2. Still single-speaker read speech. Contributions welcome: more speakers, better labels, more models.
 
 | | |
 |---|---|
 | **Website** (the Parakeet code-switching fine-tune) | [hebrish.app](https://hebrish.app): get the Hebrish keyboard for Android and the desktop apps, see the results, and find every model, dataset and demo in one place |
-| **Leaderboard** | [HF Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard) |
+| **Leaderboard** | [HF Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard): test set v2 by default (with a per-domain view and tech WER), v1 in its own tab |
 | **Test set** | [HF dataset: English-Hebrew-Codeswitching-ASR-Benchmark](https://huggingface.co/datasets/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark): v2 (`data/v2/`, current) and v1 (`data/test/`), pinned commits in [`ehcs_bench/data.py`](ehcs_bench/data.py) |
 | **Methodology, contamination, limits** | [`docs/about.md`](docs/about.md) |
 | **Write-up** | [How good is speech-to-text at Hebrew words in English? I built a benchmark to find out](https://blog.danielrosehill.com/posts/english-hebrew-code-switching-asr-benchmark) (blog, 2026-10-15) |
 
-## Results (test set v1, clean subset: 84 clips, 172 Hebrew term occurrences)
+## Results (test set v2, clean subset: 129 clips, 221 Hebrew term occurrences)
 
 <!-- results:start -->
 | Model | Type | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |
 |---|---|---|---|---|---|---|
-| [Parakeet v2 EN-HE Sabich v1.0](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **73.8** | 68.4 | 76.7 | 3.3 | 2.0 |
-| [Parakeet v2 EN-HE Jachnun v1.0](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching) | CS fine-tune | **73.3** | 70.1 | 76.2 | 3.3 | 2.2 |
-| [Parakeet v2 EN-HE PoC-3](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/728e6f88d499d9bfc40d5b5f0d1c19d626d4073b) | CS fine-tune | **67.4** | 63.2 | 70.3 | 4.0 | 2.5 |
-| [Parakeet v2 EN-HE PoC-2](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/e1541065f8bda57565f6ea404af27db7c868369e) | CS fine-tune | **65.7** | 60.7 | 67.4 | 4.2 | 2.4 |
-| [Parakeet v2 EN-HE PoC-1](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching/tree/ebc0e7aff15ed17b457d69639ab817345ea36ca2) | CS fine-tune | **62.2** | 61.5 | 63.9 | 4.6 | 2.5 |
-| [Nemotron Streaming EN-HE code-switching (checkpoint 2)](https://huggingface.co/Hebrish/Nemotron-Speech-Streaming-EN-0.6B-English-Hebrew-Codeswitching) | CS fine-tune | **62.2** | 54.7 | 64.5 | 4.7 | 2.5 |
-| [Whisper-Hebrish](https://huggingface.co/danielrosehill/Whisper-Hebrish) ⚠ | CS fine-tune | **54.1** | 56.4 | 56.4 | 6.5 | 4.7 |
-| [Whisper Large V3](https://huggingface.co/openai/whisper-large-v3) | Stock | **45.9** | 46.2 | 47.7 | 7.5 | 2.4 |
-| [Whisper Large V3 Turbo](https://huggingface.co/openai/whisper-large-v3-turbo) | Stock | **40.1** | 39.3 | 41.9 | 8.9 | 2.4 |
-| [Parakeet TDT 0.6B v2](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2) | Stock | **32.6** | 32.5 | 34.3 | 9.5 | 2.7 |
-| [Parakeet TDT 0.6B v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) | Stock | **31.4** | 31.6 | 35.5 | 10.5 | 2.7 |
+| [Parakeet v2 EN-HE Sabich v2.1](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **65.6** | 56.2 | 67.4 | 5.2 | 2.4 |
+| [Parakeet v2 EN-HE Sabich v2.0](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **65.2** | 54.0 | 66.5 | 5.6 | 2.1 |
+| [Parakeet v2 EN-HE Sabich v1.0](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **63.3** | 53.3 | 65.2 | 5.7 | 2.1 |
+| [Parakeet v2 EN-HE Jachnun v1.0](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching) | CS fine-tune | **61.1** | 51.8 | 62.9 | 5.9 | 2.4 |
+| [Parakeet TDT 0.6B v2](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2) | Stock | **19.9** | 16.1 | 23.5 | 13.7 | 2.7 |
 <!-- results:end -->
 
 ![Hebrew term recall by model, clean subset](docs/figures/term_recall.png)
@@ -79,7 +73,7 @@ Put the result file in `results/`. Then run `python3 scripts/results_table.py` t
 | `scripts/build_testset.py` | Rebuilds test set v1 from pinned upstream commits |
 | `scripts/build_testset_v2.py` | Rebuilds test set v2 (domain-balanced) from pinned upstream commits and `scripts/inputs/` (frozen lexicon, trained-on exclusions) |
 | `docs/dataset-card/README.md` | Source of the HF dataset card. Upload it with `hf upload ... README.md --repo-type dataset` (a card-only commit; the pinned revision does not change) |
-| `scripts/deploy_space.sh` | Publishes `space/` + `results/` to the leaderboard Space |
+| `scripts/deploy_space.sh` | Publishes `space/` + `results/` (every test set version, current one as the default tab) to the leaderboard Space |
 | `space/app.py` | The Gradio leaderboard |
 
 ## Related

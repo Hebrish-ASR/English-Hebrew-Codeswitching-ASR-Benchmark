@@ -88,7 +88,7 @@ Scoring groups, v1 (keys under `metrics.subsets` in a result file):
 | Field | Meaning |
 |---|---|
 | `schema` | Result format version (currently 1) |
-| `benchmark.version`, `benchmark.revision` | Test-set version and the exact dataset commit it was scored against. The leaderboard only shows results for the current revision. v1 results live in `results/<name>.json`, v2 results in `results/v2/<name>.json` |
+| `benchmark.version`, `benchmark.revision` | Test-set version and the exact dataset commit it was scored against. The leaderboard has one tab per test-set version (the current one is the default) and each tab shows only results scored on that version's revision. v1 results live in `results/<name>.json`, v2 results in `results/v2/<name>.json` |
 | `model.id`, `model.revision` | Model repo and the resolved commit that was run |
 | `model.name` | Display name |
 | `model.adapter` | `nemo`, `whisper`, or `external` (transcribed outside the runner) |

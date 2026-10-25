@@ -1,8 +1,11 @@
 """Leaderboard for the English-Hebrew code-switching ASR benchmark.
 
-Reads the result files in ./results (deployed alongside this app from the GitHub repo's
-results/ folder by scripts/deploy_space.sh). No network calls, no model inference: every
-number shown is in a result file that anyone can rescore with `ehcs-bench rescore`.
+Reads the result files in ./results/<version>/ and the pinned test-set metadata in
+./metadata-<version>.jsonl (deployed alongside this app from the GitHub repo by
+scripts/deploy_space.sh: results/v2/*.json -> results/v2/, results/*.json -> results/v1/).
+benchmark.json names the current version and the dataset commit of each. No network calls,
+no model inference: every number shown is in a result file that anyone can rescore with
+`ehcs-bench rescore`.
 """
 import html
 import json
@@ -16,29 +19,38 @@ import plotly.graph_objects as go
 ROOT = Path(__file__).parent
 BENCH = "Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"
 GITHUB = "https://github.com/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark"
-REVISION = json.loads((ROOT / "benchmark.json").read_text())["revision"]
+BENCHMARK = json.loads((ROOT / "benchmark.json").read_text())
+CURRENT = BENCHMARK["current"]
+REVISION = BENCHMARK["revision"]  # the current version's dataset commit
 BLOG = "https://blog.danielrosehill.com/posts/english-hebrew-code-switching-asr-benchmark"
 LINKS = " · ".join([
     f"[Benchmark repo]({GITHUB})",
     f"[Inference code]({GITHUB}/blob/main/ehcs_bench/adapters.py) ([Modal GPU runner]({GITHUB}/blob/main/modal_app.py))",
     f"[Scorer]({GITHUB}/blob/main/ehcs_bench/score.py)",
     f"[Test set](https://huggingface.co/datasets/{BENCH})",
-    f"[Result files]({GITHUB}/tree/main/results)",
+    f"[Result files]({GITHUB}/tree/main/results) ([v2]({GITHUB}/tree/main/results/v2))",
     f"[Write-up]({BLOG})",
     "[Fine-tune website: hebrish.app](https://hebrish.app)",
 ])
 
 
-def load():
+def load(version):
+    """Results scored on `version`'s pinned dataset commit, plus its test-set metadata."""
+    rev = BENCHMARK["versions"][version]
     out = []
-    for p in sorted((ROOT / "results").glob("*.json")):
+    for p in sorted((ROOT / "results" / version).glob("*.json")):
         r = json.loads(p.read_text())
-        if r["benchmark"]["revision"] == REVISION:
+        if r["benchmark"]["revision"] == rev:
             out.append(r)
-    return out
+    meta = {}
+    for l in (ROOT / f"metadata-{version}.jsonl").read_text().splitlines():
+        if l.strip():
+            j = json.loads(l)
+            meta[j["id"]] = j
+    return {"version": version, "revision": rev, "results": out, "meta": meta}
 
 
-RESULTS = load()
+VERSIONS = {v: load(v) for v in sorted(BENCHMARK["versions"], key=lambda v: v != CURRENT)}
 pct = lambda x: None if x is None else round(100 * x, 1)
 
 
@@ -46,9 +58,9 @@ def link(m):
     return f"[{m['name']}]({m['url']})" if m.get("url") else m["name"]
 
 
-def table(subset):
+def table(V, subset):
     rows = []
-    for r in RESULTS:
+    for r in V["results"]:
         m, s = r["model"], r["metrics"]["subsets"]
         c = s[subset]
         rows.append({
@@ -61,10 +73,12 @@ def table(subset):
             "WER %": pct(c["wer"]),
             "CER %": pct(c["cer"]),
             "English control WER %": pct(s["english_control"]["wer"]),
+            **({"Tech WER %": pct(s["tech"]["wer"])} if "tech" in s else {}),
             "Params (M)": m.get("params_m"),
             "Caveat": "⚠ " + m["contamination"] if m.get("contamination") else "",
         })
-    df = pd.DataFrame(rows)
+    # Drop all-empty columns (no v2 result records params_m): Gradio's SSR renderer crashes on a column of nulls.
+    df = pd.DataFrame(rows).dropna(axis=1, how="all")
     if len(df):
         df = df.sort_values(["Term recall %", "WER %"], ascending=[False, True]).reset_index(drop=True)
         df.insert(0, "#", range(1, len(df) + 1))
@@ -88,16 +102,16 @@ def _layout(fig, title, x=None, y=None, height=420, **kw):
     return fig
 
 
-def _ranked():
-    return sorted(RESULTS, key=lambda r: r["metrics"]["subsets"]["clean"]["terms"]["all"]["recall"])
+def _ranked(V):
+    return sorted(V["results"], key=lambda r: r["metrics"]["subsets"]["clean"]["terms"]["all"]["recall"])
 
 
 def _label(r):
     return r["model"]["name"] + (" ⚠" if r["model"].get("contamination") else "")
 
 
-def fig_recall():
-    rs = _ranked()
+def fig_recall(V):
+    rs = _ranked(V)
     fig = go.Figure()
     for (key, field, name), colour in zip([("all", "recall", "Term recall"), ("unseen", "recall", "Unseen-term recall"),
                                            ("all", "recall_lenient", "Lenient recall")], SERIES):
@@ -109,10 +123,10 @@ def fig_recall():
     return _layout(fig, "Hebrew terms transcribed correctly, clean subset", x="%", height=520)
 
 
-def fig_scatter():
+def fig_scatter(V):
     fig = go.Figure()
     for ft, colour, name in [(True, FT, "Code-switching fine-tune"), (False, STOCK, "Stock")]:
-        rs = [r for r in RESULTS if bool(r["model"].get("fine_tuned_for_code_switching")) == ft]
+        rs = [r for r in V["results"] if bool(r["model"].get("fine_tuned_for_code_switching")) == ft]
         c = [r["metrics"]["subsets"]["clean"] for r in rs]
         ys = [pct(s["terms"]["all"]["recall"]) for s in c]
         # A point just below another prints its label below itself, so the two do not collide.
@@ -126,19 +140,20 @@ def fig_scatter():
                    y="Term recall %")
 
 
-def fig_control():
-    rs = sorted(RESULTS, key=lambda r: -r["metrics"]["subsets"]["english_control"]["wer"])
-    v = [pct(r["metrics"]["subsets"]["english_control"]["wer"]) for r in rs]
+def fig_wer_bars(V, subset, title, height=380):
+    """Horizontal WER bars for a no-Hebrew subset (english_control, tech), worst at the bottom."""
+    rs = sorted(V["results"], key=lambda r: -r["metrics"]["subsets"][subset]["wer"])
+    v = [pct(r["metrics"]["subsets"][subset]["wer"]) for r in rs]
+    n = V["results"][0]["metrics"]["subsets"][subset]["n"] if rs else 0
     fig = go.Figure(go.Bar(y=[_label(r) for r in rs], x=v, orientation="h", text=[f"{x:.1f}%" for x in v],
                            textposition="outside", cliponaxis=False,
                            marker_color=[FT if r["model"].get("fine_tuned_for_code_switching") else STOCK for r in rs],
-                           hovertemplate="%{y}<br>English control WER %{x:.1f}%<extra></extra>"))
-    return _layout(fig, "English-only control (24 clips): WER, lower is better. Blue: fine-tune, grey: stock",
-                   x="WER %", height=380)
+                           hovertemplate="%{y}<br>WER %{x:.1f}%<extra></extra>"))
+    return _layout(fig, title.format(n=n) + ": WER, lower is better. Blue: fine-tune, grey: stock", x="WER %", height=height)
 
 
-def fig_heatmap(min_n):
-    rs = _ranked()[::-1]
+def fig_heatmap(V, min_n):
+    rs = _ranked(V)[::-1]
     per = rs[0]["metrics"]["per_term"] if rs else {}
     terms = [t for t, d in per.items() if d["n"] >= min_n]
     hits = {t: [r["metrics"]["per_term"][t]["strict"] / r["metrics"]["per_term"][t]["n"] for r in rs] for t in terms}
@@ -155,6 +170,38 @@ def fig_heatmap(min_n):
     return fig
 
 
+def has_domains(V):
+    return bool(V["results"]) and all("domains" in r["metrics"] for r in V["results"])
+
+
+def fig_domains(V):
+    """Term recall per lexicon domain (v2): models as columns, best model first; domains hardest first."""
+    rs = _ranked(V)[::-1]
+    doms = sorted(rs[0]["metrics"]["domains"], key=lambda d: (sum(r["metrics"]["domains"][d]["terms"]["recall"] for r in rs), d))
+    z = [[r["metrics"]["domains"][d]["terms"]["recall"] for r in rs] for d in doms]
+    txt = [[f"{pct(r['metrics']['domains'][d]['terms']['recall']):.0f}%" for r in rs] for d in doms]
+    fig = go.Figure(go.Heatmap(z=z, x=[_label(r) for r in rs], y=doms, text=txt, texttemplate="%{text}", zmin=0, zmax=1,
+                               colorscale=BLUES, xgap=2, ygap=2, colorbar=dict(title="Term recall", tickformat=".0%"),
+                               hovertemplate="%{y} · %{x}<br>Term recall %{text}<extra></extra>"))
+    fig.update_yaxes(autorange="reversed")
+    fig.update_xaxes(tickangle=-30, side="top")
+    fig = _layout(fig, "Term recall by Hebrew vocabulary domain, hardest first", height=max(400, 34 * len(doms) + 220))
+    fig.update_layout(margin=dict(t=190))
+    return fig
+
+
+def domain_table(V):
+    rows = []
+    for d in sorted(V["results"][0]["metrics"]["domains"]):
+        first = V["results"][0]["metrics"]["domains"][d]
+        row = {"Domain": d, "Clips": first["n"], "Term occurrences": first["terms"]["occurrences"]}
+        for r in _ranked(V)[::-1]:
+            m = r["metrics"]["domains"][d]
+            row[f"{r['model']['name']}: recall % / WER %"] = f"{pct(m['terms']['recall'])} / {pct(m['wer'])}"
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
 # Archive: one file per published round in ./archive (scripts/snapshot_run.py). Unlike the
 # leaderboard, it is not filtered to the current test-set revision.
 def load_archive():
@@ -169,7 +216,8 @@ def archive_md():
         out.append(f"### {a['date']}: {a['title']}\n\n{a['notes']}\n\nTest set **{a['benchmark']['version']}** "
                    f"(dataset commit [`{rev[:12]}`](https://huggingface.co/datasets/{BENCH}/tree/{rev})). Full result "
                    f"files with every transcript: [`{a['repo_commit'][:7]}`]({GITHUB}/tree/{a['repo_commit']}/results)."
-                   + ("" if rev == REVISION else " *Scored on an older test set; not comparable with the current leaderboard.*")
+                   + ("" if rev == REVISION else f" *Scored on test set {a['benchmark']['version']}, not the current "
+                                                 f"{CURRENT}: compare it with the {a['benchmark']['version']} tab, not the {CURRENT} leaderboard.*")
                    + "\n\n| # | Model | Type | Term recall % | Unseen % | Lenient % | WER % | English control WER % |\n"
                    "|---|---|---|---|---|---|---|---|")
         for i, m in enumerate(a["models"], 1):
@@ -182,10 +230,10 @@ def archive_md():
     return "\n".join(out) or "No rounds archived yet."
 
 
-def per_term():
-    names = [r["model"]["name"] for r in RESULTS]
+def per_term(V):
+    names = [r["model"]["name"] for r in V["results"]]
     terms = {}
-    for r in RESULTS:
+    for r in V["results"]:
         for t, d in r["metrics"]["per_term"].items():
             row = terms.setdefault(t, {"Term": t, "Unseen": "yes" if d["unseen"] else "", "n": d["n"]})
             row[r["model"]["name"]] = f"{d['strict']}/{d['n']}"
@@ -205,13 +253,9 @@ def highlight(text, terms, hit_test):
     return out
 
 
-def utterances(model_names, subset, only_misses):
-    meta = {}
-    p = ROOT / "metadata.jsonl"
-    for l in p.read_text().splitlines():
-        j = json.loads(l)
-        meta[j["id"]] = j
-    chosen = [r for r in RESULTS if r["model"]["name"] in (model_names or [])]
+def utterances(V, model_names, subset, only_misses):
+    meta = V["meta"]
+    chosen = [r for r in V["results"] if r["model"]["name"] in (model_names or [])]
     if not chosen:
         return "<p>Pick one or more models.</p>"
     hyp = {r["model"]["name"]: {u["id"]: u["hyp"] for u in r["utterances"]} for r in chosen}
@@ -230,7 +274,7 @@ def utterances(model_names, subset, only_misses):
         if only_misses and not any_miss:
             continue
         ref = highlight(m["text"], terms, lambda t: True)
-        parts.append(f"<div class='utt'><div class='ref'><span class='id'>{uid} · {m['subset']}</span><br>{ref}</div>{''.join(lines)}</div>")
+        parts.append(f"<div class='utt'><div class='ref'><span class='id'>{uid} · {m['subset']}{' · ' + m['domain'] if m.get('domain') else ''}</span><br>{ref}</div>{''.join(lines)}</div>")
     return "".join(parts) or "<p>Nothing to show.</p>"
 
 
@@ -243,44 +287,90 @@ mark.hit{background:#c8f7c5;color:#000} mark.miss{background:#ffc9c9;color:#000}
 ABOUT = (ROOT / "ABOUT.md").read_text()
 DICTIONARY = (ROOT / "DATA_DICTIONARY.md").read_text()
 
+def _clean_counts(V):
+    c = V["results"][0]["metrics"]["subsets"]["clean"] if V["results"] else {"n": 0, "terms": {"all": {"occurrences": 0, "terms": 0}}}
+    return c["n"], c["terms"]["all"]["occurrences"], c["terms"]["all"]["terms"]
+
+
+NOTES = {
+    "v2": "> **Test set v2 (current, 2026-10-25).** {n} code-switching clips balanced across {d} Hebrew vocabulary domains "
+          "(about 10 each), none of them trained on by any Hebrish model, plus a 25-clip English control and 25 tech clips. "
+          "Only Hebrew lexicon entries are labelled. Public and ungated. v1 results are in the *Test set v1* tab; the two sets "
+          "are not comparable.",
+    "v1": "> **Test set v1 (2026-10-15, superseded by v2 on 2026-10-25).** Known issue: 22 of the 139 labelled terms are "
+          "English tech words or product names, not Hebrew (*JSON*, *grep*, *Proxmox*, ...). Ranks are unaffected; absolute "
+          "term recall is 2 to 6 points high. v2 fixes this. Scores here are not comparable with v2.",
+}
+V1_SUBSETS = ["clean", "all", "contaminated_text", "contaminated_audio", "desktop_mic", "english_control"]
+
+
+def version_tabs(V):
+    """The leaderboard, charts, per-term and transcript tabs for one test set."""
+    v, res = V["version"], V["results"]
+    n, occ, nterms = _clean_counts(V)
+    doms = len(res[0]["metrics"]["domains"]) if has_domains(V) else 0
+    gr.Markdown(NOTES.get(v, "").format(n=n, d=doms) + f" Dataset commit [`{V['revision'][:12]}`]"
+                f"(https://huggingface.co/datasets/{BENCH}/tree/{V['revision']}).")
+    if not res:
+        gr.Markdown("No results scored on this test set yet.")
+        return
+    subsets = res[0]["metrics"]["subsets"]
+    with gr.Tab(f"Leaderboard (clean, {n} clips)"):
+        gr.Dataframe(table(V, "clean"), datatype="markdown", wrap=True, interactive=False)
+        gr.Markdown("Ranked by term recall, then WER. *Lenient* also accepts lexicon spelling variants (*tsaharon* for *tzaharon*), "
+                    "which is fairer to models never taught the canonical spelling. *English control* is "
+                    f"{subsets['english_control']['n']} clips of the same speaker with no Hebrew: a fine-tune that wrecks English shows up there."
+                    + (f" *Tech* is {subsets['tech']['n']} English tech and AI dictation clips with no Hebrew (WER only)." if "tech" in subsets else ""))
+    if "all_code_switch" in subsets:
+        with gr.Tab(f"All code-switching ({subsets['all_code_switch']['n']} clips)"):
+            gr.Markdown("Adds 37 clips excluded from the headline: 33 overlap Whisper-Hebrish's training data (26 identical recordings, 7 re-recordings of training sentences) and 4 are older desktop-mic recordings. Comparable with the numbers on the Parakeet fine-tune's model card, which used all 121. **Not a fair comparison for Whisper-Hebrish.**")
+            gr.Dataframe(table(V, "all_code_switch"), datatype="markdown", wrap=True, interactive=False)
+    if has_domains(V):
+        with gr.Tab(f"By domain ({doms})"):
+            gr.Markdown("Clean subset split by the Hebrew vocabulary domain each clip was sampled for (the [hebrish.app lexicon]"
+                        "(https://hebrish.app/lexicon) domains). About 10 clips and 15 to 20 term occurrences per domain, so a "
+                        "single word moves a domain by 5 to 7 points: read the pattern, not the decimals.")
+            gr.Plot(fig_domains(V))
+            gr.Dataframe(domain_table(V), wrap=True, interactive=False)
+    with gr.Tab("Charts"):
+        gr.Markdown(f"Clean subset ({n} clips, {occ} Hebrew term occurrences) unless stated. Hover for values. "
+                    f"With {occ} occurrences, a gap of 2 to 3 points is about {round(occ * .02)} to {round(occ * .03)} words: treat it as noise.")
+        gr.Plot(fig_recall(V))
+        gr.Plot(fig_scatter(V))
+        gr.Plot(fig_wer_bars(V, "english_control", "English-only control ({n} clips)"))
+        if "tech" in subsets:
+            gr.Plot(fig_wer_bars(V, "tech", "Tech dictation, no Hebrew ({n} clips)"))
+        radio = gr.Radio([("Terms that occur 2+ times", 2), (f"All {nterms} terms", 1)], value=2, label="Heatmap")
+        heat = gr.Plot(fig_heatmap(V, 2))
+        radio.change(lambda k: fig_heatmap(V, k), radio, heat)
+    with gr.Tab("Per term"):
+        gr.Markdown("Hits / occurrences for every Hebrew term in the clean subset. Hardest terms first.")
+        gr.Dataframe(per_term(V), wrap=True, interactive=False)
+    with gr.Tab("Transcripts"):
+        names = [r["model"]["name"] for r in _ranked(V)[::-1]]
+        subs = V1_SUBSETS if "all_code_switch" in subsets else ["clean", "all", *[k for k in subsets if k != "clean"]]
+        with gr.Row():
+            pick = gr.Dropdown(names, value=names[:2], multiselect=True, label="Models")
+            sub = gr.Dropdown(subs, value="clean", label="Subset")
+            miss = gr.Checkbox(True, label="Only clips where a selected model missed a term")
+        out = gr.HTML()
+        fn = lambda a, b, c: utterances(V, a, b, c)
+        for c in (pick, sub, miss):
+            c.change(fn, [pick, sub, miss], out)
+        demo.load(fn, [pick, sub, miss], out)
+
+
 with gr.Blocks(title="English-Hebrew Code-Switching ASR Leaderboard", css=CSS) as demo:
     gr.Markdown(f"""# English-Hebrew Code-Switching ASR Leaderboard
 
-How well does speech recognition handle **English with Hebrew words in it**: *"pick up some bamba from the makolet"*, *"I have to go to Bituach Leumi"*? Models are scored on a frozen test set ([`{BENCH}`](https://huggingface.co/datasets/{BENCH}), commit `{REVISION[:12]}`) with the open runner at [GitHub]({GITHUB}).
+How well does speech recognition handle **English with Hebrew words in it**: *"pick up some bamba from the makolet"*, *"I have to go to Bituach Leumi"*? Models are scored on a frozen test set ([`{BENCH}`](https://huggingface.co/datasets/{BENCH}), test set **{CURRENT}**, commit `{REVISION[:12]}`) with the open runner at [GitHub]({GITHUB}).
 
-**Term recall** is the share of Hebrew words written with the canonical romanized spelling (case-insensitive, whole word). It is the headline: a model can have a low WER and still mangle every Hebrew word. **Unseen-term** recall counts only Hebrew words absent from the public training split. Single speaker, read speech: see *About* before drawing conclusions.
-
-> **Status: early-stage, work in progress (test set v1).** Known issue: 22 of the 139 labelled terms are English tech words or product names, not Hebrew (*JSON*, *grep*, *Proxmox*, ...). Ranks are unaffected; absolute term recall is 2 to 6 points high. v1.1 will relabel them and rescore every model from its stored transcripts. Contributions welcome: more speakers, better labels, more models.
+**Term recall** is the share of Hebrew words written with the canonical romanized spelling (case-insensitive, whole word). It is the headline: a model can have a low WER and still mangle every Hebrew word. **Unseen-term** recall counts only Hebrew words absent from the public training split. Single speaker, read speech: see *About* before drawing conclusions. Contributions welcome: more speakers, better labels, more models.
 
 {LINKS}""")
-    with gr.Tab("Leaderboard (clean, 84 clips)"):
-        gr.Dataframe(table("clean"), datatype="markdown", wrap=True, interactive=False)
-        gr.Markdown("Ranked by term recall, then WER. *Lenient* also accepts lexicon spelling variants (*tsaharon* for *tzaharon*), which is fairer to models never taught the canonical spelling. *English control* is 24 clips of the same speaker with no Hebrew: a fine-tune that wrecks English shows up there.")
-    with gr.Tab("All code-switching (121 clips)"):
-        gr.Markdown("Adds 37 clips excluded from the headline: 33 overlap Whisper-Hebrish's training data (26 identical recordings, 7 re-recordings of training sentences) and 4 are older desktop-mic recordings. Comparable with the numbers on the Parakeet fine-tune's model card, which used all 121. **Not a fair comparison for Whisper-Hebrish.**")
-        gr.Dataframe(table("all_code_switch"), datatype="markdown", wrap=True, interactive=False)
-    with gr.Tab("Charts"):
-        gr.Markdown("Clean subset (84 clips, 172 Hebrew term occurrences) unless stated. Hover for values. "
-                    "With 172 occurrences, a gap of 2 to 3 points is about 4 to 5 words: treat it as noise.")
-        gr.Plot(fig_recall())
-        gr.Plot(fig_scatter())
-        gr.Plot(fig_control())
-        n = gr.Radio([("Terms that occur 2+ times", 2), ("All 139 terms", 1)], value=2, label="Heatmap")
-        heat = gr.Plot(fig_heatmap(2))
-        n.change(fig_heatmap, n, heat)
-    with gr.Tab("Per term"):
-        gr.Markdown("Hits / occurrences for every Hebrew term in the clean subset. Hardest terms first.")
-        gr.Dataframe(per_term(), wrap=True, interactive=False)
-    with gr.Tab("Transcripts"):
-        names = [r["model"]["name"] for r in RESULTS]
-        with gr.Row():
-            pick = gr.Dropdown(names, value=names[:2], multiselect=True, label="Models")
-            sub = gr.Dropdown(["clean", "all", "contaminated_text", "contaminated_audio", "desktop_mic", "english_control"], value="clean", label="Subset")
-            miss = gr.Checkbox(True, label="Only clips where a selected model missed a term")
-        out = gr.HTML()
-        for c in (pick, sub, miss):
-            c.change(utterances, [pick, sub, miss], out)
-        demo.load(utterances, [pick, sub, miss], out)
+    for ver, V in VERSIONS.items():
+        with gr.Tab(f"Test set {ver}" + (" (current)" if ver == CURRENT else "")):
+            version_tabs(V)
     with gr.Tab("Archive"):
         gr.Markdown("Every published benchmark round, newest first. A round is frozen when it is published; "
                     "the leaderboard tabs always show the latest result per model.\n\n" + archive_md())
