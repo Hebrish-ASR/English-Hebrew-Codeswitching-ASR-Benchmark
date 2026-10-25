@@ -6,11 +6,19 @@ code-switching fine-tune's published numbers, so the two stay comparable.
 import re
 
 SUBSET_GROUPS = {
-    # name -> subsets it pools. `clean` is the leaderboard headline.
+    # Test set v1. name -> subsets it pools. `clean` is the leaderboard headline.
     "clean": ["clean"],
     "all_code_switch": ["clean", "contaminated_text", "contaminated_audio", "desktop_mic"],
     "english_control": ["english_control"],
 }
+# Test set v2 (2026-10-25): domain-balanced code-switching headline plus two English companions.
+SUBSET_GROUPS_V2 = {
+    "clean": ["clean"],
+    "english_control": ["english_control"],
+    "tech": ["tech"],
+}
+GROUPS = {"v1": SUBSET_GROUPS, "v2": SUBSET_GROUPS_V2}
+NO_TERMS = {"english_control", "tech"}   # English-only groups: WER, no term metrics
 
 
 def norm(t):
@@ -71,20 +79,30 @@ def term_scores(rows, hyps):
             "seen": agg(lambda d: not d["unseen"])}, per
 
 
-def score(rows, hyps_by_id):
-    """rows: benchmark metadata. hyps_by_id: {id: hypothesis}. Missing ids score as empty."""
+def score(rows, hyps_by_id, version="v1"):
+    """rows: benchmark metadata. hyps_by_id: {id: hypothesis}. Missing ids score as empty.
+    version picks the scoring groups (GROUPS). v2 rows carry a `domain`, which adds
+    `domains`: term recall and WER per lexicon domain over the clean subset."""
     out = {"missing": sorted(r["id"] for r in rows if r["id"] not in hyps_by_id), "subsets": {}}
-    for name, members in SUBSET_GROUPS.items():
+    for name, members in GROUPS[version].items():
         sel = [r for r in rows if r["subset"] in members]
         hyps = [hyps_by_id.get(r["id"], "") for r in sel]
         w, c = _wer([norm(r["text"]) for r in sel], [norm(h) for h in hyps])
         w_raw, _ = _wer([r["text"] for r in sel], hyps)
         s = {"n": len(sel), "minutes": round(sum(r["duration_s"] for r in sel) / 60, 1),
              "wer": w, "cer": c, "wer_raw": w_raw}
-        if name != "english_control":
+        if name not in NO_TERMS:
             terms, per = term_scores(sel, hyps)
             s["terms"] = terms
             if name == "clean":
                 out["per_term"] = per
         out["subsets"][name] = s
+    clean = [r for r in rows if r["subset"] == "clean" and r.get("domain")]
+    if clean:
+        out["domains"] = {}
+        for d in sorted({r["domain"] for r in clean}):
+            sel = [r for r in clean if r["domain"] == d]
+            hyps = [hyps_by_id.get(r["id"], "") for r in sel]
+            w, _ = _wer([norm(r["text"]) for r in sel], [norm(h) for h in hyps])
+            out["domains"][d] = {"n": len(sel), "wer": w, "terms": term_scores(sel, hyps)[0]["all"]}
     return out

@@ -7,8 +7,8 @@ Read `docs/about.md` first: it is the methodology and also the Space's About tab
 
 | Artefact | Where | Changes how |
 |---|---|---|
-| Test set | HF dataset `Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark` | Never in place. `ehcs_bench/data.py` pins `REVISION`; a new test set is a new `VERSION` + `REVISION`, and old results stop showing on the Space (it filters by revision) |
-| Results | `results/*.json` in **this** repo (source of truth) | Add a file; `scripts/results_table.py`; `scripts/deploy_space.sh` |
+| Test set | HF dataset `Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark` (public, ungated, CC-BY-4.0) | Never in place. Each version has its own folder and config (`v1`: `data/test/` at `3cb0b2b3b3e4`; `v2`: `data/v2/` at `48ec85a301dc`, current since 2026-10-25). `ehcs_bench/data.py` holds `VERSIONS` and the current `VERSION` + `REVISION`; a new test set is a new entry plus a new `VERSION` + `REVISION`, and old results stop showing on the Space (it filters by revision) |
+| Results | `results/*.json` (v1) and `results/v2/*.json` (v2) in **this** repo (source of truth) | Add a file; `scripts/results_table.py`; `scripts/deploy_space.sh` |
 | Archive | `archive/<date>.json`, one per published round | `scripts/snapshot_run.py` after the round's results are committed. Never edit a committed round |
 | Leaderboard | HF Space `danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard` | Only via `scripts/deploy_space.sh`, which copies space/, results/, archive/, docs/about.md, docs/data-dictionary.md and the pinned metadata. Never edit the Space directly |
 
@@ -26,6 +26,22 @@ README edits to the HF dataset create new commits; that is fine because the load
 - Contamination is computed against `English-Hebrew-Mixed-Sentences@e7dc91ef7301` (what
   Whisper-Hebrish trained on 2025-11-17), not `main`: `main` gained phone takes on 2026-10-14.
 
+## Test set v2 (2026-10-25): state and what is still owed
+
+- Built by `scripts/build_testset_v2.py` from `Read-Aloud-Voice-Sentences@2cec2ebc85e9` (gated: run with
+  `with-secrets`). Inputs frozen in `scripts/inputs/`: the hebrish.app lexicon (its repo,
+  `danielrosehill/Hebrish-Website`, is private, so it is copied here) and `v2-trained-exclusions.json`
+  (test ids found in any Modal `parakeet-cs-finetune` `runs/<run>/{train,val}.jsonl`, 22 runs on 2026-10-25).
+  Pass `--manifests DIR` only to recompute that file; v2 itself is frozen, so do not.
+- **No model is scored on v2 yet** (scoring waits for the Sabich v2.1 release). Until then:
+  `scripts/results_table.py` would empty the README table (it filters to the current revision), and
+  `scripts/deploy_space.sh` stops at the `cp results/v2/*.json` step.
+- **`space/app.py` is still v1-only and needs a pass before the first v2 deploy:** it builds an
+  `all_code_switch` tab (v2 results have no such group, so it would raise KeyError), its subset dropdown lists
+  v1 subsets, and its header, tab titles and chart captions hard-code v1 counts (84 clips, 172 occurrences,
+  139 terms, the non-Hebrew-term notice). v2 adds `metrics.subsets.tech` and `metrics.domains` to show.
+- The oracle check for v2 (from the Hub copy at `48ec85a301dc`) passed on 2026-10-25.
+
 ## Modal
 
 Personal workspace only: `MODAL_PROFILE=danielrosehill`. Uses the existing secret
@@ -35,7 +51,7 @@ copies the NeMo 2.7.3 pins from `~/repos/github/audio-dictation/ASR-Training/tra
 ## Upstream fixes owed
 
 The 4 non-canonical references (`heder madregot`, `machane Yehuda`) are corrected here at
-build time. They are still wrong in `Read-Aloud-Voice-Sentences` and should be fixed there
+build time (v2 adds the `nachal Oz` -> `Nahal Oz` variant to the same table, and corrected 2 `heder madregot` references). They are still wrong in `Read-Aloud-Voice-Sentences` and should be fixed there
 by its normaliser (private repo ASR-Training, `scripts/normalize_transcripts.py`).
 
 ## Article drafts

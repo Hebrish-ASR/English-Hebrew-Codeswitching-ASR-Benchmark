@@ -24,7 +24,7 @@ FOOT = "Benchmark v1, clean subset: 84 clips, 172 Hebrew term occurrences, one s
 
 def load():
     rev = re.search(r'^REVISION = "(\w+)"', (ROOT / "ehcs_bench/data.py").read_text(), re.M).group(1)
-    rs = [json.loads(p.read_text()) for p in sorted((ROOT / "results").glob("*.json"))]
+    rs = [json.loads(p.read_text()) for p in sorted((ROOT / "results").rglob("*.json"))]
     rs = [r for r in rs if r["benchmark"]["revision"] == rev]
     return sorted(rs, key=lambda r: r["metrics"]["subsets"]["clean"]["terms"]["all"]["recall"])
 

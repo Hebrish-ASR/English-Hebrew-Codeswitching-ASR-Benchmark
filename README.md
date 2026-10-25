@@ -2,13 +2,13 @@
 
 A replicable benchmark for speech recognition on **English speech with Hebrew words in it**: *"pick up some bamba from the makolet"*, *"I have to go to Bituach Leumi tomorrow"*. It scores stock models and code-switching fine-tunes on the same frozen test set, with the same normaliser and term matcher.
 
-> **Status: early-stage, work in progress (test set v1).** Known issue: 22 of the 139 labelled terms are English tech words or product names, not Hebrew (*JSON*, *grep*, *Proxmox*, ...). Ranks are unaffected; absolute term recall is 2 to 6 points high. v1.1 will relabel them and rescore every model from its stored transcripts. Contributions welcome (see [Known issues](docs/about.md#limits)): more speakers, better labels, more models.
+> **Status (2026-10-25): test set v2 is current.** v2 has 129 code-switching clips balanced across 13 Hebrew vocabulary domains, none of them trained on by any Hebrish model, plus English and tech checks. It is the set Hebrish uses for its own internal benchmarks; see [About](docs/about.md#test-set-v2-current-2026-10-25). No model has been scored on v2 yet, so the table below is still **v1**, which stays loadable (`--version v1`) along with every result scored on it. v1's known issue (22 of its 139 labelled terms are English tech or product words) is fixed in v2. Still single-speaker read speech. Contributions welcome: more speakers, better labels, more models.
 
 | | |
 |---|---|
 | **Website** (the Parakeet code-switching fine-tune) | [hebrish.app](https://hebrish.app): get the Hebrish keyboard for Android and the desktop apps, see the results, and find every model, dataset and demo in one place |
 | **Leaderboard** | [HF Space: English-Hebrew-Codeswitching-ASR-Leaderboard](https://huggingface.co/spaces/danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard) |
-| **Test set** | [HF dataset: English-Hebrew-Codeswitching-ASR-Benchmark](https://huggingface.co/datasets/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark): v1, pinned commit in [`ehcs_bench/data.py`](ehcs_bench/data.py) |
+| **Test set** | [HF dataset: English-Hebrew-Codeswitching-ASR-Benchmark](https://huggingface.co/datasets/Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark): v2 (`data/v2/`, current) and v1 (`data/test/`), pinned commits in [`ehcs_bench/data.py`](ehcs_bench/data.py) |
 | **Methodology, contamination, limits** | [`docs/about.md`](docs/about.md) |
 | **Write-up** | [How good is speech-to-text at Hebrew words in English? I built a benchmark to find out](https://blog.danielrosehill.com/posts/english-hebrew-code-switching-asr-benchmark) (blog, 2026-10-15) |
 
@@ -51,13 +51,13 @@ MODAL_PROFILE=danielrosehill modal run modal_app.py \
   --name "Parakeet v2 EN-HE code-switching (v2)" --args "--fine-tuned --base-model nvidia/parakeet-tdt-0.6b-v2"
 ```
 
-**Models that do not run here** (APIs, phone apps, GGUF runtimes): transcribe the 145 WAVs from the dataset yourself and write one `{"id": ..., "hyp": ...}` per line. Then run:
+**Models that do not run here** (APIs, phone apps, GGUF runtimes): transcribe every WAV of the pinned test set yourself (v2: the 179 in `data/v2/audio/`) and write one `{"id": ..., "hyp": ...}` per line. Then run:
 
 ```bash
 ehcs-bench score --preds preds.jsonl --name "My model" --model-id org/model
 ```
 
-`ehcs-bench rescore results/*.json` recomputes every metric from the stored transcripts and prints `OK` when it matches.
+Every command takes `--version v1|v2` (default v2, the current set). v2 results are written to `results/v2/<name>.json`; v1 results stay in `results/`. `ehcs-bench rescore results/*.json results/v2/*.json` recomputes every metric, each file against the test set it records, from the stored transcripts and prints `OK` when it matches.
 
 ## Adding a result to the leaderboard
 
@@ -69,14 +69,15 @@ Put the result file in `results/`. Then run `python3 scripts/results_table.py` t
 |---|---|
 | `ehcs_bench/score.py` | Normaliser, term matcher, all metrics. CPU only. |
 | `ehcs_bench/adapters.py` | `nemo` and `whisper` model adapters. Add new families here. |
-| `ehcs_bench/data.py` | Pinned test-set revision and loader |
+| `ehcs_bench/data.py` | Test-set versions (v1, v2), their pinned commits, and the loader |
 | `ehcs_bench/cli.py` | `ehcs-bench run / score / rescore` |
 | `modal_app.py` | GPU runner on Modal |
-| `results/` | One JSON per model: model metadata, metrics, every transcript. The latest result per model |
+| `results/` | One JSON per model: model metadata, metrics, every transcript. The latest result per model. v1 results at the top level, v2 results in `results/v2/` |
 | `archive/` | One JSON per published benchmark round (`scripts/snapshot_run.py`). Append-only; the Space's *Archive* tab |
 | `docs/data-dictionary.md` | Every term, field and metric. The Space's *Data dictionary* tab |
 | `scripts/make_figures.py` | Static PNG charts into `docs/figures/` (`uv run --with matplotlib python scripts/make_figures.py`) |
-| `scripts/build_testset.py` | Rebuilds the test set from pinned upstream commits |
+| `scripts/build_testset.py` | Rebuilds test set v1 from pinned upstream commits |
+| `scripts/build_testset_v2.py` | Rebuilds test set v2 (domain-balanced) from pinned upstream commits and `scripts/inputs/` (frozen lexicon, trained-on exclusions) |
 | `docs/dataset-card/README.md` | Source of the HF dataset card. Upload it with `hf upload ... README.md --repo-type dataset` (a card-only commit; the pinned revision does not change) |
 | `scripts/deploy_space.sh` | Publishes `space/` + `results/` to the leaderboard Space |
 | `space/app.py` | The Gradio leaderboard |

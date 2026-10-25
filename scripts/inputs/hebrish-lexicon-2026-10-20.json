@@ -1,0 +1,14589 @@
+{
+"source": "https://hebrish.app/data/lexicon.json (repo danielrosehill/Hebrish-Website, private, data/lexicon.json at commit 67e5bdc2e8b9; built 2026-10-20). Frozen here for test set v2 on 2026-10-25: only the domain map and each term with its domain.",
+"built": "2026-10-20",
+"domains": {
+"places": "Places & streets",
+"people": "People & public figures",
+"politics": "Politics & news",
+"religious": "Religious life & calendar",
+"food": "Food & shopping",
+"health": "Health & pharmacy",
+"bureaucracy": "Bureaucracy & government",
+"money": "Money & work",
+"home": "Home, family & school",
+"army": "Army & security",
+"transport": "Transport & travel",
+"brands": "Brands & acronyms",
+"everyday": "Everyday talk"
+},
+"terms": [
+{
+"t": "a freilichen Purim",
+"d": "everyday"
+},
+{
+"t": "a gut yohr",
+"d": "everyday"
+},
+{
+"t": "aba",
+"d": "home"
+},
+{
+"t": "Abergel",
+"d": "people"
+},
+{
+"t": "Abu Falah",
+"d": "places"
+},
+{
+"t": "Abu Ghosh",
+"d": "places"
+},
+{
+"t": "Abu Hassan",
+"d": "food"
+},
+{
+"t": "Abu Tor",
+"d": "places"
+},
+{
+"t": "Abutbul",
+"d": "people"
+},
+{
+"t": "Acamol",
+"d": "health"
+},
+{
+"t": "Acamoli",
+"d": "health"
+},
+{
+"t": "Ace",
+"d": "brands"
+},
+{
+"t": "achar kach",
+"d": "everyday"
+},
+{
+"t": "Acharei Mos",
+"d": "religious"
+},
+{
+"t": "Acharei Mot",
+"d": "religious"
+},
+{
+"t": "achi",
+"d": "everyday"
+},
+{
+"t": "Achim Laneshek",
+"d": "politics"
+},
+{
+"t": "achla",
+"d": "everyday"
+},
+{
+"t": "achot",
+"d": "health"
+},
+{
+"t": "achoti",
+"d": "everyday"
+},
+{
+"t": "achshav",
+"d": "everyday"
+},
+{
+"t": "achuz hachasima",
+"d": "politics"
+},
+{
+"t": "achuzei nechut",
+"d": "health"
+},
+{
+"t": "achyan",
+"d": "home"
+},
+{
+"t": "achyanit",
+"d": "home"
+},
+{
+"t": "Achziv",
+"d": "places"
+},
+{
+"t": "ad matai",
+"d": "everyday"
+},
+{
+"t": "ad mea ve'esrim",
+"d": "everyday"
+},
+{
+"t": "Adi",
+"d": "people"
+},
+{
+"t": "Adi Altschuler",
+"d": "people"
+},
+{
+"t": "Adir Miller",
+"d": "people"
+},
+{
+"t": "adom",
+"d": "army"
+},
+{
+"t": "adom-lavan",
+"d": "transport"
+},
+{
+"t": "adrichal",
+"d": "money"
+},
+{
+"t": "Adva",
+"d": "people"
+},
+{
+"t": "Aerius",
+"d": "health"
+},
+{
+"t": "af ehad",
+"d": "everyday"
+},
+{
+"t": "af paam",
+"d": "everyday"
+},
+{
+"t": "afarsemon",
+"d": "food"
+},
+{
+"t": "Afeka",
+"d": "places"
+},
+{
+"t": "Afikim",
+"d": "brands"
+},
+{
+"t": "afikoman",
+"d": "religious"
+},
+{
+"t": "afsenai",
+"d": "army"
+},
+{
+"t": "Afula",
+"d": "places"
+},
+{
+"t": "agala",
+"d": "food"
+},
+{
+"t": "agalat kniyot",
+"d": "everyday"
+},
+{
+"t": "Agam",
+"d": "people"
+},
+{
+"t": "Agamon Hahula",
+"d": "places"
+},
+{
+"t": "agorot",
+"d": "food"
+},
+{
+"t": "agrat rishayon",
+"d": "transport"
+},
+{
+"t": "Agripas",
+"d": "places"
+},
+{
+"t": "Agron",
+"d": "places"
+},
+{
+"t": "Agudat Yisrael",
+"d": "politics"
+},
+{
+"t": "agunah",
+"d": "everyday"
+},
+{
+"t": "agvaniyot",
+"d": "food"
+},
+{
+"t": "Ahad Ha'am",
+"d": "places"
+},
+{
+"t": "ahalan",
+"d": "everyday"
+},
+{
+"t": "Aharon",
+"d": "people"
+},
+{
+"t": "ahlan vesahlan",
+"d": "everyday"
+},
+{
+"t": "Ahmad Tibi",
+"d": "people"
+},
+{
+"t": "Ahmed al-Sharaa",
+"d": "people"
+},
+{
+"t": "ahoi",
+"d": "everyday"
+},
+{
+"t": "Ahuza",
+"d": "places"
+},
+{
+"t": "Ajami",
+"d": "places"
+},
+{
+"t": "Akiva",
+"d": "people"
+},
+{
+"t": "Akko",
+"d": "places"
+},
+{
+"t": "al ha'esh",
+"d": "everyday"
+},
+{
+"t": "al hakefak",
+"d": "everyday"
+},
+{
+"t": "al hapanim",
+"d": "everyday"
+},
+{
+"t": "al lo davar",
+"d": "everyday"
+},
+{
+"t": "al tidag",
+"d": "everyday"
+},
+{
+"t": "alav hashalom",
+"d": "religious"
+},
+{
+"t": "Albar",
+"d": "brands"
+},
+{
+"t": "Ale Yarok",
+"d": "politics"
+},
+{
+"t": "aleichem shalom",
+"d": "everyday"
+},
+{
+"t": "Alfei Menashe",
+"d": "places"
+},
+{
+"t": "aliyah laTorah",
+"d": "religious"
+},
+{
+"t": "Allenby",
+"d": "places"
+},
+{
+"t": "Allergyx",
+"d": "health"
+},
+{
+"t": "AllJobs",
+"d": "brands"
+},
+{
+"t": "Alon",
+"d": "people"
+},
+{
+"t": "Alon Shvut",
+"d": "places"
+},
+{
+"t": "Alonit",
+"d": "brands"
+},
+{
+"t": "Altshuler Shaham",
+"d": "brands"
+},
+{
+"t": "aluf",
+"d": "army"
+},
+{
+"t": "Alyn",
+"d": "health"
+},
+{
+"t": "Am Kelavi",
+"d": "politics"
+},
+{
+"t": "Aman",
+"d": "brands"
+},
+{
+"t": "Amar",
+"d": "people"
+},
+{
+"t": "amba",
+"d": "food"
+},
+{
+"t": "ambatya",
+"d": "home"
+},
+{
+"t": "amcha",
+"d": "politics"
+},
+{
+"t": "Amcha Yisrael",
+"d": "politics"
+},
+{
+"t": "Amdocs",
+"d": "brands"
+},
+{
+"t": "Amichai Chikli",
+"d": "people"
+},
+{
+"t": "Amichai Eliyahu",
+"d": "people"
+},
+{
+"t": "amidah",
+"d": "everyday"
+},
+{
+"t": "Amir",
+"d": "people"
+},
+{
+"t": "Amir Avivi",
+"d": "people"
+},
+{
+"t": "Amir Ohana",
+"d": "people"
+},
+{
+"t": "Amir Yaron",
+"d": "people"
+},
+{
+"t": "Amirim",
+"d": "places"
+},
+{
+"t": "Amisragas",
+"d": "home"
+},
+{
+"t": "Amit",
+"d": "people"
+},
+{
+"t": "Amit Segal",
+"d": "people"
+},
+{
+"t": "Amitai",
+"d": "people"
+},
+{
+"t": "amlaot",
+"d": "money"
+},
+{
+"t": "Amsalem",
+"d": "people"
+},
+{
+"t": "Amuka",
+"d": "places"
+},
+{
+"t": "Anat",
+"d": "people"
+},
+{
+"t": "Anatot",
+"d": "places"
+},
+{
+"t": "Anglo",
+"d": "everyday"
+},
+{
+"t": "aninut",
+"d": "religious"
+},
+{
+"t": "antibiotika",
+"d": "health"
+},
+{
+"t": "antrikot",
+"d": "food"
+},
+{
+"t": "apostil",
+"d": "bureaucracy"
+},
+{
+"t": "apotropos",
+"d": "bureaucracy"
+},
+{
+"t": "Apropo",
+"d": "brands"
+},
+{
+"t": "Arad",
+"d": "places"
+},
+{
+"t": "Arava",
+"d": "places"
+},
+{
+"t": "arayes",
+"d": "food"
+},
+{
+"t": "arba minim",
+"d": "religious"
+},
+{
+"t": "Arcaffe",
+"d": "brands"
+},
+{
+"t": "arev",
+"d": "bureaucracy"
+},
+{
+"t": "Ariel",
+"d": "people"
+},
+{
+"t": "Ariel University",
+"d": "brands"
+},
+{
+"t": "Arik Einstein",
+"d": "people"
+},
+{
+"t": "Arizal",
+"d": "religious"
+},
+{
+"t": "Arkia",
+"d": "brands"
+},
+{
+"t": "Arlozorov",
+"d": "places"
+},
+{
+"t": "Armenian Quarter",
+"d": "places"
+},
+{
+"t": "Armon Hanatziv",
+"d": "places"
+},
+{
+"t": "arnona",
+"d": "money"
+},
+{
+"t": "Aroma",
+"d": "brands"
+},
+{
+"t": "aron kodesh",
+"d": "religious"
+},
+{
+"t": "Artem Dolgopyat",
+"d": "people"
+},
+{
+"t": "aruchat boker",
+"d": "everyday"
+},
+{
+"t": "aruchat erev",
+"d": "everyday"
+},
+{
+"t": "aruchat eser",
+"d": "home"
+},
+{
+"t": "aruchat tzohorayim",
+"d": "everyday"
+},
+{
+"t": "arvut",
+"d": "bureaucracy"
+},
+{
+"t": "Aryeh Deri",
+"d": "people"
+},
+{
+"t": "Asaf",
+"d": "people"
+},
+{
+"t": "Asara B'Teves",
+"d": "religious"
+},
+{
+"t": "Asara B'Tevet",
+"d": "religious"
+},
+{
+"t": "Ashaf",
+"d": "brands"
+},
+{
+"t": "Ashdod",
+"d": "places"
+},
+{
+"t": "asher yatzar",
+"d": "religious"
+},
+{
+"t": "ashkara",
+"d": "everyday"
+},
+{
+"t": "Ashkelon",
+"d": "places"
+},
+{
+"t": "Ashkenazi",
+"d": "people"
+},
+{
+"t": "ashpuz",
+"d": "health"
+},
+{
+"t": "asifat horim",
+"d": "home"
+},
+{
+"t": "asmachta",
+"d": "bureaucracy"
+},
+{
+"t": "Assaf Harofeh",
+"d": "health"
+},
+{
+"t": "Assi Azar",
+"d": "people"
+},
+{
+"t": "Assuta",
+"d": "health"
+},
+{
+"t": "asur",
+"d": "everyday"
+},
+{
+"t": "Atlit",
+"d": "places"
+},
+{
+"t": "atzirut",
+"d": "health"
+},
+{
+"t": "atzor",
+"d": "transport"
+},
+{
+"t": "Augmentin",
+"d": "health"
+},
+{
+"t": "Augusta Victoria",
+"d": "health"
+},
+{
+"t": "avatiach",
+"d": "food"
+},
+{
+"t": "aveilus",
+"d": "religious"
+},
+{
+"t": "aveilut",
+"d": "religious"
+},
+{
+"t": "avel",
+"d": "religious"
+},
+{
+"t": "Avi",
+"d": "people"
+},
+{
+"t": "Avi Dichter",
+"d": "people"
+},
+{
+"t": "Avi Maoz",
+"d": "people"
+},
+{
+"t": "Avigail",
+"d": "people"
+},
+{
+"t": "Avigdor Liberman",
+"d": "people"
+},
+{
+"t": "Avishai",
+"d": "people"
+},
+{
+"t": "Avital",
+"d": "people"
+},
+{
+"t": "Aviv Geffen",
+"d": "people"
+},
+{
+"t": "Avner",
+"d": "people"
+},
+{
+"t": "avoda mehabayit",
+"d": "money"
+},
+{
+"t": "Avraham",
+"d": "people"
+},
+{
+"t": "Ayala Hasson",
+"d": "people"
+},
+{
+"t": "Ayalon",
+"d": "transport"
+},
+{
+"t": "Ayelet",
+"d": "people"
+},
+{
+"t": "Ayelet Shaked",
+"d": "people"
+},
+{
+"t": "Ayman Odeh",
+"d": "people"
+},
+{
+"t": "azaka",
+"d": "army"
+},
+{
+"t": "azkara",
+"d": "religious"
+},
+{
+"t": "Azoulay",
+"d": "people"
+},
+{
+"t": "Azrieli",
+"d": "food"
+},
+{
+"t": "Azza",
+"d": "places"
+},
+{
+"t": "b'ezras Hashem",
+"d": "religious"
+},
+{
+"t": "b'ezrat hashem",
+"d": "everyday"
+},
+{
+"t": "b'kitzur",
+"d": "everyday"
+},
+{
+"t": "ba li",
+"d": "everyday"
+},
+{
+"t": "ba'aretz",
+"d": "bureaucracy"
+},
+{
+"t": "baal bayit",
+"d": "money"
+},
+{
+"t": "baal habayit",
+"d": "home"
+},
+{
+"t": "baal koreh",
+"d": "religious"
+},
+{
+"t": "Baal Shem Tov",
+"d": "religious"
+},
+{
+"t": "baal teshuva",
+"d": "religious"
+},
+{
+"t": "baalat habayit",
+"d": "home"
+},
+{
+"t": "baali",
+"d": "everyday"
+},
+{
+"t": "baalut",
+"d": "money"
+},
+{
+"t": "babaganoush",
+"d": "food"
+},
+{
+"t": "Bachar",
+"d": "people"
+},
+{
+"t": "bachur",
+"d": "everyday"
+},
+{
+"t": "bachura",
+"d": "everyday"
+},
+{
+"t": "Badatz",
+"d": "religious"
+},
+{
+"t": "Badatz Eda Charedit",
+"d": "religious"
+},
+{
+"t": "Bagatz",
+"d": "politics"
+},
+{
+"t": "Bagel Bagel",
+"d": "food"
+},
+{
+"t": "bagrut",
+"d": "home"
+},
+{
+"t": "Bahai Gardens",
+"d": "places"
+},
+{
+"t": "bahatchala",
+"d": "everyday"
+},
+{
+"t": "Baka",
+"d": "places"
+},
+{
+"t": "bakasha",
+"d": "bureaucracy"
+},
+{
+"t": "bakbuk",
+"d": "home"
+},
+{
+"t": "baklava",
+"d": "food"
+},
+{
+"t": "Bakum",
+"d": "army"
+},
+{
+"t": "bal tashchit",
+"d": "religious"
+},
+{
+"t": "Balad",
+"d": "politics"
+},
+{
+"t": "balagan",
+"d": "everyday"
+},
+{
+"t": "Balak",
+"d": "religious"
+},
+{
+"t": "balon gaz",
+"d": "home"
+},
+{
+"t": "Bamba",
+"d": "food"
+},
+{
+"t": "Bamidbar",
+"d": "religious"
+},
+{
+"t": "Banias",
+"d": "places"
+},
+{
+"t": "Bank Leumi",
+"d": "money"
+},
+{
+"t": "Bar Ilan",
+"d": "places"
+},
+{
+"t": "bar mitzva",
+"d": "religious"
+},
+{
+"t": "Bar-Lev",
+"d": "people"
+},
+{
+"t": "barad",
+"d": "everyday"
+},
+{
+"t": "Barak",
+"d": "people"
+},
+{
+"t": "Barak Ravid",
+"d": "people"
+},
+{
+"t": "Barkan",
+"d": "brands"
+},
+{
+"t": "Baruch",
+"d": "people"
+},
+{
+"t": "baruch dayan ha'emet",
+"d": "religious"
+},
+{
+"t": "Baruch Hashem",
+"d": "everyday"
+},
+{
+"t": "baruchim haba'im",
+"d": "everyday"
+},
+{
+"t": "Barzilai",
+"d": "health"
+},
+{
+"t": "bas mitzvah",
+"d": "religious"
+},
+{
+"t": "basari",
+"d": "religious"
+},
+{
+"t": "basof",
+"d": "everyday"
+},
+{
+"t": "bassa",
+"d": "everyday"
+},
+{
+"t": "bassis ledavar ha'asur",
+"d": "religious"
+},
+{
+"t": "Bat Ayin",
+"d": "places"
+},
+{
+"t": "bat dod",
+"d": "home"
+},
+{
+"t": "Bat Galim",
+"d": "places"
+},
+{
+"t": "bat mitzva",
+"d": "religious"
+},
+{
+"t": "Bat Yam",
+"d": "places"
+},
+{
+"t": "Batsheva",
+"d": "people"
+},
+{
+"t": "batzal",
+"d": "food"
+},
+{
+"t": "Bavli",
+"d": "places"
+},
+{
+"t": "bayit",
+"d": "home"
+},
+{
+"t": "Bayit Vegan",
+"d": "places"
+},
+{
+"t": "baz",
+"d": "everyday"
+},
+{
+"t": "bchirot",
+"d": "politics"
+},
+{
+"t": "bdika",
+"d": "health"
+},
+{
+"t": "bdikat dam",
+"d": "health"
+},
+{
+"t": "bdikat sheten",
+"d": "health"
+},
+{
+"t": "bdikat shten",
+"d": "health"
+},
+{
+"t": "bdikot",
+"d": "health"
+},
+{
+"t": "bdikot dam",
+"d": "health"
+},
+{
+"t": "be'emet",
+"d": "everyday"
+},
+{
+"t": "Be'er Sheva",
+"d": "places"
+},
+{
+"t": "Be'er Yaakov",
+"d": "places"
+},
+{
+"t": "be'erech",
+"d": "everyday"
+},
+{
+"t": "Be'eri",
+"d": "places"
+},
+{
+"t": "be'etzem",
+"d": "everyday"
+},
+{
+"t": "be'ezrat Hashem",
+"d": "everyday"
+},
+{
+"t": "be'ikar",
+"d": "everyday"
+},
+{
+"t": "bechayai",
+"d": "everyday"
+},
+{
+"t": "Bechukosai",
+"d": "religious"
+},
+{
+"t": "Bechukotai",
+"d": "religious"
+},
+{
+"t": "bediavad",
+"d": "everyday"
+},
+{
+"t": "bedikah",
+"d": "religious"
+},
+{
+"t": "bedikat chametz",
+"d": "religious"
+},
+{
+"t": "bedikat tolaim",
+"d": "religious"
+},
+{
+"t": "bediuk",
+"d": "everyday"
+},
+{
+"t": "Beha'aloscha",
+"d": "religious"
+},
+{
+"t": "Beha'alotcha",
+"d": "religious"
+},
+{
+"t": "Behar",
+"d": "religious"
+},
+{
+"t": "behatzlacha",
+"d": "everyday"
+},
+{
+"t": "beigele",
+"d": "food"
+},
+{
+"t": "Beilinson",
+"d": "health"
+},
+{
+"t": "beinatayim",
+"d": "everyday"
+},
+{
+"t": "Beinleumi",
+"d": "brands"
+},
+{
+"t": "beis din",
+"d": "religious"
+},
+{
+"t": "Beis Hamikdash",
+"d": "religious"
+},
+{
+"t": "beis medrash",
+"d": "religious"
+},
+{
+"t": "Beis Yosef",
+"d": "religious"
+},
+{
+"t": "beit avot",
+"d": "health"
+},
+{
+"t": "beit cholim",
+"d": "health"
+},
+{
+"t": "beit din",
+"d": "bureaucracy"
+},
+{
+"t": "beit din rabani",
+"d": "bureaucracy"
+},
+{
+"t": "Beit El",
+"d": "places"
+},
+{
+"t": "Beit Guvrin",
+"d": "places"
+},
+{
+"t": "Beit Hakerem",
+"d": "places"
+},
+{
+"t": "Beit Hamikdash",
+"d": "religious"
+},
+{
+"t": "Beit Hanasi",
+"d": "politics"
+},
+{
+"t": "Beit Hanina",
+"d": "places"
+},
+{
+"t": "Beit Issie Shapiro",
+"d": "politics"
+},
+{
+"t": "beit kafe",
+"d": "everyday"
+},
+{
+"t": "beit knesset",
+"d": "religious"
+},
+{
+"t": "beit kvarot",
+"d": "religious"
+},
+{
+"t": "Beit Lahiya",
+"d": "places"
+},
+{
+"t": "beit merkachat",
+"d": "health"
+},
+{
+"t": "beit midrash",
+"d": "religious"
+},
+{
+"t": "beit mishpat",
+"d": "bureaucracy"
+},
+{
+"t": "Beit Safafa",
+"d": "places"
+},
+{
+"t": "beit sefer",
+"d": "home"
+},
+{
+"t": "Beit She'an",
+"d": "places"
+},
+{
+"t": "Beit Shemesh",
+"d": "places"
+},
+{
+"t": "Beit Yosef",
+"d": "religious"
+},
+{
+"t": "Beit Zayit",
+"d": "places"
+},
+{
+"t": "Beitar Illit",
+"d": "places"
+},
+{
+"t": "Beitar Yerushalayim",
+"d": "everyday"
+},
+{
+"t": "bekarov",
+"d": "everyday"
+},
+{
+"t": "bekeitzur",
+"d": "everyday"
+},
+{
+"t": "Belzer Rebbe",
+"d": "religious"
+},
+{
+"t": "Ben Caspit",
+"d": "people"
+},
+{
+"t": "ben dod",
+"d": "home"
+},
+{
+"t": "Ben Gvir",
+"d": "people"
+},
+{
+"t": "Ben Ish Chai",
+"d": "religious"
+},
+{
+"t": "Ben Maimon",
+"d": "places"
+},
+{
+"t": "Ben Shemen",
+"d": "places"
+},
+{
+"t": "Ben Yehuda",
+"d": "places"
+},
+{
+"t": "Ben-Ami",
+"d": "people"
+},
+{
+"t": "Ben-Ari",
+"d": "people"
+},
+{
+"t": "Ben-David",
+"d": "people"
+},
+{
+"t": "Ben-Gurion University",
+"d": "brands"
+},
+{
+"t": "Ben-Haim",
+"d": "people"
+},
+{
+"t": "Ben-Shimon",
+"d": "people"
+},
+{
+"t": "Ben-Shushan",
+"d": "people"
+},
+{
+"t": "Ben-Yosef",
+"d": "people"
+},
+{
+"t": "Ben-Zvi",
+"d": "people"
+},
+{
+"t": "Benedict",
+"d": "food"
+},
+{
+"t": "Beni",
+"d": "people"
+},
+{
+"t": "Benjamin Netanyahu",
+"d": "people"
+},
+{
+"t": "Benny Gantz",
+"d": "people"
+},
+{
+"t": "benzin",
+"d": "transport"
+},
+{
+"t": "Bepanthen",
+"d": "health"
+},
+{
+"t": "Bereishis",
+"d": "religious"
+},
+{
+"t": "Bereishit",
+"d": "religious"
+},
+{
+"t": "berez",
+"d": "home"
+},
+{
+"t": "Berkowitz",
+"d": "people"
+},
+{
+"t": "besamim",
+"d": "religious"
+},
+{
+"t": "beseder",
+"d": "everyday"
+},
+{
+"t": "besha'a tova",
+"d": "everyday"
+},
+{
+"t": "Beshalach",
+"d": "religious"
+},
+{
+"t": "bet din",
+"d": "bureaucracy"
+},
+{
+"t": "betach",
+"d": "everyday"
+},
+{
+"t": "Betacorten",
+"d": "health"
+},
+{
+"t": "bete'avon",
+"d": "everyday"
+},
+{
+"t": "bevadai",
+"d": "everyday"
+},
+{
+"t": "bevakasha",
+"d": "transport"
+},
+{
+"t": "Beyachad",
+"d": "politics"
+},
+{
+"t": "beytza",
+"d": "food"
+},
+{
+"t": "Bezalel",
+"d": "brands"
+},
+{
+"t": "Bezalel Smotrich",
+"d": "people"
+},
+{
+"t": "Bezeq",
+"d": "home"
+},
+{
+"t": "Bibi",
+"d": "people"
+},
+{
+"t": "bichlal",
+"d": "everyday"
+},
+{
+"t": "bidok bitchoni",
+"d": "transport"
+},
+{
+"t": "Bikat Hayarden",
+"d": "places"
+},
+{
+"t": "bikur bayit",
+"d": "health"
+},
+{
+"t": "bikur cholim",
+"d": "health"
+},
+{
+"t": "Bikur Rofe",
+"d": "health"
+},
+{
+"t": "Binyamin",
+"d": "people"
+},
+{
+"t": "Binyamina",
+"d": "places"
+},
+{
+"t": "binyan",
+"d": "money"
+},
+{
+"t": "Binyanei Ha'uma",
+"d": "places"
+},
+{
+"t": "birchat hagomel",
+"d": "everyday"
+},
+{
+"t": "Birkas Hamazon",
+"d": "religious"
+},
+{
+"t": "Birkat Hamazon",
+"d": "religious"
+},
+{
+"t": "Birkat Kohanim",
+"d": "religious"
+},
+{
+"t": "bis hundert und tzvantzig",
+"d": "everyday"
+},
+{
+"t": "bishul",
+"d": "religious"
+},
+{
+"t": "bishul akum",
+"d": "religious"
+},
+{
+"t": "bishul Yisrael",
+"d": "religious"
+},
+{
+"t": "bishul Yisroel",
+"d": "religious"
+},
+{
+"t": "Bisli",
+"d": "food"
+},
+{
+"t": "Bissli",
+"d": "brands"
+},
+{
+"t": "Bit",
+"d": "brands"
+},
+{
+"t": "bitachon",
+"d": "army"
+},
+{
+"t": "Biton",
+"d": "people"
+},
+{
+"t": "bituach",
+"d": "health"
+},
+{
+"t": "bituach bayit",
+"d": "home"
+},
+{
+"t": "bituach briut",
+"d": "money"
+},
+{
+"t": "bituach chaim",
+"d": "money"
+},
+{
+"t": "bituach chova",
+"d": "money"
+},
+{
+"t": "Bituach Leumi",
+"d": "money"
+},
+{
+"t": "bituach makif",
+"d": "money"
+},
+{
+"t": "bituach mashkanta",
+"d": "money"
+},
+{
+"t": "bituach mashlim",
+"d": "health"
+},
+{
+"t": "bituach menahalim",
+"d": "money"
+},
+{
+"t": "bituach menhalim",
+"d": "money"
+},
+{
+"t": "bituach mivne",
+"d": "home"
+},
+{
+"t": "bituach nachasim",
+"d": "money"
+},
+{
+"t": "bituach refui",
+"d": "health"
+},
+{
+"t": "bituach shiniyim",
+"d": "money"
+},
+{
+"t": "bituach siud",
+"d": "health"
+},
+{
+"t": "bituach tchula",
+"d": "money"
+},
+{
+"t": "bituach tzad gimel",
+"d": "money"
+},
+{
+"t": "Bituach Yashir",
+"d": "brands"
+},
+{
+"t": "bitul berov",
+"d": "religious"
+},
+{
+"t": "bitul beshishim",
+"d": "religious"
+},
+{
+"t": "Bitzaron",
+"d": "places"
+},
+{
+"t": "blech",
+"d": "religious"
+},
+{
+"t": "bli ayin hara",
+"d": "everyday"
+},
+{
+"t": "bli neder",
+"d": "everyday"
+},
+{
+"t": "Bnei Akiva",
+"d": "home"
+},
+{
+"t": "Bnei Brak",
+"d": "places"
+},
+{
+"t": "Bo",
+"d": "religious"
+},
+{
+"t": "bo'i",
+"d": "everyday"
+},
+{
+"t": "bo'u",
+"d": "everyday"
+},
+{
+"t": "Boaz",
+"d": "people"
+},
+{
+"t": "Bograshov",
+"d": "places"
+},
+{
+"t": "boker",
+"d": "everyday"
+},
+{
+"t": "boker or",
+"d": "everyday"
+},
+{
+"t": "boker tov",
+"d": "everyday"
+},
+{
+"t": "Bondormin",
+"d": "health"
+},
+{
+"t": "boneh",
+"d": "religious"
+},
+{
+"t": "bore nefashot",
+"d": "religious"
+},
+{
+"t": "borer",
+"d": "religious"
+},
+{
+"t": "borerut",
+"d": "bureaucracy"
+},
+{
+"t": "Boruch Hashem",
+"d": "religious"
+},
+{
+"t": "botz",
+"d": "food"
+},
+{
+"t": "bourekas",
+"d": "food"
+},
+{
+"t": "bracha",
+"d": "everyday"
+},
+{
+"t": "bracha acharona",
+"d": "religious"
+},
+{
+"t": "bracha rishona",
+"d": "religious"
+},
+{
+"t": "brachos",
+"d": "religious"
+},
+{
+"t": "brachot",
+"d": "religious"
+},
+{
+"t": "Brechat Hameshushim",
+"d": "places"
+},
+{
+"t": "breicha",
+"d": "everyday"
+},
+{
+"t": "Breslov",
+"d": "religious"
+},
+{
+"t": "bris",
+"d": "religious"
+},
+{
+"t": "brit mila",
+"d": "religious"
+},
+{
+"t": "brocha",
+"d": "religious"
+},
+{
+"t": "bruto",
+"d": "money"
+},
+{
+"t": "bsis",
+"d": "army"
+},
+{
+"t": "bsorot tovot",
+"d": "everyday"
+},
+{
+"t": "Buchman",
+"d": "places"
+},
+{
+"t": "Bug",
+"d": "brands"
+},
+{
+"t": "bulgarit",
+"d": "brands"
+},
+{
+"t": "Burgeranch",
+"d": "brands"
+},
+{
+"t": "Caesarea",
+"d": "places"
+},
+{
+"t": "Cafe Greg",
+"d": "brands"
+},
+{
+"t": "cafe hafuch",
+"d": "food"
+},
+{
+"t": "Cafe Hillel",
+"d": "food"
+},
+{
+"t": "Cafe Joe",
+"d": "food"
+},
+{
+"t": "Cal",
+"d": "brands"
+},
+{
+"t": "Cal Auto",
+"d": "transport"
+},
+{
+"t": "Calcalist",
+"d": "brands"
+},
+{
+"t": "Cardiloc",
+"d": "health"
+},
+{
+"t": "Cardo",
+"d": "places"
+},
+{
+"t": "Carmel Winery",
+"d": "food"
+},
+{
+"t": "Carmi",
+"d": "people"
+},
+{
+"t": "Carrefour",
+"d": "brands"
+},
+{
+"t": "Cartia",
+"d": "health"
+},
+{
+"t": "Castro",
+"d": "brands"
+},
+{
+"t": "Cellcom",
+"d": "home"
+},
+{
+"t": "Cellopark",
+"d": "brands"
+},
+{
+"t": "Chabad",
+"d": "religious"
+},
+{
+"t": "chadar kosher",
+"d": "everyday"
+},
+{
+"t": "chadar lida",
+"d": "health"
+},
+{
+"t": "chadar miyun",
+"d": "health"
+},
+{
+"t": "chadar sheina",
+"d": "home"
+},
+{
+"t": "chadar sherut",
+"d": "home"
+},
+{
+"t": "chafif",
+"d": "everyday"
+},
+{
+"t": "chag",
+"d": "religious"
+},
+{
+"t": "chag kasher vesameach",
+"d": "everyday"
+},
+{
+"t": "chag Pesach sameach",
+"d": "everyday"
+},
+{
+"t": "chag sameach",
+"d": "everyday"
+},
+{
+"t": "chag urim sameach",
+"d": "everyday"
+},
+{
+"t": "chagim",
+"d": "religious"
+},
+{
+"t": "Chagit",
+"d": "people"
+},
+{
+"t": "chagora",
+"d": "transport"
+},
+{
+"t": "Chaim",
+"d": "people"
+},
+{
+"t": "chalaka",
+"d": "religious"
+},
+{
+"t": "chalav Yisrael",
+"d": "religious"
+},
+{
+"t": "chalavi",
+"d": "religious"
+},
+{
+"t": "chalitza",
+"d": "bureaucracy"
+},
+{
+"t": "chalomot ne'imim",
+"d": "everyday"
+},
+{
+"t": "cham",
+"d": "everyday"
+},
+{
+"t": "chamal",
+"d": "army"
+},
+{
+"t": "chametz",
+"d": "religious"
+},
+{
+"t": "chamin",
+"d": "food"
+},
+{
+"t": "Champion Motors",
+"d": "brands"
+},
+{
+"t": "chamsin",
+"d": "everyday"
+},
+{
+"t": "chamud",
+"d": "everyday"
+},
+{
+"t": "chamuda",
+"d": "everyday"
+},
+{
+"t": "chamutz",
+"d": "everyday"
+},
+{
+"t": "Chana",
+"d": "people"
+},
+{
+"t": "Chana Henkin",
+"d": "people"
+},
+{
+"t": "chanaya",
+"d": "transport"
+},
+{
+"t": "chanaya kfula",
+"d": "transport"
+},
+{
+"t": "chanaya pratit",
+"d": "money"
+},
+{
+"t": "Chanuka",
+"d": "religious"
+},
+{
+"t": "chanukiah",
+"d": "religious"
+},
+{
+"t": "chanut",
+"d": "food"
+},
+{
+"t": "chanut perachim",
+"d": "everyday"
+},
+{
+"t": "chanyon",
+"d": "transport"
+},
+{
+"t": "charedi",
+"d": "everyday"
+},
+{
+"t": "Charvot Barzel",
+"d": "places"
+},
+{
+"t": "chas v'sholom",
+"d": "religious"
+},
+{
+"t": "chas vechalila",
+"d": "everyday"
+},
+{
+"t": "chas veshalom",
+"d": "everyday"
+},
+{
+"t": "Chasam Sofer",
+"d": "religious"
+},
+{
+"t": "chashash",
+"d": "religious"
+},
+{
+"t": "chashmalai",
+"d": "home"
+},
+{
+"t": "chatan",
+"d": "religious"
+},
+{
+"t": "chatima",
+"d": "bureaucracy"
+},
+{
+"t": "chativat beinayim",
+"d": "home"
+},
+{
+"t": "Chativat Hachashmona'im",
+"d": "politics"
+},
+{
+"t": "chatufim",
+"d": "politics"
+},
+{
+"t": "chatul rechov",
+"d": "home"
+},
+{
+"t": "chatuna",
+"d": "home"
+},
+{
+"t": "chatzer",
+"d": "money"
+},
+{
+"t": "chatzi pensyon",
+"d": "transport"
+},
+{
+"t": "chatzilim",
+"d": "food"
+},
+{
+"t": "chatzot",
+"d": "everyday"
+},
+{
+"t": "chaval",
+"d": "everyday"
+},
+{
+"t": "chaval al hazman",
+"d": "everyday"
+},
+{
+"t": "chavat da'at",
+"d": "health"
+},
+{
+"t": "chaver",
+"d": "everyday"
+},
+{
+"t": "chavera",
+"d": "everyday"
+},
+{
+"t": "chaverim",
+"d": "everyday"
+},
+{
+"t": "chavila",
+"d": "brands"
+},
+{
+"t": "chavis",
+"d": "home"
+},
+{
+"t": "chavita",
+"d": "food"
+},
+{
+"t": "chavrusa",
+"d": "religious"
+},
+{
+"t": "chavruta",
+"d": "religious"
+},
+{
+"t": "Chaya",
+"d": "people"
+},
+{
+"t": "chayal",
+"d": "army"
+},
+{
+"t": "chayal boded",
+"d": "army"
+},
+{
+"t": "Chayei Sarah",
+"d": "religious"
+},
+{
+"t": "chazak",
+"d": "everyday"
+},
+{
+"t": "chazak uvaruch",
+"d": "everyday"
+},
+{
+"t": "chazak ve'ematz",
+"d": "everyday"
+},
+{
+"t": "chazan",
+"d": "religious"
+},
+{
+"t": "Chazon Ish",
+"d": "religious"
+},
+{
+"t": "Check Point",
+"d": "brands"
+},
+{
+"t": "cheder madregot",
+"d": "army"
+},
+{
+"t": "chelek",
+"d": "transport"
+},
+{
+"t": "chelka",
+"d": "money"
+},
+{
+"t": "Chermon",
+"d": "places"
+},
+{
+"t": "cherum",
+"d": "army"
+},
+{
+"t": "chesed",
+"d": "religious"
+},
+{
+"t": "cheshbon",
+"d": "bureaucracy"
+},
+{
+"t": "cheshbon osh",
+"d": "money"
+},
+{
+"t": "cheshbonit",
+"d": "bureaucracy"
+},
+{
+"t": "Cheshvan",
+"d": "religious"
+},
+{
+"t": "chevel kvisa",
+"d": "home"
+},
+{
+"t": "chevra",
+"d": "everyday"
+},
+{
+"t": "chevra kadisha",
+"d": "religious"
+},
+{
+"t": "Chevrat Hachashmal",
+"d": "brands"
+},
+{
+"t": "Chevrat Hashmal",
+"d": "home"
+},
+{
+"t": "chevre",
+"d": "everyday"
+},
+{
+"t": "chibur",
+"d": "brands"
+},
+{
+"t": "Chida",
+"d": "religious"
+},
+{
+"t": "chidush rishayon",
+"d": "transport"
+},
+{
+"t": "Chili Tropper",
+"d": "people"
+},
+{
+"t": "chillul Hashem",
+"d": "religious"
+},
+{
+"t": "chiloni",
+"d": "religious"
+},
+{
+"t": "chilutz",
+"d": "army"
+},
+{
+"t": "chimum",
+"d": "home"
+},
+{
+"t": "chinah",
+"d": "religious"
+},
+{
+"t": "chisun",
+"d": "health"
+},
+{
+"t": "chisun shapa'at",
+"d": "health"
+},
+{
+"t": "chisunim",
+"d": "health"
+},
+{
+"t": "chitulim",
+"d": "home"
+},
+{
+"t": "chiyuv",
+"d": "bureaucracy"
+},
+{
+"t": "chnun",
+"d": "everyday"
+},
+{
+"t": "chodesh",
+"d": "everyday"
+},
+{
+"t": "chodesh tov",
+"d": "everyday"
+},
+{
+"t": "chof",
+"d": "everyday"
+},
+{
+"t": "chofesh hagadol",
+"d": "home"
+},
+{
+"t": "chofesh Pesach",
+"d": "religious"
+},
+{
+"t": "Chofetz Chaim",
+"d": "religious"
+},
+{
+"t": "chofshi chodshi",
+"d": "transport"
+},
+{
+"t": "chok avoda",
+"d": "money"
+},
+{
+"t": "chok hagiyus",
+"d": "politics"
+},
+{
+"t": "chok yesod",
+"d": "politics"
+},
+{
+"t": "Chol Hamoed",
+"d": "everyday"
+},
+{
+"t": "cholah",
+"d": "health"
+},
+{
+"t": "choleh",
+"d": "health"
+},
+{
+"t": "cholent",
+"d": "food"
+},
+{
+"t": "cholov Yisroel",
+"d": "religious"
+},
+{
+"t": "chom",
+"d": "health"
+},
+{
+"t": "chool",
+"d": "everyday"
+},
+{
+"t": "choref",
+"d": "everyday"
+},
+{
+"t": "chosson",
+"d": "religious"
+},
+{
+"t": "chotemet",
+"d": "bureaucracy"
+},
+{
+"t": "chova",
+"d": "army"
+},
+{
+"t": "chovesh",
+"d": "health"
+},
+{
+"t": "choze",
+"d": "money"
+},
+{
+"t": "choze sechirut",
+"d": "money"
+},
+{
+"t": "chozeh avoda",
+"d": "money"
+},
+{
+"t": "chozeh ptuach",
+"d": "money"
+},
+{
+"t": "chozeh sachirut",
+"d": "home"
+},
+{
+"t": "chozer betshuva",
+"d": "religious"
+},
+{
+"t": "chraime",
+"d": "food"
+},
+{
+"t": "chufsha",
+"d": "money"
+},
+{
+"t": "chufshat leida",
+"d": "money"
+},
+{
+"t": "chufshat machala",
+"d": "health"
+},
+{
+"t": "chugim",
+"d": "home"
+},
+{
+"t": "Chukas",
+"d": "religious"
+},
+{
+"t": "Chukat",
+"d": "religious"
+},
+{
+"t": "Chumash",
+"d": "religious"
+},
+{
+"t": "chummusia",
+"d": "food"
+},
+{
+"t": "chumra",
+"d": "religious"
+},
+{
+"t": "chuppah",
+"d": "religious"
+},
+{
+"t": "chutz la'aretz",
+"d": "bureaucracy"
+},
+{
+"t": "Cibus",
+"d": "money"
+},
+{
+"t": "Cinema City",
+"d": "brands"
+},
+{
+"t": "Cipralex",
+"d": "health"
+},
+{
+"t": "CityPass",
+"d": "brands"
+},
+{
+"t": "Clal",
+"d": "brands"
+},
+{
+"t": "Clalit",
+"d": "health"
+},
+{
+"t": "Clalit Smile",
+"d": "health"
+},
+{
+"t": "Clonex",
+"d": "health"
+},
+{
+"t": "Cod-Acamol",
+"d": "health"
+},
+{
+"t": "Cofix",
+"d": "brands"
+},
+{
+"t": "Cohen",
+"d": "people"
+},
+{
+"t": "Coldex",
+"d": "health"
+},
+{
+"t": "Colmobil",
+"d": "brands"
+},
+{
+"t": "combina",
+"d": "everyday"
+},
+{
+"t": "Concerta",
+"d": "health"
+},
+{
+"t": "d'oraisa",
+"d": "religious"
+},
+{
+"t": "Daf Yomi",
+"d": "religious"
+},
+{
+"t": "Dafna",
+"d": "people"
+},
+{
+"t": "dafuk",
+"d": "everyday"
+},
+{
+"t": "Dahan",
+"d": "people"
+},
+{
+"t": "dai",
+"d": "everyday"
+},
+{
+"t": "daka",
+"d": "everyday"
+},
+{
+"t": "dakot",
+"d": "brands"
+},
+{
+"t": "daleket",
+"d": "health"
+},
+{
+"t": "Dalia",
+"d": "people"
+},
+{
+"t": "dalkat garon",
+"d": "health"
+},
+{
+"t": "dalkat oznayim",
+"d": "health"
+},
+{
+"t": "dalkat re'ot",
+"d": "health"
+},
+{
+"t": "Dalton",
+"d": "food"
+},
+{
+"t": "Dan Illouz",
+"d": "people"
+},
+{
+"t": "Dana-Dwek",
+"d": "health"
+},
+{
+"t": "Dancing Camel",
+"d": "food"
+},
+{
+"t": "Dani",
+"d": "people"
+},
+{
+"t": "Daniel",
+"d": "religious"
+},
+{
+"t": "Danny Kushmaro",
+"d": "people"
+},
+{
+"t": "Danny Levy",
+"d": "people"
+},
+{
+"t": "darkon",
+"d": "bureaucracy"
+},
+{
+"t": "dati",
+"d": "everyday"
+},
+{
+"t": "dati leumi",
+"d": "religious"
+},
+{
+"t": "davar sheyesh lo matirin",
+"d": "religious"
+},
+{
+"t": "daven",
+"d": "religious"
+},
+{
+"t": "David Zini",
+"d": "people"
+},
+{
+"t": "David's Village",
+"d": "places"
+},
+{
+"t": "davka",
+"d": "everyday"
+},
+{
+"t": "dayan",
+"d": "bureaucracy"
+},
+{
+"t": "Degania",
+"d": "places"
+},
+{
+"t": "Degel Hatorah",
+"d": "politics"
+},
+{
+"t": "Deir al-Balah",
+"d": "places"
+},
+{
+"t": "delek",
+"d": "transport"
+},
+{
+"t": "Delta Galil",
+"d": "brands"
+},
+{
+"t": "Deni Avdija",
+"d": "people"
+},
+{
+"t": "Denya",
+"d": "places"
+},
+{
+"t": "derabanan",
+"d": "religious"
+},
+{
+"t": "derech",
+"d": "transport"
+},
+{
+"t": "Derech Beit Lechem",
+"d": "places"
+},
+{
+"t": "Derech Hevron",
+"d": "places"
+},
+{
+"t": "Derech Menachem Begin",
+"d": "places"
+},
+{
+"t": "Derech Shechem",
+"d": "places"
+},
+{
+"t": "derech tzleha",
+"d": "transport"
+},
+{
+"t": "Deri",
+"d": "people"
+},
+{
+"t": "Devarim",
+"d": "religious"
+},
+{
+"t": "Dexamol",
+"d": "health"
+},
+{
+"t": "Dexcel",
+"d": "brands"
+},
+{
+"t": "dgima",
+"d": "health"
+},
+{
+"t": "dikanat hastudentim",
+"d": "home"
+},
+{
+"t": "Dikla",
+"d": "people"
+},
+{
+"t": "Dimona",
+"d": "places"
+},
+{
+"t": "dina demalchuta dina",
+"d": "religious"
+},
+{
+"t": "dira",
+"d": "home"
+},
+{
+"t": "Dira Behanacha",
+"d": "money"
+},
+{
+"t": "dira meruhetet",
+"d": "money"
+},
+{
+"t": "dira yad shniya",
+"d": "money"
+},
+{
+"t": "dirat gag",
+"d": "home"
+},
+{
+"t": "dirat gan",
+"d": "home"
+},
+{
+"t": "dirat kablan",
+"d": "money"
+},
+{
+"t": "dirot",
+"d": "home"
+},
+{
+"t": "Discount",
+"d": "brands"
+},
+{
+"t": "diskit",
+"d": "army"
+},
+{
+"t": "Divrei Hayamim",
+"d": "religious"
+},
+{
+"t": "diyur",
+"d": "bureaucracy"
+},
+{
+"t": "diyur mugan",
+"d": "health"
+},
+{
+"t": "Dizengoff",
+"d": "places"
+},
+{
+"t": "dli",
+"d": "home"
+},
+{
+"t": "dmei avtala",
+"d": "money"
+},
+{
+"t": "dmei chanaya",
+"d": "transport"
+},
+{
+"t": "dmei Chanuka",
+"d": "home"
+},
+{
+"t": "dmei chufsha",
+"d": "money"
+},
+{
+"t": "dmei gan",
+"d": "home"
+},
+{
+"t": "dmei havra'a",
+"d": "money"
+},
+{
+"t": "dmei havraa",
+"d": "money"
+},
+{
+"t": "dmei kvish",
+"d": "transport"
+},
+{
+"t": "dmei leida",
+"d": "money"
+},
+{
+"t": "dmei machala",
+"d": "money"
+},
+{
+"t": "dmei mafteach",
+"d": "money"
+},
+{
+"t": "dmei nesia",
+"d": "transport"
+},
+{
+"t": "dmei nezek",
+"d": "bureaucracy"
+},
+{
+"t": "dmei nihul",
+"d": "money"
+},
+{
+"t": "dmei peilut",
+"d": "money"
+},
+{
+"t": "dmei sechirut",
+"d": "money"
+},
+{
+"t": "dmei tivuch",
+"d": "money"
+},
+{
+"t": "dmei tza'ar",
+"d": "bureaucracy"
+},
+{
+"t": "doach",
+"d": "transport"
+},
+{
+"t": "doach chaniya",
+"d": "transport"
+},
+{
+"t": "doar",
+"d": "everyday"
+},
+{
+"t": "doar beinleumi",
+"d": "health"
+},
+{
+"t": "Doar Israel",
+"d": "brands"
+},
+{
+"t": "doar mahir",
+"d": "health"
+},
+{
+"t": "doar rishum",
+"d": "health"
+},
+{
+"t": "doch ma'am",
+"d": "money"
+},
+{
+"t": "doch shnati",
+"d": "money"
+},
+{
+"t": "dod",
+"d": "everyday"
+},
+{
+"t": "doda",
+"d": "everyday"
+},
+{
+"t": "dodim",
+"d": "home"
+},
+{
+"t": "Dor Alon",
+"d": "brands"
+},
+{
+"t": "Doron",
+"d": "people"
+},
+{
+"t": "Dov",
+"d": "people"
+},
+{
+"t": "Dov Lando",
+"d": "people"
+},
+{
+"t": "Dov Lior",
+"d": "people"
+},
+{
+"t": "du-mishpachti",
+"d": "home"
+},
+{
+"t": "dud hashmal",
+"d": "home"
+},
+{
+"t": "dud shemesh",
+"d": "home"
+},
+{
+"t": "Dudi Amsalem",
+"d": "people"
+},
+{
+"t": "Dudu",
+"d": "people"
+},
+{
+"t": "Dudu Topaz",
+"d": "people"
+},
+{
+"t": "dugri",
+"d": "everyday"
+},
+{
+"t": "Duvdevan",
+"d": "politics"
+},
+{
+"t": "dvar Torah",
+"d": "religious"
+},
+{
+"t": "Dvir",
+"d": "people"
+},
+{
+"t": "Eden",
+"d": "people"
+},
+{
+"t": "Eden Ben Zaken",
+"d": "people"
+},
+{
+"t": "Eden Golan",
+"d": "people"
+},
+{
+"t": "Eden Teva Market",
+"d": "food"
+},
+{
+"t": "Edri",
+"d": "people"
+},
+{
+"t": "edut",
+"d": "bureaucracy"
+},
+{
+"t": "Effie Defrin",
+"d": "people"
+},
+{
+"t": "Efrat",
+"d": "people"
+},
+{
+"t": "Efrat Rayten",
+"d": "people"
+},
+{
+"t": "efshar",
+"d": "everyday"
+},
+{
+"t": "Egged",
+"d": "transport"
+},
+{
+"t": "Egozi",
+"d": "food"
+},
+{
+"t": "Ehud",
+"d": "people"
+},
+{
+"t": "Eicha",
+"d": "religious"
+},
+{
+"t": "Eikev",
+"d": "religious"
+},
+{
+"t": "Eilat",
+"d": "places"
+},
+{
+"t": "Ein Avdat",
+"d": "places"
+},
+{
+"t": "ein ba'aya",
+"d": "everyday"
+},
+{
+"t": "ein bishul achar bishul",
+"d": "religious"
+},
+{
+"t": "Ein Bokek",
+"d": "places"
+},
+{
+"t": "ein davar",
+"d": "everyday"
+},
+{
+"t": "Ein Feshcha",
+"d": "places"
+},
+{
+"t": "Ein Gedi",
+"d": "places"
+},
+{
+"t": "Ein Gev",
+"d": "places"
+},
+{
+"t": "Ein Harod",
+"d": "places"
+},
+{
+"t": "Ein Hemed",
+"d": "places"
+},
+{
+"t": "Ein Hod",
+"d": "places"
+},
+{
+"t": "Ein Kerem",
+"d": "places"
+},
+{
+"t": "ein li koach",
+"d": "everyday"
+},
+{
+"t": "ein li musag",
+"d": "everyday"
+},
+{
+"t": "ein li zman",
+"d": "everyday"
+},
+{
+"t": "ein matzav",
+"d": "everyday"
+},
+{
+"t": "ein mila",
+"d": "everyday"
+},
+{
+"t": "Ein Prat",
+"d": "places"
+},
+{
+"t": "Einat Wilf",
+"d": "people"
+},
+{
+"t": "Einav",
+"d": "people"
+},
+{
+"t": "eiru'a bitchoni",
+"d": "army"
+},
+{
+"t": "Eisenkot",
+"d": "people"
+},
+{
+"t": "Eitan",
+"d": "people"
+},
+{
+"t": "Eitanim",
+"d": "health"
+},
+{
+"t": "eize",
+"d": "everyday"
+},
+{
+"t": "eize kef",
+"d": "everyday"
+},
+{
+"t": "eizo",
+"d": "everyday"
+},
+{
+"t": "El Al",
+"d": "brands"
+},
+{
+"t": "El Malei Rachamim",
+"d": "religious"
+},
+{
+"t": "Elad",
+"d": "people"
+},
+{
+"t": "Elazar",
+"d": "places"
+},
+{
+"t": "Elazar Stern",
+"d": "people"
+},
+{
+"t": "Elbaz",
+"d": "people"
+},
+{
+"t": "Elbit",
+"d": "brands"
+},
+{
+"t": "Elchanan",
+"d": "people"
+},
+{
+"t": "Eldan",
+"d": "brands"
+},
+{
+"t": "Eli",
+"d": "people"
+},
+{
+"t": "Eli Cohen",
+"d": "people"
+},
+{
+"t": "Eli Sharabi",
+"d": "people"
+},
+{
+"t": "Eliezer",
+"d": "people"
+},
+{
+"t": "Elior",
+"d": "people"
+},
+{
+"t": "Elisha",
+"d": "people"
+},
+{
+"t": "Elisheva",
+"d": "people"
+},
+{
+"t": "Elite",
+"d": "brands"
+},
+{
+"t": "Elkana",
+"d": "places"
+},
+{
+"t": "Elkana Federman",
+"d": "people"
+},
+{
+"t": "Elkayam",
+"d": "people"
+},
+{
+"t": "Ella",
+"d": "people"
+},
+{
+"t": "Eltroxin",
+"d": "health"
+},
+{
+"t": "Elul",
+"d": "religious"
+},
+{
+"t": "Emek Ha'ela",
+"d": "places"
+},
+{
+"t": "Emek Hamatzleva",
+"d": "places"
+},
+{
+"t": "Emek Hefer",
+"d": "places"
+},
+{
+"t": "Emek Refaim",
+"d": "places"
+},
+{
+"t": "Emek Yizrael",
+"d": "places"
+},
+{
+"t": "emet",
+"d": "everyday"
+},
+{
+"t": "Emor",
+"d": "religious"
+},
+{
+"t": "Enaladex",
+"d": "health"
+},
+{
+"t": "Eran Zahavi",
+"d": "people"
+},
+{
+"t": "Erel Segal",
+"d": "people"
+},
+{
+"t": "Eretz Nehederet",
+"d": "people"
+},
+{
+"t": "erev",
+"d": "everyday"
+},
+{
+"t": "erev chag",
+"d": "everyday"
+},
+{
+"t": "Erev Pesach",
+"d": "religious"
+},
+{
+"t": "Erev Shabbat",
+"d": "religious"
+},
+{
+"t": "erev tov",
+"d": "everyday"
+},
+{
+"t": "Erez",
+"d": "people"
+},
+{
+"t": "eruv",
+"d": "religious"
+},
+{
+"t": "eruv tavshilin",
+"d": "religious"
+},
+{
+"t": "esrog",
+"d": "religious"
+},
+{
+"t": "Esti",
+"d": "people"
+},
+{
+"t": "etmol",
+"d": "everyday"
+},
+{
+"t": "etrog",
+"d": "religious"
+},
+{
+"t": "Even Sapir",
+"d": "places"
+},
+{
+"t": "Even Yehuda",
+"d": "places"
+},
+{
+"t": "Eyal",
+"d": "people"
+},
+{
+"t": "Eyal Golan",
+"d": "people"
+},
+{
+"t": "Eyal Kitzis",
+"d": "people"
+},
+{
+"t": "Eyal Zamir",
+"d": "people"
+},
+{
+"t": "Ezer Mizion",
+"d": "health"
+},
+{
+"t": "Ezra",
+"d": "religious"
+},
+{
+"t": "ezrach",
+"d": "bureaucracy"
+},
+{
+"t": "fadicha",
+"d": "everyday"
+},
+{
+"t": "Falafel Hakosem",
+"d": "food"
+},
+{
+"t": "Feldman",
+"d": "people"
+},
+{
+"t": "Fenistil",
+"d": "health"
+},
+{
+"t": "Fiverr",
+"d": "brands"
+},
+{
+"t": "fizioterapia",
+"d": "health"
+},
+{
+"t": "Fleur Hassan-Nahoum",
+"d": "people"
+},
+{
+"t": "Flixonase",
+"d": "health"
+},
+{
+"t": "Florentin",
+"d": "places"
+},
+{
+"t": "Fox",
+"d": "brands"
+},
+{
+"t": "freier",
+"d": "everyday"
+},
+{
+"t": "Freshmarket",
+"d": "food"
+},
+{
+"t": "Friedman",
+"d": "people"
+},
+{
+"t": "Frishman",
+"d": "places"
+},
+{
+"t": "frum",
+"d": "everyday"
+},
+{
+"t": "Fucicort",
+"d": "health"
+},
+{
+"t": "Fucidin",
+"d": "health"
+},
+{
+"t": "ful",
+"d": "food"
+},
+{
+"t": "ful medames",
+"d": "food"
+},
+{
+"t": "Gabay",
+"d": "people"
+},
+{
+"t": "gabbai",
+"d": "religious"
+},
+{
+"t": "Gaby Lasky",
+"d": "people"
+},
+{
+"t": "Gadi",
+"d": "people"
+},
+{
+"t": "Gadi Eisenkot",
+"d": "people"
+},
+{
+"t": "Gadi Yevarkan",
+"d": "people"
+},
+{
+"t": "Gal",
+"d": "people"
+},
+{
+"t": "gal chom",
+"d": "everyday"
+},
+{
+"t": "Galatz",
+"d": "army"
+},
+{
+"t": "Galei Tzahal",
+"d": "brands"
+},
+{
+"t": "galgal",
+"d": "transport"
+},
+{
+"t": "Galgalatz",
+"d": "army"
+},
+{
+"t": "Gali Baharav-Miara",
+"d": "people"
+},
+{
+"t": "Galil",
+"d": "places"
+},
+{
+"t": "Galil Elyon",
+"d": "places"
+},
+{
+"t": "Galit",
+"d": "people"
+},
+{
+"t": "Gamadim",
+"d": "food"
+},
+{
+"t": "Gamla",
+"d": "places"
+},
+{
+"t": "gan",
+"d": "home"
+},
+{
+"t": "gan chova",
+"d": "home"
+},
+{
+"t": "Gan Sacher",
+"d": "places"
+},
+{
+"t": "gan shaashuim",
+"d": "transport"
+},
+{
+"t": "gan trom chova",
+"d": "home"
+},
+{
+"t": "Gan Yavne",
+"d": "places"
+},
+{
+"t": "gan yeladim",
+"d": "home"
+},
+{
+"t": "Ganei Tikva",
+"d": "places"
+},
+{
+"t": "ganenet",
+"d": "home"
+},
+{
+"t": "ganon",
+"d": "home"
+},
+{
+"t": "Gantz",
+"d": "people"
+},
+{
+"t": "Garin Tzabar",
+"d": "army"
+},
+{
+"t": "garinim",
+"d": "food"
+},
+{
+"t": "Gav Ha'uma",
+"d": "people"
+},
+{
+"t": "Gaviscon",
+"d": "health"
+},
+{
+"t": "gdud",
+"d": "army"
+},
+{
+"t": "gebrokts",
+"d": "religious"
+},
+{
+"t": "Gedera",
+"d": "places"
+},
+{
+"t": "gelila",
+"d": "religious"
+},
+{
+"t": "Gemara",
+"d": "religious"
+},
+{
+"t": "Gemara shiur",
+"d": "religious"
+},
+{
+"t": "gerer",
+"d": "transport"
+},
+{
+"t": "gerira",
+"d": "transport"
+},
+{
+"t": "geshem",
+"d": "everyday"
+},
+{
+"t": "Gett",
+"d": "transport"
+},
+{
+"t": "Geula",
+"d": "places"
+},
+{
+"t": "gever",
+"d": "everyday"
+},
+{
+"t": "gevinat akum",
+"d": "religious"
+},
+{
+"t": "gevs",
+"d": "health"
+},
+{
+"t": "gibush",
+"d": "army"
+},
+{
+"t": "Gideon Sa'ar",
+"d": "people"
+},
+{
+"t": "Gil",
+"d": "people"
+},
+{
+"t": "Gila Gamliel",
+"d": "people"
+},
+{
+"t": "Gilad",
+"d": "people"
+},
+{
+"t": "Gilad Erdan",
+"d": "people"
+},
+{
+"t": "Gilad Kariv",
+"d": "people"
+},
+{
+"t": "Gilboa",
+"d": "places"
+},
+{
+"t": "Gili",
+"d": "people"
+},
+{
+"t": "Gilo",
+"d": "places"
+},
+{
+"t": "gimelim",
+"d": "health"
+},
+{
+"t": "gimlat siud",
+"d": "health"
+},
+{
+"t": "gina tziburit",
+"d": "transport"
+},
+{
+"t": "ginekolog",
+"d": "health"
+},
+{
+"t": "Ginot Ha'ir",
+"d": "places"
+},
+{
+"t": "gisha",
+"d": "brands"
+},
+{
+"t": "Givat Hatachmoshet",
+"d": "places"
+},
+{
+"t": "Givat Hatzarfatit",
+"d": "places"
+},
+{
+"t": "Givat Mordechai",
+"d": "places"
+},
+{
+"t": "Givat Ram",
+"d": "places"
+},
+{
+"t": "Givat Sharett",
+"d": "places"
+},
+{
+"t": "Givat Shaul",
+"d": "places"
+},
+{
+"t": "Givat Shmuel",
+"d": "places"
+},
+{
+"t": "Givat Ze'ev",
+"d": "places"
+},
+{
+"t": "Givatayim",
+"d": "places"
+},
+{
+"t": "Givati",
+"d": "army"
+},
+{
+"t": "giyur",
+"d": "religious"
+},
+{
+"t": "giyus",
+"d": "army"
+},
+{
+"t": "gizbar",
+"d": "money"
+},
+{
+"t": "glida",
+"d": "everyday"
+},
+{
+"t": "Globes",
+"d": "brands"
+},
+{
+"t": "Glucomin",
+"d": "health"
+},
+{
+"t": "gmar chatima tova",
+"d": "everyday"
+},
+{
+"t": "Golan",
+"d": "people"
+},
+{
+"t": "Golan Heights Winery",
+"d": "food"
+},
+{
+"t": "Golan Telecom",
+"d": "brands"
+},
+{
+"t": "Golani",
+"d": "army"
+},
+{
+"t": "Gold",
+"d": "people"
+},
+{
+"t": "Golda Meir",
+"d": "places"
+},
+{
+"t": "Goldberg",
+"d": "people"
+},
+{
+"t": "Goldknopf",
+"d": "people"
+},
+{
+"t": "Goldstar",
+"d": "brands"
+},
+{
+"t": "Gonenim",
+"d": "places"
+},
+{
+"t": "Good Pharm",
+"d": "brands"
+},
+{
+"t": "Gordon",
+"d": "places"
+},
+{
+"t": "GoTo",
+"d": "transport"
+},
+{
+"t": "Gottex",
+"d": "brands"
+},
+{
+"t": "Gra",
+"d": "religious"
+},
+{
+"t": "Greenberg",
+"d": "people"
+},
+{
+"t": "Gulliver",
+"d": "brands"
+},
+{
+"t": "Gush Dan",
+"d": "places"
+},
+{
+"t": "Gush Etzion",
+"d": "places"
+},
+{
+"t": "Gush Katif lettuce",
+"d": "religious"
+},
+{
+"t": "gut Shabbos",
+"d": "everyday"
+},
+{
+"t": "gut yontif",
+"d": "everyday"
+},
+{
+"t": "gveret",
+"d": "everyday"
+},
+{
+"t": "gvina levana",
+"d": "food"
+},
+{
+"t": "gvina tzehuba",
+"d": "food"
+},
+{
+"t": "Ha'ach Hagadol",
+"d": "people"
+},
+{
+"t": "ha'arachat chozeh",
+"d": "money"
+},
+{
+"t": "ha'arachat tlut",
+"d": "health"
+},
+{
+"t": "Ha'avoda",
+"d": "politics"
+},
+{
+"t": "Ha'azinu",
+"d": "religious"
+},
+{
+"t": "Haaretz",
+"d": "brands"
+},
+{
+"t": "habibi",
+"d": "everyday"
+},
+{
+"t": "Habima",
+"d": "places"
+},
+{
+"t": "Hachshara",
+"d": "brands"
+},
+{
+"t": "hachzar hotzaot",
+"d": "money"
+},
+{
+"t": "Hadad",
+"d": "people"
+},
+{
+"t": "Hadar",
+"d": "people"
+},
+{
+"t": "Hadar Yosef",
+"d": "places"
+},
+{
+"t": "Hadas",
+"d": "people"
+},
+{
+"t": "Hadash",
+"d": "politics"
+},
+{
+"t": "Hadassah",
+"d": "health"
+},
+{
+"t": "Hadassah Ein Kerem",
+"d": "health"
+},
+{
+"t": "Hadera",
+"d": "places"
+},
+{
+"t": "hadlakas neiros",
+"d": "religious"
+},
+{
+"t": "hadlakat nerot",
+"d": "religious"
+},
+{
+"t": "hafgana",
+"d": "politics"
+},
+{
+"t": "hafka'a",
+"d": "bureaucracy"
+},
+{
+"t": "hafnaya",
+"d": "health"
+},
+{
+"t": "hafnayot",
+"d": "health"
+},
+{
+"t": "hafrasha",
+"d": "money"
+},
+{
+"t": "hafrashat challah",
+"d": "religious"
+},
+{
+"t": "hafsakat chashmal",
+"d": "home"
+},
+{
+"t": "hafsakat esh",
+"d": "army"
+},
+{
+"t": "Haftara",
+"d": "religious"
+},
+{
+"t": "haftarah",
+"d": "religious"
+},
+{
+"t": "haftorah",
+"d": "religious"
+},
+{
+"t": "hafuch",
+"d": "food"
+},
+{
+"t": "hafuch gadol",
+"d": "food"
+},
+{
+"t": "hafuch katan",
+"d": "food"
+},
+{
+"t": "hafuga",
+"d": "politics"
+},
+{
+"t": "hag'ala",
+"d": "religious"
+},
+{
+"t": "hagbaha",
+"d": "religious"
+},
+{
+"t": "Haggada",
+"d": "religious"
+},
+{
+"t": "Hagihon",
+"d": "home"
+},
+{
+"t": "Hagit",
+"d": "people"
+},
+{
+"t": "Hagoshrim",
+"d": "places"
+},
+{
+"t": "hagrala",
+"d": "money"
+},
+{
+"t": "Haifa",
+"d": "places"
+},
+{
+"t": "Haifa University",
+"d": "brands"
+},
+{
+"t": "Haim Katz",
+"d": "people"
+},
+{
+"t": "hakafos",
+"d": "religious"
+},
+{
+"t": "hakafot",
+"d": "religious"
+},
+{
+"t": "hakamat matzeva",
+"d": "religious"
+},
+{
+"t": "hakaot",
+"d": "health"
+},
+{
+"t": "hakarat to'arim",
+"d": "bureaucracy"
+},
+{
+"t": "hakav ha'adom",
+"d": "transport"
+},
+{
+"t": "Hakav Hatzahov",
+"d": "places"
+},
+{
+"t": "Hakav Hayarok",
+"d": "places"
+},
+{
+"t": "hakhanah",
+"d": "home"
+},
+{
+"t": "Hakirya",
+"d": "army"
+},
+{
+"t": "Hakochav Haba",
+"d": "people"
+},
+{
+"t": "hakol beseder",
+"d": "everyday"
+},
+{
+"t": "hakol tov",
+"d": "everyday"
+},
+{
+"t": "Hakrayot",
+"d": "places"
+},
+{
+"t": "halacha",
+"d": "religious"
+},
+{
+"t": "halevai",
+"d": "everyday"
+},
+{
+"t": "Halevi",
+"d": "people"
+},
+{
+"t": "halichon",
+"d": "health"
+},
+{
+"t": "Halisa",
+"d": "places"
+},
+{
+"t": "Hallel",
+"d": "religious"
+},
+{
+"t": "halva",
+"d": "food"
+},
+{
+"t": "hamakom yenachem",
+"d": "religious"
+},
+{
+"t": "hamakom yenachem etchem",
+"d": "everyday"
+},
+{
+"t": "Hamakor",
+"d": "people"
+},
+{
+"t": "hamarat rishayon",
+"d": "bureaucracy"
+},
+{
+"t": "Hamasger",
+"d": "places"
+},
+{
+"t": "Hamashbir",
+"d": "food"
+},
+{
+"t": "Hamashbir Lazarchan",
+"d": "food"
+},
+{
+"t": "Hamat Gader",
+"d": "places"
+},
+{
+"t": "Hamiluimnikim",
+"d": "politics"
+},
+{
+"t": "hanacha",
+"d": "money"
+},
+{
+"t": "hanachot",
+"d": "food"
+},
+{
+"t": "Hanan Ben Ari",
+"d": "people"
+},
+{
+"t": "Hananel",
+"d": "people"
+},
+{
+"t": "hanchayot",
+"d": "politics"
+},
+{
+"t": "Hanevi'im",
+"d": "places"
+},
+{
+"t": "hanhala",
+"d": "money"
+},
+{
+"t": "Hapalmach",
+"d": "places"
+},
+{
+"t": "Hapiratim",
+"d": "politics"
+},
+{
+"t": "Hapoalim",
+"d": "money"
+},
+{
+"t": "Hapoel Yerushalayim",
+"d": "everyday"
+},
+{
+"t": "Haptucha",
+"d": "home"
+},
+{
+"t": "Har Adar",
+"d": "places"
+},
+{
+"t": "Har Bental",
+"d": "places"
+},
+{
+"t": "Har Bracha",
+"d": "food"
+},
+{
+"t": "Har Gilo",
+"d": "places"
+},
+{
+"t": "Har Habayit",
+"d": "places"
+},
+{
+"t": "Har Hamenuchot",
+"d": "places"
+},
+{
+"t": "Har Hamor",
+"d": "places"
+},
+{
+"t": "Har Hatzofim",
+"d": "health"
+},
+{
+"t": "Har Hazeitim",
+"d": "places"
+},
+{
+"t": "Har Herzl",
+"d": "places"
+},
+{
+"t": "Har Hevron",
+"d": "places"
+},
+{
+"t": "Har Homa",
+"d": "places"
+},
+{
+"t": "Har Hotzvim",
+"d": "places"
+},
+{
+"t": "Har Nof",
+"d": "places"
+},
+{
+"t": "Har Tavor",
+"d": "places"
+},
+{
+"t": "harchakot",
+"d": "religious"
+},
+{
+"t": "hardama",
+"d": "health"
+},
+{
+"t": "Harel",
+"d": "people"
+},
+{
+"t": "Hareshima Hameshutefet",
+"d": "politics"
+},
+{
+"t": "harif",
+"d": "food"
+},
+{
+"t": "Harish",
+"d": "places"
+},
+{
+"t": "harshama",
+"d": "bureaucracy"
+},
+{
+"t": "hasa'ot",
+"d": "home"
+},
+{
+"t": "hasaga",
+"d": "bureaucracy"
+},
+{
+"t": "hasava miktzo'it",
+"d": "home"
+},
+{
+"t": "hasbara",
+"d": "politics"
+},
+{
+"t": "Hashalom",
+"d": "transport"
+},
+{
+"t": "hashavat aveida",
+"d": "religious"
+},
+{
+"t": "hashbonit",
+"d": "food"
+},
+{
+"t": "Hashem yishmor",
+"d": "everyday"
+},
+{
+"t": "Hashirut Hameteorologi",
+"d": "everyday"
+},
+{
+"t": "hashlamot",
+"d": "home"
+},
+{
+"t": "hashmal",
+"d": "home"
+},
+{
+"t": "Hashmonaim",
+"d": "places"
+},
+{
+"t": "Hatachana",
+"d": "places"
+},
+{
+"t": "hatamot",
+"d": "everyday"
+},
+{
+"t": "hatarah",
+"d": "army"
+},
+{
+"t": "hatarah mukdemet",
+"d": "army"
+},
+{
+"t": "hatavot",
+"d": "bureaucracy"
+},
+{
+"t": "Hatikva",
+"d": "places"
+},
+{
+"t": "hativa",
+"d": "everyday"
+},
+{
+"t": "hatra'a mukdemet",
+"d": "politics"
+},
+{
+"t": "hatzaa",
+"d": "money"
+},
+{
+"t": "hatzaga",
+"d": "home"
+},
+{
+"t": "hatzala",
+"d": "health"
+},
+{
+"t": "Hatzi Chinam",
+"d": "brands"
+},
+{
+"t": "Hatzionut Hadatit",
+"d": "politics"
+},
+{
+"t": "Hatzor Haglilit",
+"d": "places"
+},
+{
+"t": "havara banka'it",
+"d": "bureaucracy"
+},
+{
+"t": "havdalah",
+"d": "religious"
+},
+{
+"t": "Hayarkon",
+"d": "places"
+},
+{
+"t": "hayoetzet hamishpatit",
+"d": "politics"
+},
+{
+"t": "hayom",
+"d": "everyday"
+},
+{
+"t": "hazmana",
+"d": "bureaucracy"
+},
+{
+"t": "Hebrew University",
+"d": "brands"
+},
+{
+"t": "hechsher",
+"d": "religious"
+},
+{
+"t": "hechzer",
+"d": "health"
+},
+{
+"t": "hechzer mas",
+"d": "money"
+},
+{
+"t": "heder",
+"d": "religious"
+},
+{
+"t": "hefsed merubeh",
+"d": "religious"
+},
+{
+"t": "hefsek tahara",
+"d": "religious"
+},
+{
+"t": "herayon",
+"d": "health"
+},
+{
+"t": "Hermon",
+"d": "places"
+},
+{
+"t": "Herodion",
+"d": "places"
+},
+{
+"t": "Herzl",
+"d": "places"
+},
+{
+"t": "Herzliya",
+"d": "places"
+},
+{
+"t": "Herzliya Marina",
+"d": "places"
+},
+{
+"t": "Herzliya Pituach",
+"d": "places"
+},
+{
+"t": "Herzog",
+"d": "health"
+},
+{
+"t": "hesder",
+"d": "religious"
+},
+{
+"t": "heshbon chisachon",
+"d": "money"
+},
+{
+"t": "heshbon ishi",
+"d": "money"
+},
+{
+"t": "heshbon iska",
+"d": "money"
+},
+{
+"t": "heshbon osek",
+"d": "money"
+},
+{
+"t": "heshbonit mas",
+"d": "money"
+},
+{
+"t": "heshbonit mas kabala",
+"d": "money"
+},
+{
+"t": "heskem",
+"d": "health"
+},
+{
+"t": "heskem gerushin",
+"d": "bureaucracy"
+},
+{
+"t": "heskem kolektivi",
+"d": "money"
+},
+{
+"t": "heskem mamon",
+"d": "bureaucracy"
+},
+{
+"t": "heskem odafim",
+"d": "politics"
+},
+{
+"t": "hesped",
+"d": "home"
+},
+{
+"t": "Hess",
+"d": "places"
+},
+{
+"t": "heter",
+"d": "bureaucracy"
+},
+{
+"t": "heter bniya",
+"d": "money"
+},
+{
+"t": "heter ha'asaka",
+"d": "health"
+},
+{
+"t": "heter mechira",
+"d": "religious"
+},
+{
+"t": "Hila",
+"d": "people"
+},
+{
+"t": "Hilan",
+"d": "brands"
+},
+{
+"t": "hilbeh",
+"d": "food"
+},
+{
+"t": "Hillel",
+"d": "people"
+},
+{
+"t": "Hillel Yaffe",
+"d": "health"
+},
+{
+"t": "hishtatfut atzmit",
+"d": "health"
+},
+{
+"t": "Histadrut",
+"d": "money"
+},
+{
+"t": "Histafed",
+"d": "health"
+},
+{
+"t": "histaglut",
+"d": "bureaucracy"
+},
+{
+"t": "hit-hayvut",
+"d": "health"
+},
+{
+"t": "hitchadshut ironit",
+"d": "money"
+},
+{
+"t": "hitchaivut",
+"d": "health"
+},
+{
+"t": "hitkashrut",
+"d": "brands"
+},
+{
+"t": "hitnatkut",
+"d": "home"
+},
+{
+"t": "hitpatchut hayeled",
+"d": "health"
+},
+{
+"t": "hitpatrut",
+"d": "money"
+},
+{
+"t": "hitra'a",
+"d": "army"
+},
+{
+"t": "hitstanenut",
+"d": "health"
+},
+{
+"t": "Hod HaSharon",
+"d": "places"
+},
+{
+"t": "hoda'a",
+"d": "home"
+},
+{
+"t": "hoda'a mukdemet",
+"d": "money"
+},
+{
+"t": "Hodaya",
+"d": "people"
+},
+{
+"t": "Hof Hacarmel",
+"d": "places"
+},
+{
+"t": "Holon",
+"d": "places"
+},
+{
+"t": "Holyland Park",
+"d": "places"
+},
+{
+"t": "Holyland Towers",
+"d": "places"
+},
+{
+"t": "Home Center",
+"d": "brands"
+},
+{
+"t": "Honigman",
+"d": "brands"
+},
+{
+"t": "Hopon",
+"d": "brands"
+},
+{
+"t": "horaat keva",
+"d": "health"
+},
+{
+"t": "horim",
+"d": "home"
+},
+{
+"t": "Horowitz",
+"d": "people"
+},
+{
+"t": "Hoshana Raba",
+"d": "religious"
+},
+{
+"t": "HOT",
+"d": "brands"
+},
+{
+"t": "Hotza'a Lapoal",
+"d": "bureaucracy"
+},
+{
+"t": "hotza'ot mukarot",
+"d": "bureaucracy"
+},
+{
+"t": "hotzaah",
+"d": "religious"
+},
+{
+"t": "hotzaot",
+"d": "home"
+},
+{
+"t": "Hulda",
+"d": "places"
+},
+{
+"t": "hutar lepirsum",
+"d": "politics"
+},
+{
+"t": "Ibn Gabirol",
+"d": "places"
+},
+{
+"t": "Ibufen",
+"d": "health"
+},
+{
+"t": "Ichilov",
+"d": "health"
+},
+{
+"t": "Ichud Hatzalah",
+"d": "army"
+},
+{
+"t": "Idan Raichel",
+"d": "people"
+},
+{
+"t": "Idit Silman",
+"d": "people"
+},
+{
+"t": "Ido",
+"d": "people"
+},
+{
+"t": "ikra",
+"d": "food"
+},
+{
+"t": "ikur",
+"d": "home"
+},
+{
+"t": "Ilan",
+"d": "people"
+},
+{
+"t": "Ilana Dayan",
+"d": "people"
+},
+{
+"t": "im yirtze Hashem",
+"d": "everyday"
+},
+{
+"t": "ima",
+"d": "everyday"
+},
+{
+"t": "ima shel shabbat",
+"d": "home"
+},
+{
+"t": "Immanuel",
+"d": "places"
+},
+{
+"t": "Inbal",
+"d": "people"
+},
+{
+"t": "Inbar",
+"d": "people"
+},
+{
+"t": "infuzia",
+"d": "health"
+},
+{
+"t": "inhalatzia",
+"d": "health"
+},
+{
+"t": "instalator",
+"d": "home"
+},
+{
+"t": "Ir Atika",
+"d": "places"
+},
+{
+"t": "Ir David",
+"d": "places"
+},
+{
+"t": "Irit",
+"d": "people"
+},
+{
+"t": "iriya",
+"d": "bureaucracy"
+},
+{
+"t": "Isaac Herzog",
+"d": "people"
+},
+{
+"t": "isha",
+"d": "everyday"
+},
+{
+"t": "Ishay Ribo",
+"d": "people"
+},
+{
+"t": "ishpuz",
+"d": "health"
+},
+{
+"t": "ishti",
+"d": "everyday"
+},
+{
+"t": "ishur",
+"d": "health"
+},
+{
+"t": "ishur avoda",
+"d": "bureaucracy"
+},
+{
+"t": "ishur knisa",
+"d": "bureaucracy"
+},
+{
+"t": "ishur machala",
+"d": "money"
+},
+{
+"t": "ishur nihul cheshbon",
+"d": "money"
+},
+{
+"t": "ishur nikui bamakor",
+"d": "bureaucracy"
+},
+{
+"t": "ishur toshavut",
+"d": "bureaucracy"
+},
+{
+"t": "ishur yetzia",
+"d": "bureaucracy"
+},
+{
+"t": "ishur yitra",
+"d": "money"
+},
+{
+"t": "ishur zchuyot",
+"d": "money"
+},
+{
+"t": "ishurim",
+"d": "health"
+},
+{
+"t": "Isracard",
+"d": "money"
+},
+{
+"t": "Israel Ganz",
+"d": "people"
+},
+{
+"t": "Israel Hayom",
+"d": "brands"
+},
+{
+"t": "Israel Katz",
+"d": "people"
+},
+{
+"t": "Israir",
+"d": "brands"
+},
+{
+"t": "Isru Chag",
+"d": "religious"
+},
+{
+"t": "Issta",
+"d": "brands"
+},
+{
+"t": "Itai",
+"d": "people"
+},
+{
+"t": "Itamar",
+"d": "people"
+},
+{
+"t": "Itamar Ben Gvir",
+"d": "people"
+},
+{
+"t": "itriyot",
+"d": "food"
+},
+{
+"t": "Ituran",
+"d": "transport"
+},
+{
+"t": "Itzik",
+"d": "people"
+},
+{
+"t": "Ivory",
+"d": "brands"
+},
+{
+"t": "Iyar",
+"d": "religious"
+},
+{
+"t": "Iyov",
+"d": "religious"
+},
+{
+"t": "Jabalia",
+"d": "places"
+},
+{
+"t": "Jabotinsky",
+"d": "places"
+},
+{
+"t": "jachnun",
+"d": "food"
+},
+{
+"t": "Jafora",
+"d": "food"
+},
+{
+"t": "Janglo",
+"d": "bureaucracy"
+},
+{
+"t": "Japanika",
+"d": "brands"
+},
+{
+"t": "Jewish Quarter",
+"d": "places"
+},
+{
+"t": "JobMaster",
+"d": "brands"
+},
+{
+"t": "jobnik",
+"d": "army"
+},
+{
+"t": "kaba",
+"d": "army"
+},
+{
+"t": "Kababir",
+"d": "places"
+},
+{
+"t": "kabala",
+"d": "money"
+},
+{
+"t": "kabalat kahal",
+"d": "health"
+},
+{
+"t": "kaban",
+"d": "brands"
+},
+{
+"t": "kabanos",
+"d": "food"
+},
+{
+"t": "Kabbalas Shabbos",
+"d": "religious"
+},
+{
+"t": "kabbalat panim",
+"d": "religious"
+},
+{
+"t": "Kabbalat Shabbat",
+"d": "religious"
+},
+{
+"t": "kablan",
+"d": "money"
+},
+{
+"t": "kacha kacha",
+"d": "everyday"
+},
+{
+"t": "Kachol Lavan",
+"d": "politics"
+},
+{
+"t": "kachol-lavan",
+"d": "transport"
+},
+{
+"t": "kadaif",
+"d": "food"
+},
+{
+"t": "kaddish",
+"d": "religious"
+},
+{
+"t": "kaddish yatom",
+"d": "religious"
+},
+{
+"t": "kadur",
+"d": "home"
+},
+{
+"t": "kaduregel",
+"d": "home"
+},
+{
+"t": "kadurim",
+"d": "health"
+},
+{
+"t": "kadursal",
+"d": "home"
+},
+{
+"t": "kaf",
+"d": "home"
+},
+{
+"t": "Kaf Hachaim",
+"d": "religious"
+},
+{
+"t": "kafe",
+"d": "everyday"
+},
+{
+"t": "kafe hafuch",
+"d": "everyday"
+},
+{
+"t": "kafe turki",
+"d": "food"
+},
+{
+"t": "Kafr Aqab",
+"d": "places"
+},
+{
+"t": "kala",
+"d": "everyday"
+},
+{
+"t": "kalbiya",
+"d": "home"
+},
+{
+"t": "kalevet",
+"d": "home"
+},
+{
+"t": "kallah",
+"d": "religious"
+},
+{
+"t": "kalpi",
+"d": "politics"
+},
+{
+"t": "kama ze",
+"d": "everyday"
+},
+{
+"t": "Kaminitz",
+"d": "politics"
+},
+{
+"t": "Kan",
+"d": "brands"
+},
+{
+"t": "Kanfei Nesharim",
+"d": "places"
+},
+{
+"t": "kanyon",
+"d": "food"
+},
+{
+"t": "kapara",
+"d": "everyday"
+},
+{
+"t": "kapara alecha",
+"d": "everyday"
+},
+{
+"t": "kaparot",
+"d": "religious"
+},
+{
+"t": "Kaplan",
+"d": "people"
+},
+{
+"t": "kapsulot",
+"d": "health"
+},
+{
+"t": "kar",
+"d": "everyday"
+},
+{
+"t": "karka",
+"d": "money"
+},
+{
+"t": "Karmei Tzur",
+"d": "places"
+},
+{
+"t": "karmelit",
+"d": "religious"
+},
+{
+"t": "Karmiel",
+"d": "places"
+},
+{
+"t": "Karnei Shomron",
+"d": "places"
+},
+{
+"t": "kartis",
+"d": "transport"
+},
+{
+"t": "kartis ashrai",
+"d": "bureaucracy"
+},
+{
+"t": "kartis chov",
+"d": "bureaucracy"
+},
+{
+"t": "kartis debit",
+"d": "food"
+},
+{
+"t": "kartis hofshi",
+"d": "transport"
+},
+{
+"t": "kartis magnet",
+"d": "health"
+},
+{
+"t": "kartis magnetic",
+"d": "health"
+},
+{
+"t": "kartis nekudot",
+"d": "bureaucracy"
+},
+{
+"t": "kartis sim",
+"d": "brands"
+},
+{
+"t": "kartis zikaron",
+"d": "brands"
+},
+{
+"t": "kartisiya",
+"d": "transport"
+},
+{
+"t": "kasher",
+"d": "religious"
+},
+{
+"t": "kashrus",
+"d": "religious"
+},
+{
+"t": "kashrut",
+"d": "religious"
+},
+{
+"t": "kaspomat",
+"d": "bureaucracy"
+},
+{
+"t": "Katamon",
+"d": "places"
+},
+{
+"t": "Katamonim",
+"d": "places"
+},
+{
+"t": "katbam",
+"d": "politics"
+},
+{
+"t": "Katz",
+"d": "people"
+},
+{
+"t": "katzin",
+"d": "army"
+},
+{
+"t": "Katzrin",
+"d": "places"
+},
+{
+"t": "kav",
+"d": "transport"
+},
+{
+"t": "kav kavvi",
+"d": "brands"
+},
+{
+"t": "kav nayad",
+"d": "brands"
+},
+{
+"t": "kavim",
+"d": "transport"
+},
+{
+"t": "kavod habriyot",
+"d": "religious"
+},
+{
+"t": "kayitz",
+"d": "everyday"
+},
+{
+"t": "kaytana",
+"d": "home"
+},
+{
+"t": "kaze",
+"d": "everyday"
+},
+{
+"t": "kazot",
+"d": "everyday"
+},
+{
+"t": "ke'ev",
+"d": "health"
+},
+{
+"t": "ke'ilu",
+"d": "everyday"
+},
+{
+"t": "Kedoshim",
+"d": "religious"
+},
+{
+"t": "Kedumim",
+"d": "places"
+},
+{
+"t": "kef",
+"d": "everyday"
+},
+{
+"t": "kehila",
+"d": "religious"
+},
+{
+"t": "kehilla",
+"d": "everyday"
+},
+{
+"t": "kein yehi ratzon",
+"d": "everyday"
+},
+{
+"t": "keli shemelachto le'issur",
+"d": "religious"
+},
+{
+"t": "keli shemelachto lehetter",
+"d": "religious"
+},
+{
+"t": "Kerem Hateimanim",
+"d": "places"
+},
+{
+"t": "Kerem Shalom",
+"d": "places"
+},
+{
+"t": "Keren",
+"d": "people"
+},
+{
+"t": "Keren Hayesod",
+"d": "places"
+},
+{
+"t": "keren hishtalmut",
+"d": "money"
+},
+{
+"t": "keren kaspit",
+"d": "money"
+},
+{
+"t": "Keren Kayemet",
+"d": "brands"
+},
+{
+"t": "Keren Neubach",
+"d": "people"
+},
+{
+"t": "keren pensia",
+"d": "money"
+},
+{
+"t": "Keren Terner",
+"d": "people"
+},
+{
+"t": "kesef",
+"d": "food"
+},
+{
+"t": "Keshet",
+"d": "brands"
+},
+{
+"t": "Keshet Teamim",
+"d": "food"
+},
+{
+"t": "kesubah",
+"d": "religious"
+},
+{
+"t": "ketiva vechatima tova",
+"d": "everyday"
+},
+{
+"t": "ketubah",
+"d": "religious"
+},
+{
+"t": "Ketura",
+"d": "places"
+},
+{
+"t": "kever",
+"d": "religious"
+},
+{
+"t": "Kever Rachel",
+"d": "places"
+},
+{
+"t": "Kfar Adumim",
+"d": "places"
+},
+{
+"t": "Kfar Aza",
+"d": "places"
+},
+{
+"t": "Kfar Blum",
+"d": "places"
+},
+{
+"t": "Kfar Chabad",
+"d": "places"
+},
+{
+"t": "Kfar Etzion",
+"d": "places"
+},
+{
+"t": "Kfar Giladi",
+"d": "places"
+},
+{
+"t": "Kfar Saba",
+"d": "places"
+},
+{
+"t": "Kfar Shalem",
+"d": "places"
+},
+{
+"t": "Kfar Shaul",
+"d": "health"
+},
+{
+"t": "Kfar Shmaryahu",
+"d": "places"
+},
+{
+"t": "Kfar Tavor",
+"d": "places"
+},
+{
+"t": "Kfar Vradim",
+"d": "places"
+},
+{
+"t": "Kfar Yona",
+"d": "places"
+},
+{
+"t": "Khan Yunis",
+"d": "places"
+},
+{
+"t": "Ki Savo",
+"d": "religious"
+},
+{
+"t": "Ki Seitzei",
+"d": "religious"
+},
+{
+"t": "Ki Sisa",
+"d": "religious"
+},
+{
+"t": "Ki Tavo",
+"d": "religious"
+},
+{
+"t": "Ki Teitzei",
+"d": "religious"
+},
+{
+"t": "Ki Tisa",
+"d": "religious"
+},
+{
+"t": "Kibbutz Galuyot",
+"d": "places"
+},
+{
+"t": "kiddush",
+"d": "religious"
+},
+{
+"t": "kiddush Hashem",
+"d": "religious"
+},
+{
+"t": "kiddushin",
+"d": "religious"
+},
+{
+"t": "Kif Kef",
+"d": "brands"
+},
+{
+"t": "kikar",
+"d": "transport"
+},
+{
+"t": "Kikar Dizengoff",
+"d": "places"
+},
+{
+"t": "Kikar Hachatufim",
+"d": "places"
+},
+{
+"t": "Kikar Hahistadrut",
+"d": "places"
+},
+{
+"t": "Kikar Hamedina",
+"d": "places"
+},
+{
+"t": "Kikar Hashabbat",
+"d": "brands"
+},
+{
+"t": "Kikar Rabin",
+"d": "places"
+},
+{
+"t": "Kikar Safra",
+"d": "places"
+},
+{
+"t": "Kikar Tzion",
+"d": "places"
+},
+{
+"t": "kimat hinam",
+"d": "food"
+},
+{
+"t": "kinehora",
+"d": "everyday"
+},
+{
+"t": "King David Residence",
+"d": "places"
+},
+{
+"t": "King George",
+"d": "places"
+},
+{
+"t": "kinim",
+"d": "health"
+},
+{
+"t": "Kinneret",
+"d": "places"
+},
+{
+"t": "Kipat Barzel",
+"d": "politics"
+},
+{
+"t": "kippa",
+"d": "religious"
+},
+{
+"t": "kirayim",
+"d": "home"
+},
+{
+"t": "Kiryat Anavim",
+"d": "places"
+},
+{
+"t": "Kiryat Arba",
+"d": "places"
+},
+{
+"t": "Kiryat Ata",
+"d": "places"
+},
+{
+"t": "Kiryat Bialik",
+"d": "places"
+},
+{
+"t": "Kiryat Eliezer",
+"d": "places"
+},
+{
+"t": "Kiryat Gat",
+"d": "places"
+},
+{
+"t": "Kiryat Haim",
+"d": "places"
+},
+{
+"t": "Kiryat Hayovel",
+"d": "places"
+},
+{
+"t": "Kiryat Malachi",
+"d": "places"
+},
+{
+"t": "Kiryat Matersdorf",
+"d": "places"
+},
+{
+"t": "Kiryat Menachem",
+"d": "places"
+},
+{
+"t": "Kiryat Moshe",
+"d": "places"
+},
+{
+"t": "Kiryat Motzkin",
+"d": "places"
+},
+{
+"t": "Kiryat Ono",
+"d": "places"
+},
+{
+"t": "Kiryat Shalom",
+"d": "places"
+},
+{
+"t": "Kiryat Shmona",
+"d": "places"
+},
+{
+"t": "Kiryat Shmuel",
+"d": "places"
+},
+{
+"t": "Kiryat Tivon",
+"d": "places"
+},
+{
+"t": "Kiryat Yam",
+"d": "places"
+},
+{
+"t": "Kiryat Ye'arim",
+"d": "places"
+},
+{
+"t": "kise",
+"d": "home"
+},
+{
+"t": "kise galgalim",
+"d": "health"
+},
+{
+"t": "kisei bitachon",
+"d": "home"
+},
+{
+"t": "kishur",
+"d": "brands"
+},
+{
+"t": "Kislev",
+"d": "religious"
+},
+{
+"t": "Kissufim",
+"d": "places"
+},
+{
+"t": "kisui",
+"d": "money"
+},
+{
+"t": "kita",
+"d": "home"
+},
+{
+"t": "kita alef",
+"d": "home"
+},
+{
+"t": "kita bet",
+"d": "home"
+},
+{
+"t": "Kitan",
+"d": "brands"
+},
+{
+"t": "kitat konenut",
+"d": "army"
+},
+{
+"t": "kitniyot",
+"d": "religious"
+},
+{
+"t": "kitot",
+"d": "home"
+},
+{
+"t": "kitzbat yeladim",
+"d": "bureaucracy"
+},
+{
+"t": "kitzbat zikna",
+"d": "health"
+},
+{
+"t": "kitzvat yeladim",
+"d": "money"
+},
+{
+"t": "kivun",
+"d": "transport"
+},
+{
+"t": "kiyor",
+"d": "home"
+},
+{
+"t": "kizuz",
+"d": "bureaucracy"
+},
+{
+"t": "Klein",
+"d": "people"
+},
+{
+"t": "kli rishon",
+"d": "religious"
+},
+{
+"t": "kli sheni",
+"d": "religious"
+},
+{
+"t": "Klik",
+"d": "food"
+},
+{
+"t": "klinait tikshoret",
+"d": "health"
+},
+{
+"t": "klita",
+"d": "bureaucracy"
+},
+{
+"t": "knafeh",
+"d": "food"
+},
+{
+"t": "knas",
+"d": "transport"
+},
+{
+"t": "kneidlach",
+"d": "food"
+},
+{
+"t": "Knesset",
+"d": "brands"
+},
+{
+"t": "kniya",
+"d": "food"
+},
+{
+"t": "kniyot",
+"d": "food"
+},
+{
+"t": "koach adam",
+"d": "money"
+},
+{
+"t": "koalitzia",
+"d": "politics"
+},
+{
+"t": "Kobi",
+"d": "people"
+},
+{
+"t": "Kochav Hashachar",
+"d": "places"
+},
+{
+"t": "Kochav Nolad",
+"d": "people"
+},
+{
+"t": "Kochav Yaakov",
+"d": "places"
+},
+{
+"t": "Kochav Yair",
+"d": "places"
+},
+{
+"t": "kod ezor",
+"d": "brands"
+},
+{
+"t": "kod medina",
+"d": "brands"
+},
+{
+"t": "kofer",
+"d": "bureaucracy"
+},
+{
+"t": "Koheles",
+"d": "religious"
+},
+{
+"t": "Kohelet",
+"d": "religious"
+},
+{
+"t": "kol hakavod",
+"d": "everyday"
+},
+{
+"t": "kol hakavod lachem",
+"d": "everyday"
+},
+{
+"t": "Kol Nidre",
+"d": "religious"
+},
+{
+"t": "kol paam",
+"d": "everyday"
+},
+{
+"t": "kol tuv",
+"d": "everyday"
+},
+{
+"t": "Kol Zchut",
+"d": "bureaucracy"
+},
+{
+"t": "kolbo",
+"d": "food"
+},
+{
+"t": "kollel",
+"d": "religious"
+},
+{
+"t": "koma",
+"d": "money"
+},
+{
+"t": "kor",
+"d": "everyday"
+},
+{
+"t": "Korach",
+"d": "religious"
+},
+{
+"t": "korkinet",
+"d": "transport"
+},
+{
+"t": "korkinet chashmalit",
+"d": "transport"
+},
+{
+"t": "kos",
+"d": "home"
+},
+{
+"t": "kotej",
+"d": "home"
+},
+{
+"t": "Kotel",
+"d": "places"
+},
+{
+"t": "kotev",
+"d": "religious"
+},
+{
+"t": "kotlet",
+"d": "food"
+},
+{
+"t": "kravi",
+"d": "everyday"
+},
+{
+"t": "Kravitz",
+"d": "brands"
+},
+{
+"t": "krembo",
+"d": "food"
+},
+{
+"t": "kreplach",
+"d": "food"
+},
+{
+"t": "kri'ah",
+"d": "religious"
+},
+{
+"t": "Krias Shema",
+"d": "religious"
+},
+{
+"t": "kriat haTorah",
+"d": "religious"
+},
+{
+"t": "Kriat Shema",
+"d": "religious"
+},
+{
+"t": "KSP",
+"d": "brands"
+},
+{
+"t": "ktzat",
+"d": "everyday"
+},
+{
+"t": "ktzitzot",
+"d": "food"
+},
+{
+"t": "kubaneh",
+"d": "food"
+},
+{
+"t": "kubbeh",
+"d": "food"
+},
+{
+"t": "kubbeh selek",
+"d": "food"
+},
+{
+"t": "kugel yerushalmi",
+"d": "food"
+},
+{
+"t": "kumkum",
+"d": "home"
+},
+{
+"t": "kumta",
+"d": "army"
+},
+{
+"t": "kupa",
+"d": "food"
+},
+{
+"t": "kupa atzmit",
+"d": "everyday"
+},
+{
+"t": "kupa otomatit",
+"d": "food"
+},
+{
+"t": "kupat gemel",
+"d": "money"
+},
+{
+"t": "kupat gemel lehashkaa",
+"d": "money"
+},
+{
+"t": "kupat holim",
+"d": "health"
+},
+{
+"t": "kupat pensia",
+"d": "money"
+},
+{
+"t": "kusbara",
+"d": "food"
+},
+{
+"t": "kuskus",
+"d": "food"
+},
+{
+"t": "kvar",
+"d": "everyday"
+},
+{
+"t": "kviat tor",
+"d": "health"
+},
+{
+"t": "kvish",
+"d": "transport"
+},
+{
+"t": "Kvish Echad",
+"d": "transport"
+},
+{
+"t": "Kvish Shesh",
+"d": "transport"
+},
+{
+"t": "kvura",
+"d": "religious"
+},
+{
+"t": "labane",
+"d": "food"
+},
+{
+"t": "labriut",
+"d": "everyday"
+},
+{
+"t": "lachatz dam",
+"d": "health"
+},
+{
+"t": "Lachish",
+"d": "places"
+},
+{
+"t": "lachmaniyot",
+"d": "food"
+},
+{
+"t": "lachtzan matzuka",
+"d": "health"
+},
+{
+"t": "lachuch",
+"d": "food"
+},
+{
+"t": "lachut",
+"d": "everyday"
+},
+{
+"t": "laffa",
+"d": "food"
+},
+{
+"t": "Lag Ba'omer",
+"d": "religious"
+},
+{
+"t": "lahoh",
+"d": "food"
+},
+{
+"t": "Laline",
+"d": "brands"
+},
+{
+"t": "Laly Derai",
+"d": "people"
+},
+{
+"t": "lama lo",
+"d": "everyday"
+},
+{
+"t": "Lamas",
+"d": "brands"
+},
+{
+"t": "Landwer",
+"d": "brands"
+},
+{
+"t": "Laniado",
+"d": "health"
+},
+{
+"t": "Lapid",
+"d": "people"
+},
+{
+"t": "lashon hara",
+"d": "religious"
+},
+{
+"t": "Latrun",
+"d": "places"
+},
+{
+"t": "Laxadin",
+"d": "health"
+},
+{
+"t": "layla tov",
+"d": "everyday"
+},
+{
+"t": "le'at",
+"d": "transport"
+},
+{
+"t": "le'ilui nishmat",
+"d": "religious"
+},
+{
+"t": "leben",
+"d": "food"
+},
+{
+"t": "lech",
+"d": "everyday"
+},
+{
+"t": "Lech Lecha",
+"d": "religious"
+},
+{
+"t": "lech leshalom",
+"d": "everyday"
+},
+{
+"t": "lechatchila",
+"d": "everyday"
+},
+{
+"t": "lechayim",
+"d": "everyday"
+},
+{
+"t": "lechem",
+"d": "everyday"
+},
+{
+"t": "lechem achid",
+"d": "food"
+},
+{
+"t": "Lechem Erez",
+"d": "food"
+},
+{
+"t": "lechi",
+"d": "everyday"
+},
+{
+"t": "lecho",
+"d": "food"
+},
+{
+"t": "lechu",
+"d": "everyday"
+},
+{
+"t": "legamrei",
+"d": "everyday"
+},
+{
+"t": "lehalacha",
+"d": "religious"
+},
+{
+"t": "Lehavim",
+"d": "places"
+},
+{
+"t": "lehitra'ot bekarov",
+"d": "everyday"
+},
+{
+"t": "lehitraot",
+"d": "transport"
+},
+{
+"t": "leining",
+"d": "religious"
+},
+{
+"t": "lemaaseh",
+"d": "religious"
+},
+{
+"t": "Lerner",
+"d": "people"
+},
+{
+"t": "leshana habaa biyerushalayim",
+"d": "everyday"
+},
+{
+"t": "leshana tova tikatevu",
+"d": "everyday"
+},
+{
+"t": "leshka",
+"d": "health"
+},
+{
+"t": "Leumi Card",
+"d": "brands"
+},
+{
+"t": "Leumit",
+"d": "health"
+},
+{
+"t": "Leumit Zahav",
+"d": "health"
+},
+{
+"t": "Lev Hair",
+"d": "places"
+},
+{
+"t": "levaya",
+"d": "religious"
+},
+{
+"t": "Levi",
+"d": "people"
+},
+{
+"t": "Levi Yitzhak",
+"d": "transport"
+},
+{
+"t": "Levinsky",
+"d": "places"
+},
+{
+"t": "Levinson",
+"d": "people"
+},
+{
+"t": "levivot",
+"d": "religious"
+},
+{
+"t": "Liat",
+"d": "people"
+},
+{
+"t": "Liberman",
+"d": "people"
+},
+{
+"t": "lidah",
+"d": "health"
+},
+{
+"t": "lifnim mishurat hadin",
+"d": "religious"
+},
+{
+"t": "Ligat Ha'al",
+"d": "everyday"
+},
+{
+"t": "Lihi",
+"d": "people"
+},
+{
+"t": "Likud",
+"d": "politics"
+},
+{
+"t": "Lilach",
+"d": "people"
+},
+{
+"t": "Lilienblum",
+"d": "places"
+},
+{
+"t": "limonana",
+"d": "food"
+},
+{
+"t": "Limor",
+"d": "people"
+},
+{
+"t": "limudim",
+"d": "home"
+},
+{
+"t": "Linoy Ashram",
+"d": "people"
+},
+{
+"t": "Lior",
+"d": "people"
+},
+{
+"t": "Lior Raz",
+"d": "people"
+},
+{
+"t": "Lior Schleien",
+"d": "people"
+},
+{
+"t": "Liran",
+"d": "people"
+},
+{
+"t": "Liron",
+"d": "people"
+},
+{
+"t": "Lishkat Ta'asuka",
+"d": "bureaucracy"
+},
+{
+"t": "lo ba li",
+"d": "everyday"
+},
+{
+"t": "lo chashuv",
+"d": "everyday"
+},
+{
+"t": "lo ichpat li",
+"d": "everyday"
+},
+{
+"t": "lo meshane",
+"d": "everyday"
+},
+{
+"t": "lo mevin",
+"d": "everyday"
+},
+{
+"t": "lo nora",
+"d": "everyday"
+},
+{
+"t": "lo yodea",
+"d": "everyday"
+},
+{
+"t": "Lod",
+"d": "places"
+},
+{
+"t": "lokshen",
+"d": "food"
+},
+{
+"t": "Lorastine",
+"d": "health"
+},
+{
+"t": "Lorivan",
+"d": "health"
+},
+{
+"t": "Losec",
+"d": "health"
+},
+{
+"t": "loshon hora",
+"d": "religious"
+},
+{
+"t": "luach chashmal",
+"d": "home"
+},
+{
+"t": "luach zmanim",
+"d": "home"
+},
+{
+"t": "Lubavitcher Rebbe",
+"d": "religious"
+},
+{
+"t": "lul",
+"d": "home"
+},
+{
+"t": "lulav",
+"d": "religious"
+},
+{
+"t": "ma ata omer",
+"d": "everyday"
+},
+{
+"t": "ma hadash",
+"d": "everyday"
+},
+{
+"t": "ma hamatzav",
+"d": "everyday"
+},
+{
+"t": "ma inyanim",
+"d": "everyday"
+},
+{
+"t": "ma kore",
+"d": "everyday"
+},
+{
+"t": "ma la'asot",
+"d": "everyday"
+},
+{
+"t": "ma nishma",
+"d": "everyday"
+},
+{
+"t": "ma pitom",
+"d": "everyday"
+},
+{
+"t": "ma shlomcha",
+"d": "everyday"
+},
+{
+"t": "ma shlomech",
+"d": "everyday"
+},
+{
+"t": "ma ze",
+"d": "everyday"
+},
+{
+"t": "ma'abada",
+"d": "health"
+},
+{
+"t": "ma'achaz",
+"d": "politics"
+},
+{
+"t": "ma'akav",
+"d": "health"
+},
+{
+"t": "Ma'ale Adumim",
+"d": "places"
+},
+{
+"t": "Ma'ale Hachamisha",
+"d": "places"
+},
+{
+"t": "ma'alit",
+"d": "money"
+},
+{
+"t": "ma'alit shabbat",
+"d": "home"
+},
+{
+"t": "Ma'alot",
+"d": "places"
+},
+{
+"t": "Ma'alot Dafna",
+"d": "places"
+},
+{
+"t": "ma'am",
+"d": "money"
+},
+{
+"t": "ma'atafot kfulot",
+"d": "politics"
+},
+{
+"t": "ma'atzar minhali",
+"d": "politics"
+},
+{
+"t": "ma'avar kupa",
+"d": "health"
+},
+{
+"t": "Ma'avar Rafah",
+"d": "places"
+},
+{
+"t": "Ma'ayanei Hayeshua",
+"d": "health"
+},
+{
+"t": "Maadanot",
+"d": "brands"
+},
+{
+"t": "maafiya",
+"d": "food"
+},
+{
+"t": "maariv",
+"d": "religious"
+},
+{
+"t": "maaser",
+"d": "religious"
+},
+{
+"t": "maaser kesafim",
+"d": "religious"
+},
+{
+"t": "maasik",
+"d": "money"
+},
+{
+"t": "maavar chatzaya",
+"d": "transport"
+},
+{
+"t": "maayan",
+"d": "everyday"
+},
+{
+"t": "Maayan 2000",
+"d": "food"
+},
+{
+"t": "Maccabi",
+"d": "everyday"
+},
+{
+"t": "Maccabi Dent",
+"d": "health"
+},
+{
+"t": "Maccabi Healthcare",
+"d": "brands"
+},
+{
+"t": "Maccabi Sheli",
+"d": "health"
+},
+{
+"t": "Maccabim",
+"d": "places"
+},
+{
+"t": "machala",
+"d": "money"
+},
+{
+"t": "machane",
+"d": "everyday"
+},
+{
+"t": "machar",
+"d": "everyday"
+},
+{
+"t": "machatzit hashekel",
+"d": "religious"
+},
+{
+"t": "machavat",
+"d": "home"
+},
+{
+"t": "machberet",
+"d": "home"
+},
+{
+"t": "machbes",
+"d": "home"
+},
+{
+"t": "machbren",
+"d": "home"
+},
+{
+"t": "Machfud",
+"d": "religious"
+},
+{
+"t": "machlaka",
+"d": "army"
+},
+{
+"t": "machlokes",
+"d": "religious"
+},
+{
+"t": "machloket",
+"d": "religious"
+},
+{
+"t": "machmir",
+"d": "everyday"
+},
+{
+"t": "Machneyuda",
+"d": "food"
+},
+{
+"t": "Machon Lev",
+"d": "brands"
+},
+{
+"t": "machsan",
+"d": "home"
+},
+{
+"t": "Machsanei Hashmal",
+"d": "brands"
+},
+{
+"t": "Machsanei Hashuk",
+"d": "food"
+},
+{
+"t": "Machsanei Lahav",
+"d": "food"
+},
+{
+"t": "machshev",
+"d": "brands"
+},
+{
+"t": "machsom",
+"d": "transport"
+},
+{
+"t": "Machtesh Ramon",
+"d": "places"
+},
+{
+"t": "machzor",
+"d": "religious"
+},
+{
+"t": "mad chom",
+"d": "health"
+},
+{
+"t": "mada",
+"d": "army"
+},
+{
+"t": "madad",
+"d": "home"
+},
+{
+"t": "madaf",
+"d": "home"
+},
+{
+"t": "madbir",
+"d": "home"
+},
+{
+"t": "madim",
+"d": "army"
+},
+{
+"t": "Madlan",
+"d": "brands"
+},
+{
+"t": "madregot",
+"d": "army"
+},
+{
+"t": "madrich",
+"d": "home"
+},
+{
+"t": "madricha",
+"d": "home"
+},
+{
+"t": "mafsek",
+"d": "home"
+},
+{
+"t": "maftir",
+"d": "religious"
+},
+{
+"t": "magad",
+"d": "army"
+},
+{
+"t": "Magav",
+"d": "bureaucracy"
+},
+{
+"t": "magavonim",
+"d": "home"
+},
+{
+"t": "Magen David Adom",
+"d": "army"
+},
+{
+"t": "Magen Zahav",
+"d": "health"
+},
+{
+"t": "magevet",
+"d": "home"
+},
+{
+"t": "Maghar",
+"d": "places"
+},
+{
+"t": "Maghazi",
+"d": "places"
+},
+{
+"t": "Maglan",
+"d": "politics"
+},
+{
+"t": "magniv",
+"d": "everyday"
+},
+{
+"t": "Mahane Yehuda",
+"d": "places"
+},
+{
+"t": "Maharal",
+"d": "religious"
+},
+{
+"t": "mahir",
+"d": "transport"
+},
+{
+"t": "mahlah",
+"d": "health"
+},
+{
+"t": "majadra",
+"d": "food"
+},
+{
+"t": "Majdal Shams",
+"d": "places"
+},
+{
+"t": "Makassed",
+"d": "health"
+},
+{
+"t": "makeh bepatish",
+"d": "religious"
+},
+{
+"t": "Mako",
+"d": "brands"
+},
+{
+"t": "makolet",
+"d": "food"
+},
+{
+"t": "malabi",
+"d": "food"
+},
+{
+"t": "malawach",
+"d": "food"
+},
+{
+"t": "Malcha",
+"d": "places"
+},
+{
+"t": "Malchei Yisrael",
+"d": "places"
+},
+{
+"t": "Malha",
+"d": "food"
+},
+{
+"t": "Malka",
+"d": "people"
+},
+{
+"t": "Malki",
+"d": "people"
+},
+{
+"t": "malkosh",
+"d": "everyday"
+},
+{
+"t": "mamad",
+"d": "army"
+},
+{
+"t": "mamak",
+"d": "army"
+},
+{
+"t": "mamash",
+"d": "everyday"
+},
+{
+"t": "Mamilla",
+"d": "food"
+},
+{
+"t": "Mamilla Residences",
+"d": "places"
+},
+{
+"t": "mamlachti dati",
+"d": "home"
+},
+{
+"t": "mamzer",
+"d": "bureaucracy"
+},
+{
+"t": "mana ishit",
+"d": "food"
+},
+{
+"t": "mandatim",
+"d": "politics"
+},
+{
+"t": "mangal",
+"d": "everyday"
+},
+{
+"t": "manikur",
+"d": "everyday"
+},
+{
+"t": "mankal",
+"d": "money"
+},
+{
+"t": "Manor Solomon",
+"d": "people"
+},
+{
+"t": "Mansour Abbas",
+"d": "people"
+},
+{
+"t": "manulan",
+"d": "home"
+},
+{
+"t": "maon",
+"d": "home"
+},
+{
+"t": "maon yom",
+"d": "home"
+},
+{
+"t": "marak",
+"d": "food"
+},
+{
+"t": "marak itriyot",
+"d": "food"
+},
+{
+"t": "marak of",
+"d": "food"
+},
+{
+"t": "marak yerek",
+"d": "food"
+},
+{
+"t": "Mariano Idelman",
+"d": "people"
+},
+{
+"t": "marit ayin",
+"d": "religious"
+},
+{
+"t": "mas briut",
+"d": "money"
+},
+{
+"t": "Mas Hachnasa",
+"d": "money"
+},
+{
+"t": "mas hachnasa ashrai",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa chaverot",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa chayav",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa chiyuv",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa chov",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa hafkaa",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa halvaa",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa hashlamot",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa havara",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa kartis",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa kizuz",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa mashkanta",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa meshicha",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa mezakeh",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa nikuim",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa ov",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa patur",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa pitura",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa ribit",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa shelo mitzvot",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa tashlumim",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa yechidim",
+"d": "bureaucracy"
+},
+{
+"t": "mas hachnasa zikui",
+"d": "bureaucracy"
+},
+{
+"t": "mas keniyot",
+"d": "bureaucracy"
+},
+{
+"t": "mas kniya",
+"d": "bureaucracy"
+},
+{
+"t": "mas rechev",
+"d": "transport"
+},
+{
+"t": "mas rechisha",
+"d": "home"
+},
+{
+"t": "mas rechush",
+"d": "bureaucracy"
+},
+{
+"t": "mas shevach",
+"d": "bureaucracy"
+},
+{
+"t": "mas zikui",
+"d": "bureaucracy"
+},
+{
+"t": "masaa",
+"d": "transport"
+},
+{
+"t": "masabacha",
+"d": "food"
+},
+{
+"t": "Masada",
+"d": "places"
+},
+{
+"t": "maseches",
+"d": "religious"
+},
+{
+"t": "masechet",
+"d": "religious"
+},
+{
+"t": "Masei",
+"d": "religious"
+},
+{
+"t": "mashabei enosh",
+"d": "money"
+},
+{
+"t": "mashakit tash",
+"d": "army"
+},
+{
+"t": "mashcha",
+"d": "health"
+},
+{
+"t": "mashgiach",
+"d": "religious"
+},
+{
+"t": "mashkanta",
+"d": "bureaucracy"
+},
+{
+"t": "mashkifim",
+"d": "politics"
+},
+{
+"t": "mashkon",
+"d": "bureaucracy"
+},
+{
+"t": "mashlim",
+"d": "health"
+},
+{
+"t": "mashov",
+"d": "money"
+},
+{
+"t": "maskir",
+"d": "money"
+},
+{
+"t": "maskoret",
+"d": "money"
+},
+{
+"t": "maslul",
+"d": "home"
+},
+{
+"t": "masorti",
+"d": "religious"
+},
+{
+"t": "maspik",
+"d": "everyday"
+},
+{
+"t": "masrek kinim",
+"d": "home"
+},
+{
+"t": "Matan",
+"d": "people"
+},
+{
+"t": "Matan Kahana",
+"d": "people"
+},
+{
+"t": "matana",
+"d": "home"
+},
+{
+"t": "matanot la'evyonim",
+"d": "religious"
+},
+{
+"t": "matate",
+"d": "home"
+},
+{
+"t": "matbucha",
+"d": "food"
+},
+{
+"t": "Mateh Binyamin",
+"d": "places"
+},
+{
+"t": "Mateh Yehuda",
+"d": "places"
+},
+{
+"t": "matkonet",
+"d": "home"
+},
+{
+"t": "matnas",
+"d": "home"
+},
+{
+"t": "matok",
+"d": "everyday"
+},
+{
+"t": "Matos",
+"d": "religious"
+},
+{
+"t": "Matot",
+"d": "religious"
+},
+{
+"t": "matza",
+"d": "religious"
+},
+{
+"t": "matzav",
+"d": "everyday"
+},
+{
+"t": "matzav cherum",
+"d": "army"
+},
+{
+"t": "matzber",
+"d": "transport"
+},
+{
+"t": "matzeget",
+"d": "money"
+},
+{
+"t": "matzeiva",
+"d": "religious"
+},
+{
+"t": "matzeva",
+"d": "religious"
+},
+{
+"t": "matzil",
+"d": "transport"
+},
+{
+"t": "matzlemat mehirut",
+"d": "transport"
+},
+{
+"t": "matzo",
+"d": "religious"
+},
+{
+"t": "Max",
+"d": "brands"
+},
+{
+"t": "Max Brenner",
+"d": "brands"
+},
+{
+"t": "Max Stock",
+"d": "brands"
+},
+{
+"t": "May Golan",
+"d": "people"
+},
+{
+"t": "Maya",
+"d": "people"
+},
+{
+"t": "mayim",
+"d": "everyday"
+},
+{
+"t": "mayim acharonim",
+"d": "religious"
+},
+{
+"t": "mayim chamim",
+"d": "home"
+},
+{
+"t": "mayim rishonim",
+"d": "religious"
+},
+{
+"t": "mazal tov",
+"d": "everyday"
+},
+{
+"t": "mazal tov lecha",
+"d": "everyday"
+},
+{
+"t": "mazeg avir",
+"d": "everyday"
+},
+{
+"t": "mazel tov",
+"d": "religious"
+},
+{
+"t": "mazgan",
+"d": "home"
+},
+{
+"t": "mazganai",
+"d": "home"
+},
+{
+"t": "Mazkeret Batya",
+"d": "places"
+},
+{
+"t": "mazkira",
+"d": "health"
+},
+{
+"t": "mazkirut",
+"d": "health"
+},
+{
+"t": "mazleg",
+"d": "home"
+},
+{
+"t": "me'amen",
+"d": "everyday"
+},
+{
+"t": "me'amen ishi",
+"d": "everyday"
+},
+{
+"t": "Me'arat Hamachpela",
+"d": "places"
+},
+{
+"t": "Me'arat Hanetifim",
+"d": "places"
+},
+{
+"t": "Mea She'arim",
+"d": "places"
+},
+{
+"t": "mechabel",
+"d": "politics"
+},
+{
+"t": "mecham",
+"d": "home"
+},
+{
+"t": "mechanechet",
+"d": "home"
+},
+{
+"t": "mechatech",
+"d": "religious"
+},
+{
+"t": "mechdal",
+"d": "politics"
+},
+{
+"t": "mecher",
+"d": "food"
+},
+{
+"t": "meches",
+"d": "bureaucracy"
+},
+{
+"t": "mechina",
+"d": "home"
+},
+{
+"t": "mechir",
+"d": "transport"
+},
+{
+"t": "Mechir Lamishtaken",
+"d": "money"
+},
+{
+"t": "mechira",
+"d": "bureaucracy"
+},
+{
+"t": "mechirat chametz",
+"d": "religious"
+},
+{
+"t": "mechiron",
+"d": "food"
+},
+{
+"t": "mechitza",
+"d": "religious"
+},
+{
+"t": "mechonai",
+"d": "transport"
+},
+{
+"t": "mechonat keelim",
+"d": "home"
+},
+{
+"t": "mechonat kvisa",
+"d": "home"
+},
+{
+"t": "mechonit",
+"d": "transport"
+},
+{
+"t": "mechutan",
+"d": "everyday"
+},
+{
+"t": "mechutanim",
+"d": "everyday"
+},
+{
+"t": "mefached",
+"d": "everyday"
+},
+{
+"t": "mefaked",
+"d": "army"
+},
+{
+"t": "mefaked pluga",
+"d": "army"
+},
+{
+"t": "megama",
+"d": "home"
+},
+{
+"t": "megillah",
+"d": "religious"
+},
+{
+"t": "Megillas Esther",
+"d": "religious"
+},
+{
+"t": "Megillat Eicha",
+"d": "religious"
+},
+{
+"t": "Megillat Esther",
+"d": "religious"
+},
+{
+"t": "Megillat Rut",
+"d": "religious"
+},
+{
+"t": "mehadrin",
+"d": "religious"
+},
+{
+"t": "mehanekh",
+"d": "everyday"
+},
+{
+"t": "mehanekhet",
+"d": "home"
+},
+{
+"t": "Mei Eden",
+"d": "brands"
+},
+{
+"t": "Meir",
+"d": "people"
+},
+{
+"t": "Meital",
+"d": "people"
+},
+{
+"t": "Meitar",
+"d": "places"
+},
+{
+"t": "Meitav",
+"d": "brands"
+},
+{
+"t": "meitzav",
+"d": "home"
+},
+{
+"t": "mekadmot",
+"d": "bureaucracy"
+},
+{
+"t": "mekarer",
+"d": "home"
+},
+{
+"t": "mekom riali",
+"d": "politics"
+},
+{
+"t": "Mekor Baruch",
+"d": "places"
+},
+{
+"t": "Mekor Chaim",
+"d": "places"
+},
+{
+"t": "Mekorot",
+"d": "home"
+},
+{
+"t": "Mekupelet",
+"d": "food"
+},
+{
+"t": "Melachim",
+"d": "religious"
+},
+{
+"t": "melafefonim",
+"d": "food"
+},
+{
+"t": "melave",
+"d": "transport"
+},
+{
+"t": "memshala",
+"d": "politics"
+},
+{
+"t": "memshelet ma'avar",
+"d": "politics"
+},
+{
+"t": "Menachem",
+"d": "people"
+},
+{
+"t": "menahel",
+"d": "home"
+},
+{
+"t": "menahelet",
+"d": "home"
+},
+{
+"t": "Menora",
+"d": "brands"
+},
+{
+"t": "meorav yerushalmi",
+"d": "food"
+},
+{
+"t": "Merav",
+"d": "people"
+},
+{
+"t": "Merav Ben-Ari",
+"d": "people"
+},
+{
+"t": "Mercantile",
+"d": "brands"
+},
+{
+"t": "mercaz",
+"d": "places"
+},
+{
+"t": "merchav mugan",
+"d": "politics"
+},
+{
+"t": "Meretz",
+"d": "politics"
+},
+{
+"t": "merguez",
+"d": "food"
+},
+{
+"t": "merhav mugan",
+"d": "army"
+},
+{
+"t": "merkachat",
+"d": "health"
+},
+{
+"t": "Merkaz Hacarmel",
+"d": "places"
+},
+{
+"t": "merkaz klita",
+"d": "bureaucracy"
+},
+{
+"t": "merkaz kniyot",
+"d": "food"
+},
+{
+"t": "merkaz refui",
+"d": "health"
+},
+{
+"t": "merkaz yom",
+"d": "health"
+},
+{
+"t": "Meron",
+"d": "places"
+},
+{
+"t": "mesader kiddushin",
+"d": "religious"
+},
+{
+"t": "mesanen",
+"d": "home"
+},
+{
+"t": "Meshek Zuriel",
+"d": "food"
+},
+{
+"t": "meshicha",
+"d": "bureaucracy"
+},
+{
+"t": "mesiba",
+"d": "home"
+},
+{
+"t": "mesibat Purim",
+"d": "religious"
+},
+{
+"t": "mesibat siyum",
+"d": "home"
+},
+{
+"t": "mesibat yom huledet",
+"d": "home"
+},
+{
+"t": "metapelet",
+"d": "health"
+},
+{
+"t": "metargel",
+"d": "home"
+},
+{
+"t": "metavech",
+"d": "money"
+},
+{
+"t": "metoraf",
+"d": "everyday"
+},
+{
+"t": "Metropoline",
+"d": "brands"
+},
+{
+"t": "Metula",
+"d": "places"
+},
+{
+"t": "Metzora",
+"d": "religious"
+},
+{
+"t": "metzuyan",
+"d": "everyday"
+},
+{
+"t": "Meuhedet",
+"d": "health"
+},
+{
+"t": "Meuhedet Adif",
+"d": "health"
+},
+{
+"t": "meurav yerushalmi",
+"d": "food"
+},
+{
+"t": "Mevaseret Zion",
+"d": "places"
+},
+{
+"t": "Mevo Beitar",
+"d": "places"
+},
+{
+"t": "mevulbal",
+"d": "everyday"
+},
+{
+"t": "meyabesh",
+"d": "home"
+},
+{
+"t": "meyaledet",
+"d": "health"
+},
+{
+"t": "mezonot",
+"d": "bureaucracy"
+},
+{
+"t": "mezuman",
+"d": "food"
+},
+{
+"t": "mezuza",
+"d": "religious"
+},
+{
+"t": "mi sheberach",
+"d": "religious"
+},
+{
+"t": "Michal",
+"d": "people"
+},
+{
+"t": "michtav",
+"d": "health"
+},
+{
+"t": "michtav hafnaya",
+"d": "health"
+},
+{
+"t": "michtav shichrur",
+"d": "health"
+},
+{
+"t": "michzur",
+"d": "home"
+},
+{
+"t": "Micropirin",
+"d": "health"
+},
+{
+"t": "Midbar Yehuda",
+"d": "places"
+},
+{
+"t": "midgam",
+"d": "politics"
+},
+{
+"t": "midrachov",
+"d": "transport"
+},
+{
+"t": "midrasha",
+"d": "religious"
+},
+{
+"t": "Midreshet Ben Gurion",
+"d": "places"
+},
+{
+"t": "Migdal",
+"d": "brands"
+},
+{
+"t": "Migdal Ha'emek",
+"d": "places"
+},
+{
+"t": "Migdal Oz",
+"d": "places"
+},
+{
+"t": "migunit",
+"d": "politics"
+},
+{
+"t": "Miketz",
+"d": "religious"
+},
+{
+"t": "Miki Zohar",
+"d": "people"
+},
+{
+"t": "miklat",
+"d": "home"
+},
+{
+"t": "miklat tachton",
+"d": "army"
+},
+{
+"t": "miklat tziburi",
+"d": "army"
+},
+{
+"t": "miklechot",
+"d": "home"
+},
+{
+"t": "mikrogal",
+"d": "home"
+},
+{
+"t": "mikror",
+"d": "home"
+},
+{
+"t": "mikud",
+"d": "health"
+},
+{
+"t": "mikve",
+"d": "religious"
+},
+{
+"t": "milchama",
+"d": "politics"
+},
+{
+"t": "milga",
+"d": "home"
+},
+{
+"t": "Milky",
+"d": "brands"
+},
+{
+"t": "miluim",
+"d": "army"
+},
+{
+"t": "miluimnik",
+"d": "army"
+},
+{
+"t": "Mimouna",
+"d": "religious"
+},
+{
+"t": "mincha",
+"d": "religious"
+},
+{
+"t": "minhag hamakom",
+"d": "religious"
+},
+{
+"t": "minhal",
+"d": "bureaucracy"
+},
+{
+"t": "minui",
+"d": "everyday"
+},
+{
+"t": "minyan",
+"d": "religious"
+},
+{
+"t": "Miri Regev",
+"d": "people"
+},
+{
+"t": "Miriam",
+"d": "people"
+},
+{
+"t": "mirpaa",
+"d": "health"
+},
+{
+"t": "mirpeset",
+"d": "home"
+},
+{
+"t": "mirpeset sukka",
+"d": "home"
+},
+{
+"t": "mirsham",
+"d": "health"
+},
+{
+"t": "mirsham chozer",
+"d": "health"
+},
+{
+"t": "mirsham kavu'a",
+"d": "health"
+},
+{
+"t": "mirshamim",
+"d": "health"
+},
+{
+"t": "misada",
+"d": "everyday"
+},
+{
+"t": "mischak",
+"d": "everyday"
+},
+{
+"t": "Misgav Ladach",
+"d": "health"
+},
+{
+"t": "misgeret ashrai",
+"d": "money"
+},
+{
+"t": "mishcha",
+"d": "health"
+},
+{
+"t": "mishchat shinayim",
+"d": "home"
+},
+{
+"t": "Mishkenot Sha'ananim",
+"d": "places"
+},
+{
+"t": "Mishlei",
+"d": "religious"
+},
+{
+"t": "mishloach",
+"d": "health"
+},
+{
+"t": "mishloach manot",
+"d": "religious"
+},
+{
+"t": "mishmeret",
+"d": "money"
+},
+{
+"t": "mishmoret",
+"d": "bureaucracy"
+},
+{
+"t": "Mishna",
+"d": "religious"
+},
+{
+"t": "Mishna Berura",
+"d": "religious"
+},
+{
+"t": "Mishor Adumim",
+"d": "places"
+},
+{
+"t": "mishpacha",
+"d": "home"
+},
+{
+"t": "mishpachton",
+"d": "home"
+},
+{
+"t": "mishpat",
+"d": "transport"
+},
+{
+"t": "Mishpatim",
+"d": "religious"
+},
+{
+"t": "mishra",
+"d": "money"
+},
+{
+"t": "mishtamtim",
+"d": "politics"
+},
+{
+"t": "mishtara",
+"d": "bureaucracy"
+},
+{
+"t": "Mishteret Israel",
+"d": "brands"
+},
+{
+"t": "mispar kavvi",
+"d": "brands"
+},
+{
+"t": "mispar nayad",
+"d": "brands"
+},
+{
+"t": "mispar rechev",
+"d": "transport"
+},
+{
+"t": "mispar zehut",
+"d": "bureaucracy"
+},
+{
+"t": "misrad",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Ha'aliyah",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Ha'avoda",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Ha'energiya",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Ha'otzar",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Habitachon",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Habriut",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hachaklaut",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hachinuch",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hachutz",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hadatot",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hadoar",
+"d": "health"
+},
+{
+"t": "Misrad Hakalkala",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Haklita",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hamada",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hamishpatim",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hapnim",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Harevacha",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Harishui",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hashikun",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hasport",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hasviva",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hatachbura",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hatarbut",
+"d": "bureaucracy"
+},
+{
+"t": "Misrad Hatayarut",
+"d": "bureaucracy"
+},
+{
+"t": "Mister Zol",
+"d": "food"
+},
+{
+"t": "mita",
+"d": "home"
+},
+{
+"t": "mitbach",
+"d": "home"
+},
+{
+"t": "mitragesh",
+"d": "everyday"
+},
+{
+"t": "mitriya",
+"d": "everyday"
+},
+{
+"t": "mitz",
+"d": "food"
+},
+{
+"t": "mitz tivi",
+"d": "food"
+},
+{
+"t": "Mitzpe Ramon",
+"d": "places"
+},
+{
+"t": "Mitzpe Yericho",
+"d": "places"
+},
+{
+"t": "mitzva",
+"d": "everyday"
+},
+{
+"t": "mitzvos",
+"d": "religious"
+},
+{
+"t": "mitzvot",
+"d": "religious"
+},
+{
+"t": "mivchan",
+"d": "home"
+},
+{
+"t": "mivchan te'oria",
+"d": "transport"
+},
+{
+"t": "mivreshet shinayim",
+"d": "home"
+},
+{
+"t": "mivtza",
+"d": "food"
+},
+{
+"t": "miyun",
+"d": "health"
+},
+{
+"t": "miyun yeladim",
+"d": "health"
+},
+{
+"t": "miznon",
+"d": "food"
+},
+{
+"t": "Mizrahi",
+"d": "people"
+},
+{
+"t": "Mizrahi Tefahot",
+"d": "money"
+},
+{
+"t": "mizron",
+"d": "home"
+},
+{
+"t": "mizvada",
+"d": "transport"
+},
+{
+"t": "mo'atza",
+"d": "bureaucracy"
+},
+{
+"t": "mo'ed bet",
+"d": "everyday"
+},
+{
+"t": "moadim lesimcha",
+"d": "everyday"
+},
+{
+"t": "moadon",
+"d": "home"
+},
+{
+"t": "Mobileye",
+"d": "brands"
+},
+{
+"t": "mochrotayim",
+"d": "everyday"
+},
+{
+"t": "Modi'in",
+"d": "places"
+},
+{
+"t": "Modi'in Illit",
+"d": "places"
+},
+{
+"t": "moed",
+"d": "home"
+},
+{
+"t": "moed alef",
+"d": "home"
+},
+{
+"t": "moed bet",
+"d": "home"
+},
+{
+"t": "Moetzet Yesha",
+"d": "politics"
+},
+{
+"t": "mohel",
+"d": "religious"
+},
+{
+"t": "mokdan",
+"d": "home"
+},
+{
+"t": "moked",
+"d": "everyday"
+},
+{
+"t": "molid",
+"d": "religious"
+},
+{
+"t": "moneh",
+"d": "home"
+},
+{
+"t": "moneh chashmal",
+"d": "home"
+},
+{
+"t": "monit",
+"d": "transport"
+},
+{
+"t": "monit sherut",
+"d": "transport"
+},
+{
+"t": "Montefiore",
+"d": "places"
+},
+{
+"t": "Moovit",
+"d": "transport"
+},
+{
+"t": "Mor",
+"d": "people"
+},
+{
+"t": "morah",
+"d": "everyday"
+},
+{
+"t": "Moran",
+"d": "people"
+},
+{
+"t": "Mordechai",
+"d": "people"
+},
+{
+"t": "more nehiga",
+"d": "transport"
+},
+{
+"t": "moreh",
+"d": "home"
+},
+{
+"t": "mosad siudi",
+"d": "health"
+},
+{
+"t": "Moshava Germanit",
+"d": "places"
+},
+{
+"t": "Moshe",
+"d": "people"
+},
+{
+"t": "Moshe Feiglin",
+"d": "people"
+},
+{
+"t": "Moshe Gafni",
+"d": "people"
+},
+{
+"t": "Moshe Hillel Hirsch",
+"d": "people"
+},
+{
+"t": "Moshe Lion",
+"d": "people"
+},
+{
+"t": "Moshe Peretz",
+"d": "people"
+},
+{
+"t": "Moshe Pinchi",
+"d": "people"
+},
+{
+"t": "Moshe Radman",
+"d": "people"
+},
+{
+"t": "Mossad",
+"d": "brands"
+},
+{
+"t": "motek",
+"d": "everyday"
+},
+{
+"t": "Moti",
+"d": "people"
+},
+{
+"t": "Motilium",
+"d": "health"
+},
+{
+"t": "Motza",
+"d": "places"
+},
+{
+"t": "Motzash",
+"d": "religious"
+},
+{
+"t": "motzei chag",
+"d": "everyday"
+},
+{
+"t": "Motzei Shabbat",
+"d": "religious"
+},
+{
+"t": "motzetz",
+"d": "home"
+},
+{
+"t": "Moxypen",
+"d": "health"
+},
+{
+"t": "msabbaha",
+"d": "food"
+},
+{
+"t": "Mucolit",
+"d": "health"
+},
+{
+"t": "mufleta",
+"d": "food"
+},
+{
+"t": "mugbal",
+"d": "money"
+},
+{
+"t": "mujaddara",
+"d": "food"
+},
+{
+"t": "muktze",
+"d": "religious"
+},
+{
+"t": "muktze machmat chesron kis",
+"d": "religious"
+},
+{
+"t": "muktze machmat mitzvah",
+"d": "religious"
+},
+{
+"t": "mumche",
+"d": "health"
+},
+{
+"t": "musach",
+"d": "transport"
+},
+{
+"t": "Musaf",
+"d": "religious"
+},
+{
+"t": "mushlam",
+"d": "health"
+},
+{
+"t": "Muslim Quarter",
+"d": "places"
+},
+{
+"t": "Musrara",
+"d": "places"
+},
+{
+"t": "mutar",
+"d": "everyday"
+},
+{
+"t": "MyVisit",
+"d": "bureaucracy"
+},
+{
+"t": "na'im lehakir",
+"d": "everyday"
+},
+{
+"t": "naalei bayit",
+"d": "home"
+},
+{
+"t": "Naama",
+"d": "people"
+},
+{
+"t": "Naama Lazimi",
+"d": "people"
+},
+{
+"t": "Naaman",
+"d": "brands"
+},
+{
+"t": "nachal",
+"d": "everyday"
+},
+{
+"t": "Nachal Amud",
+"d": "places"
+},
+{
+"t": "Nachal Arugot",
+"d": "places"
+},
+{
+"t": "Nachal David",
+"d": "places"
+},
+{
+"t": "Nachal Kziv",
+"d": "places"
+},
+{
+"t": "Nachal Sorek",
+"d": "places"
+},
+{
+"t": "Nachalat Binyamin",
+"d": "places"
+},
+{
+"t": "Nachlaot",
+"d": "places"
+},
+{
+"t": "Nachmani",
+"d": "people"
+},
+{
+"t": "nachon",
+"d": "everyday"
+},
+{
+"t": "Nachshon",
+"d": "places"
+},
+{
+"t": "Nachshonim",
+"d": "places"
+},
+{
+"t": "Nadav",
+"d": "people"
+},
+{
+"t": "nadlan",
+"d": "money"
+},
+{
+"t": "nafal hachashmal",
+"d": "home"
+},
+{
+"t": "Naftali Bennett",
+"d": "people"
+},
+{
+"t": "nagar",
+"d": "everyday"
+},
+{
+"t": "nahag",
+"d": "transport"
+},
+{
+"t": "Nahal Oz",
+"d": "places"
+},
+{
+"t": "Nahala Umenucha",
+"d": "places"
+},
+{
+"t": "Nahalal",
+"d": "places"
+},
+{
+"t": "Nahariya",
+"d": "places"
+},
+{
+"t": "naknik",
+"d": "food"
+},
+{
+"t": "naknikim",
+"d": "everyday"
+},
+{
+"t": "naknikiyot",
+"d": "food"
+},
+{
+"t": "Namal",
+"d": "places"
+},
+{
+"t": "Namir",
+"d": "places"
+},
+{
+"t": "Nanuchka",
+"d": "food"
+},
+{
+"t": "Naot",
+"d": "brands"
+},
+{
+"t": "Narocin",
+"d": "health"
+},
+{
+"t": "nashakiya",
+"d": "army"
+},
+{
+"t": "Naso",
+"d": "religious"
+},
+{
+"t": "Nasocort",
+"d": "health"
+},
+{
+"t": "nat bar nat",
+"d": "religious"
+},
+{
+"t": "Natan",
+"d": "people"
+},
+{
+"t": "Natbag",
+"d": "transport"
+},
+{
+"t": "Nati",
+"d": "people"
+},
+{
+"t": "nativ tachbura",
+"d": "transport"
+},
+{
+"t": "Navon",
+"d": "people"
+},
+{
+"t": "naxon",
+"d": "everyday"
+},
+{
+"t": "nayad",
+"d": "brands"
+},
+{
+"t": "nayadim",
+"d": "brands"
+},
+{
+"t": "nayar toalet",
+"d": "home"
+},
+{
+"t": "Nayot",
+"d": "places"
+},
+{
+"t": "nazelet",
+"d": "health"
+},
+{
+"t": "nechadim",
+"d": "home"
+},
+{
+"t": "Nechemia",
+"d": "religious"
+},
+{
+"t": "Nechumi Yaffe",
+"d": "people"
+},
+{
+"t": "nechut",
+"d": "health"
+},
+{
+"t": "Nefesh B'Nefesh",
+"d": "bureaucracy"
+},
+{
+"t": "nefila",
+"d": "politics"
+},
+{
+"t": "nefilot",
+"d": "politics"
+},
+{
+"t": "Negev",
+"d": "places"
+},
+{
+"t": "nehag chadash",
+"d": "transport"
+},
+{
+"t": "nehag nosaf",
+"d": "money"
+},
+{
+"t": "Neilah",
+"d": "religious"
+},
+{
+"t": "nekudat isuf",
+"d": "everyday"
+},
+{
+"t": "nekudot zchut",
+"d": "home"
+},
+{
+"t": "nekudot zikui",
+"d": "money"
+},
+{
+"t": "Neot Kedumim",
+"d": "places"
+},
+{
+"t": "nerot",
+"d": "health"
+},
+{
+"t": "nes",
+"d": "food"
+},
+{
+"t": "nesach tabu",
+"d": "home"
+},
+{
+"t": "neshama",
+"d": "everyday"
+},
+{
+"t": "Nesher",
+"d": "places"
+},
+{
+"t": "neshoma",
+"d": "religious"
+},
+{
+"t": "nesia",
+"d": "transport"
+},
+{
+"t": "nesia tova",
+"d": "transport"
+},
+{
+"t": "Ness Ziona",
+"d": "places"
+},
+{
+"t": "Neta",
+"d": "people"
+},
+{
+"t": "Netali Shem Tov",
+"d": "people"
+},
+{
+"t": "Netanel",
+"d": "people"
+},
+{
+"t": "Netanya",
+"d": "places"
+},
+{
+"t": "Netanyahu",
+"d": "people"
+},
+{
+"t": "netilas yadayim",
+"d": "religious"
+},
+{
+"t": "netilat yadayim",
+"d": "religious"
+},
+{
+"t": "Netiv Hachesed",
+"d": "food"
+},
+{
+"t": "Netivot",
+"d": "places"
+},
+{
+"t": "neto",
+"d": "money"
+},
+{
+"t": "Netta Barzilai",
+"d": "people"
+},
+{
+"t": "netz",
+"d": "religious"
+},
+{
+"t": "Netziv",
+"d": "religious"
+},
+{
+"t": "Neve Ativ",
+"d": "places"
+},
+{
+"t": "Neve Avivim",
+"d": "places"
+},
+{
+"t": "Neve Daniel",
+"d": "places"
+},
+{
+"t": "Neve Eliezer",
+"d": "places"
+},
+{
+"t": "Neve Granot",
+"d": "places"
+},
+{
+"t": "Neve Ilan",
+"d": "places"
+},
+{
+"t": "Neve Sha'anan",
+"d": "places"
+},
+{
+"t": "Neve Tzedek",
+"d": "places"
+},
+{
+"t": "Neve Yaakov",
+"d": "places"
+},
+{
+"t": "Neve Zemer",
+"d": "places"
+},
+{
+"t": "Neve Zohar",
+"d": "places"
+},
+{
+"t": "Neviot",
+"d": "brands"
+},
+{
+"t": "New Pharm",
+"d": "brands"
+},
+{
+"t": "nezek",
+"d": "bureaucracy"
+},
+{
+"t": "nezelet",
+"d": "health"
+},
+{
+"t": "nezila",
+"d": "home"
+},
+{
+"t": "nichum aveilim",
+"d": "religious"
+},
+{
+"t": "nidaber",
+"d": "everyday"
+},
+{
+"t": "nifga",
+"d": "health"
+},
+{
+"t": "nifgei evra",
+"d": "health"
+},
+{
+"t": "niftar",
+"d": "home"
+},
+{
+"t": "nikui bamakor",
+"d": "money"
+},
+{
+"t": "nikuim",
+"d": "money"
+},
+{
+"t": "nimas li",
+"d": "everyday"
+},
+{
+"t": "Nimrod",
+"d": "people"
+},
+{
+"t": "Nimrod Sheffer",
+"d": "people"
+},
+{
+"t": "Nine Days",
+"d": "religious"
+},
+{
+"t": "Nir",
+"d": "people"
+},
+{
+"t": "Nir Barkat",
+"d": "people"
+},
+{
+"t": "Nir Oz",
+"d": "places"
+},
+{
+"t": "Nirlat",
+"d": "brands"
+},
+{
+"t": "Nisan",
+"d": "religious"
+},
+{
+"t": "Nishmat",
+"d": "politics"
+},
+{
+"t": "nisuin",
+"d": "home"
+},
+{
+"t": "nitra'e",
+"d": "everyday"
+},
+{
+"t": "nituach",
+"d": "health"
+},
+{
+"t": "nitva",
+"d": "bureaucracy"
+},
+{
+"t": "Nitzan",
+"d": "places"
+},
+{
+"t": "Nitzanim",
+"d": "places"
+},
+{
+"t": "Nitzat Haduvdevan",
+"d": "food"
+},
+{
+"t": "Nitzavim",
+"d": "religious"
+},
+{
+"t": "Noa",
+"d": "people"
+},
+{
+"t": "Noa Kirel",
+"d": "people"
+},
+{
+"t": "Noach",
+"d": "religious"
+},
+{
+"t": "Noam",
+"d": "people"
+},
+{
+"t": "Noam Sohlberg",
+"d": "people"
+},
+{
+"t": "noar hagva'ot",
+"d": "politics"
+},
+{
+"t": "Nocturno",
+"d": "health"
+},
+{
+"t": "Nof Ayalon",
+"d": "places"
+},
+{
+"t": "Nof HaGalil",
+"d": "places"
+},
+{
+"t": "Nofei Aviv",
+"d": "places"
+},
+{
+"t": "nohal",
+"d": "money"
+},
+{
+"t": "Nokdim",
+"d": "places"
+},
+{
+"t": "Nordau",
+"d": "places"
+},
+{
+"t": "Normalax",
+"d": "health"
+},
+{
+"t": "Normiten",
+"d": "health"
+},
+{
+"t": "notarion",
+"d": "bureaucracy"
+},
+{
+"t": "notein ta'am",
+"d": "religious"
+},
+{
+"t": "Novimol",
+"d": "health"
+},
+{
+"t": "nudnik",
+"d": "everyday"
+},
+{
+"t": "nura",
+"d": "home"
+},
+{
+"t": "Nurit",
+"d": "people"
+},
+{
+"t": "Nurofen",
+"d": "health"
+},
+{
+"t": "nusach",
+"d": "religious"
+},
+{
+"t": "ochel nefesh",
+"d": "religious"
+},
+{
+"t": "od lesimchot",
+"d": "everyday"
+},
+{
+"t": "od paam",
+"d": "everyday"
+},
+{
+"t": "Oded Forer",
+"d": "people"
+},
+{
+"t": "Odelia",
+"d": "people"
+},
+{
+"t": "Of Tov",
+"d": "brands"
+},
+{
+"t": "Ofakim",
+"d": "places"
+},
+{
+"t": "ofanayim",
+"d": "transport"
+},
+{
+"t": "Ofer",
+"d": "people"
+},
+{
+"t": "Ofer Cassif",
+"d": "people"
+},
+{
+"t": "Ofer Winter",
+"d": "people"
+},
+{
+"t": "Ofir",
+"d": "people"
+},
+{
+"t": "Ofir Sofer",
+"d": "people"
+},
+{
+"t": "Oflox",
+"d": "health"
+},
+{
+"t": "ofnoa",
+"d": "transport"
+},
+{
+"t": "Ofra",
+"d": "places"
+},
+{
+"t": "Ohad",
+"d": "people"
+},
+{
+"t": "Ohad Hemo",
+"d": "people"
+},
+{
+"t": "Ohana",
+"d": "people"
+},
+{
+"t": "ohel",
+"d": "everyday"
+},
+{
+"t": "Ohr Hachaim",
+"d": "religious"
+},
+{
+"t": "olah",
+"d": "bureaucracy"
+},
+{
+"t": "oleh chadash",
+"d": "bureaucracy"
+},
+{
+"t": "oleh vatik",
+"d": "everyday"
+},
+{
+"t": "olim",
+"d": "bureaucracy"
+},
+{
+"t": "Omepradex",
+"d": "health"
+},
+{
+"t": "Omer",
+"d": "people"
+},
+{
+"t": "Omer Adam",
+"d": "people"
+},
+{
+"t": "Omri",
+"d": "people"
+},
+{
+"t": "Omri Ronen",
+"d": "people"
+},
+{
+"t": "ona'at devarim",
+"d": "religious"
+},
+{
+"t": "One Zero",
+"d": "brands"
+},
+{
+"t": "onen",
+"d": "religious"
+},
+{
+"t": "Open University",
+"d": "brands"
+},
+{
+"t": "Ophir Tours",
+"d": "brands"
+},
+{
+"t": "opozitzia",
+"d": "politics"
+},
+{
+"t": "Optalgin",
+"d": "health"
+},
+{
+"t": "Optica Halperin",
+"d": "brands"
+},
+{
+"t": "optzia",
+"d": "money"
+},
+{
+"t": "Or Akiva",
+"d": "places"
+},
+{
+"t": "Or Yehuda",
+"d": "places"
+},
+{
+"t": "Oranit",
+"d": "places"
+},
+{
+"t": "orech din",
+"d": "bureaucracy"
+},
+{
+"t": "Oren",
+"d": "people"
+},
+{
+"t": "Ori",
+"d": "people"
+},
+{
+"t": "Orit",
+"d": "people"
+},
+{
+"t": "Orit Farkash-Hacohen",
+"d": "people"
+},
+{
+"t": "Orit Strock",
+"d": "people"
+},
+{
+"t": "Orly",
+"d": "people"
+},
+{
+"t": "osek murshe",
+"d": "bureaucracy"
+},
+{
+"t": "osek patur",
+"d": "bureaucracy"
+},
+{
+"t": "Osem",
+"d": "brands"
+},
+{
+"t": "Osher Ad",
+"d": "food"
+},
+{
+"t": "Osnat",
+"d": "people"
+},
+{
+"t": "Otef Aza",
+"d": "places"
+},
+{
+"t": "Otidin",
+"d": "health"
+},
+{
+"t": "otobus",
+"d": "transport"
+},
+{
+"t": "otobusim",
+"d": "transport"
+},
+{
+"t": "Otrivin",
+"d": "health"
+},
+{
+"t": "otzar beit din",
+"d": "religious"
+},
+{
+"t": "Otzar Hachayal",
+"d": "money"
+},
+{
+"t": "Otzma Yehudit",
+"d": "politics"
+},
+{
+"t": "Outbrain",
+"d": "brands"
+},
+{
+"t": "ov",
+"d": "bureaucracy"
+},
+{
+"t": "oved",
+"d": "money"
+},
+{
+"t": "ovedet zara",
+"d": "health"
+},
+{
+"t": "ozeret",
+"d": "home"
+},
+{
+"t": "oznei haman",
+"d": "food"
+},
+{
+"t": "pa'amon",
+"d": "home"
+},
+{
+"t": "paam",
+"d": "everyday"
+},
+{
+"t": "paam achat",
+"d": "everyday"
+},
+{
+"t": "pach ashpa",
+"d": "home"
+},
+{
+"t": "pach michzur",
+"d": "home"
+},
+{
+"t": "pach zevel",
+"d": "home"
+},
+{
+"t": "pagosh",
+"d": "transport"
+},
+{
+"t": "pakach",
+"d": "transport"
+},
+{
+"t": "pakid",
+"d": "bureaucracy"
+},
+{
+"t": "pancheriya",
+"d": "transport"
+},
+{
+"t": "Pango",
+"d": "transport"
+},
+{
+"t": "Pardes Hanna",
+"d": "places"
+},
+{
+"t": "pargiot",
+"d": "food"
+},
+{
+"t": "pargit",
+"d": "food"
+},
+{
+"t": "Park Hamesila",
+"d": "places"
+},
+{
+"t": "Park Hayarkon",
+"d": "places"
+},
+{
+"t": "parkeh",
+"d": "home"
+},
+{
+"t": "parsha",
+"d": "religious"
+},
+{
+"t": "parshas",
+"d": "religious"
+},
+{
+"t": "Parshat Hachodesh",
+"d": "religious"
+},
+{
+"t": "parshat hashavua",
+"d": "religious"
+},
+{
+"t": "Parshat Para",
+"d": "religious"
+},
+{
+"t": "Parshat Shekalim",
+"d": "religious"
+},
+{
+"t": "Partner",
+"d": "brands"
+},
+{
+"t": "parve",
+"d": "religious"
+},
+{
+"t": "pas yisrael",
+"d": "religious"
+},
+{
+"t": "pas Yisroel",
+"d": "religious"
+},
+{
+"t": "pashtida",
+"d": "food"
+},
+{
+"t": "pashut",
+"d": "everyday"
+},
+{
+"t": "Pasta Basta",
+"d": "food"
+},
+{
+"t": "pastrama",
+"d": "food"
+},
+{
+"t": "PayBox",
+"d": "money"
+},
+{
+"t": "Payoneer",
+"d": "brands"
+},
+{
+"t": "Paz",
+"d": "transport"
+},
+{
+"t": "pazam",
+"d": "brands"
+},
+{
+"t": "Pazgas",
+"d": "home"
+},
+{
+"t": "Pazomat",
+"d": "brands"
+},
+{
+"t": "peilut",
+"d": "home"
+},
+{
+"t": "Peki'in",
+"d": "places"
+},
+{
+"t": "Pekudei",
+"d": "religious"
+},
+{
+"t": "Peled",
+"d": "people"
+},
+{
+"t": "Pelephone",
+"d": "home"
+},
+{
+"t": "Peninei Halacha",
+"d": "religious"
+},
+{
+"t": "pensyon kelavim",
+"d": "home"
+},
+{
+"t": "Pepper",
+"d": "brands"
+},
+{
+"t": "perach",
+"d": "everyday"
+},
+{
+"t": "Pereg",
+"d": "food"
+},
+{
+"t": "Peretz",
+"d": "people"
+},
+{
+"t": "Pesach",
+"d": "religious"
+},
+{
+"t": "Pesek Zman",
+"d": "food"
+},
+{
+"t": "Petah Tikva",
+"d": "places"
+},
+{
+"t": "petek",
+"d": "politics"
+},
+{
+"t": "petrozilia",
+"d": "food"
+},
+{
+"t": "peula",
+"d": "home"
+},
+{
+"t": "peuton",
+"d": "home"
+},
+{
+"t": "pgisha",
+"d": "money"
+},
+{
+"t": "Phoenix",
+"d": "brands"
+},
+{
+"t": "pidyon",
+"d": "bureaucracy"
+},
+{
+"t": "pidyon haben",
+"d": "religious"
+},
+{
+"t": "Pierre Koenig",
+"d": "places"
+},
+{
+"t": "pigu'a",
+"d": "army"
+},
+{
+"t": "pikadon",
+"d": "money"
+},
+{
+"t": "pikadon sechirut",
+"d": "money"
+},
+{
+"t": "pikuach nefesh",
+"d": "religious"
+},
+{
+"t": "pikuadon",
+"d": "bureaucracy"
+},
+{
+"t": "pikud",
+"d": "army"
+},
+{
+"t": "pikud darom",
+"d": "army"
+},
+{
+"t": "Pikud Haoref",
+"d": "army"
+},
+{
+"t": "pikud tzafon",
+"d": "army"
+},
+{
+"t": "Pinchas",
+"d": "people"
+},
+{
+"t": "pinkas",
+"d": "home"
+},
+{
+"t": "pinkas shekim",
+"d": "money"
+},
+{
+"t": "Pinsker",
+"d": "places"
+},
+{
+"t": "Pinto",
+"d": "people"
+},
+{
+"t": "pinui",
+"d": "health"
+},
+{
+"t": "pinui binui",
+"d": "money"
+},
+{
+"t": "pinui pesolet",
+"d": "home"
+},
+{
+"t": "pirun mukdam",
+"d": "money"
+},
+{
+"t": "Pisgat Ze'ev",
+"d": "places"
+},
+{
+"t": "pishpeshim",
+"d": "home"
+},
+{
+"t": "pitom",
+"d": "everyday"
+},
+{
+"t": "pitot",
+"d": "food"
+},
+{
+"t": "piturim",
+"d": "money"
+},
+{
+"t": "pitzuchim",
+"d": "food"
+},
+{
+"t": "pitzuim",
+"d": "money"
+},
+{
+"t": "pitzutz",
+"d": "everyday"
+},
+{
+"t": "pitzutzia",
+"d": "food"
+},
+{
+"t": "pitzuyim",
+"d": "bureaucracy"
+},
+{
+"t": "pizur haknesset",
+"d": "politics"
+},
+{
+"t": "pkak",
+"d": "transport"
+},
+{
+"t": "pkid shuma",
+"d": "bureaucracy"
+},
+{
+"t": "pkida",
+"d": "bureaucracy"
+},
+{
+"t": "plata",
+"d": "religious"
+},
+{
+"t": "plugah",
+"d": "army"
+},
+{
+"t": "Pluxee",
+"d": "brands"
+},
+{
+"t": "Pnina Tamano-Shata",
+"d": "people"
+},
+{
+"t": "pniya",
+"d": "bureaucracy"
+},
+{
+"t": "Poleg",
+"d": "places"
+},
+{
+"t": "Polgat",
+"d": "brands"
+},
+{
+"t": "polisa",
+"d": "money"
+},
+{
+"t": "Poriya",
+"d": "health"
+},
+{
+"t": "posek",
+"d": "religious"
+},
+{
+"t": "praklit",
+"d": "bureaucracy"
+},
+{
+"t": "Pramin",
+"d": "health"
+},
+{
+"t": "Pri Galil",
+"d": "food"
+},
+{
+"t": "pricha",
+"d": "health"
+},
+{
+"t": "Prigat",
+"d": "brands"
+},
+{
+"t": "primeriz",
+"d": "politics"
+},
+{
+"t": "Primor",
+"d": "food"
+},
+{
+"t": "profil",
+"d": "army"
+},
+{
+"t": "protektzia",
+"d": "everyday"
+},
+{
+"t": "Psagot",
+"d": "places"
+},
+{
+"t": "psak",
+"d": "religious"
+},
+{
+"t": "psak din",
+"d": "bureaucracy"
+},
+{
+"t": "psak halacha",
+"d": "religious"
+},
+{
+"t": "psichometri",
+"d": "home"
+},
+{
+"t": "ptitim",
+"d": "food"
+},
+{
+"t": "ptor",
+"d": "army"
+},
+{
+"t": "ptor mechess",
+"d": "bureaucracy"
+},
+{
+"t": "ptur",
+"d": "bureaucracy"
+},
+{
+"t": "ptur mas",
+"d": "money"
+},
+{
+"t": "ptzua",
+"d": "health"
+},
+{
+"t": "pulke",
+"d": "food"
+},
+{
+"t": "pundak",
+"d": "everyday"
+},
+{
+"t": "Purim sameach",
+"d": "everyday"
+},
+{
+"t": "Qatargate",
+"d": "places"
+},
+{
+"t": "Ra'am",
+"d": "politics"
+},
+{
+"t": "Ra'anana",
+"d": "places"
+},
+{
+"t": "ra'ashan",
+"d": "religious"
+},
+{
+"t": "raam",
+"d": "everyday"
+},
+{
+"t": "Rabanut",
+"d": "bureaucracy"
+},
+{
+"t": "Rabbanut",
+"d": "religious"
+},
+{
+"t": "Rabbanut Yerushalayim",
+"d": "religious"
+},
+{
+"t": "Rabbeinu Tam",
+"d": "religious"
+},
+{
+"t": "Rabbi Nachman",
+"d": "religious"
+},
+{
+"t": "Rabbi Sacks",
+"d": "religious"
+},
+{
+"t": "Rabinowitz",
+"d": "people"
+},
+{
+"t": "Racheli",
+"d": "people"
+},
+{
+"t": "Rafael",
+"d": "brands"
+},
+{
+"t": "Rahat",
+"d": "places"
+},
+{
+"t": "rak rega",
+"d": "everyday"
+},
+{
+"t": "rakevet",
+"d": "transport"
+},
+{
+"t": "Rakevet Israel",
+"d": "brands"
+},
+{
+"t": "rakevet kala",
+"d": "transport"
+},
+{
+"t": "Rakevet Yisrael",
+"d": "transport"
+},
+{
+"t": "Ramat Aviv",
+"d": "places"
+},
+{
+"t": "Ramat Beit Shemesh",
+"d": "places"
+},
+{
+"t": "Ramat Beit Shemesh Daled",
+"d": "places"
+},
+{
+"t": "Ramat Beit Shemesh Gimmel",
+"d": "places"
+},
+{
+"t": "Ramat Denya",
+"d": "places"
+},
+{
+"t": "Ramat Eshkol",
+"d": "places"
+},
+{
+"t": "Ramat Gan",
+"d": "places"
+},
+{
+"t": "Ramat Hachayal",
+"d": "places"
+},
+{
+"t": "Ramat Hanadiv",
+"d": "places"
+},
+{
+"t": "Ramat HaSharon",
+"d": "places"
+},
+{
+"t": "Ramat Rachel",
+"d": "places"
+},
+{
+"t": "Ramat Raziel",
+"d": "places"
+},
+{
+"t": "Ramat Sharett",
+"d": "places"
+},
+{
+"t": "Ramat Shlomo",
+"d": "places"
+},
+{
+"t": "Ramat Yishai",
+"d": "places"
+},
+{
+"t": "ramatkal",
+"d": "brands"
+},
+{
+"t": "Rambam",
+"d": "religious"
+},
+{
+"t": "Ramban",
+"d": "religious"
+},
+{
+"t": "Ramchal",
+"d": "religious"
+},
+{
+"t": "Rami Levy",
+"d": "food"
+},
+{
+"t": "Ramla",
+"d": "places"
+},
+{
+"t": "Ramon Airport",
+"d": "brands"
+},
+{
+"t": "Ramot",
+"d": "places"
+},
+{
+"t": "Ramot Polin",
+"d": "places"
+},
+{
+"t": "ramzor",
+"d": "transport"
+},
+{
+"t": "Ran Gvili",
+"d": "people"
+},
+{
+"t": "rasham leyerushot",
+"d": "bureaucracy"
+},
+{
+"t": "Rashba",
+"d": "religious"
+},
+{
+"t": "Rashbi",
+"d": "religious"
+},
+{
+"t": "Rashi",
+"d": "religious"
+},
+{
+"t": "Rashut Ha'atikot",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Ha'uchlusin",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Hachashmal",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Hadarachim",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Hamayim",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Hamisim",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Hanamalim",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Haochlusin",
+"d": "brands"
+},
+{
+"t": "Rashut Hashiddur",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Hateufa",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Hateva Vehaganim",
+"d": "bureaucracy"
+},
+{
+"t": "Rashut Lehaganat Hatzarchan",
+"d": "bureaucracy"
+},
+{
+"t": "Rassco",
+"d": "places"
+},
+{
+"t": "rav aluf",
+"d": "army"
+},
+{
+"t": "Rav Asher Weiss",
+"d": "religious"
+},
+{
+"t": "Rav Aviner",
+"d": "religious"
+},
+{
+"t": "Rav Chaim Kanievsky",
+"d": "religious"
+},
+{
+"t": "Rav David Yosef",
+"d": "religious"
+},
+{
+"t": "Rav Elyashiv",
+"d": "religious"
+},
+{
+"t": "Rav Kalman Ber",
+"d": "religious"
+},
+{
+"t": "Rav Kav",
+"d": "transport"
+},
+{
+"t": "Rav Kook",
+"d": "religious"
+},
+{
+"t": "Rav Landau",
+"d": "religious"
+},
+{
+"t": "Rav Lichtenstein",
+"d": "religious"
+},
+{
+"t": "Rav Melamed",
+"d": "religious"
+},
+{
+"t": "Rav Mordechai Eliyahu",
+"d": "religious"
+},
+{
+"t": "Rav Ovadia",
+"d": "religious"
+},
+{
+"t": "Rav Rubin",
+"d": "religious"
+},
+{
+"t": "rav samal",
+"d": "army"
+},
+{
+"t": "Rav Schachter",
+"d": "religious"
+},
+{
+"t": "rav seren",
+"d": "army"
+},
+{
+"t": "Rav Shlomo Zalman",
+"d": "religious"
+},
+{
+"t": "Rav Shteinman",
+"d": "religious"
+},
+{
+"t": "Rav Soloveitchik",
+"d": "religious"
+},
+{
+"t": "Rav Yitzchak Yosef",
+"d": "religious"
+},
+{
+"t": "Ravit",
+"d": "people"
+},
+{
+"t": "Raviv Drucker",
+"d": "people"
+},
+{
+"t": "ravshatz",
+"d": "army"
+},
+{
+"t": "Raz",
+"d": "people"
+},
+{
+"t": "Re'eh",
+"d": "religious"
+},
+{
+"t": "Re'im",
+"d": "places"
+},
+{
+"t": "Re'uven",
+"d": "people"
+},
+{
+"t": "reayon avoda",
+"d": "money"
+},
+{
+"t": "Reb Moshe",
+"d": "religious"
+},
+{
+"t": "rebbetzin",
+"d": "religious"
+},
+{
+"t": "Rebbi",
+"d": "religious"
+},
+{
+"t": "Recanati",
+"d": "food"
+},
+{
+"t": "rechev",
+"d": "transport"
+},
+{
+"t": "rechev tziburi",
+"d": "transport"
+},
+{
+"t": "rechilut",
+"d": "religious"
+},
+{
+"t": "Rechov Yafo",
+"d": "places"
+},
+{
+"t": "refuah shleimah",
+"d": "everyday"
+},
+{
+"t": "rega",
+"d": "everyday"
+},
+{
+"t": "Regavim",
+"d": "politics"
+},
+{
+"t": "regila",
+"d": "army"
+},
+{
+"t": "Rehavia",
+"d": "places"
+},
+{
+"t": "rehov",
+"d": "transport"
+},
+{
+"t": "Rehovot",
+"d": "places"
+},
+{
+"t": "Reichman",
+"d": "brands"
+},
+{
+"t": "Rema",
+"d": "religious"
+},
+{
+"t": "Rennie",
+"d": "health"
+},
+{
+"t": "rentgen",
+"d": "health"
+},
+{
+"t": "Renuar",
+"d": "brands"
+},
+{
+"t": "reshet",
+"d": "brands"
+},
+{
+"t": "Reshet Bet",
+"d": "brands"
+},
+{
+"t": "reshet nayad",
+"d": "brands"
+},
+{
+"t": "reshut harabim",
+"d": "religious"
+},
+{
+"t": "reshut hayachid",
+"d": "religious"
+},
+{
+"t": "retivut",
+"d": "home"
+},
+{
+"t": "Revital",
+"d": "people"
+},
+{
+"t": "Revivim",
+"d": "places"
+},
+{
+"t": "ribit",
+"d": "bureaucracy"
+},
+{
+"t": "ribit lo tzmuda",
+"d": "money"
+},
+{
+"t": "ribit tzmuda",
+"d": "money"
+},
+{
+"t": "Rif",
+"d": "religious"
+},
+{
+"t": "rikud",
+"d": "everyday"
+},
+{
+"t": "Rina Matzliach",
+"d": "people"
+},
+{
+"t": "ripui be'isuk",
+"d": "health"
+},
+{
+"t": "rishayon",
+"d": "bureaucracy"
+},
+{
+"t": "rishayon bniya",
+"d": "bureaucracy"
+},
+{
+"t": "rishayon esek",
+"d": "bureaucracy"
+},
+{
+"t": "rishayon iski",
+"d": "bureaucracy"
+},
+{
+"t": "rishayon nehiga",
+"d": "transport"
+},
+{
+"t": "rishayon neshek",
+"d": "bureaucracy"
+},
+{
+"t": "rishayon rechev",
+"d": "bureaucracy"
+},
+{
+"t": "Rishon LeZion",
+"d": "places"
+},
+{
+"t": "Rishui",
+"d": "brands"
+},
+{
+"t": "rishum",
+"d": "bureaucracy"
+},
+{
+"t": "rishum nisu'in",
+"d": "bureaucracy"
+},
+{
+"t": "rishum plili",
+"d": "bureaucracy"
+},
+{
+"t": "Ritalin",
+"d": "health"
+},
+{
+"t": "Ritva",
+"d": "religious"
+},
+{
+"t": "ritzpa",
+"d": "home"
+},
+{
+"t": "Rivka",
+"d": "people"
+},
+{
+"t": "ro'eh cheshbon",
+"d": "money"
+},
+{
+"t": "rofa",
+"d": "health"
+},
+{
+"t": "rofat mishpacha",
+"d": "health"
+},
+{
+"t": "rofe",
+"d": "health"
+},
+{
+"t": "rofe mishpacha",
+"d": "health"
+},
+{
+"t": "rofe mumche",
+"d": "health"
+},
+{
+"t": "rofe nashim",
+"d": "health"
+},
+{
+"t": "rofe shinayim",
+"d": "health"
+},
+{
+"t": "rofe toran",
+"d": "health"
+},
+{
+"t": "rofe yeladim",
+"d": "health"
+},
+{
+"t": "Roi",
+"d": "people"
+},
+{
+"t": "Rokacet",
+"d": "health"
+},
+{
+"t": "rokachat",
+"d": "health"
+},
+{
+"t": "rokeach",
+"d": "health"
+},
+{
+"t": "Roladin",
+"d": "brands"
+},
+{
+"t": "Roman Gofman",
+"d": "people"
+},
+{
+"t": "Romema",
+"d": "places"
+},
+{
+"t": "Romi",
+"d": "people"
+},
+{
+"t": "Ron Dermer",
+"d": "people"
+},
+{
+"t": "Ron Huldai",
+"d": "people"
+},
+{
+"t": "Ronen",
+"d": "people"
+},
+{
+"t": "Ronen Bar",
+"d": "people"
+},
+{
+"t": "Roni",
+"d": "people"
+},
+{
+"t": "Ronit",
+"d": "people"
+},
+{
+"t": "Rosenberg",
+"d": "people"
+},
+{
+"t": "Rosh",
+"d": "religious"
+},
+{
+"t": "Rosh Chodesh",
+"d": "religious"
+},
+{
+"t": "rosh gadol",
+"d": "money"
+},
+{
+"t": "rosh ha'ir",
+"d": "politics"
+},
+{
+"t": "Rosh HaAyin",
+"d": "places"
+},
+{
+"t": "rosh hamemshala",
+"d": "politics"
+},
+{
+"t": "Rosh Hanikra",
+"d": "places"
+},
+{
+"t": "Rosh Hashana",
+"d": "religious"
+},
+{
+"t": "rosh katan",
+"d": "money"
+},
+{
+"t": "Rosh Pina",
+"d": "places"
+},
+{
+"t": "rosh tzevet",
+"d": "money"
+},
+{
+"t": "Rosh Tzurim",
+"d": "places"
+},
+{
+"t": "rosh yeshiva",
+"d": "religious"
+},
+{
+"t": "Rothschild",
+"d": "places"
+},
+{
+"t": "ruach",
+"d": "everyday"
+},
+{
+"t": "ruach mizrachit",
+"d": "everyday"
+},
+{
+"t": "rugelach",
+"d": "food"
+},
+{
+"t": "Rus",
+"d": "religious"
+},
+{
+"t": "Rut",
+"d": "religious"
+},
+{
+"t": "Ruti",
+"d": "people"
+},
+{
+"t": "saba",
+"d": "home"
+},
+{
+"t": "sababa",
+"d": "everyday"
+},
+{
+"t": "sabich",
+"d": "food"
+},
+{
+"t": "Sabon",
+"d": "brands"
+},
+{
+"t": "sachar",
+"d": "money"
+},
+{
+"t": "sachar minimum",
+"d": "money"
+},
+{
+"t": "sachir",
+"d": "money"
+},
+{
+"t": "sachirut",
+"d": "home"
+},
+{
+"t": "sachlav",
+"d": "food"
+},
+{
+"t": "Sachne",
+"d": "places"
+},
+{
+"t": "sadir",
+"d": "army"
+},
+{
+"t": "sadna",
+"d": "home"
+},
+{
+"t": "safek brachot lehakel",
+"d": "religious"
+},
+{
+"t": "safek deoraita",
+"d": "religious"
+},
+{
+"t": "safek derabanan lekula",
+"d": "religious"
+},
+{
+"t": "safsal",
+"d": "transport"
+},
+{
+"t": "sakin",
+"d": "home"
+},
+{
+"t": "sakit zevel",
+"d": "home"
+},
+{
+"t": "sal briut",
+"d": "bureaucracy"
+},
+{
+"t": "sal habriut",
+"d": "health"
+},
+{
+"t": "sal klita",
+"d": "bureaucracy"
+},
+{
+"t": "salat aravi",
+"d": "food"
+},
+{
+"t": "salat chatzilim",
+"d": "food"
+},
+{
+"t": "salat katzutz",
+"d": "food"
+},
+{
+"t": "salat turki",
+"d": "food"
+},
+{
+"t": "salat yerakot",
+"d": "food"
+},
+{
+"t": "salatim",
+"d": "food"
+},
+{
+"t": "samal",
+"d": "army"
+},
+{
+"t": "samankal",
+"d": "money"
+},
+{
+"t": "sambusak",
+"d": "food"
+},
+{
+"t": "Sami Abu Shehadeh",
+"d": "people"
+},
+{
+"t": "sandak",
+"d": "religious"
+},
+{
+"t": "sandlar",
+"d": "everyday"
+},
+{
+"t": "Sanhedria",
+"d": "places"
+},
+{
+"t": "sapa",
+"d": "home"
+},
+{
+"t": "sapak internet",
+"d": "home"
+},
+{
+"t": "Sara Netanyahu",
+"d": "people"
+},
+{
+"t": "Sarit",
+"d": "people"
+},
+{
+"t": "Sarit Hadad",
+"d": "people"
+},
+{
+"t": "Sarona",
+"d": "food"
+},
+{
+"t": "Sasson",
+"d": "people"
+},
+{
+"t": "Sataf",
+"d": "places"
+},
+{
+"t": "Satmar Rebbe",
+"d": "religious"
+},
+{
+"t": "Savidor",
+"d": "places"
+},
+{
+"t": "savlanut",
+"d": "everyday"
+},
+{
+"t": "savta",
+"d": "home"
+},
+{
+"t": "Savyon",
+"d": "places"
+},
+{
+"t": "sayaat",
+"d": "home"
+},
+{
+"t": "sayeret",
+"d": "army"
+},
+{
+"t": "schach",
+"d": "religious"
+},
+{
+"t": "Schneider",
+"d": "health"
+},
+{
+"t": "Sde Boker",
+"d": "places"
+},
+{
+"t": "Sde Teiman",
+"d": "places"
+},
+{
+"t": "Sderot",
+"d": "places"
+},
+{
+"t": "Sderot Begin",
+"d": "places"
+},
+{
+"t": "Sderot Ben Gurion",
+"d": "places"
+},
+{
+"t": "Sderot Hanassi",
+"d": "places"
+},
+{
+"t": "sechirut",
+"d": "money"
+},
+{
+"t": "sefach",
+"d": "bureaucracy"
+},
+{
+"t": "sefarim",
+"d": "religious"
+},
+{
+"t": "sefek sefeika",
+"d": "religious"
+},
+{
+"t": "sefel",
+"d": "home"
+},
+{
+"t": "sefer Torah",
+"d": "religious"
+},
+{
+"t": "Sefira",
+"d": "religious"
+},
+{
+"t": "sefiras ha'omer",
+"d": "religious"
+},
+{
+"t": "sefirat ha'omer",
+"d": "religious"
+},
+{
+"t": "seforim",
+"d": "religious"
+},
+{
+"t": "Segal",
+"d": "people"
+},
+{
+"t": "segula",
+"d": "everyday"
+},
+{
+"t": "seker",
+"d": "politics"
+},
+{
+"t": "selichos",
+"d": "religious"
+},
+{
+"t": "Selichot",
+"d": "religious"
+},
+{
+"t": "seminarion",
+"d": "home"
+},
+{
+"t": "seren",
+"d": "army"
+},
+{
+"t": "seret",
+"d": "everyday"
+},
+{
+"t": "seudah",
+"d": "religious"
+},
+{
+"t": "seudas mitzvah",
+"d": "religious"
+},
+{
+"t": "seudat havra'a",
+"d": "religious"
+},
+{
+"t": "seudat mitzvah",
+"d": "religious"
+},
+{
+"t": "seudat Shabbat",
+"d": "religious"
+},
+{
+"t": "sevivon",
+"d": "religious"
+},
+{
+"t": "sgan aluf",
+"d": "army"
+},
+{
+"t": "sgirat tik",
+"d": "bureaucracy"
+},
+{
+"t": "sha'a",
+"d": "everyday"
+},
+{
+"t": "Sha'agat Ha'ari",
+"d": "places"
+},
+{
+"t": "Sha'ar Ha'arayot",
+"d": "places"
+},
+{
+"t": "Sha'ar Haashpot",
+"d": "places"
+},
+{
+"t": "Sha'ar Shechem",
+"d": "places"
+},
+{
+"t": "Sha'ar Tzion",
+"d": "places"
+},
+{
+"t": "Sha'ar Yafo",
+"d": "places"
+},
+{
+"t": "Sha'arei Tikva",
+"d": "places"
+},
+{
+"t": "sha'atnez",
+"d": "religious"
+},
+{
+"t": "sha'on me'orer",
+"d": "home"
+},
+{
+"t": "Shaar Binyamin",
+"d": "places"
+},
+{
+"t": "Shaare Zedek",
+"d": "health"
+},
+{
+"t": "Shaarei Chesed",
+"d": "places"
+},
+{
+"t": "shaat hadchak",
+"d": "religious"
+},
+{
+"t": "Shabak",
+"d": "bureaucracy"
+},
+{
+"t": "shaban",
+"d": "health"
+},
+{
+"t": "Shabas",
+"d": "brands"
+},
+{
+"t": "shabbat chatan",
+"d": "religious"
+},
+{
+"t": "Shabbat Chazon",
+"d": "religious"
+},
+{
+"t": "Shabbat elevator",
+"d": "religious"
+},
+{
+"t": "Shabbat goy",
+"d": "religious"
+},
+{
+"t": "Shabbat Hagadol",
+"d": "religious"
+},
+{
+"t": "Shabbat Mevarchim",
+"d": "religious"
+},
+{
+"t": "Shabbat Nachamu",
+"d": "religious"
+},
+{
+"t": "Shabbat Shalom",
+"d": "religious"
+},
+{
+"t": "Shabbat Shira",
+"d": "religious"
+},
+{
+"t": "Shabbat Shuva",
+"d": "religious"
+},
+{
+"t": "Shabbat Zachor",
+"d": "religious"
+},
+{
+"t": "shabbaton",
+"d": "everyday"
+},
+{
+"t": "Shabbos",
+"d": "religious"
+},
+{
+"t": "Shachar",
+"d": "people"
+},
+{
+"t": "Shacharis",
+"d": "religious"
+},
+{
+"t": "shacharit",
+"d": "religious"
+},
+{
+"t": "shachen",
+"d": "bureaucracy"
+},
+{
+"t": "shadchan",
+"d": "home"
+},
+{
+"t": "Shagrir",
+"d": "transport"
+},
+{
+"t": "Shai",
+"d": "people"
+},
+{
+"t": "shakshuka",
+"d": "food"
+},
+{
+"t": "shalat",
+"d": "everyday"
+},
+{
+"t": "shalem",
+"d": "transport"
+},
+{
+"t": "shaliach",
+"d": "health"
+},
+{
+"t": "shalish",
+"d": "army"
+},
+{
+"t": "Shalma",
+"d": "places"
+},
+{
+"t": "Shalom",
+"d": "people"
+},
+{
+"t": "shalom aleichem",
+"d": "everyday"
+},
+{
+"t": "Shalom Asayag",
+"d": "people"
+},
+{
+"t": "shalom bayit",
+"d": "home"
+},
+{
+"t": "shalom rav",
+"d": "everyday"
+},
+{
+"t": "shalom zachar",
+"d": "religious"
+},
+{
+"t": "shalosh seudos",
+"d": "religious"
+},
+{
+"t": "shalosh seudot",
+"d": "religious"
+},
+{
+"t": "shama'i mekarke'in",
+"d": "money"
+},
+{
+"t": "shamai",
+"d": "bureaucracy"
+},
+{
+"t": "shamash",
+"d": "religious"
+},
+{
+"t": "shamenet",
+"d": "food"
+},
+{
+"t": "Shamir",
+"d": "people"
+},
+{
+"t": "Shamir Salads",
+"d": "brands"
+},
+{
+"t": "shampoo kinim",
+"d": "home"
+},
+{
+"t": "shana tova",
+"d": "everyday"
+},
+{
+"t": "shana tova umetuka",
+"d": "everyday"
+},
+{
+"t": "Shani",
+"d": "people"
+},
+{
+"t": "Shani Cohen",
+"d": "people"
+},
+{
+"t": "shaon choref",
+"d": "everyday"
+},
+{
+"t": "shaon kayitz",
+"d": "everyday"
+},
+{
+"t": "shaon Shabbat",
+"d": "religious"
+},
+{
+"t": "shaot nosafot",
+"d": "money"
+},
+{
+"t": "shapa'at",
+"d": "health"
+},
+{
+"t": "Shapira",
+"d": "people"
+},
+{
+"t": "sharav",
+"d": "everyday"
+},
+{
+"t": "Sharona",
+"d": "food"
+},
+{
+"t": "Sharren Haskel",
+"d": "people"
+},
+{
+"t": "Shas",
+"d": "brands"
+},
+{
+"t": "Shaul",
+"d": "people"
+},
+{
+"t": "Shaul Hamelech",
+"d": "places"
+},
+{
+"t": "Shaul Meridor",
+"d": "people"
+},
+{
+"t": "shavua",
+"d": "everyday"
+},
+{
+"t": "Shavua Tov",
+"d": "religious"
+},
+{
+"t": "Shavuos",
+"d": "religious"
+},
+{
+"t": "Shavuot",
+"d": "religious"
+},
+{
+"t": "shawarma",
+"d": "food"
+},
+{
+"t": "shayla",
+"d": "religious"
+},
+{
+"t": "Shazar",
+"d": "places"
+},
+{
+"t": "shchenim",
+"d": "bureaucracy"
+},
+{
+"t": "She'erit Yisrael",
+"d": "religious"
+},
+{
+"t": "Sheba",
+"d": "health"
+},
+{
+"t": "Shefa Shuk",
+"d": "food"
+},
+{
+"t": "shehakol",
+"d": "religious"
+},
+{
+"t": "Sheikh Jarrah",
+"d": "places"
+},
+{
+"t": "Sheikh Radwan",
+"d": "places"
+},
+{
+"t": "Sheinfeld",
+"d": "places"
+},
+{
+"t": "shek",
+"d": "money"
+},
+{
+"t": "shek dachuy",
+"d": "money"
+},
+{
+"t": "sheka",
+"d": "home"
+},
+{
+"t": "Shekem Electric",
+"d": "brands"
+},
+{
+"t": "Shelach",
+"d": "religious"
+},
+{
+"t": "sheleg",
+"d": "everyday"
+},
+{
+"t": "shemesh",
+"d": "everyday"
+},
+{
+"t": "Shemini",
+"d": "religious"
+},
+{
+"t": "Shemini Atzeres",
+"d": "religious"
+},
+{
+"t": "Shemini Atzeret",
+"d": "religious"
+},
+{
+"t": "Shemoneh Esrei",
+"d": "religious"
+},
+{
+"t": "shemor al atzmecha",
+"d": "everyday"
+},
+{
+"t": "Shemos",
+"d": "religious"
+},
+{
+"t": "Shemot",
+"d": "religious"
+},
+{
+"t": "Shenkar",
+"d": "brands"
+},
+{
+"t": "Shenkin",
+"d": "places"
+},
+{
+"t": "sherut",
+"d": "transport"
+},
+{
+"t": "sherut chova",
+"d": "army"
+},
+{
+"t": "Sherut Hataasuka",
+"d": "brands"
+},
+{
+"t": "sherut keva",
+"d": "army"
+},
+{
+"t": "sherut lakochot",
+"d": "home"
+},
+{
+"t": "sherut leumi",
+"d": "army"
+},
+{
+"t": "sherut miluim",
+"d": "army"
+},
+{
+"t": "sherutim",
+"d": "home"
+},
+{
+"t": "sheva brachot",
+"d": "religious"
+},
+{
+"t": "shever",
+"d": "health"
+},
+{
+"t": "shevet",
+"d": "home"
+},
+{
+"t": "sheyihye lecha yom nechmad",
+"d": "everyday"
+},
+{
+"t": "Shfela",
+"d": "places"
+},
+{
+"t": "shi'abud",
+"d": "money"
+},
+{
+"t": "shi'ul",
+"d": "health"
+},
+{
+"t": "shibutz",
+"d": "money"
+},
+{
+"t": "shichrur",
+"d": "army"
+},
+{
+"t": "shichva",
+"d": "home"
+},
+{
+"t": "shidduch",
+"d": "home"
+},
+{
+"t": "shigra",
+"d": "politics"
+},
+{
+"t": "shikum",
+"d": "health"
+},
+{
+"t": "shikun",
+"d": "money"
+},
+{
+"t": "Shilav",
+"d": "brands"
+},
+{
+"t": "Shilo",
+"d": "places"
+},
+{
+"t": "shilshom",
+"d": "everyday"
+},
+{
+"t": "shilshul",
+"d": "health"
+},
+{
+"t": "Shimon",
+"d": "people"
+},
+{
+"t": "Shimon Hatzadik",
+"d": "places"
+},
+{
+"t": "Shimon Riklin",
+"d": "people"
+},
+{
+"t": "shimu'a",
+"d": "money"
+},
+{
+"t": "shimua",
+"d": "money"
+},
+{
+"t": "Shin Bet",
+"d": "brands"
+},
+{
+"t": "shinayim",
+"d": "health"
+},
+{
+"t": "shipud",
+"d": "food"
+},
+{
+"t": "Shipudei Hatikva",
+"d": "food"
+},
+{
+"t": "shiputz",
+"d": "home"
+},
+{
+"t": "shiputznik",
+"d": "home"
+},
+{
+"t": "Shir Hashirim",
+"d": "religious"
+},
+{
+"t": "Shira",
+"d": "people"
+},
+{
+"t": "Shira Haas",
+"d": "people"
+},
+{
+"t": "Shiri",
+"d": "people"
+},
+{
+"t": "shiryun",
+"d": "politics"
+},
+{
+"t": "shishlik",
+"d": "food"
+},
+{
+"t": "shitafon",
+"d": "everyday"
+},
+{
+"t": "Shitrit",
+"d": "people"
+},
+{
+"t": "shiur",
+"d": "religious"
+},
+{
+"t": "shiurei bayit",
+"d": "home"
+},
+{
+"t": "shiurim",
+"d": "home"
+},
+{
+"t": "shiva",
+"d": "religious"
+},
+{
+"t": "shivah nekiyim",
+"d": "religious"
+},
+{
+"t": "Shivtei Yisrael",
+"d": "places"
+},
+{
+"t": "shkalim",
+"d": "money"
+},
+{
+"t": "shkedei marak",
+"d": "brands"
+},
+{
+"t": "shkhuna",
+"d": "bureaucracy"
+},
+{
+"t": "shkia",
+"d": "everyday"
+},
+{
+"t": "shkifut oref",
+"d": "health"
+},
+{
+"t": "shlach li",
+"d": "everyday"
+},
+{
+"t": "shlilat rishayon",
+"d": "transport"
+},
+{
+"t": "Shlomi",
+"d": "people"
+},
+{
+"t": "Shlomit",
+"d": "people"
+},
+{
+"t": "Shlomo",
+"d": "people"
+},
+{
+"t": "Shlomo Artzi",
+"d": "people"
+},
+{
+"t": "Shlomo Karhi",
+"d": "people"
+},
+{
+"t": "Shlomo Share",
+"d": "transport"
+},
+{
+"t": "Shlomo Sixt",
+"d": "brands"
+},
+{
+"t": "Shlomzion Hamalka",
+"d": "places"
+},
+{
+"t": "shloshim",
+"d": "religious"
+},
+{
+"t": "shmartafit",
+"d": "home"
+},
+{
+"t": "shmira",
+"d": "army"
+},
+{
+"t": "shmirat herayon",
+"d": "health"
+},
+{
+"t": "shmirot",
+"d": "army"
+},
+{
+"t": "shmita",
+"d": "religious"
+},
+{
+"t": "Shmone Esre",
+"d": "religious"
+},
+{
+"t": "Shmuel",
+"d": "people"
+},
+{
+"t": "Shmuel Hanavi",
+"d": "places"
+},
+{
+"t": "shmurat teva",
+"d": "transport"
+},
+{
+"t": "shnaton",
+"d": "home"
+},
+{
+"t": "shnayim mikra",
+"d": "religious"
+},
+{
+"t": "shnitzel",
+"d": "food"
+},
+{
+"t": "shnitzel tiras",
+"d": "food"
+},
+{
+"t": "shniya",
+"d": "everyday"
+},
+{
+"t": "shofar",
+"d": "religious"
+},
+{
+"t": "shofet",
+"d": "bureaucracy"
+},
+{
+"t": "Shoftim",
+"d": "religious"
+},
+{
+"t": "Shoham",
+"d": "places"
+},
+{
+"t": "shoko",
+"d": "everyday"
+},
+{
+"t": "shoko b'sakit",
+"d": "food"
+},
+{
+"t": "sholom bayis",
+"d": "religious"
+},
+{
+"t": "shomer",
+"d": "politics"
+},
+{
+"t": "shomer negia",
+"d": "religious"
+},
+{
+"t": "Shomer Shabbat",
+"d": "religious"
+},
+{
+"t": "Shomron",
+"d": "places"
+},
+{
+"t": "Shoshana",
+"d": "people"
+},
+{
+"t": "shoshvinim",
+"d": "religious"
+},
+{
+"t": "shoter",
+"d": "transport"
+},
+{
+"t": "Shoval",
+"d": "people"
+},
+{
+"t": "shovar",
+"d": "health"
+},
+{
+"t": "shtar",
+"d": "bureaucracy"
+},
+{
+"t": "shtar chov",
+"d": "bureaucracy"
+},
+{
+"t": "shtar halva'ah",
+"d": "bureaucracy"
+},
+{
+"t": "shtar matana",
+"d": "bureaucracy"
+},
+{
+"t": "shtar mechira",
+"d": "bureaucracy"
+},
+{
+"t": "shtar shituf",
+"d": "bureaucracy"
+},
+{
+"t": "shtar yerusha",
+"d": "bureaucracy"
+},
+{
+"t": "shten",
+"d": "health"
+},
+{
+"t": "shtifat rechev",
+"d": "transport"
+},
+{
+"t": "shtuyot",
+"d": "everyday"
+},
+{
+"t": "Shuafat",
+"d": "places"
+},
+{
+"t": "Shufersal",
+"d": "food"
+},
+{
+"t": "Shuk Hacarmel",
+"d": "food"
+},
+{
+"t": "Shuk Hanamal",
+"d": "food"
+},
+{
+"t": "Shuk Hapishpeshim",
+"d": "food"
+},
+{
+"t": "Shuk Hatikva",
+"d": "food"
+},
+{
+"t": "shuk hayir",
+"d": "food"
+},
+{
+"t": "Shuk Sarona",
+"d": "food"
+},
+{
+"t": "Shuki",
+"d": "people"
+},
+{
+"t": "shulchan",
+"d": "home"
+},
+{
+"t": "Shulchan Aruch",
+"d": "religious"
+},
+{
+"t": "shum",
+"d": "food"
+},
+{
+"t": "shuma",
+"d": "money"
+},
+{
+"t": "Shushan Purim",
+"d": "religious"
+},
+{
+"t": "shutafim",
+"d": "home"
+},
+{
+"t": "Shvat",
+"d": "religious"
+},
+{
+"t": "shvav",
+"d": "home"
+},
+{
+"t": "shvil",
+"d": "everyday"
+},
+{
+"t": "Shvil Yisrael",
+"d": "transport"
+},
+{
+"t": "shvu'a",
+"d": "bureaucracy"
+},
+{
+"t": "sibim",
+"d": "home"
+},
+{
+"t": "siddur",
+"d": "religious"
+},
+{
+"t": "Sigal",
+"d": "people"
+},
+{
+"t": "Sigd",
+"d": "religious"
+},
+{
+"t": "sikum bikur",
+"d": "health"
+},
+{
+"t": "silan",
+"d": "everyday"
+},
+{
+"t": "Silverol",
+"d": "health"
+},
+{
+"t": "Silwan",
+"d": "places"
+},
+{
+"t": "simcha",
+"d": "everyday"
+},
+{
+"t": "Simcha Rothman",
+"d": "people"
+},
+{
+"t": "Simchas Torah",
+"d": "religious"
+},
+{
+"t": "simchat bat",
+"d": "religious"
+},
+{
+"t": "Simchat Beit Hasho'eva",
+"d": "religious"
+},
+{
+"t": "Simchat Torah",
+"d": "religious"
+},
+{
+"t": "Simvacor",
+"d": "health"
+},
+{
+"t": "sinta",
+"d": "food"
+},
+{
+"t": "Sinufed",
+"d": "health"
+},
+{
+"t": "sirop",
+"d": "health"
+},
+{
+"t": "sirus",
+"d": "home"
+},
+{
+"t": "siud",
+"d": "health"
+},
+{
+"t": "Sivan",
+"d": "people"
+},
+{
+"t": "Sivan Rahav-Meir",
+"d": "people"
+},
+{
+"t": "siyum",
+"d": "religious"
+},
+{
+"t": "skhug",
+"d": "food"
+},
+{
+"t": "skira",
+"d": "health"
+},
+{
+"t": "skirat ma'arachot",
+"d": "health"
+},
+{
+"t": "slicha",
+"d": "transport"
+},
+{
+"t": "Smadar",
+"d": "people"
+},
+{
+"t": "smartut",
+"d": "home"
+},
+{
+"t": "smol",
+"d": "transport"
+},
+{
+"t": "smola",
+"d": "transport"
+},
+{
+"t": "Smotrich",
+"d": "people"
+},
+{
+"t": "snif",
+"d": "money"
+},
+{
+"t": "sochen bituach",
+"d": "money"
+},
+{
+"t": "socher",
+"d": "money"
+},
+{
+"t": "Sochnut",
+"d": "bureaucracy"
+},
+{
+"t": "SodaStream",
+"d": "brands"
+},
+{
+"t": "sof haderech",
+"d": "everyday"
+},
+{
+"t": "sof shavua",
+"d": "everyday"
+},
+{
+"t": "sof shavua naim",
+"d": "everyday"
+},
+{
+"t": "sof sof",
+"d": "everyday"
+},
+{
+"t": "sofash",
+"d": "army"
+},
+{
+"t": "sofer",
+"d": "religious"
+},
+{
+"t": "solela",
+"d": "transport"
+},
+{
+"t": "Sonol",
+"d": "brands"
+},
+{
+"t": "Soroka",
+"d": "health"
+},
+{
+"t": "soter",
+"d": "religious"
+},
+{
+"t": "sponja",
+"d": "home"
+},
+{
+"t": "Srugim",
+"d": "brands"
+},
+{
+"t": "stam",
+"d": "everyday"
+},
+{
+"t": "stam yeinam",
+"d": "religious"
+},
+{
+"t": "Static and Ben El",
+"d": "people"
+},
+{
+"t": "Stav",
+"d": "people"
+},
+{
+"t": "Steimatzky",
+"d": "brands"
+},
+{
+"t": "Steipler",
+"d": "religious"
+},
+{
+"t": "Stella Maris",
+"d": "places"
+},
+{
+"t": "Stern",
+"d": "people"
+},
+{
+"t": "Sterodex",
+"d": "health"
+},
+{
+"t": "Stop Market",
+"d": "food"
+},
+{
+"t": "Strauss",
+"d": "places"
+},
+{
+"t": "sufa",
+"d": "everyday"
+},
+{
+"t": "sufat avak",
+"d": "everyday"
+},
+{
+"t": "sufganiya",
+"d": "food"
+},
+{
+"t": "sufganiyot",
+"d": "food"
+},
+{
+"t": "Sugat",
+"d": "brands"
+},
+{
+"t": "sukeret herayon",
+"d": "health"
+},
+{
+"t": "sukka",
+"d": "religious"
+},
+{
+"t": "Sukkos",
+"d": "religious"
+},
+{
+"t": "Sukkot",
+"d": "religious"
+},
+{
+"t": "sumsum",
+"d": "food"
+},
+{
+"t": "Super Yuda",
+"d": "food"
+},
+{
+"t": "Super-Pharm",
+"d": "brands"
+},
+{
+"t": "Superbus",
+"d": "brands"
+},
+{
+"t": "Supergas",
+"d": "home"
+},
+{
+"t": "ta koli",
+"d": "brands"
+},
+{
+"t": "Ta'al",
+"d": "politics"
+},
+{
+"t": "ta'ase li tova",
+"d": "everyday"
+},
+{
+"t": "ta'im",
+"d": "everyday"
+},
+{
+"t": "taam",
+"d": "everyday"
+},
+{
+"t": "Taanis Esther",
+"d": "religious"
+},
+{
+"t": "Taanit Esther",
+"d": "religious"
+},
+{
+"t": "taaruvot",
+"d": "religious"
+},
+{
+"t": "Taboola",
+"d": "brands"
+},
+{
+"t": "tachana",
+"d": "transport"
+},
+{
+"t": "tachana merkazit",
+"d": "transport"
+},
+{
+"t": "Tachana Rishona",
+"d": "places"
+},
+{
+"t": "tachanat benzin",
+"d": "transport"
+},
+{
+"t": "tachanat mishpat",
+"d": "transport"
+},
+{
+"t": "tachanat otobus",
+"d": "transport"
+},
+{
+"t": "tachanat sherut",
+"d": "transport"
+},
+{
+"t": "tachanot",
+"d": "transport"
+},
+{
+"t": "tachazit",
+"d": "everyday"
+},
+{
+"t": "tachboshet",
+"d": "health"
+},
+{
+"t": "tachles",
+"d": "everyday"
+},
+{
+"t": "tachposet",
+"d": "home"
+},
+{
+"t": "tachrichim",
+"d": "religious"
+},
+{
+"t": "tachtonim",
+"d": "everyday"
+},
+{
+"t": "tachzor elai",
+"d": "everyday"
+},
+{
+"t": "Tadiran",
+"d": "home"
+},
+{
+"t": "tafsik",
+"d": "everyday"
+},
+{
+"t": "tafsiki",
+"d": "everyday"
+},
+{
+"t": "tagid li",
+"d": "everyday"
+},
+{
+"t": "tagmul miluim",
+"d": "army"
+},
+{
+"t": "tahanat delek",
+"d": "transport"
+},
+{
+"t": "tahara",
+"d": "religious"
+},
+{
+"t": "takala",
+"d": "home"
+},
+{
+"t": "takanon",
+"d": "health"
+},
+{
+"t": "takeh",
+"d": "everyday"
+},
+{
+"t": "Tal",
+"d": "people"
+},
+{
+"t": "Tal Friedman",
+"d": "people"
+},
+{
+"t": "Tal Shachar",
+"d": "places"
+},
+{
+"t": "Talbiya",
+"d": "places"
+},
+{
+"t": "Talia",
+"d": "people"
+},
+{
+"t": "Talik Gvili",
+"d": "people"
+},
+{
+"t": "tallis",
+"d": "religious"
+},
+{
+"t": "tallit",
+"d": "religious"
+},
+{
+"t": "Tally Gotliv",
+"d": "people"
+},
+{
+"t": "talmid chacham",
+"d": "religious"
+},
+{
+"t": "talmid chochom",
+"d": "religious"
+},
+{
+"t": "talmida",
+"d": "home"
+},
+{
+"t": "Talmon",
+"d": "places"
+},
+{
+"t": "Talpiot",
+"d": "places"
+},
+{
+"t": "Tama",
+"d": "money"
+},
+{
+"t": "Tamar",
+"d": "people"
+},
+{
+"t": "Tambour",
+"d": "brands"
+},
+{
+"t": "tamid",
+"d": "everyday"
+},
+{
+"t": "Tamuz",
+"d": "religious"
+},
+{
+"t": "Tanach",
+"d": "religious"
+},
+{
+"t": "tanur",
+"d": "home"
+},
+{
+"t": "tapuchei adama",
+"d": "food"
+},
+{
+"t": "Tapuchips",
+"d": "brands"
+},
+{
+"t": "Tapuzina",
+"d": "brands"
+},
+{
+"t": "Tara",
+"d": "brands"
+},
+{
+"t": "taramosalata",
+"d": "food"
+},
+{
+"t": "tarbit garon",
+"d": "health"
+},
+{
+"t": "targilim",
+"d": "home"
+},
+{
+"t": "tashlich",
+"d": "religious"
+},
+{
+"t": "tashlum",
+"d": "food"
+},
+{
+"t": "tashlumim",
+"d": "food"
+},
+{
+"t": "tat aluf",
+"d": "army"
+},
+{
+"t": "tav chanaya",
+"d": "transport"
+},
+{
+"t": "tav kniya",
+"d": "everyday"
+},
+{
+"t": "tav toshav",
+"d": "everyday"
+},
+{
+"t": "Taybeh",
+"d": "places"
+},
+{
+"t": "tayelet",
+"d": "places"
+},
+{
+"t": "Tazria",
+"d": "religious"
+},
+{
+"t": "Tchernichovsky",
+"d": "places"
+},
+{
+"t": "te'uda",
+"d": "home"
+},
+{
+"t": "techina",
+"d": "food"
+},
+{
+"t": "technai",
+"d": "home"
+},
+{
+"t": "Technion",
+"d": "brands"
+},
+{
+"t": "techum Shabbat",
+"d": "religious"
+},
+{
+"t": "tefilas haderech",
+"d": "religious"
+},
+{
+"t": "tefilat haderech",
+"d": "religious"
+},
+{
+"t": "tefillah",
+"d": "religious"
+},
+{
+"t": "tefillin",
+"d": "religious"
+},
+{
+"t": "Tehila",
+"d": "people"
+},
+{
+"t": "Tehillim",
+"d": "religious"
+},
+{
+"t": "teka",
+"d": "home"
+},
+{
+"t": "tekes",
+"d": "army"
+},
+{
+"t": "Tekoa",
+"d": "places"
+},
+{
+"t": "Tel Aviv University",
+"d": "brands"
+},
+{
+"t": "Tel Baruch",
+"d": "places"
+},
+{
+"t": "Tel Hashomer",
+"d": "health"
+},
+{
+"t": "Tel Mond",
+"d": "places"
+},
+{
+"t": "Tel-O-Fun",
+"d": "transport"
+},
+{
+"t": "Telfast",
+"d": "health"
+},
+{
+"t": "Telma",
+"d": "brands"
+},
+{
+"t": "Telz Stone",
+"d": "places"
+},
+{
+"t": "tembel",
+"d": "everyday"
+},
+{
+"t": "Tempo",
+"d": "brands"
+},
+{
+"t": "Ten Bis",
+"d": "brands"
+},
+{
+"t": "tena'im",
+"d": "religious"
+},
+{
+"t": "teoria",
+"d": "transport"
+},
+{
+"t": "Teperberg",
+"d": "food"
+},
+{
+"t": "Terem",
+"d": "army"
+},
+{
+"t": "Terminal X",
+"d": "brands"
+},
+{
+"t": "Terumah",
+"d": "religious"
+},
+{
+"t": "terumot umaasrot",
+"d": "religious"
+},
+{
+"t": "Tetzaveh",
+"d": "religious"
+},
+{
+"t": "teudat bagrut",
+"d": "home"
+},
+{
+"t": "teudat ezrach",
+"d": "bureaucracy"
+},
+{
+"t": "teudat gerushin",
+"d": "bureaucracy"
+},
+{
+"t": "teudat kashrut",
+"d": "religious"
+},
+{
+"t": "teudat lida",
+"d": "bureaucracy"
+},
+{
+"t": "teudat limudim",
+"d": "bureaucracy"
+},
+{
+"t": "teudat maavar",
+"d": "bureaucracy"
+},
+{
+"t": "teudat nisuin",
+"d": "bureaucracy"
+},
+{
+"t": "teudat oleh",
+"d": "bureaucracy"
+},
+{
+"t": "teudat oved",
+"d": "money"
+},
+{
+"t": "teudat petira",
+"d": "bureaucracy"
+},
+{
+"t": "teudat siyum",
+"d": "home"
+},
+{
+"t": "teudat toshav",
+"d": "bureaucracy"
+},
+{
+"t": "teudat yosher",
+"d": "bureaucracy"
+},
+{
+"t": "teudat zehut",
+"d": "bureaucracy"
+},
+{
+"t": "teum mas",
+"d": "money"
+},
+{
+"t": "teunah",
+"d": "transport"
+},
+{
+"t": "Teva",
+"d": "brands"
+},
+{
+"t": "teva'oni",
+"d": "food"
+},
+{
+"t": "Tevacutan",
+"d": "health"
+},
+{
+"t": "Tevet",
+"d": "religious"
+},
+{
+"t": "tevilat kelim",
+"d": "religious"
+},
+{
+"t": "tfarim",
+"d": "health"
+},
+{
+"t": "TheMarker",
+"d": "brands"
+},
+{
+"t": "Tibi",
+"d": "people"
+},
+{
+"t": "tichon",
+"d": "home"
+},
+{
+"t": "Tickchak",
+"d": "brands"
+},
+{
+"t": "tigbur",
+"d": "everyday"
+},
+{
+"t": "tihur",
+"d": "bureaucracy"
+},
+{
+"t": "tik",
+"d": "bureaucracy"
+},
+{
+"t": "tik nikuyim",
+"d": "money"
+},
+{
+"t": "tik osek",
+"d": "bureaucracy"
+},
+{
+"t": "tik refu'i",
+"d": "health"
+},
+{
+"t": "tikkun korim",
+"d": "religious"
+},
+{
+"t": "tikun mana",
+"d": "religious"
+},
+{
+"t": "Tikva Hadasha",
+"d": "politics"
+},
+{
+"t": "tilboshet",
+"d": "home"
+},
+{
+"t": "tilim",
+"d": "politics"
+},
+{
+"t": "Timna",
+"d": "places"
+},
+{
+"t": "tinok",
+"d": "everyday"
+},
+{
+"t": "tinoket",
+"d": "everyday"
+},
+{
+"t": "tinokiya",
+"d": "home"
+},
+{
+"t": "tipat halav",
+"d": "health"
+},
+{
+"t": "tipot",
+"d": "health"
+},
+{
+"t": "tipot af",
+"d": "health"
+},
+{
+"t": "tipot einayim",
+"d": "health"
+},
+{
+"t": "tipot oznayim",
+"d": "health"
+},
+{
+"t": "Tiptipot",
+"d": "health"
+},
+{
+"t": "tipul",
+"d": "transport"
+},
+{
+"t": "tipul nimratz",
+"d": "health"
+},
+{
+"t": "tipul shnati",
+"d": "transport"
+},
+{
+"t": "Tirat Carmel",
+"d": "places"
+},
+{
+"t": "Tirat Tzvi",
+"d": "brands"
+},
+{
+"t": "Tirat Zvi",
+"d": "brands"
+},
+{
+"t": "tirga",
+"d": "everyday"
+},
+{
+"t": "tirgul",
+"d": "home"
+},
+{
+"t": "tiron",
+"d": "army"
+},
+{
+"t": "tironut",
+"d": "army"
+},
+{
+"t": "tirs",
+"d": "food"
+},
+{
+"t": "tisa",
+"d": "transport"
+},
+{
+"t": "tisa beshalom",
+"d": "everyday"
+},
+{
+"t": "Tisha Bav",
+"d": "religious"
+},
+{
+"t": "Tishrei",
+"d": "religious"
+},
+{
+"t": "tisporet",
+"d": "home"
+},
+{
+"t": "tistadru",
+"d": "everyday"
+},
+{
+"t": "titchadesh",
+"d": "everyday"
+},
+{
+"t": "Tiv Taam",
+"d": "food"
+},
+{
+"t": "Tivall",
+"d": "brands"
+},
+{
+"t": "tiyul",
+"d": "everyday"
+},
+{
+"t": "tiyul shnati",
+"d": "home"
+},
+{
+"t": "tizaher",
+"d": "everyday"
+},
+{
+"t": "tizku lemitzvot",
+"d": "everyday"
+},
+{
+"t": "tizku leshanim rabot",
+"d": "everyday"
+},
+{
+"t": "Tkuma",
+"d": "politics"
+},
+{
+"t": "tluna",
+"d": "bureaucracy"
+},
+{
+"t": "tlush",
+"d": "money"
+},
+{
+"t": "tlush maskoret",
+"d": "money"
+},
+{
+"t": "tnaim",
+"d": "brands"
+},
+{
+"t": "Tnuva",
+"d": "brands"
+},
+{
+"t": "toar rishon",
+"d": "home"
+},
+{
+"t": "toar sheni",
+"d": "home"
+},
+{
+"t": "tochnit",
+"d": "bureaucracy"
+},
+{
+"t": "tochnit chisachon",
+"d": "money"
+},
+{
+"t": "toda",
+"d": "transport"
+},
+{
+"t": "toda al hakol",
+"d": "everyday"
+},
+{
+"t": "toda la'el",
+"d": "everyday"
+},
+{
+"t": "toda raba",
+"d": "transport"
+},
+{
+"t": "tofes",
+"d": "money"
+},
+{
+"t": "Tofes 101",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 106",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 126",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1301",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1302",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1303",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1304",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1305",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1306",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1307",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1308",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1309",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1310",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1311",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1312",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1313",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1314",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1315",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1316",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1317",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1318",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1319",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1320",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1321",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1322",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1323",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1324",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1325",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1326",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1327",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1328",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1329",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1330",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1333",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1334",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1335",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1336",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1337",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1338",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1339",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1340",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1341",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1342",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1343",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1345",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1346",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1347",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1348",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1349",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1350",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1351",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1352",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1353",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1354",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1356",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1357",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1358",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1359",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1360",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1361",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1362",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1363",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1364",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1365",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1367",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1368",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1369",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 1370",
+"d": "bureaucracy"
+},
+{
+"t": "Tofes 17",
+"d": "health"
+},
+{
+"t": "tofes yarok",
+"d": "transport"
+},
+{
+"t": "tola'im",
+"d": "health"
+},
+{
+"t": "Toldos",
+"d": "religious"
+},
+{
+"t": "Toldot",
+"d": "religious"
+},
+{
+"t": "Tomer",
+"d": "people"
+},
+{
+"t": "Tony Vespa",
+"d": "food"
+},
+{
+"t": "tor dachuf",
+"d": "health"
+},
+{
+"t": "tor lerofe",
+"d": "everyday"
+},
+{
+"t": "toranut",
+"d": "health"
+},
+{
+"t": "Torat Hamelech",
+"d": "politics"
+},
+{
+"t": "torim",
+"d": "health"
+},
+{
+"t": "Tosafot",
+"d": "religious"
+},
+{
+"t": "Tosfos",
+"d": "religious"
+},
+{
+"t": "toshav",
+"d": "bureaucracy"
+},
+{
+"t": "toshav chozer",
+"d": "bureaucracy"
+},
+{
+"t": "tov",
+"d": "everyday"
+},
+{
+"t": "tov lir'ot otcha",
+"d": "everyday"
+},
+{
+"t": "Tova",
+"d": "people"
+},
+{
+"t": "tove'a",
+"d": "bureaucracy"
+},
+{
+"t": "Trei Asar",
+"d": "religious"
+},
+{
+"t": "treif",
+"d": "religious"
+},
+{
+"t": "tremp",
+"d": "transport"
+},
+{
+"t": "trempiyada",
+"d": "transport"
+},
+{
+"t": "trisim",
+"d": "home"
+},
+{
+"t": "trisim chashmaliyim",
+"d": "home"
+},
+{
+"t": "trop",
+"d": "religious"
+},
+{
+"t": "trufa",
+"d": "health"
+},
+{
+"t": "trufot",
+"d": "health"
+},
+{
+"t": "Tsahi Halevi",
+"d": "people"
+},
+{
+"t": "tsilum chaze",
+"d": "health"
+},
+{
+"t": "Tu B'av",
+"d": "religious"
+},
+{
+"t": "Tu Bishvat",
+"d": "religious"
+},
+{
+"t": "Tulkarm",
+"d": "places"
+},
+{
+"t": "Tur",
+"d": "religious"
+},
+{
+"t": "Turgeman",
+"d": "people"
+},
+{
+"t": "Turmus Ayya",
+"d": "places"
+},
+{
+"t": "tushim",
+"d": "everyday"
+},
+{
+"t": "Tveria",
+"d": "places"
+},
+{
+"t": "tvi'a ktana",
+"d": "bureaucracy"
+},
+{
+"t": "tvia",
+"d": "money"
+},
+{
+"t": "tviot",
+"d": "health"
+},
+{
+"t": "tviya",
+"d": "health"
+},
+{
+"t": "Twito",
+"d": "people"
+},
+{
+"t": "tza'ar baalei chaim",
+"d": "religious"
+},
+{
+"t": "tza'atzua",
+"d": "home"
+},
+{
+"t": "tza'atzuim",
+"d": "home"
+},
+{
+"t": "tzabar",
+"d": "bureaucracy"
+},
+{
+"t": "Tzachi",
+"d": "people"
+},
+{
+"t": "tzad gimel",
+"d": "bureaucracy"
+},
+{
+"t": "Tzafon Hadash",
+"d": "places"
+},
+{
+"t": "Tzafon Yashan",
+"d": "places"
+},
+{
+"t": "Tzahal",
+"d": "army"
+},
+{
+"t": "tzaharon",
+"d": "home"
+},
+{
+"t": "tzalachat",
+"d": "home"
+},
+{
+"t": "tzanhanim",
+"d": "army"
+},
+{
+"t": "tzarchania",
+"d": "food"
+},
+{
+"t": "tzav",
+"d": "army"
+},
+{
+"t": "tzav giyus",
+"d": "army"
+},
+{
+"t": "tzav kiyum tzava'a",
+"d": "bureaucracy"
+},
+{
+"t": "tzav miluim",
+"d": "army"
+},
+{
+"t": "tzav rishon",
+"d": "army"
+},
+{
+"t": "tzav shmone",
+"d": "army"
+},
+{
+"t": "tzav yerusha",
+"d": "bureaucracy"
+},
+{
+"t": "tzava",
+"d": "army"
+},
+{
+"t": "tzedakah",
+"d": "religious"
+},
+{
+"t": "tzeit hakochavim",
+"d": "everyday"
+},
+{
+"t": "tzeva",
+"d": "army"
+},
+{
+"t": "Tzeva Adom",
+"d": "army"
+},
+{
+"t": "tzevet",
+"d": "army"
+},
+{
+"t": "Tzfat",
+"d": "places"
+},
+{
+"t": "tzfira",
+"d": "army"
+},
+{
+"t": "tzila",
+"d": "everyday"
+},
+{
+"t": "tziltzul",
+"d": "brands"
+},
+{
+"t": "tzilum",
+"d": "health"
+},
+{
+"t": "tzilum raentgen",
+"d": "health"
+},
+{
+"t": "tzimchoni",
+"d": "food"
+},
+{
+"t": "tzimmer",
+"d": "transport"
+},
+{
+"t": "tzinor",
+"d": "home"
+},
+{
+"t": "tzintzenet",
+"d": "home"
+},
+{
+"t": "Tzipi",
+"d": "people"
+},
+{
+"t": "Tzir Netzarim",
+"d": "places"
+},
+{
+"t": "Tzir Philadelphi",
+"d": "places"
+},
+{
+"t": "tzitzis",
+"d": "religious"
+},
+{
+"t": "tzitzit",
+"d": "religious"
+},
+{
+"t": "tziyun",
+"d": "everyday"
+},
+{
+"t": "tzmigim",
+"d": "transport"
+},
+{
+"t": "tznius",
+"d": "religious"
+},
+{
+"t": "tzniut",
+"d": "everyday"
+},
+{
+"t": "Tzofar",
+"d": "politics"
+},
+{
+"t": "Tzofia",
+"d": "people"
+},
+{
+"t": "Tzofim",
+"d": "home"
+},
+{
+"t": "Tzohar",
+"d": "religious"
+},
+{
+"t": "tzohorayim",
+"d": "everyday"
+},
+{
+"t": "tzohorayim tovim",
+"d": "everyday"
+},
+{
+"t": "Tzom Gedalya",
+"d": "religious"
+},
+{
+"t": "tzom kal",
+"d": "everyday"
+},
+{
+"t": "tzomet",
+"d": "transport"
+},
+{
+"t": "Tzomet Sfarim",
+"d": "brands"
+},
+{
+"t": "tzonit",
+"d": "food"
+},
+{
+"t": "Tzuba",
+"d": "places"
+},
+{
+"t": "Tzur",
+"d": "people"
+},
+{
+"t": "Tzur Hadassah",
+"d": "places"
+},
+{
+"t": "Tzur Yigal",
+"d": "places"
+},
+{
+"t": "Tzuriel",
+"d": "people"
+},
+{
+"t": "Tzvi",
+"d": "people"
+},
+{
+"t": "ugat gvina",
+"d": "food"
+},
+{
+"t": "Ugdat Aza",
+"d": "politics"
+},
+{
+"t": "Ugo",
+"d": "food"
+},
+{
+"t": "ulam",
+"d": "religious"
+},
+{
+"t": "ulpan",
+"d": "home"
+},
+{
+"t": "ulpana",
+"d": "home"
+},
+{
+"t": "Umm al-Fahm",
+"d": "places"
+},
+{
+"t": "Union Motors",
+"d": "brands"
+},
+{
+"t": "upsherin",
+"d": "religious"
+},
+{
+"t": "Uri",
+"d": "people"
+},
+{
+"t": "ushpizin",
+"d": "religious"
+},
+{
+"t": "Ussishkin",
+"d": "places"
+},
+{
+"t": "Uvda",
+"d": "people"
+},
+{
+"t": "V'zos Habracha",
+"d": "religious"
+},
+{
+"t": "va'ad horim",
+"d": "home"
+},
+{
+"t": "va'ad mekomi",
+"d": "bureaucracy"
+},
+{
+"t": "va'ada refu'it",
+"d": "health"
+},
+{
+"t": "va'adat chakira mamlachtit",
+"d": "politics"
+},
+{
+"t": "va'adat charigim",
+"d": "health"
+},
+{
+"t": "Va'adat Habchirot",
+"d": "politics"
+},
+{
+"t": "Va'era",
+"d": "religious"
+},
+{
+"t": "Va'etchanan",
+"d": "religious"
+},
+{
+"t": "vaad bayit",
+"d": "bureaucracy"
+},
+{
+"t": "vaad ovedim",
+"d": "money"
+},
+{
+"t": "Vaeschanan",
+"d": "religious"
+},
+{
+"t": "Vaknin",
+"d": "people"
+},
+{
+"t": "Vaniglia",
+"d": "food"
+},
+{
+"t": "vatik",
+"d": "bureaucracy"
+},
+{
+"t": "Vayakhel",
+"d": "religious"
+},
+{
+"t": "Vayechi",
+"d": "religious"
+},
+{
+"t": "Vayelech",
+"d": "religious"
+},
+{
+"t": "Vayera",
+"d": "religious"
+},
+{
+"t": "Vayeshev",
+"d": "religious"
+},
+{
+"t": "Vayetzei",
+"d": "religious"
+},
+{
+"t": "Vayigash",
+"d": "religious"
+},
+{
+"t": "Vayikra",
+"d": "religious"
+},
+{
+"t": "Vayishlach",
+"d": "religious"
+},
+{
+"t": "veterinar",
+"d": "home"
+},
+{
+"t": "Vezot Habracha",
+"d": "religious"
+},
+{
+"t": "Victory",
+"d": "brands"
+},
+{
+"t": "Vilna Gaon",
+"d": "religious"
+},
+{
+"t": "Voltaren",
+"d": "health"
+},
+{
+"t": "vort",
+"d": "religious"
+},
+{
+"t": "Wadi Nisnas",
+"d": "places"
+},
+{
+"t": "Walid Taha",
+"d": "people"
+},
+{
+"t": "walla",
+"d": "everyday"
+},
+{
+"t": "Waze",
+"d": "brands"
+},
+{
+"t": "Weiss",
+"d": "people"
+},
+{
+"t": "Weizmann",
+"d": "brands"
+},
+{
+"t": "Wissotzky",
+"d": "brands"
+},
+{
+"t": "Wix",
+"d": "brands"
+},
+{
+"t": "Wolfson",
+"d": "health"
+},
+{
+"t": "Wolfson Towers",
+"d": "places"
+},
+{
+"t": "Wolt",
+"d": "transport"
+},
+{
+"t": "Yaakov",
+"d": "people"
+},
+{
+"t": "Yaakov Aryeh Alter",
+"d": "people"
+},
+{
+"t": "Yaakov Asher",
+"d": "people"
+},
+{
+"t": "Yad Eliyahu",
+"d": "places"
+},
+{
+"t": "Yad Sarah",
+"d": "health"
+},
+{
+"t": "yad shniya",
+"d": "transport"
+},
+{
+"t": "yad soledet bo",
+"d": "religious"
+},
+{
+"t": "Yad Vashem",
+"d": "brands"
+},
+{
+"t": "yadid",
+"d": "everyday"
+},
+{
+"t": "yadid nefesh",
+"d": "everyday"
+},
+{
+"t": "Yael",
+"d": "people"
+},
+{
+"t": "yafeh",
+"d": "everyday"
+},
+{
+"t": "yaffa",
+"d": "everyday"
+},
+{
+"t": "Yafo",
+"d": "places"
+},
+{
+"t": "Yahadut Hatorah",
+"d": "politics"
+},
+{
+"t": "yahrzeit",
+"d": "religious"
+},
+{
+"t": "Yair",
+"d": "people"
+},
+{
+"t": "Yair Golan",
+"d": "people"
+},
+{
+"t": "Yair Lapid",
+"d": "people"
+},
+{
+"t": "yalda",
+"d": "everyday"
+},
+{
+"t": "Yalkut Yosef",
+"d": "religious"
+},
+{
+"t": "yalla",
+"d": "everyday"
+},
+{
+"t": "Yam Hamelach",
+"d": "places"
+},
+{
+"t": "yamin",
+"d": "transport"
+},
+{
+"t": "yamina",
+"d": "transport"
+},
+{
+"t": "Yango",
+"d": "transport"
+},
+{
+"t": "Yaniv",
+"d": "people"
+},
+{
+"t": "Yarden",
+"d": "people"
+},
+{
+"t": "Yariv Levin",
+"d": "people"
+},
+{
+"t": "Yaron Zelekha",
+"d": "people"
+},
+{
+"t": "Yasam",
+"d": "brands"
+},
+{
+"t": "yashar",
+"d": "transport"
+},
+{
+"t": "yasher koach",
+"d": "everyday"
+},
+{
+"t": "Yavne",
+"d": "places"
+},
+{
+"t": "Yaya Fink",
+"d": "people"
+},
+{
+"t": "yayin nesech",
+"d": "religious"
+},
+{
+"t": "yechida",
+"d": "army"
+},
+{
+"t": "Yechiel",
+"d": "people"
+},
+{
+"t": "yedidim",
+"d": "army"
+},
+{
+"t": "Yedidya",
+"d": "people"
+},
+{
+"t": "Yediot Ahronot",
+"d": "brands"
+},
+{
+"t": "yedu'im batzibur",
+"d": "bureaucracy"
+},
+{
+"t": "Yefe Nof",
+"d": "places"
+},
+{
+"t": "Yehezkel",
+"d": "people"
+},
+{
+"t": "Yehonatan",
+"d": "people"
+},
+{
+"t": "Yehoshua",
+"d": "people"
+},
+{
+"t": "Yehoshua Fass",
+"d": "people"
+},
+{
+"t": "Yehud",
+"d": "places"
+},
+{
+"t": "Yehuda",
+"d": "people"
+},
+{
+"t": "Yehuda Hamaccabi",
+"d": "places"
+},
+{
+"t": "Yehuda Matzos",
+"d": "food"
+},
+{
+"t": "Yehudiya",
+"d": "places"
+},
+{
+"t": "Yeinot Bitan",
+"d": "food"
+},
+{
+"t": "yeladim",
+"d": "everyday"
+},
+{
+"t": "yeled",
+"d": "everyday"
+},
+{
+"t": "Yelin Lapidot",
+"d": "brands"
+},
+{
+"t": "yemei chufsha",
+"d": "money"
+},
+{
+"t": "yemei machala",
+"d": "money"
+},
+{
+"t": "Yemin Moshe",
+"d": "places"
+},
+{
+"t": "yeri",
+"d": "army"
+},
+{
+"t": "Yeruham",
+"d": "places"
+},
+{
+"t": "yerusha",
+"d": "bureaucracy"
+},
+{
+"t": "Yerushalayim",
+"d": "places"
+},
+{
+"t": "yerut",
+"d": "politics"
+},
+{
+"t": "Yes",
+"d": "brands"
+},
+{
+"t": "Yes Planet",
+"d": "brands"
+},
+{
+"t": "Yesh",
+"d": "brands"
+},
+{
+"t": "Yesh Atid",
+"d": "politics"
+},
+{
+"t": "Yesh Chesed",
+"d": "food"
+},
+{
+"t": "Yesh Din",
+"d": "politics"
+},
+{
+"t": "Yesha",
+"d": "brands"
+},
+{
+"t": "Yeshayahu",
+"d": "religious"
+},
+{
+"t": "yeshivat tzevet",
+"d": "money"
+},
+{
+"t": "Yesud Hama'ala",
+"d": "places"
+},
+{
+"t": "yibum",
+"d": "bureaucracy"
+},
+{
+"t": "yichud",
+"d": "everyday"
+},
+{
+"t": "Yifat",
+"d": "people"
+},
+{
+"t": "Yigal Alon",
+"d": "places"
+},
+{
+"t": "yihye beseder",
+"d": "everyday"
+},
+{
+"t": "yihye tov",
+"d": "everyday"
+},
+{
+"t": "Yinon Magal",
+"d": "people"
+},
+{
+"t": "yipui ko'ach mitmashech",
+"d": "bureaucracy"
+},
+{
+"t": "yipui koach",
+"d": "bureaucracy"
+},
+{
+"t": "Yirmiyahu",
+"d": "places"
+},
+{
+"t": "yishar koach",
+"d": "everyday"
+},
+{
+"t": "yishuv",
+"d": "places"
+},
+{
+"t": "Yisrael",
+"d": "people"
+},
+{
+"t": "Yisrael Beytenu",
+"d": "politics"
+},
+{
+"t": "Yisrael Techila",
+"d": "politics"
+},
+{
+"t": "Yisro",
+"d": "religious"
+},
+{
+"t": "Yitro",
+"d": "religious"
+},
+{
+"t": "Yitzhak",
+"d": "people"
+},
+{
+"t": "Yitzhak Amit",
+"d": "people"
+},
+{
+"t": "Yitzhak Goldknopf",
+"d": "people"
+},
+{
+"t": "Yitzhak Navon",
+"d": "transport"
+},
+{
+"t": "Yitzhak Wasserlauf",
+"d": "people"
+},
+{
+"t": "Yizkor",
+"d": "religious"
+},
+{
+"t": "Ynet",
+"d": "brands"
+},
+{
+"t": "yo'etz klita",
+"d": "bureaucracy"
+},
+{
+"t": "yo'etz mas",
+"d": "money"
+},
+{
+"t": "yo'etz mashkanta'ot",
+"d": "money"
+},
+{
+"t": "yo'etzet hanaka",
+"d": "health"
+},
+{
+"t": "yo'etzet klita",
+"d": "bureaucracy"
+},
+{
+"t": "Yoav",
+"d": "people"
+},
+{
+"t": "Yoav Gallant",
+"d": "people"
+},
+{
+"t": "Yoav Kisch",
+"d": "people"
+},
+{
+"t": "Yoav Segalovitz",
+"d": "people"
+},
+{
+"t": "Yoaz Hendel",
+"d": "people"
+},
+{
+"t": "Yochananof",
+"d": "food"
+},
+{
+"t": "Yocheved",
+"d": "people"
+},
+{
+"t": "yofi",
+"d": "everyday"
+},
+{
+"t": "Yogev",
+"d": "people"
+},
+{
+"t": "Yokneam",
+"d": "places"
+},
+{
+"t": "yoledet",
+"d": "health"
+},
+{
+"t": "yom",
+"d": "everyday"
+},
+{
+"t": "Yom Aliyah",
+"d": "politics"
+},
+{
+"t": "yom bchirot",
+"d": "politics"
+},
+{
+"t": "Yom Chamishi",
+"d": "everyday"
+},
+{
+"t": "yom chofesh",
+"d": "everyday"
+},
+{
+"t": "Yom Haatzmaut",
+"d": "politics"
+},
+{
+"t": "Yom Hamishpacha",
+"d": "religious"
+},
+{
+"t": "Yom Hashoah",
+"d": "politics"
+},
+{
+"t": "Yom Hazikaron",
+"d": "politics"
+},
+{
+"t": "yom horim",
+"d": "home"
+},
+{
+"t": "yom huledet",
+"d": "home"
+},
+{
+"t": "yom huledet sameach",
+"d": "everyday"
+},
+{
+"t": "yom mayim",
+"d": "everyday"
+},
+{
+"t": "yom nechmad",
+"d": "everyday"
+},
+{
+"t": "Yom Revi'i",
+"d": "everyday"
+},
+{
+"t": "Yom Rishon",
+"d": "everyday"
+},
+{
+"t": "Yom Sheni",
+"d": "everyday"
+},
+{
+"t": "Yom Shishi",
+"d": "everyday"
+},
+{
+"t": "Yom Shlishi",
+"d": "everyday"
+},
+{
+"t": "yom sidurim",
+"d": "army"
+},
+{
+"t": "yom sport",
+"d": "home"
+},
+{
+"t": "yom tov",
+"d": "everyday"
+},
+{
+"t": "Yom Yerushalayim",
+"d": "politics"
+},
+{
+"t": "Yonah",
+"d": "religious"
+},
+{
+"t": "Yonatan",
+"d": "people"
+},
+{
+"t": "Yoni",
+"d": "people"
+},
+{
+"t": "Yonit Levi",
+"d": "people"
+},
+{
+"t": "yontif",
+"d": "religious"
+},
+{
+"t": "Yoram Cohen",
+"d": "people"
+},
+{
+"t": "yored",
+"d": "bureaucracy"
+},
+{
+"t": "yoreh",
+"d": "everyday"
+},
+{
+"t": "Yosef",
+"d": "people"
+},
+{
+"t": "Yoseph Haddad",
+"d": "people"
+},
+{
+"t": "Yossi",
+"d": "people"
+},
+{
+"t": "Yotam Zimri",
+"d": "people"
+},
+{
+"t": "yoter midai",
+"d": "everyday"
+},
+{
+"t": "Yotvata",
+"d": "brands"
+},
+{
+"t": "Yousef Jabareen",
+"d": "people"
+},
+{
+"t": "yud bet",
+"d": "home"
+},
+{
+"t": "yud bet chodesh",
+"d": "religious"
+},
+{
+"t": "Yuli Edelstein",
+"d": "people"
+},
+{
+"t": "Yulia Malinovsky",
+"d": "people"
+},
+{
+"t": "Yuval",
+"d": "people"
+},
+{
+"t": "Yuval Raphael",
+"d": "people"
+},
+{
+"t": "Yuval Shany",
+"d": "people"
+},
+{
+"t": "za'atar",
+"d": "food"
+},
+{
+"t": "zachta",
+"d": "everyday"
+},
+{
+"t": "zagag",
+"d": "home"
+},
+{
+"t": "Zaka",
+"d": "brands"
+},
+{
+"t": "zakaut",
+"d": "bureaucracy"
+},
+{
+"t": "Zap",
+"d": "brands"
+},
+{
+"t": "ze ma yesh",
+"d": "everyday"
+},
+{
+"t": "Ze'ev",
+"d": "people"
+},
+{
+"t": "Zehut",
+"d": "politics"
+},
+{
+"t": "zei gezunt",
+"d": "everyday"
+},
+{
+"t": "zemiros",
+"d": "religious"
+},
+{
+"t": "zemirot",
+"d": "religious"
+},
+{
+"t": "zeved habat",
+"d": "religious"
+},
+{
+"t": "zhug",
+"d": "food"
+},
+{
+"t": "Zichron Moshe",
+"d": "places"
+},
+{
+"t": "Zichron Yaakov",
+"d": "places"
+},
+{
+"t": "zichrono livracha",
+"d": "everyday"
+},
+{
+"t": "zihum",
+"d": "health"
+},
+{
+"t": "zikui",
+"d": "bureaucracy"
+},
+{
+"t": "zikui mas",
+"d": "money"
+},
+{
+"t": "zimun tor",
+"d": "bureaucracy"
+},
+{
+"t": "Zinnat",
+"d": "health"
+},
+{
+"t": "zman",
+"d": "everyday"
+},
+{
+"t": "zmanim",
+"d": "religious"
+},
+{
+"t": "Zodorm",
+"d": "health"
+},
+{
+"t": "Zoglowek",
+"d": "brands"
+},
+{
+"t": "Zohar",
+"d": "people"
+},
+{
+"t": "Zol Stock",
+"d": "food"
+},
+{
+"t": "zrika",
+"d": "health"
+},
+{
+"t": "zuz",
+"d": "transport"
+},
+{
+"t": "Zvi Sukkot",
+"d": "people"
+}
+]
+}

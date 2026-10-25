@@ -35,7 +35,7 @@ def main():
     rev = re.search(r'^REVISION = "(\w+)"', (ROOT / "ehcs_bench/data.py").read_text(), re.M).group(1)
     ver = re.search(r'^VERSION = "(\w+)"', (ROOT / "ehcs_bench/data.py").read_text(), re.M).group(1)
     commit = subprocess.check_output(["git", "rev-parse", a.commit or "HEAD"], cwd=ROOT, text=True).strip()
-    res = [json.loads(p.read_text()) for p in sorted((ROOT / "results").glob("*.json"))]
+    res = [json.loads(p.read_text()) for p in sorted((ROOT / "results").rglob("*.json"))]
     res = [r for r in res if r["benchmark"]["revision"] == rev]
     key = lambda r: (-r["metrics"]["subsets"]["clean"]["terms"]["all"]["recall"], r["metrics"]["subsets"]["clean"]["wer"])
     out = ROOT / "archive" / f"{a.date}.json"

@@ -40,9 +40,9 @@ def entry(model: str, name: str = "", args: str = "", out: str = ""):
     argv = ["--model", model] + (["--name", name] if name else []) + shlex.split(args)
     res = run.remote(argv)
     j = json.loads(res)
-    from ehcs_bench.cli import slug
-    p = Path(out or ROOT / "results" / f"{slug(j['model']['name'])}.json")
+    from ehcs_bench.cli import result_path
+    p = Path(out or ROOT / result_path(j["model"]["name"], j["benchmark"]["version"]))
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(res)
     c = j["metrics"]["subsets"]["clean"]
-    print(f"{j['model']['name']}: clean WER {c['wer']:.2%}, term recall {c['terms']['all']['recall']:.1%} -> {p}")
+    print(f"{j['model']['name']} [{j['benchmark']['version']}]: clean WER {c['wer']:.2%}, term recall {c['terms']['all']['recall']:.1%} -> {p}")

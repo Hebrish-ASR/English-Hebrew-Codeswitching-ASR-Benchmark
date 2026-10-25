@@ -26,12 +26,18 @@ def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
-def build_result(rows, sha, hyps, model, extra=None):
+def result_path(name, version):
+    """v1 results are results/<slug>.json (as published); later sets get their own folder,
+    results/<version>/<slug>.json, so a rerun on v2 never overwrites a v1 result."""
+    return Path("results") / ("" if version == "v1" else version) / f"{slug(name)}.json"
+
+
+def build_result(rows, sha, hyps, model, extra=None, version=data.VERSION):
     return {"schema": SCHEMA,
-            "benchmark": {"repo": data.REPO, "version": data.VERSION, "revision": sha},
+            "benchmark": {"repo": data.REPO, "version": version, "revision": sha},
             "model": model, "scored_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             **(extra or {}),
-            "metrics": score(rows, hyps),
+            "metrics": score(rows, hyps, version),
             "utterances": [{"id": r["id"], "subset": r["subset"], "ref": r["text"], "hyp": hyps.get(r["id"], "")} for r in rows]}
 
 
@@ -43,21 +49,25 @@ def model_meta(a, repo=None, revision=None, adapter=None, settings=None):
 
 
 def write(res, out):
-    out = Path(out or f"results/{slug(res['model']['name'])}.json")
+    out = Path(out or result_path(res["model"]["name"], res["benchmark"]["version"]))
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(res, ensure_ascii=False, indent=1) + "\n")
     c = res["metrics"]["subsets"]["clean"]
-    print(f"{res['model']['name']}: clean WER {c['wer']:.2%}, term recall {c['terms']['all']['recall']:.1%} "
+    print(f"{res['model']['name']} [{res['benchmark']['version']}]: clean WER {c['wer']:.2%}, term recall {c['terms']['all']['recall']:.1%} "
           f"(unseen {c['terms']['unseen']['recall']:.1%}), English WER "
           f"{res['metrics']['subsets']['english_control']['wer']:.2%} -> {out}")
     return out
+
+
+def version(a):
+    return a.version or data.version_of(a.revision) or data.VERSION
 
 
 def cmd_run(a):
     from .adapters import ADAPTERS, parse_spec, resolve_revision
     adapter, repo, rev = parse_spec(a.model)
     rev = resolve_revision(repo, rev)
-    rows, _, sha = data.load(a.revision)
+    rows, _, sha = data.load(a.revision, version=version(a))
     if a.limit:
         rows = rows[: a.limit]
     t0 = time.time()
@@ -66,33 +76,41 @@ def cmd_run(a):
     audio = sum(r["duration_s"] for r in rows)
     res = build_result(rows, sha, {r["id"]: t for r, t in zip(rows, texts)},
                        model_meta(a, repo, rev, adapter, settings),
-                       {"run": {"wall_seconds": round(secs, 1), "audio_seconds": round(audio, 1), "host": a.host}})
+                       {"run": {"wall_seconds": round(secs, 1), "audio_seconds": round(audio, 1), "host": a.host}},
+                       version(a))
     return write(res, a.out)
 
 
 def cmd_score(a):
-    rows, _, sha = data.load(a.revision)
+    rows, _, sha = data.load(a.revision, version=version(a))
     hyps = {}
     for l in Path(a.preds).read_text().splitlines():
         if l.strip():
             j = json.loads(l)
             hyps[j["id"]] = j["hyp"]
-    res = build_result(rows, sha, hyps, model_meta(a))
+    res = build_result(rows, sha, hyps, model_meta(a), version=version(a))
     if res["metrics"]["missing"]:
         print(f"warning: {len(res['metrics']['missing'])} ids have no prediction and score as empty", file=sys.stderr)
     return write(res, a.out)
 
 
 def cmd_rescore(a):
-    rows, _, sha = data.load(a.revision)
-    bad = 0
+    """Each file is rescored against the test-set version and commit it records."""
+    bad, sets = 0, {}
     for p in a.files:
         res = json.loads(Path(p).read_text())
-        if res["benchmark"]["revision"] != sha:
-            print(f"{p}: scored against {res['benchmark']['revision'][:12]}, benchmark is {sha[:12]}; skipping")
+        ver, rev = res["benchmark"]["version"], res["benchmark"]["revision"]
+        if (a.version and ver != a.version) or ver not in data.VERSIONS:
+            print(f"{p}: test set {ver}, skipping")
+            continue
+        if (ver, rev) not in sets:
+            sets[ver, rev] = data.load(rev, version=ver)
+        rows, _, sha = sets[ver, rev]
+        if sha != rev:
+            print(f"{p}: scored against {rev[:12]}, which resolves to {sha[:12]}; skipping")
             bad += 1
             continue
-        fresh = score(rows, {u["id"]: u["hyp"] for u in res["utterances"]})
+        fresh = score(rows, {u["id"]: u["hyp"] for u in res["utterances"]}, ver)
         same = fresh["subsets"] == res["metrics"]["subsets"]
         print(f"{p}: {'OK' if same else 'METRICS DIFFER'}")
         bad += not same
@@ -107,7 +125,8 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     def common(p):
-        p.add_argument("--revision", default=data.REVISION, help="benchmark dataset revision")
+        p.add_argument("--version", choices=sorted(data.VERSIONS), help=f"test set (default {data.VERSION})")
+        p.add_argument("--revision", help="benchmark dataset commit (default: the one pinned for --version)")
         p.add_argument("--name", help="display name on the leaderboard")
         p.add_argument("--model-id", help="HF repo id or other stable identifier")
         p.add_argument("--base-model", help="what it was fine-tuned from, if anything")
@@ -129,7 +148,7 @@ def main(argv=None):
     s.add_argument("--preds", required=True)
     v = sub.add_parser("rescore", help="recompute metrics from the transcripts in result files")
     v.add_argument("files", nargs="+")
-    v.add_argument("--revision", default=data.REVISION)
+    v.add_argument("--version", choices=sorted(data.VERSIONS), help="only files scored on this test set")
     v.add_argument("--write", action="store_true", help="overwrite stale metrics")
     a = ap.parse_args(argv)
     if a.cmd == "run":
