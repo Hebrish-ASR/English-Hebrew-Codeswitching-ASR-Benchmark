@@ -15,14 +15,21 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 ## Results (test set v2, clean subset: 129 clips, 221 Hebrew term occurrences)
 
 <!-- results:start -->
-| Model | Type | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |
-|---|---|---|---|---|---|---|
-| [Parakeet v2 EN-HE Sabich v2.2](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **70.1** | 62.0 | 71.0 | 4.9 | 2.1 |
-| [Parakeet v2 EN-HE Sabich v2.1](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **65.6** | 56.2 | 67.4 | 5.2 | 2.4 |
-| [Parakeet v2 EN-HE Sabich v2.0](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **65.2** | 54.0 | 66.5 | 5.6 | 2.1 |
-| [Parakeet v2 EN-HE Sabich v1.0](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **63.3** | 53.3 | 65.2 | 5.7 | 2.1 |
-| [Parakeet v2 EN-HE Jachnun v1.0](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching) | CS fine-tune | **61.1** | 51.8 | 62.9 | 5.9 | 2.4 |
-| [Parakeet TDT 0.6B v2](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2) | Stock | **19.9** | 16.1 | 23.5 | 13.7 | 2.7 |
+#### Code-switching fine-tunes
+
+| Model | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |
+|---|---|---|---|---|---|
+| [Sabich v2.2](https://huggingface.co/Hebrish/Sabich) | **70.1** | 62.0 | 71.0 | 4.9 | 2.1 |
+| [Sabich v2.1](https://huggingface.co/Hebrish/Sabich) | **65.6** | 56.2 | 67.4 | 5.2 | 2.4 |
+| [Sabich v2.0](https://huggingface.co/Hebrish/Sabich) | **65.2** | 54.0 | 66.5 | 5.6 | 2.1 |
+| [Sabich v1.0](https://huggingface.co/Hebrish/Sabich) | **63.3** | 53.3 | 65.2 | 5.7 | 2.1 |
+| [Jachnun v1.0](https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching) | **61.1** | 51.8 | 62.9 | 5.9 | 2.4 |
+
+#### Stock ASR models
+
+| Model | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |
+|---|---|---|---|---|---|
+| [Parakeet TDT 0.6B v2](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2) | **19.9** | 16.1 | 23.5 | 13.7 | 2.7 |
 <!-- results:end -->
 
 ![Hebrew term recall by model, clean subset](docs/figures/term_recall.png)

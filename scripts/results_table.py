@@ -10,17 +10,22 @@ res = [json.loads(p.read_text()) for p in sorted((ROOT / "results").rglob("*.jso
 res = [r for r in res if r["benchmark"]["revision"] == rev]
 p = lambda x: f"{100 * x:.1f}"
 key = lambda r: (-r["metrics"]["subsets"]["clean"]["terms"]["all"]["recall"], r["metrics"]["subsets"]["clean"]["wer"])
-lines = ["| Model | Type | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |",
-         "|---|---|---|---|---|---|---|"]
-for r in sorted(res, key=key):
-    m, s = r["model"], r["metrics"]["subsets"]
-    c = s["clean"]
-    name = f"[{m['name']}]({m['url']})" if m.get("url") else m["name"]
-    if m.get("contamination"):
-        name += " ⚠"
-    lines.append(f"| {name} | {'CS fine-tune' if m.get('fine_tuned_for_code_switching') else 'Stock'} | "
-                 f"**{p(c['terms']['all']['recall'])}** | {p(c['terms']['unseen']['recall'])} | "
-                 f"{p(c['terms']['all']['recall_lenient'])} | {p(c['wer'])} | {p(s['english_control']['wer'])} |")
+head = ["| Model | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |",
+        "|---|---|---|---|---|---|"]
+lines = []
+for ft, title in [(True, "Code-switching fine-tunes"), (False, "Stock ASR models")]:
+    rs = [r for r in res if bool(r["model"].get("fine_tuned_for_code_switching")) == ft]
+    if not rs:
+        continue
+    lines += ([""] if lines else []) + [f"#### {title}", ""] + head
+    for r in sorted(rs, key=key):
+        m, s = r["model"], r["metrics"]["subsets"]
+        c = s["clean"]
+        name = f"[{m['name']}]({m['url']})" if m.get("url") else m["name"]
+        if m.get("contamination"):
+            name += " ⚠"
+        lines.append(f"| {name} | **{p(c['terms']['all']['recall'])}** | {p(c['terms']['unseen']['recall'])} | "
+                     f"{p(c['terms']['all']['recall_lenient'])} | {p(c['wer'])} | {p(s['english_control']['wer'])} |")
 readme = ROOT / "README.md"
 t = readme.read_text()
 t = re.sub(r"(<!-- results:start -->\n).*?(<!-- results:end -->)", lambda m: m.group(1) + "\n".join(lines) + "\n" + m.group(2),

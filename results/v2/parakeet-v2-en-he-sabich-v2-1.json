@@ -8,7 +8,7 @@
  "model": {
   "id": "Hebrish/Sabich",
   "revision": "e597fd40f0606cfab6a54963cd123ac82cdcd4e6",
-  "name": "Parakeet v2 EN-HE Sabich v2.1",
+  "name": "Sabich v2.1",
   "adapter": "nemo",
   "base_model": "nvidia/parakeet-tdt-0.6b-v2",
   "fine_tuned_for_code_switching": true,

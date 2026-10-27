@@ -58,9 +58,11 @@ def link(m):
     return f"[{m['name']}]({m['url']})" if m.get("url") else m["name"]
 
 
-def table(V, subset):
+def table(V, subset, ft=None):
     rows = []
     for r in V["results"]:
+        if ft is not None and bool(r["model"].get("fine_tuned_for_code_switching")) != ft:
+            continue
         m, s = r["model"], r["metrics"]["subsets"]
         c = s[subset]
         rows.append({
@@ -83,6 +85,15 @@ def table(V, subset):
         df = df.sort_values(["Term recall %", "WER %"], ascending=[False, True]).reset_index(drop=True)
         df.insert(0, "#", range(1, len(df) + 1))
     return df
+
+
+def sections(V, subset):
+    """Two leaderboard sections, split on model.fine_tuned_for_code_switching."""
+    for ft, title in [(True, "Code-switching fine-tunes"), (False, "Stock ASR models")]:
+        df = table(V, subset, ft)
+        if len(df):
+            gr.Markdown(f"### {title}")
+            gr.Dataframe(df, datatype="markdown", wrap=True, interactive=False)
 
 
 # Charts. Colour carries one job per chart: model type (fine-tune vs stock), or metric
@@ -316,7 +327,7 @@ def version_tabs(V):
         return
     subsets = res[0]["metrics"]["subsets"]
     with gr.Tab(f"Leaderboard (clean, {n} clips)"):
-        gr.Dataframe(table(V, "clean"), datatype="markdown", wrap=True, interactive=False)
+        sections(V, "clean")
         gr.Markdown("Ranked by term recall, then WER. *Lenient* also accepts lexicon spelling variants (*tsaharon* for *tzaharon*), "
                     "which is fairer to models never taught the canonical spelling. *English control* is "
                     f"{subsets['english_control']['n']} clips of the same speaker with no Hebrew: a fine-tune that wrecks English shows up there."
@@ -324,7 +335,7 @@ def version_tabs(V):
     if "all_code_switch" in subsets:
         with gr.Tab(f"All code-switching ({subsets['all_code_switch']['n']} clips)"):
             gr.Markdown("Adds 37 clips excluded from the headline: 33 overlap Whisper-Hebrish's training data (26 identical recordings, 7 re-recordings of training sentences) and 4 are older desktop-mic recordings. Comparable with the numbers on the Parakeet fine-tune's model card, which used all 121. **Not a fair comparison for Whisper-Hebrish.**")
-            gr.Dataframe(table(V, "all_code_switch"), datatype="markdown", wrap=True, interactive=False)
+            sections(V, "all_code_switch")
     if has_domains(V):
         with gr.Tab(f"By domain ({doms})"):
             gr.Markdown("Clean subset split by the Hebrew vocabulary domain each clip was sampled for (the [hebrish.app lexicon]"
