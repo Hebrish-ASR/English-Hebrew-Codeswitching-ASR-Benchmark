@@ -33,7 +33,7 @@ README edits to the HF dataset create new commits; that is fine because the load
   `danielrosehill/Hebrish-Website`, is private, so it is copied here) and `v2-trained-exclusions.json`
   (test ids found in any Modal `parakeet-cs-finetune` `runs/<run>/{train,val}.jsonl`, 22 runs on 2026-10-25).
   Pass `--manifests DIR` only to recompute that file; v2 itself is frozen, so do not.
-- **First v2 round scored and deployed 2026-10-25** (stock Parakeet v2, Jachnun v1.0, Sabich v1.0, v2.0, v2.1; Sabich v2.1 tops it).
+- **First v2 round scored and deployed 2026-10-25** (stock Parakeet v2, Jachnun v1.0, Sabich v1.0, v2.0, v2.1; Sabich v2.1 topped it). Sabich v2.2 (r12-all) was added 2026-10-28 and now tops the v2 leaderboard: term recall 70.1%, WER 4.91%.
   `space/app.py` now has a tab per test set (v2 default: leaderboard with Tech WER, *By domain* heatmap and table, charts, per term,
   transcripts with domain labels; v1 keeps its *All code-switching* tab and v1 subsets). Not yet done: no v2 round in `archive/`
   (`scripts/snapshot_run.py`), so the Archive tab still lists only v1 rounds.

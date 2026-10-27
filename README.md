@@ -17,6 +17,7 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 <!-- results:start -->
 | Model | Type | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |
 |---|---|---|---|---|---|---|
+| [Parakeet v2 EN-HE Sabich v2.2](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **70.1** | 62.0 | 71.0 | 4.9 | 2.1 |
 | [Parakeet v2 EN-HE Sabich v2.1](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **65.6** | 56.2 | 67.4 | 5.2 | 2.4 |
 | [Parakeet v2 EN-HE Sabich v2.0](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **65.2** | 54.0 | 66.5 | 5.6 | 2.1 |
 | [Parakeet v2 EN-HE Sabich v1.0](https://huggingface.co/Hebrish/Sabich) | CS fine-tune | **63.3** | 53.3 | 65.2 | 5.7 | 2.1 |
