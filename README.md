@@ -20,6 +20,7 @@ A replicable benchmark for speech recognition on **English speech with Hebrew wo
 | Model | Term recall % | Unseen-term recall % | Lenient % | WER % | English control WER % |
 |---|---|---|---|---|---|
 | [Sabich v2.2](https://huggingface.co/Hebrish/Sabich) | **70.1** | 62.0 | 71.0 | 4.9 | 2.1 |
+| [Sabich v2.3](https://huggingface.co/Hebrish/Sabich) | **67.0** | 59.9 | 67.9 | 5.0 | 2.4 |
 | [Sabich v2.1](https://huggingface.co/Hebrish/Sabich) | **65.6** | 56.2 | 67.4 | 5.2 | 2.4 |
 | [Sabich v2.0](https://huggingface.co/Hebrish/Sabich) | **65.2** | 54.0 | 66.5 | 5.6 | 2.1 |
 | [Sabich v1.0](https://huggingface.co/Hebrish/Sabich) | **63.3** | 53.3 | 65.2 | 5.7 | 2.1 |
