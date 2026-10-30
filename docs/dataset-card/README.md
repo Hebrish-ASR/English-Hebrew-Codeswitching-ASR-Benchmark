@@ -27,13 +27,11 @@ configs:
   default: true
   data_files:
   - split: test
-    path:
-    - data/v2/metadata.jsonl
-    - data/v2/audio/*.wav
+    path: data/v2-*.parquet
 - config_name: v1
   data_files:
   - split: test
-    path: data/test/**
+    path: data/test-*.parquet
 ---
 
 # English-Hebrew Code-Switching ASR Benchmark
@@ -56,7 +54,16 @@ This repository is the test set only. It never changes in place: a new test set 
 ```python
 from datasets import load_dataset
 v2 = load_dataset("Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark", "v2", split="test")
+# exactly the scored files: the pinned commit
+v2 = load_dataset("Hebrish/English-Hebrew-Codeswitching-ASR-Benchmark", "v2", split="test", revision="48ec85a301dc593979adb701cb52f13bb66305d4")
 ```
+
+**Storage (2026-10-30).** On `main` each version is Parquet with the audio embedded: `data/v2-*.parquet` (v2)
+and `data/test-*.parquet` (v1), one row per clip, the `audio` column decoding with torchcodec (cast to
+`Audio(decode=False)` for the WAV bytes). `meta/v2.jsonl` and `meta/test.jsonl` hold every clip's metadata
+without audio, plus `shard` and the clip's byte range in it (`audio_offset`, `audio_length`). The WAV files are
+the same bytes as before. The pinned commits above predate this and keep the original audiofolder layout
+(`<folder>/metadata.jsonl` + `<folder>/audio/*.wav`); the runner loads either.
 
 <!-- hebrish-listen:begin -->
 ## Listen: what Hebrish is and how it's made
@@ -138,7 +145,7 @@ The domains are the ones [hebrish.app's lexicon](https://hebrish.app/lexicon) us
 
 | Column | Meaning |
 |---|---|
-| `file_name` | `audio/<id>.wav`, 16 kHz mono 16-bit. Clips recorded as 48 kHz / 24-bit FLAC (from 2026-10-22) were resampled |
+| `audio` | The clip, a 16 kHz mono 16-bit WAV (`audio/<id>.wav`; `file_name` in the audiofolder layout of the pinned commits). Clips recorded as 48 kHz / 24-bit FLAC (from 2026-10-22) were resampled |
 | `id` | Same id as in the source dataset |
 | `text` | Reference transcript: cased and punctuated, canonical romanized Hebrew |
 | `subset` | `clean`, `english_control` or `tech` |

@@ -12,6 +12,17 @@ Read `docs/about.md` first: it is the methodology and also the Space's About tab
 | Archive | `archive/<date>.json`, one per published round | `scripts/snapshot_run.py` after the round's results are committed. Never edit a committed round |
 | Leaderboard | HF Space `danielrosehill/English-Hebrew-Codeswitching-ASR-Leaderboard` | Only via `scripts/deploy_space.sh`, which copies space/, archive/, docs/about.md, docs/data-dictionary.md, and per version `results/<v>/` (from repo `results/*.json` for v1, `results/<v>/*.json` otherwise) plus the pinned `metadata-<v>.jsonl`; `benchmark.json` = `{current, revision, versions}`. Gradio 5.29.0 SDK, free CPU. Never edit the Space directly |
 
+**Parquet on `main` (2026-10-30).** The dataset's `main` is converted to Parquet by the Recorder repo's
+`scripts/convert_to_parquet.py` (`~/repos/github/ai-models/Voice-Training-Recorder/docs/parquet-layout.md`):
+splits `test` (v1) and `v2` as `data/<split>-*.parquet` plus index `meta/<split>.jsonl`. The pins stay on the
+pre-conversion audiofolder commits (decided 2026-10-30: same bytes, and every result and leaderboard tab
+filters on the pinned sha, so repinning would orphan them for no gain). `data.load` reads either layout by the
+commit asked for (Parquet: cuts each WAV out of its shard by `audio_offset`/`audio_length`); `build_testset*.py`
+and `deploy_space.sh` read only pinned pre-conversion commits and need no change. The converter writes the
+README `configs` as one `default` config with splits `test` and `v2`; `docs/dataset-card/README.md` already
+has the Parquet `configs` with the `v2`/`v1` config names, so upload it (card-only commit) once
+`meta/schema.json` exists on `main`, and not before (its paths do not exist on an audiofolder `main`).
+
 README edits to the HF dataset create new commits; that is fine because the loader pins
 `REVISION`, not `main`. Do not repin unless the audio or metadata changed.
 

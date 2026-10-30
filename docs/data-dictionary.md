@@ -68,6 +68,8 @@ Scoring groups, v1 (keys under `metrics.subsets` in a result file):
 
 ### Test-set fields (`metadata.jsonl`: `data/v2/` for v2, `data/test/` for v1)
 
+At the pinned commits these are the rows of `metadata.jsonl`. On the dataset's `main`, converted to Parquet on 2026-10-30, the same rows are in `meta/v2.jsonl` and `meta/test.jsonl` (with `audio_path` in place of `file_name`, plus `shard`, `audio_offset`, `audio_length`: the WAV's byte range in its `data/<split>-*.parquet` shard) and in the shards themselves (`audio` column). `ehcs_bench/data.py` reads either layout.
+
 | Field | Type | Meaning |
 |---|---|---|
 | `id` | string | Clip id: UTC recording time plus a random suffix |

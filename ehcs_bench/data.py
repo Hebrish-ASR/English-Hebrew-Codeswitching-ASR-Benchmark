@@ -2,6 +2,11 @@
 
 Each version lives in its own folder of REPO and is pinned to the commit that added it.
 v1 (2026-10-15): data/test/, 145 clips. v2 (2026-10-25): data/v2/, domain-balanced, the current set.
+
+The pinned commits are HF audiofolders (<folder>/metadata.jsonl + <folder>/audio/). On 2026-10-30 `main` was
+converted to Parquet (Voice-Training-Recorder docs/parquet-layout.md): splits `test` (v1) and `v2` as
+data/<split>-*.parquet shards, index meta/<split>.jsonl with each take's byte range in its shard. Earlier
+commits keep the audiofolder, so the pins are unchanged; load() reads either layout, by the commit asked for.
 """
 import json
 from pathlib import Path
@@ -32,7 +37,10 @@ def load(revision=None, local_dir=None, version=None):
     version = version or version_of(revision) or VERSION
     revision = revision or VERSIONS[version][0]
     folder = VERSIONS[version][1]
-    sha = HfApi().dataset_info(REPO, revision=revision).sha
+    api = HfApi()
+    sha = api.dataset_info(REPO, revision=revision).sha
+    if api.file_exists(REPO, "meta/schema.json", repo_type="dataset", revision=sha):
+        return (*_load_parquet(folder.split("/")[-1], sha, local_dir), sha)
     root = Path(snapshot_download(REPO, repo_type="dataset", revision=sha,
                                   allow_patterns=[f"{folder}/metadata.jsonl", f"{folder}/audio/*"], local_dir=local_dir))
     d = root / folder
@@ -40,3 +48,26 @@ def load(revision=None, local_dir=None, version=None):
     for r in rows:
         r["audio_path"] = str(d / r["file_name"])
     return rows, d, sha
+
+
+def _load_parquet(split, sha, local_dir=None):
+    """Rows of `split` at a Parquet commit, each take's audio file cut out of its shard by its byte range
+    (audio is stored verbatim, uncompressed) into <local_dir or a temp dir>/<sha12>/<split>/<audio_path>."""
+    import tempfile
+    from huggingface_hub import hf_hub_download
+    idx = hf_hub_download(REPO, f"meta/{split}.jsonl", repo_type="dataset", revision=sha)
+    rows = [json.loads(l) for l in Path(idx).read_text().splitlines() if l.strip()]
+    out = Path(local_dir or tempfile.gettempdir()) / f"ehcs-{sha[:12]}" / split
+    shards = {}
+    for r in rows:
+        dest = out / r["audio_path"]
+        if not dest.exists():
+            if r["shard"] not in shards:
+                shards[r["shard"]] = hf_hub_download(REPO, r["shard"], repo_type="dataset", revision=sha)
+            with open(shards[r["shard"]], "rb") as f:
+                f.seek(r["audio_offset"])
+                data = f.read(r["audio_length"])
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(data)
+        r["file_name"], r["audio_path"] = r["audio_path"], str(dest)
+    return rows, out
